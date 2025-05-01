@@ -1,0 +1,282 @@
+every_possible_country = {
+    limit = {
+        always = no
+    }
+    generate_character = {
+        token_base = ead_secretary_malone
+		name = ead_secretary_malone_name 
+		portraits = {
+				civilian = {
+					small = gfx/interface/ideas/ead_secretary_malone.dds
+				}
+			}
+		advisor = {
+				slot = economic_advisor
+				cost = 50
+				idea_token = ead_secretary_malone
+				desc = ead_sierra_secretary_interior_desc
+				traits = { ead_sierra_secretary_interior }
+				available = {
+					has_completed_focus = enc_mobilize_economy
+				}
+			}
+    }
+	generate_character = {
+        token_base = ead_trainer_james_adams
+		name = ead_trainer_james_adams_name
+		portraits = {
+			army = { 
+				small = gfx/interface/ideas/ead_trainer_james_adams.dds
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+            idea_token = ead_trainer_james_adams
+            desc = ead_enclave_drill_master_desc
+            cost = 50
+			traits = {
+				ead_enclave_drill_master
+			}
+			available = {
+				has_completed_focus = enc_purity
+			}
+        }
+    }
+	generate_character = {
+        token_base = ead_overseer_twen
+		name = ead_overseer_twen_name
+		portraits = {
+			civilian = {
+				small = gfx/interface/ideas/ead_overseer_twen.dds
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = ead_overseer_twen
+			desc = ead_first_overseer_desc
+            cost = 50
+			traits = {
+				ead_first_overseer
+			}
+			available = {
+				has_completed_focus = Enc_project_safe_haven
+			}
+		}
+    }
+	generate_character = {
+        token_base = ead_senator_glenn_brown
+		name = ead_senator_glenn_brown_name
+		portraits = {
+			civilian = {
+				small = gfx/interface/ideas/ead_senator_glenn_brown.dds
+			}
+		}
+		allowed = { original_tag = ERB }
+		advisor = {
+			slot = economic_advisor
+			idea_token = ead_senator_glenn_brown
+			desc = ead_slave_master_desc
+			available = {
+				has_completed_focus = enc_slave_labour
+			}
+            cost = 50
+			traits = {
+				ead_slave_master
+			}
+		}
+    }
+	generate_character = {
+        token_base = ead_scientist_eric_alexander
+		name = ead_scientist_eric_alexander_name
+		portraits = {
+			civilian = {
+				small = gfx/interface/ideas/ead_scientist_eric_alexander.dds
+			}
+		}
+		allowed = { original_tag = ERB }
+		advisor = {
+			slot = cultural_advisor
+			idea_token = ead_scientist_eric_alexander
+			desc = ead_lobotomite_production_expert_desc
+			cost = 50
+			traits = {
+				ead_lobotomite_production_expert
+			}
+			available = {
+				has_completed_focus = enc_little_yangtze
+			}
+		}
+    }
+	generate_character = {
+        token_base = ead_col_frederic_wagner
+		name = ead_col_frederic_wagner_name 
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_col_frederic_wagner.dds
+			}
+		}
+		allowed = { original_tag = ERB }
+		advisor = {
+			slot = high_command
+			idea_token = ead_col_frederic_wagner
+			cost = 100
+			desc = ead_wastelander_recruiter_desc
+			traits = { 
+				ead_wastelander_recruiter
+			}
+			available = {
+				has_completed_focus = enc_vlt_core
+			}
+		}
+    }
+	generate_character = {
+        token_base = ead_engineer_dawson
+		name = ead_engineer_dawson_name
+		portraits = {
+			civilian = {
+				small = gfx/interface/ideas/ead_engineer_dawson.dds
+			}
+		}
+		allowed = { original_tag = ERB }
+		advisor = {
+			slot = economic_advisor
+			idea_token = ead_engineer_dawson
+			cost = 50
+			desc = ead_sierra_engineer_desc
+			traits = {
+				ead_sierra_engineer
+			}
+			available = {
+				has_completed_focus = enc_depot_start
+			}
+		}
+    }
+	generate_character = {
+        token_base = ead_orion_moreno
+		name = ead_orion_moreno_name
+		portraits = {
+			civilian = {
+				small = gfx/interface/ideas/ead_orion_moreno.dds
+			}
+		}
+		allowed = { original_tag = ERB }
+		advisor = {
+			slot = army_chief
+			idea_token = ead_orion_moreno
+			cost = 100
+			desc = ead_loyal_enclave_soldier_desc
+			traits = { 
+				ead_loyal_enclave_soldier
+			}
+			available = {
+				has_completed_focus = enc_remnants
+			}
+		}
+    }
+	generate_character = {
+        token_base = ead_lynette
+		name = ead_lynette_name
+		portraits = {
+			civilian = {
+				small = gfx/interface/ideas/lynette.dds
+			}
+		}
+		allowed = { original_tag = ERB }
+		advisor = {
+			slot = cultural_advisor
+			idea_token = ead_lynette
+			cost = 50
+			desc = ead_enclave_first_citizen_desc
+			traits = { 
+				ead_enclave_first_citizen
+			}
+			visible = { 
+				has_completed_focus = enc_vlt_core
+			}
+		}
+    }
+	generate_character = {
+        token_base = ead_agent_osborne
+		name = ead_agent_osborne_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_agent_osborne.dds
+			}
+		}
+		allowed = { original_tag = ERB }
+		advisor = {
+			slot = army_chief
+			idea_token = ead_agent_osborne
+			cost = 100
+			desc = ead_special_agent_desc
+			available = {
+				has_completed_focus = enc_perfect_human
+			}
+			traits = { ead_special_agent }
+		}
+    }
+	generate_character = {
+        token_base = ead_agent_simmons
+		name = ead_agent_simmons_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_agent_simmons.dds
+			}
+		}
+		allowed = { original_tag = ERB }
+		advisor = {
+			slot = high_command
+			idea_token = ead_agent_simmons
+			cost = 50
+			desc = ead_enclave_purifier_desc
+			available = {
+				has_completed_focus = enc_vlt_pure
+			}
+			traits = { ead_enclave_purifier }
+		}
+    }
+	generate_character = {
+        token_base = ead_molly_perkins
+		name = ead_molly_perkins_name
+		portraits = {
+			army = {
+				small = GFX_idea_erc_molly_perkins
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = ead_molly_perkins
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_vault_logistics_desc
+			traits = { ead_vault_logistics }
+			visible = { 
+				has_completed_focus = enc_vlt_core
+			}
+		}
+    }
+	generate_character = {
+        token_base = ead_ace_hawk
+		name = ead_ace_hawk_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_ace_hawk.dds
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = ead_ace_hawk
+			cost = 50
+			allowed = {
+				original_tag = ERB 
+			}
+			desc = ead_vertibird_ace_desc
+			traits = { ead_vertibird_ace }
+			available = {
+				has_completed_focus = enc_DoD_start
+			}
+		}
+    }
+}
