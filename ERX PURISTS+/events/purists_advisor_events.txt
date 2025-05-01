@@ -1,0 +1,68 @@
+#######################################
+# Advisor and other character recruiting from Smile
+#######################################
+
+add_namespace = purists_advisor
+
+country_event = {
+	id = purists_advisor.1
+	title = purists_advisor.1.t
+	desc = purists_advisor.1.d
+	picture = GFX_enc_event_anderson_08
+	fire_only_once = yes
+
+	trigger = {
+		tag = ERB
+		has_completed_focus = enc_purity
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = { 
+		name = purists_advisor.1.a
+		generate_character = {
+			token_base = ead_secretary_malone
+		} 
+		generate_character = {
+			token_base = ead_trainer_james_adams
+		} 
+		generate_character = {
+			token_base = ead_overseer_twen
+		} 
+		generate_character = {
+			token_base = ead_senator_glenn_brown
+		} 
+		generate_character = {
+			token_base = ead_scientist_eric_alexander
+		} 
+		generate_character = {
+			token_base = ead_col_frederic_wagner
+		} 
+		generate_character = {
+			token_base = ead_engineer_dawson
+		} 
+		generate_character = {
+			token_base = ead_orion_moreno
+		} 
+		generate_character = {
+			token_base = ead_lynette
+		} 
+		generate_character = {
+			token_base = ead_agent_osborne
+		} 
+		generate_character = {
+			token_base = ead_agent_simmons
+		} 
+		generate_character = {
+			token_base = ead_molly_perkins
+		} 
+		generate_character = {
+			token_base = ead_ace_hawk
+		} 
+	}
+	option = { 
+		name = purists_advisor.1.b
+		add_manpower = 2000
+		add_political_power = 200
+	}
+}

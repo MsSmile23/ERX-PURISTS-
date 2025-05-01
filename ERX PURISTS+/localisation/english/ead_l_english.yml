@@ -1,0 +1,63 @@
+﻿l_english:
+
+#Leader/Advisor Traits 
+
+ead_enclave_drill_master: "Second Master Sergeant of Sierra Base"
+ead_enclave_drill_master_desc: "Master Sergeant James Adams is a grizzled, no-nonsense veteran and survivor of Navarro, forged in the crucible of post-apocalyptic warfare. With a steely gaze and a voice that commands instant respect, James serves as a lead instructor alongside the legendary Sergeant Dornan, training the next generation of Enclave soldiers at the Sierra facility."
+
+ead_first_overseer: "First Overseer" 
+ead_first_overseer_desc: "Appointed by President Anderson as the inaugural Overseer of the first Vault, Carl Twen is a steadfast and cunning administrator known for his unshakable loyalty and meticulous attention to detail. A trusted confidant of the President, Twen’s pragmatic leadership and strategic foresight make him the ideal steward for the Enclave’s ambitious reclamation efforts."
+
+ead_slave_master: "Wastelander Slaver"
+ead_slave_master_desc: "Senator Glenn Brown is a shrewd and morally flexible figure within the Sierra Enclave, renowned for his expertise in exploiting wasteland labor to fuel the Enclave’s ambitions. With a silver tongue and a cold, calculating mind, Brown employs a mix of coercion, psychological manipulation, and brutal efficiency to maximize the productivity of enslaved wastelanders. His unapologetic pragmatism and knack for bending others to his will make him a powerful, if controversial, voice in the Enclave’s political hierarchy. Brown’s methods, though effective, sow fear and resentment, cementing his reputation as a man who gets results at any cost."
+
+ead_lobotomite_production_expert: "Director of Lobotomite programm"
+ead_lobotomite_production_expert_desc: "Eric Alexander is a brilliant yet ethically dubious military scientist who assumed control of the lobotomite program after the Enclave seized Big MT. Coldly analytical and driven by a zeal for advancing Enclave technology, Alexander refines the program by subjecting wastelanders to horrific neurological experiments, transforming them into obedient, mindless drones. His innovations enhance the Enclave’s labor and combat capabilities, but his ruthless methods spark unease even among his peers. Alexander’s unwavering commitment to scientific progress and Enclave supremacy makes him a pivotal, if unsettling, figure in Big MT’s dark legacy."
+
+
+ead_wastelander_recruiter: "Wastelander Recruiter"
+ead_wastelander_recruiter_desc: "Colonel Frederick Wagner is a forward-thinking yet divisive officer in the Sierra Enclave, championing the recruitment of honorary humans who pass rigorous Enclave genetic screenings. Following the controversial introduction of this policy, Wagner’s pragmatic vision sees these select wastelanders as vital to bolstering the Enclave’s ranks, despite fierce opposition from traditionalist colleagues who view outsiders as impure. His persuasive arguments and proven battlefield leadership make him a polarizing figure, balancing the Enclave’s purist ideals with the practical need for manpower in their quest to rebuild America."
+
+ead_sierra_engineer: "Sierra Engineer"
+ead_sierra_engineer_desc: "A seasoned engineer, who supported for years Bloomfield Space Center, Scott Dawson worked closely with President Anderson before the facility was overrun by the NCR. Now leading a hardened team at the Sierra Facility, Dawson faces the relentless challenge of keeping its aging infrastructure, power grids, and defense systems—functional under constant strain. With dwindling supplies and mounting external threats, his leadership is the only thing standing between operational integrity and total collapse. Every day is a battle against time, sabotage, and the ever-looming specter of NCR forces closing in. Failure is not an option."
+
+
+ead_loyal_enclave_soldier: "Loyal Enclave Soldier"
+ead_loyal_enclave_soldier_desc: "Orion Moreno, a grizzled ex-Enclave heavy weapons trooper, rejoins the Sierra Enclave with a handful of fellow Navarro remnants, driven by lingering loyalty to the Enclave’s vision. Once a proud member of Judah Kreger’s squad, Moreno’s ruthless zeal and unyielding demeanor made him a formidable soldier, but his decision to integrate with his team after Navarro’s fall left a stain on his reputation. At Sierra, his return stirs mixed reactions—while some admire his combat prowess and dedication, others resent his past desertion, viewing him as a liability to the Enclave’s fragile unity."
+
+
+ead_enclave_first_citizen: "First Citizen"
+ead_enclave_first_citizen_desc: "Lynette, once the imperious leader of Vault City, now serves the Sierra Enclave as a strategic advisor, leveraging her administrative acumen and knowledge of wasteland politics. Her sharp intellect and organizational skills make her a valuable asset in managing Enclave operations, but her haughty demeanor and past authoritarian rule in Vault City breed distrust among many. Particularly, those Enclave members who once sought refuge in Vault City harbor deep resentment, recalling her strict policies."
+
+
+ead_special_agent: "Special Agent"
+ead_special_agent_desc: "Special Agent Robert Osborne is a dedicated and fearless operative of the Sierra Enclave, the first commander to volunteer for the recently completed super-soldier program. Through advanced genetic enhancements and cybernetic implants, Osborne has been transformed into a near-superhuman warrior, boasting unparalleled strength, agility, and resilience. His voluntary sacrifice for the Enclave’s cause makes him a revered figure, though his altered state unnerves some colleagues. Osborne’s unwavering commitment and tactical prowess cement his role as a cornerstone of the Enclave’s military ambitions."
+
+ead_enclave_purifier: "Purifier of the Wasteland"
+ead_enclave_purifier_desc: "Special Agent Joyce Simmons is a feared and sadistic operative of the Sierra Enclave, notorious for her cruel zeal in purifying wastelanders. With a twisted sense of duty, Simmons revels in enforcing the Enclave’s genetic purity standards, often employing brutal methods to eliminate those deemed unworthy. Her cold, calculating demeanor and penchant for inflicting suffering make her a terrifying presence, even among allies. While her effectiveness in purging threats is undeniable, her unhinged sadism unsettles many at the Sierra base, casting a dark shadow over her loyalty to the Enclave’s cause."
+
+ead_vault_logistics: "Vault Hydroponics Head"
+ead_vault_logistics_desc: "Molly, formerly the head of Vault City’s Hydroponics Farm, is an enigmatic visionary now serving the Sierra Enclave with her unparalleled expertise in agricultural logistics. Unlike most Vault City natives, she dreams of reviving America’s great breadbasket, a passion that led her to boldly declare herself head of the long-defunct U.S. Department of Agriculture during a Presidential meeting. Her audacity is matched by her skill, as she orchestrates efficient food production to sustain the Enclave’s growing needs. While her unorthodox arrival raises eyebrows, her vital contributions silence doubters, making her an indispensable, if eccentric, asset."
+
+ead_sierra_secretary_interior: "Secretary of the Interior"
+ead_sierra_secretary_interior_desc: "Evelyn Malone, the poised and empathetic Secretary of the Interior for the Sierra Enclave, is a rare advocate for the well-being of Enclave personnel. Recognizing the grueling demands of their mission, she prioritizes rest and recuperation programs to maintain morale and mental resilience. Her keen understanding of human needs, combined with her organizational finesse, ensures that recreation facilities and downtime are strategically integrated into the Enclave’s operations. Though some view her focus on R&R as a luxury, Malone’s efforts foster loyalty and efficiency, earning her quiet respect among the ranks."
+
+ead_vertibird_ace: "Vertibird Ace"
+ead_vertibird_ace_desc: "The Enclave Vertibird Ace, Captain Marcus 'Hawk' Ellison, is a fearless and skilled pilot renowned for his mastery of the Sierra Enclave’s Vertibird fleet. With unmatched precision and nerves of steel, Hawk executes daring aerial maneuvers, providing critical air support and reconnaissance for Enclave operations. His aggressive tactics and ability to outmaneuver wasteland threats have earned him a fearsome reputation, though his cocky attitude sometimes clashes with more grounded officers. Hawk’s loyalty to the Enclave’s mission soars as high as his Vertibird, making him a vital asset in the skies."
+
+#Characters
+
+ead_trainer_james_adams_name: "Master sergeant James Adams"
+ead_overseer_twen_name: "First Overseer Carl Twen"
+ead_senator_glenn_brown_name: "Senator Glenn Brown"
+ead_scientist_eric_alexander_name: "Chief Scientist Eric Alexander"
+ead_col_frederic_wagner_name: "Colonel Frederick Wagner"
+ead_engineer_dawson_name: "Chief Engineer Scott Dawson"
+ead_orion_moreno_name: "Orion Moreno"
+ead_lynette_name: "First Citizen Lynette"
+ead_agent_osborne_name: "Special Agent Osborne"
+ead_agent_simmons_name: "Special Agent Simmons"
+ead_molly_perkins_name: "Molly Perkins"
+ead_secretary_malone_name: "Secretary of the Interior Evelyn Malone"
+ead_ace_hawk_name: "Captain Marcus 'Hawk' Ellison"
+
