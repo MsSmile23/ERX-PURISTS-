@@ -279,4 +279,107 @@ every_possible_country = {
 			}
 		}
     }
+	generate_character = {
+        token_base = ead_mike_williams
+		name = ead_mike_williams_name
+		portraits = {
+			army = {
+				small = GFX_idea_VLT_advisor_1
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = ead_mike_williams
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_vault_technician_desc
+			traits = { ead_vault_technician }
+			visible = { 
+				has_completed_focus = enc_vlt_core
+			}
+		}
+    }
+	generate_character = {
+        token_base = ead_col_holmes
+		name = ead_col_holmes_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_col_holmes.dds
+				large = gfx/leaders/ead_col_holmes.dds
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ead_col_holmes
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_tank_ace_desc
+			traits = { ead_tank_ace }
+			available = {
+				has_completed_focus = enc_hes_alive
+			}
+		}
+		field_marshal = {
+            skill = 5
+            attack_skill = 5
+            defense_skill = 5
+            planning_skill = 5
+            logistics_skill = 5
+            traits = {
+                enc_purist
+                agile_trait
+            }
+            legacy_id = -1
+        }
+    }
+
+	generate_character = {
+        token_base = ead_dr_sierra
+		name = ead_dr_sierra_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_dr_sierra.dds
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ead_dr_sierra
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_beast_master_desc
+			traits = { ead_beast_master }
+			available = {
+				has_completed_focus = enc_nova_prospekt
+			}
+		}
+    }
+
+	generate_character = {
+        token_base = ead_dr_hayes
+		name = ead_dr_hayes_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_dr_hayes.dds
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ead_mike_williams
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_drone_production_desc
+			traits = { ead_drone_production }
+			available = {
+				has_completed_focus = enc_enhanced_cloning_program
+			}
+		}
+    }
 }

@@ -6,3 +6,13 @@ purists_advisor.1.d: "Mister Anderson, your victory is a tremendous success for 
 purists_advisor.1.a: "To my trusted advisors (unlocks additional content)."
 purists_advisor.1.b: "I AM THE PRESIDENT."
 ################################################################################################################ -<
+purists_advisor.2.t: "Fate of the Vault-City leadership."
+purists_advisor.2.d: "Mister Anderson, after you gave the order to spare the population of Vault City, we were faced with the obvious question of what to do with their leadership. Many of them have expressed a desire to cooperate with us, but... frankly, Mister President, many in our ranks will not be very happy to see these 'people' again. But, the call is yours."
+purists_advisor.2.a: "Sure, but keep an eye on them."
+purists_advisor.2.b: "They will do fine in janitor positions."
+purists_advisor.2.c: "Its time for some public execution."
+################################################################################################################ -<
+purists_advisor.3.t: "A man from Texas."
+purists_advisor.3.d: "Mr. President, after we managed to contact Colonel Houston, he sent us his best man - Colonel Holms. According to him, he is a real ace who will help us in the conquest of America and the speedy reunification in Texas."
+purists_advisor.3.a: "His more than welcome."
+################################################################################################################ -<
