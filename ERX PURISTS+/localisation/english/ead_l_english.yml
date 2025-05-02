@@ -45,6 +45,18 @@ ead_sierra_secretary_interior_desc: "Evelyn Malone, the poised and empathetic Se
 ead_vertibird_ace: "Vertibird Ace"
 ead_vertibird_ace_desc: "The Enclave Vertibird Ace, Captain Marcus 'Hawk' Ellison, is a fearless and skilled pilot renowned for his mastery of the Sierra Enclave’s Vertibird fleet. With unmatched precision and nerves of steel, Hawk executes daring aerial maneuvers, providing critical air support and reconnaissance for Enclave operations. His aggressive tactics and ability to outmaneuver wasteland threats have earned him a fearsome reputation, though his cocky attitude sometimes clashes with more grounded officers. Hawk’s loyalty to the Enclave’s mission soars as high as his Vertibird, making him a vital asset in the skies."
 
+ead_vault_technician: "Vault Technician"
+ead_vault_technician_desc: "Mike Williams, a former technician from Vault City, now serves the Sierra Enclave under their strict supervision. Once a skilled maintenance worker adept at repairing Vault City’s intricate systems, Williams defected after growing disillusioned with Vault City’s rigid leadership. His technical expertise in hydroponics and machinery made him a valuable asset to the Enclave, but his outsider status keeps him under constant scrutiny. Distrustful of his loyalties, Enclave officials monitor his every move, ensuring his talents are used to bolster their operations while keeping him on a tight leash."
+
+ead_drone_production: "Director of Drone Programm"
+ead_drone_production_desc: "Chief Researcher Jeff Hayes directs the Enclave’s drone program with a vision to revolutionize their technology. Recognizing that current drones are slow and rudimentary, Hayes proposes innovative upgrades to enhance their speed, intelligence, and combat effectiveness. His ambitious plans, however, demand a significant investment of resources, straining the Enclave’s budget. A brilliant but meticulous mind, Hayes works tirelessly under pressure, promising a future where Enclave drones dominate the wasteland skies—if the cost can be justified."
+
+ead_beast_master: "Enclave Beast Master"
+ead_beast_master_desc: "Chief Researcher Vera Scierra leads the Enclave’s experimental division, specializing in crafting nightmarish abominations like deathclaws and cazadores. A brilliant yet unsettling figure, she thrives on pushing the boundaries of genetic engineering to create lethal bio-weapons for Enclave dominance. With additional funding, Scierra promises to enhance their strength, agility, and obedience, though her unorthodox methods fuel unease among colleagues. Her relentless drive makes her a key asset in the Enclave’s quest to weaponize the wasteland’s deadliest creatures."
+
+ead_tank_ace: "Armored Expert from Texas"
+ead_tank_ace_desc: "Colonel Mike Holms, a seasoned officer from the recently contacted Texas Enclave, brings a wealth of expertise to the Sierra Enclave with his deep knowledge of tank design. Having honed his skills in the harsh Texan wasteland, Holms excels at improving armored vehicles, enhancing their durability, firepower, and mobility to dominate the battlefield. His innovative designs, born from years of practical experience, make him a valuable ally, though his brash demeanor and outsider perspective sometimes clash with Sierra’s rigid hierarchy."
+
 #Characters
 
 ead_trainer_james_adams_name: "Master sergeant James Adams"
@@ -60,4 +72,8 @@ ead_agent_simmons_name: "Special Agent Simmons"
 ead_molly_perkins_name: "Molly Perkins"
 ead_secretary_malone_name: "Secretary of the Interior Evelyn Malone"
 ead_ace_hawk_name: "Captain Marcus 'Hawk' Ellison"
+ead_mike_williams_name: "Technician Mike Williams"
+ead_dr_hayes_name: "Chief Researcher Jeff Hayes"
+ead_dr_sierra_name: "Chief Researcher Sierra"
+ead_col_holmes_name: "Colonel Mike Holms"
 
