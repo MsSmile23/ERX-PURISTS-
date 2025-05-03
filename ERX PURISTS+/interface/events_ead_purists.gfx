@@ -1,0 +1,16 @@
+spriteTypes = {
+#Event
+	SpriteType = { 
+		name = "GFX_ead_texas_reinforsment"
+		texturefile = "gfx/interface/events_pictures/ead_man_from_texas.tga"
+	}
+
+	SpriteType = {
+		name = "GFX_ead_mca_reinforsment"
+		texturefile = "gfx/interface/events_pictures/ead_guys_from_mca.tga"
+	}
+}
+
+
+
+

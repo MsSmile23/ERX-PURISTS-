@@ -382,4 +382,102 @@ every_possible_country = {
 			}
 		}
     }
+
+	generate_character = {
+        token_base = ead_dr_padilla
+		name = ead_dr_padilla_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_dr_padilla.dds
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ead_dr_padilla
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_armor_expert_desc
+			traits = { ead_armor_expert }
+			research_bonus = { tank_tech_category = 0.15 }
+		}
+    }
+
+	generate_character = {
+        token_base = ead_dr_davidson
+		name = ead_dr_davidson_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_dr_davidson.dds
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = ead_dr_davidson
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_medic_advisor_desc
+			traits = { ead_medic_advisor }
+			available = {
+				has_completed_focus = enc_vlt_labs
+			}
+		}
+    }
+
+	generate_character = {
+        token_base = ead_agent_gerald
+		name = ead_agent_gerald_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_agent_gerald.dds
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = ead_agent_gerald
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_vertibird_production_master_desc
+			traits = { ead_vertibird_production_master }
+		}
+    }
+
+	generate_character = {
+        token_base = ead_major_shelton
+		name = ead_major_shelton_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_major_shelton.dds
+				large = gfx/leaders/ead_major_shelton.dds
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ead_major_shelton
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_mac_resource_desc
+			traits = { ead_mac_resource }
+		}
+		field_marshal = {
+            skill = 5
+            attack_skill = 5
+            defense_skill = 5
+            planning_skill = 5
+            logistics_skill = 5
+            traits = {
+                enc_purist
+                charismatic_trait
+
+            }
+            legacy_id = -1
+        }
+    }
 }

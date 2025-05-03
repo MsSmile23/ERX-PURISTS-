@@ -59,6 +59,9 @@ country_event = { #Recruiting default characters
 		generate_character = {
 			token_base = ead_dr_sierra
 		} 
+		generate_character = {
+			token_base = ead_dr_davidson
+		}
 	}
 	option = { 
 		name = purists_advisor.1.b
@@ -113,7 +116,7 @@ country_event = { #Ace from Texas
 	id = purists_advisor.3
 	title = purists_advisor.3.t
 	desc = purists_advisor.3.d
-	picture = GFX_event_marine_one
+	picture = GFX_ead_texas_reinforsment
 	fire_only_once = yes
 
 	trigger = {
@@ -127,6 +130,9 @@ country_event = { #Ace from Texas
 		name = purists_advisor.3.a
 		generate_character = {
 			token_base = ead_col_holmes
+		}
+		generate_character = {
+			token_base = ead_dr_padilla
 		} 
 		add_manpower = 500
 		army_experience = 75
@@ -135,5 +141,34 @@ country_event = { #Ace from Texas
 			uses = 1
 			category = tank_tech_category
 		}
+	}
+}
+
+country_event = { #Aid from MacAurthur 
+	id = purists_advisor.4
+	title = purists_advisor.4.t
+	desc = purists_advisor.4.d
+	picture = GFX_ead_mca_reinforsment
+	fire_only_once = yes
+
+	trigger = {
+		tag = ERB
+		has_completed_focus = enc_aid_to_mca
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = { 
+		name = purists_advisor.4.a
+		generate_character = {
+			token_base = ead_agent_gerald
+		}
+		generate_character = {
+			token_base = ead_major_shelton
+		} 
+		add_manpower = 500
+		air_experience = 75
+		add_equipment_to_stockpile = { type = vb_transport_plane_equipment amount = 100 producer = USA }
+		add_equipment_to_stockpile = { type = vb_gunship_equipment amount = 200 producer = USA }
 	}
 }

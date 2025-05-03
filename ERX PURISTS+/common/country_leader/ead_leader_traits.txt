@@ -194,4 +194,65 @@ leader_traits = {
 			}
 		}
 	}
+
+	ead_armor_expert = {
+		random = no
+		research_speed_factor = 0.08
+		experience_gain_army = 0.08
+		industrial_capacity_factory = 0.1
+	}
+
+	ead_medic_advisor = {
+		random = no
+		consumer_goods_factor = 0.05
+		org_loss_when_moving = -0.15
+		weekly_manpower = 1
+
+		equipment_bonus = {
+			support_equipment = {
+				casualty_trickleback = 0.10
+				reliability = 0.03
+				build_cost_ic = -0.1
+				instant = yes
+			}
+		}
+	}
+
+	ead_vertibird_production_master = {
+		random = no
+		air_cas_efficiency = 0.1
+		air_range_factor = 0.2
+
+		equipment_bonus = {
+			vb_gunship_equipment = {
+				instant = yes
+				build_cost_ic = 0.6
+				reliability = 0.2
+				air_agility = 0.15
+				maximum_speed = 0.15
+				air_bombing = 0.05
+				air_range = 0.2
+				air_attack = 0.3
+				
+			}
+
+			land_vertibird_equipment = {
+				instant = yes
+				build_cost_ic = 0.3
+				reliability = 0.2
+				maximum_speed = 0.2 
+				breakthrough = 0.2 
+				armor_value = 0.2 
+			}
+		}
+	}
+
+	ead_mac_resource = { 
+		random = no
+		country_resource_advanced = 50
+		local_resources_factor = 0.2
+		compliance_gain = 0.05
+		army_org_factor = 0.15
+		army_org_regain = 0.1
+	 }
 }
