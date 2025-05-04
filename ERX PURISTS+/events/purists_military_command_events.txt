@@ -1,0 +1,164 @@
+#######################################
+# Military from Smile
+#######################################
+
+add_namespace = purists_ead_military
+
+country_event = { #Recruiting military
+	id = purists_ead_military.1
+	title = purists_ead_military.1.t
+	desc = purists_ead_military.1.d
+	picture = GFX_ead_military_reviving
+	fire_only_once = yes
+
+	trigger = {
+		tag = ERB
+		has_completed_focus = enc_purity
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = { 
+		name = purists_ead_military.1.a
+		create_field_marshal = {
+			name = "General Patton"
+			traits = { 
+				enc_purist
+				intelligent_trait
+				
+			}
+			portrait_path = "gfx/leaders/General_Patton.dss"
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+			legacy_id = -1
+			
+		}
+		create_field_marshal = {
+			name = "General Garza"
+			traits = { 
+				perceptive_trait
+				intelligent_trait
+				
+			}
+			portrait_path = "gfx/leaders/General_Garza.dss"
+			skill = 4
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 6
+			legacy_id = -1
+			
+		}
+		create_corps_commander = {
+			name = "Colonel Gray"
+			traits = { 
+				enc_purist
+				local_leader_trait
+				inspirational_trait
+				
+			}
+			portrait_path = "gfx/leaders/Colonel_Gray.dss"
+			skill = 3
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 6
+			logistics_skill = 3
+			legacy_id = -1
+			
+		}
+		create_corps_commander = {
+			name = "Colonel Smith"
+			traits = { 
+				enc_purist
+				charismatic_trait
+				life_giver_trait
+				
+			}
+			portrait_path = "gfx/leaders/Colonel_Smith.dss"
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 3
+			legacy_id = -1
+			
+		}
+		create_corps_commander = {
+			name = "Major Jones"
+			traits = { 
+				enc_purist
+				perceptive_trait
+				intelligent_trait
+				
+			}
+			portrait_path = "gfx/leaders/Major_Jones.dss"
+			skill = 3
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 3
+			legacy_id = -1
+			
+		}
+		create_corps_commander = {
+			name = "Major Phelps"
+			traits = { 
+				enc_purist
+				survivalist_trait
+				life_giver_trait
+				
+			}
+			portrait_path = "gfx/leaders/Major_Phelps.dss"
+			skill = 2
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 3
+			legacy_id = -1
+			
+		}
+		create_corps_commander = {
+			name = "Major Hamilton"
+			traits = { 
+				enc_purist
+				enduring_trait
+				
+			}
+			portrait_path = "gfx/leaders/Major_Hamilton.dss"
+			skill = 3
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = -1
+			
+		}
+		create_corps_commander = {
+			name = "Captain Sims"
+			traits = { 
+				enc_purist
+				sniper_trait
+				awareness_trait
+				perceptive_trait
+				
+			}
+			portrait_path = "gfx/leaders/Captain_Sims.dss"
+			skill = 2
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 3
+			legacy_id = -1
+			
+		}
+		
+	}
+	option = { 
+		name = purists_ead_military.1.b
+		add_manpower = 1000
+		army_experience = 100
+	}
+}

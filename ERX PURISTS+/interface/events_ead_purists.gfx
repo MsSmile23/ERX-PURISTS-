@@ -9,6 +9,12 @@ spriteTypes = {
 		name = "GFX_ead_mca_reinforsment"
 		texturefile = "gfx/interface/events_pictures/ead_guys_from_mca.tga"
 	}
+
+	spriteType = {
+		name = "GFX_ead_military_reviving"
+		textureFile = "gfx/interface/events_pictures/ead_military_reviving.tga"
+	}
+
 }
 
 
