@@ -6,4 +6,10 @@ purists_ead_military.1.d: "The Enclave needs an influx of fresh blood more than 
 purists_ead_military.1.a: "God bless the Enclave. God bless the President. (unlock additional commanders)"
 purists_ead_military.1.b: "We dont need them."
 ################################################################################################################ -<
+################################################################################################################ -<
+purists_ead_military.2.t: "Sigma squads."
+purists_ead_military.2.d: "Squad Sigma, an elite units of the Sierra Enclave, comprises experianced soldiers trained for both brute force and stealth operations. Known for their ruthless efficiency and unyielding loyalty, they were once a cornerstone of the Enclave’s military might. However, their fate remains debated: some advocate deploying them as frontline units to crush wasteland resistance with overwhelming power, while others argue their precision and covert skills make them ideal for black-ops missions, targeting high-value threats in secrecy. The Enclave must decide whether to unleash their raw strength or harness their shadowy potential."
+purists_ead_military.2.a: "Deploy them!"
+purists_ead_military.2.b: "Keep them in shadow."
+################################################################################################################ -<
 
