@@ -255,4 +255,14 @@ leader_traits = {
 		army_org_factor = 0.15
 		army_org_regain = 0.1
 	 }
+
+	sigma_boy = {
+		random = no
+		conscription = -0.01
+		army_morale_factor = 0.10
+		special_forces_min = 50
+		civilian_intel_factor = 0.05
+		army_intel_factor = 0.05
+		navy_intel_factor = 0.05
+	}
 }

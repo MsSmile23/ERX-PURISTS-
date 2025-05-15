@@ -69,6 +69,9 @@ ead_vertibird_production_master_desc: "Agent Gerald Adams, a skilled engineer fr
 ead_mac_resource: "Pacifier from MacArthur"
 ead_mac_resource_desc: "Major William Shelton, a seasoned officer from the MacArthur Detachment, now serves under President Anderson. Stationed at the MacArthur Air Force Base, a key Chicago resource outpost, Shelton honed his expertise in pacifying local wastelanders and efficiently collecting scarce resources. His strategic mind and diplomatic ruthlessness have made him invaluable in securing supplies, though his pragmatic approach sometimes raises eyebrows among purist Enclave ranks."
 
+sigma_boy: "Secret Service Agent"
+sigma_boy_desc: "Former Secret Service Agent Colonel Hammel now seeks to redeem his tarnished reputation within the Sierra Enclave under the new administration. Once a trusted protector of high-ranking officials, a past failure drove him to prove his worth anew. Leveraging his expertise in security protocols, tactical planning, and covert operations, he offers his full skill set to President Anderson’s regime. His determination to restore his honor fuels his relentless service, earning cautious respect despite lingering doubts."
+
 #Characters
 
 ead_trainer_james_adams_name: "Master sergeant James Adams"
@@ -92,4 +95,10 @@ ead_dr_padilla_name: "Engineer Margaret Padilla"
 ead_dr_davidson_name: "Doctor John Davidson"
 ead_agent_gerald_name: "Agent Gerald Adams"
 ead_major_shelton_name: "Major William Shelton"
+ead_col_hammel_name: "Colonel Edward Hammel"
+
+
+#Other
+
+purists_sigma: "Sigma Units"
 
