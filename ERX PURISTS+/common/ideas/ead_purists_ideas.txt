@@ -1,0 +1,51 @@
+ideas = {
+	country = {
+
+		Purists_chosen_one_dead = {
+			picture = WBH_idea_eradicate_the_mutants
+			name = "Chosen One is DEAD"
+			allowed = { always = no	}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+			 stability_factor = 0.05
+			 resistance_decay = 0.05
+			 resistance_damage_to_garrison = -0.1
+			 army_org_factor = 0.05
+			}
+		}
+
+		Purists_sigma_on_the_field = {
+			picture = enc_usa_stormtroopers
+			name = "Squad Sigma: On the Field"
+			allowed = { always = no	}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+			 conscription = -0.03
+			 special_forces_min = 150
+			 special_forces_cap = 0.15
+			 army_org_factor = 0.10
+			 experience_gain_army = 0.2
+			}
+		}
+
+		Purists_sigma_as_reacon = {
+			picture = enc_usa_paoptimization
+			name = "Squad Sigma: In Shadows"
+			allowed = { always = no	}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+			 	civilian_intel_factor = 0.15
+				army_intel_factor = 0.15
+				navy_intel_factor = 0.15
+				intelligence_agency_defense = 0.50
+			 	resistance_damage_to_garrison = -0.1
+				required_garrison_factor = -0.10
+				resistance_activity = -0.10
+				recon_factor = 0.15
+			}
+		}
+	}
+}

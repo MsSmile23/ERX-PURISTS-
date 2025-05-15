@@ -480,4 +480,38 @@ every_possible_country = {
             legacy_id = -1
         }
     }
+
+	generate_character = {
+        token_base = ead_col_hammel
+		name = ead_col_hammel_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_col_hammel.dds
+				large = gfx/leaders/ead_col_hammel.dds
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ead_col_hammel
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = sigma_boy_desc
+			traits = { sigma_boy }
+		}
+		field_marshal = {
+            skill = 5
+            attack_skill = 5
+            defense_skill = 5
+            planning_skill = 5
+            logistics_skill = 5
+            traits = {
+                enc_purist
+                charismatic_trait
+
+            }
+            legacy_id = -1
+        }
+    }
 }
