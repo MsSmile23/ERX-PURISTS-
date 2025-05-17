@@ -50,3 +50,249 @@ country_event = { #Chosen one is dead
 		add_political_power = 100
 	}
 }
+
+country_event = { #Shandy Sands has fallen
+	id = purists_ead_vengeance.3
+	title = purists_ead_vengeance.3.t
+	desc = purists_ead_vengeance.3.d
+	picture = GFX_enc_event_wheres_my_money
+	fire_only_once = yes
+
+	trigger = {
+		tag = ERB
+		has_completed_focus = enc_purity
+		not = { country_exists = NCR }
+		controls_state = 253
+	}
+	mean_time_to_happen = {
+		days = 20
+	}
+	option = { 
+		name = purists_ead_vengeance.3.a
+		add_ideas = Purists_destruction_shady
+		add_political_power = 200
+		253 = {
+			add_manpower = -20000
+		}
+	}
+}
+
+country_event = { #Shandy Sands has fallen
+	id = purists_ead_vengeance.3
+	title = purists_ead_vengeance.3.t
+	desc = purists_ead_vengeance.3.d
+	picture = GFX_enc_event_wheres_my_money
+	fire_only_once = yes
+
+	trigger = {
+		tag = ERB
+		has_completed_focus = enc_purity
+		not = { country_exists = NCR }
+		controls_state = 253
+	}
+	mean_time_to_happen = {
+		days = 20
+	}
+	option = { 
+		name = purists_ead_vengeance.3.a
+		add_ideas = Purists_destruction_shady
+		add_political_power = 200
+		253 = {
+			add_manpower = -20000
+		}
+	}
+}
+
+country_event = { #Hub has fallen
+	id = purists_ead_vengeance.4
+	title = purists_ead_vengeance.4.t
+	desc = purists_ead_vengeance.4.d
+	picture = GFX_event_enc_urban_patrol
+	fire_only_once = yes
+
+	trigger = {
+		tag = ERB
+		has_completed_focus = enc_purity
+		not = { country_exists = NCR }
+		controls_state = 1
+	}
+	mean_time_to_happen = {
+		days = 20
+	}
+	option = { 
+		name = purists_ead_vengeance.4.a
+		add_ideas = Purists_destruction_hub
+		add_political_power = 200
+		1 = {
+			add_manpower = -20000
+		}
+	}
+	option = { 
+		name = purists_ead_vengeance.4.b
+		add_ideas = Purists_hub_spared
+		1 = {
+			add_manpower = -2000
+		}
+	}
+}
+country_event = { #Boneyard has fallen
+	id = purists_ead_vengeance.5
+	title = purists_ead_vengeance.5.t
+	desc = purists_ead_vengeance.5.d
+	picture = GFX_event_enc_urban_patrol
+	fire_only_once = yes
+
+	trigger = {
+		tag = ERB
+		has_completed_focus = enc_purity
+		not = { country_exists = NCR }
+		controls_state = 350
+	}
+	mean_time_to_happen = {
+		days = 20
+	}
+	option = { 
+		name = purists_ead_vengeance.5.a
+		add_ideas = Purists_destruction_boneyard
+		add_political_power = 200
+		350 = {
+			add_manpower = -20000
+		}
+	}
+	option = { 
+		name = purists_ead_vengeance.5.b
+		add_ideas = Purists_boneyard_spared
+		350 = {
+			add_manpower = -2000
+		}
+	}
+}
+
+country_event = { #Dayglow has fallen
+	id = purists_ead_vengeance.6
+	title = purists_ead_vengeance.6.t
+	desc = purists_ead_vengeance.6.d
+	picture = GFX_event_enc_urban_patrol
+	fire_only_once = yes
+
+	trigger = {
+		tag = ERB
+		has_completed_focus = enc_purity
+		not = { country_exists = NCR }
+		controls_state = 63
+	}
+	mean_time_to_happen = {
+		days = 20
+	}
+	option = { 
+		name = purists_ead_vengeance.6.a
+		add_ideas = Purists_destruction_dayglow
+		add_political_power = 200
+		63 = {
+			add_manpower = -20000
+		}
+	}
+	option = { 
+		name = purists_ead_vengeance.6.b
+		add_ideas = Purists_dayglow_spared
+		63 = {
+			add_manpower = -2000
+		}
+	}
+}
+
+country_event = { #Brotherhood has fallen
+	id = purists_ead_vengeance.7
+	title = purists_ead_vengeance.7.t
+	desc = purists_ead_vengeance.7.d
+	picture = GFX_event_enc_dead_bos
+	fire_only_once = yes
+
+	trigger = {
+		tag = ERB
+		has_completed_focus = enc_purity
+		not = { country_exists = BOS }
+		controls_state = 157
+	}
+	mean_time_to_happen = {
+		days = 20
+	}
+	option = { 
+		name = purists_ead_vengeance.7.a
+		add_ideas = Purists_bos_death
+		add_political_power = 200
+		157 = {
+			add_manpower = -30000
+		}
+	}
+	option = { 
+		name = purists_ead_vengeance.7.b
+		add_ideas = Purists_bos_slaves
+		157 = {
+			add_manpower = -20000
+		}
+	}
+	option = { 
+		name = purists_ead_vengeance.7.c
+		add_ideas = Purists_bos_recruite
+		157 = {
+			add_manpower = -20000
+		}
+	}
+}
+
+country_event = { #Fate of the Lost Hill
+	id = purists_ead_vengeance.8
+	title = purists_ead_vengeance.8.t
+	desc = purists_ead_vengeance.8.d
+	picture = GFX_event_us_sarmy_picture
+	fire_only_once = yes
+
+	trigger = {
+		tag = ERB
+		has_completed_focus = enc_purity
+		not = { country_exists = BOS }
+		controls_state = 157
+	}
+	mean_time_to_happen = {
+		days = 20
+	}
+	option = { 
+		name = purists_ead_vengeance.8.a
+		add_ideas = Purists_bunker_ruined
+	}
+	option = { 
+		name = purists_ead_vengeance.8.b
+		add_ideas = Purists_bunker_science
+	}
+	option = { 
+		name = purists_ead_vengeance.8.c
+		add_ideas = Purists_bunker_restored
+	}
+}
+
+country_event = { #Victory on the west
+	id = purists_ead_vengeance.9
+	title = purists_ead_vengeance.9.t
+	desc = purists_ead_vengeance.9.d
+	picture = GFX_enc_event_anderson_10
+	fire_only_once = yes
+
+	trigger = {
+		tag = ERB
+		has_completed_focus = enc_purity
+		not = { country_exists = BOS }
+		not = { country_exists = NCR }
+		not = { country_exists = ARR }
+		controls_state = 337
+		controls_state = 253
+		controls_state = 157
+	}
+	mean_time_to_happen = {
+		days = 20
+	}
+	option = { 
+		name = purists_ead_vengeance.9.a
+		add_ideas = Purists_victory_west_coast
+	}
+}
