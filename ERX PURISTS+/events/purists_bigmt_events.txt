@@ -1,0 +1,42 @@
+add_namespace = purists_ead_bigmt
+
+country_event = { #Legendary BloatFly
+	id = purists_ead_bigmt.1
+	title = purists_ead_bigmt.1.t
+	desc = purists_ead_bigmt.1.d
+	picture = GFX_ead_bloatfly
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = purists_ead_bigmt.1.a
+		army_experience = 10
+		add_stability = 0.03
+		add_equipment_to_stockpile = {
+			type = combat_robot_equipment
+			amount = -30
+		}
+		add_equipment_to_stockpile = {
+			type = support_robot_equipment
+			amount = -10
+		}
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = support_medical_tech_category
+		}
+	}
+} 
+country_event = { #HCTS
+	id = purists_ead_bigmt.2
+	title = purists_ead_bigmt.2.t
+	desc = purists_ead_bigmt.2.d
+	picture = GFX_ead_enclave_hazmat
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = purists_ead_bigmt.2.a
+		set_technology = {
+			purists_hazmat_tech_1 = 1
+		}
+	}
+}

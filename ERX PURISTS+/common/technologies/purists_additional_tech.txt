@@ -1,0 +1,103 @@
+technologies = {
+	purists_hazmat_tech_1 = {
+		dependencies = {
+			blocked_tech = 1
+		}
+		category_army = {
+			defence = 0.05
+			supply_consumption = 0.05
+			casualty_trickleback = 0.05
+		}
+
+		heavy_infantry = {
+			need = {
+				support_equipment = 3
+			}
+		}
+		militia = {
+			need = {
+				support_equipment = 3
+			}
+		}
+		police_infantry = {
+			need = {
+				support_equipment = 3
+			}
+		}
+		infantry = {
+			need = {
+				support_equipment = 3
+			}
+		}
+		motorized = {
+			need = {
+				support_equipment = 3
+			}
+		}
+		motorized_heavy_infantry = {
+			need = {
+				support_equipment = 3
+			}
+		}
+		ghoul_infantry = {
+			need = {
+				support_equipment = 3
+			}
+		}
+		dog_infantry = {
+			need = {
+				support_equipment = 3
+			}
+		}
+		skate_infantry = {
+			need = {
+				support_equipment = 3
+			}
+		}
+		fireteam_infantry = {
+			need = {
+				support_equipment = 3
+			}
+		}
+		demolitions_infantry = {
+			need = {
+				support_equipment = 3
+			}
+		}
+		anti_armor_infantry = {
+			need = {
+				support_equipment = 3
+			}
+		}
+		spec_ops = {
+			need = {
+				support_equipment = 3
+			}
+		}
+		spec_ops_cavalry = {
+			need = {
+				support_equipment = 3
+			}
+		}
+		ghoul_paratrooper = {
+			need = {
+				support_equipment = 3
+			}
+		}
+		power_armour = {
+			need = {
+				support_equipment = 3
+			}
+		}
+		power_armour_fireteam_infantry = {
+			need = {
+				support_equipment = 3
+			}
+		}
+		power_armour_demolitions_infantry = {
+			need = {
+				support_equipment = 3
+			}
+		}
+	}
+}

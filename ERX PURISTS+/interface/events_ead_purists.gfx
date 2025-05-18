@@ -14,6 +14,46 @@ spriteTypes = {
 		name = "GFX_ead_military_reviving"
 		textureFile = "gfx/interface/events_pictures/ead_military_reviving.tga"
 	}
+	
+	spriteType = {
+		name = "GFX_ead_bloatfly"
+		textureFile = "gfx/interface/events_pictures/ead_legendary_bloatfly.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_enclave_hazmat"
+		textureFile = "gfx/interface/events_pictures/ead_enclave_hazmat.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_enclave_roboscorpions"
+		textureFile = "gfx/interface/events_pictures/ead_enclave_roboscorpions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_forbidden_dom"
+		textureFile = "gfx/interface/events_pictures/ead_forbidden_dom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_metal_giant"
+		textureFile = "gfx/interface/events_pictures/ead_metal_giant.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_red_cloud"
+		textureFile = "gfx/interface/events_pictures/ead_red_cloud.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_sink"
+		textureFile = "gfx/interface/events_pictures/ead_sink.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_teleportation"
+		textureFile = "gfx/interface/events_pictures/ead_teleportation.dds"
+	}
 
 }
 
