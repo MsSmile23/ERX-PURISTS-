@@ -12,6 +12,26 @@ Purists_explore_strange_cave_desc: "During reconnaissance, the garrison of Big M
 Purists_new_hazmat_suite: "Hazmat Suit"
 Purists_new_hazmat_suite_desc: "As we know, the Big MT was the center of research of many things, including interesting prototypes of hazmat suits. Our scientific division proposes to continue the research of pre-war scientists and improve their design."
 ################################################################################################################ -<
+################################################################################################################ -<
+Purists_forbidden_dome: "Forbidden Dome"
+Purists_forbidden_dome_desc: "When we arrived to the Big MT, we had found that some of the scientists did survive the Great War, only to find out that every single one of them is insane. Along with insanity, they spouted that they were in a constant fight with another surviving scientist, Dr. Mobius.For the sake of BMT security, we must investigate this source of a problems"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_sink: "The Sink"
+Purists_sink_desc: "The so-called 'Sink' is a very strange place. As we know from the archives of this place, this space used to be a personal room of Dr. Mobius. After himself, he left behind many strange devices, whose purpose is not entirely clear to us. We must investigate this."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_z43_plant: "Z-43 Plant"
+Purists_z43_plant_desc: "Prior to the Great War, the Z-43 staff were performing research on the production of various substances poisonous to humans. Some of our chemical corps guys would like to explore all this stuff, that was left here"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_teleporter: "Big MT Transponder"
+Purists_teleporter_desc: "Teleportation. Even before the war, some of our best scientist was experimenting in this field, trying to find a way to an instant transportation. Big MT was one of those places and according to archives, maybe those scientist has finally managed to crack it. We must find so called transponder"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_wanamingo: "Guess, who is back?"
+Purists_wanamingo_desc: "With the reopening of our biological corps, some scientists are proposing to use the data from Big MT to resurrect the ancient monster that terrorized the wasteland many years ago: Wanamingo"
+################################################################################################################ -<
 
 
 

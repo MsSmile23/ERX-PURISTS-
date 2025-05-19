@@ -11,6 +11,7 @@ country_event = { #Legendary BloatFly
 		name = purists_ead_bigmt.1.a
 		army_experience = 10
 		add_stability = 0.03
+		add_manpower = -12
 		add_equipment_to_stockpile = {
 			type = combat_robot_equipment
 			amount = -30
@@ -38,5 +39,89 @@ country_event = { #HCTS
 		set_technology = {
 			purists_hazmat_tech_1 = 1
 		}
+	}
+}
+
+country_event = { #Mobius Start
+	id = purists_ead_bigmt.3
+	title = purists_ead_bigmt.3.t
+	desc = purists_ead_bigmt.3.d
+	picture = GFX_ead_forbidden_dom
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = purists_ead_bigmt.33.a
+	}
+}
+
+country_event = { #Mobius Giant
+	id = purists_ead_bigmt.4
+	title = purists_ead_bigmt.4.t
+	desc = purists_ead_bigmt.4.d
+	picture = GFX_ead_metal_giant
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = purists_ead_bigmt.4.a
+	}
+}
+
+country_event = { #Enclave Mobius
+	id = purists_ead_bigmt.5
+	title = purists_ead_bigmt.5.t
+	desc = purists_ead_bigmt.5.d
+	picture = GFX_ead_enclave_roboscorpions
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = purists_ead_bigmt.5.a
+	}
+}
+
+country_event = { #Enclave Sink
+	id = purists_ead_bigmt.6
+	title = purists_ead_bigmt.6.t
+	desc = purists_ead_bigmt.6.d
+	picture = GFX_ead_sink
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = purists_ead_bigmt.6.a
+	}
+}
+
+country_event = { #Enclave Red Cloud
+	id = purists_ead_bigmt.7
+	title = purists_ead_bigmt.7.t
+	desc = purists_ead_bigmt.7.d
+	picture = GFX_ead_red_cloud
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = purists_ead_bigmt.7.a
+	}
+}
+
+country_event = { #Enclave Teleporter
+	id = purists_ead_bigmt.8
+	title = purists_ead_bigmt.8.t
+	desc = purists_ead_bigmt.8.d
+	picture = GFX_ead_teleportation
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = purists_ead_bigmt.8.a
+	}
+}
+
+country_event = { #Enclave Wanamingo
+	id = purists_ead_bigmt.9
+	title = purists_ead_bigmt.9.t
+	desc = purists_ead_bigmt.9.d
+	picture = GFX_ead_teleportation
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = purists_ead_bigmt.9.a
 	}
 }
