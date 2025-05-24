@@ -87,7 +87,6 @@ country_event = { #Shandy Sands has fallen
 	trigger = {
 		tag = ERB
 		has_completed_focus = enc_purity
-		not = { country_exists = NCR }
 		controls_state = 253
 	}
 	mean_time_to_happen = {
@@ -113,7 +112,6 @@ country_event = { #Hub has fallen
 	trigger = {
 		tag = ERB
 		has_completed_focus = enc_purity
-		not = { country_exists = NCR }
 		controls_state = 1
 	}
 	mean_time_to_happen = {
@@ -145,7 +143,6 @@ country_event = { #Boneyard has fallen
 	trigger = {
 		tag = ERB
 		has_completed_focus = enc_purity
-		not = { country_exists = NCR }
 		controls_state = 350
 	}
 	mean_time_to_happen = {
@@ -178,7 +175,6 @@ country_event = { #Dayglow has fallen
 	trigger = {
 		tag = ERB
 		has_completed_focus = enc_purity
-		not = { country_exists = NCR }
 		controls_state = 63
 	}
 	mean_time_to_happen = {
@@ -235,6 +231,82 @@ country_event = { #Brotherhood has fallen
 	option = { 
 		name = purists_ead_vengeance.7.c
 		add_ideas = Purists_bos_recruite
+		generate_character = {
+			token_base = ead_scribe_hellen
+		} 
+		generate_character = {
+			token_base = ead_knight_echo
+		} 
+		generate_character = {
+			token_base = ead_paladin_ramzi
+		} 
+		create_corps_commander = {
+			name = "Paladin Joana"
+			traits = { 
+				perceptive_trait
+				intelligent_trait
+				
+			}
+			portrait_path = "GFX_Portrait_Brotherhood_Generic_1"
+			skill = 2
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 3
+			legacy_id = -1
+			
+		}
+		create_corps_commander = {
+			name = "Paladin Adams"
+			traits = { 
+				survivalist_trait
+				life_giver_trait
+				
+			}
+			portrait_path = "GFX_Portrait_Brotherhood_Generic_2"
+			skill = 2
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 3
+			legacy_id = -1
+			
+		}
+		create_corps_commander = {
+			name = "Knight Romeros"
+			traits = { 
+				enduring_trait
+			}
+			portrait_path = "GFX_Portrait_Brotherhood_Generic_3"
+			skill = 3
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id = -1
+			
+		}
+		create_corps_commander = {
+			name = "Knight James"
+			traits = { 
+				awareness_trait
+				perceptive_trait
+				
+			}
+			portrait_path = "GFX_Portrait_Brotherhood_Generic_4"
+			skill = 2
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 3
+			legacy_id = -1
+			
+		}
+		set_technology = {
+			knights_unlock_tech = 1
+			scribes_unlock_tech = 1
+		}
+		hidden_effect = {load_oob = enc_bos_recruits }
 		157 = {
 			add_manpower = -20000
 		}

@@ -1,0 +1,259 @@
+Purists_Sink_Interactions = {
+	Purity_Smart_Lights = {
+        cost = 75
+		icon = decision_enc_propaganda
+		modifier = {
+			political_power_gain = -0.1
+            country_resource_energy = -50
+            research_speed_factor = 0.4
+            production_factory_max_efficiency_factor = 0.3
+            production_factory_efficiency_gain_factor = 0.3
+            production_lack_of_resource_penalty_factor = -0.3
+		}
+		days_remove = 40
+		days_re_enable = 20
+        remove_effect = {
+            random_core_state = {
+                add_resource = {
+                    type = composites
+                    amount = 20
+                }
+                add_resource = {
+					type = circuitry
+					amount = 6
+				}
+            }
+        }
+    }
+
+    Purity_Mood_Lights = {
+        cost = 75
+		icon = decision_enc_propaganda
+		modifier = {
+			political_power_gain = -0.1
+            country_resource_energy = -50
+            political_power_factor = 0.7
+            monthly_population = 0.4
+            production_speed_buildings_factor = 0.3
+		}
+		days_remove = 40
+		days_re_enable = 20
+        remove_effect = {
+			add_manpower = 200
+            random_core_state = {
+                add_manpower = 1000
+            }
+		}
+    }
+
+    Purity_central_intel = {
+        cost = 75
+		icon = decision_enc_propaganda
+		modifier = {
+			political_power_gain = -0.1
+            country_resource_energy = -50
+            planning_speed = 0.4
+            max_planning_factor = 0.4
+            experience_gain_army = 0.4
+            command_power_gain = 0.4
+		}
+		days_remove = 40
+		days_re_enable = 20
+    }
+
+    Purity_book_chute = {
+        cost = 75
+		icon = decision_enc_propaganda
+		modifier = {
+			political_power_gain = -0.1
+            country_resource_energy = -50
+            industrial_capacity_dockyard = 0.4
+            industrial_capacity_factory = 0.4
+            war_support_weekly = 0.003
+		}
+		days_remove = 40
+		days_re_enable = 20
+        remove_effect = {
+			add_offsite_building = {
+					type = arms_factory
+					level = 2
+			}
+		}
+    }
+
+    Purity_toaster = {
+        cost = 75
+		icon = decision_enc_propaganda
+		modifier = {
+			political_power_gain = -0.1
+            country_resource_energy = -50
+            army_attack_factor = 0.10
+            war_support_weekly = 0.002
+		}
+		days_remove = 40
+		days_re_enable = 20
+        remove_effect = {
+			random_core_state = {
+                add_resource = {
+                    type = metal
+                    amount = 30
+                }
+            }
+		}
+    }
+
+    Purity_sink_sink = {
+        cost = 75
+		icon = decision_enc_propaganda
+		modifier = {
+			political_power_gain = -0.1
+            country_resource_energy = -50
+            supply_node_range = 0.3
+            supply_factor = 0.3
+		}
+		days_remove = 40
+		days_re_enable = 20
+        remove_effect = {
+			random_core_state = {
+                add_resource = {
+                    type = water
+                    amount = 30
+                }
+            }
+		}
+    }
+
+    Purity_muggy = {
+        cost = 75
+		icon = decision_enc_propaganda
+		modifier = {
+			political_power_gain = -0.1
+            country_resource_energy = -50
+            equipment_capture_factor = 0.2
+		}
+		days_remove = 40
+		days_re_enable = 20
+        remove_effect = {
+			random_core_state = {
+                add_resource = {
+                    type = energy
+                    amount = 20
+                }
+
+                add_resource = {
+                    type = advanced
+                    amount = 10
+                }
+            }
+
+			if = {
+					limit = { NOT = { has_idea = Purists_muggy_for_you }}
+					add_ideas = Purists_muggy_for_you
+			}
+		}
+    }
+
+    Purists_bio_station = {
+		cost = 75
+        icon = decision_enc_propaganda
+		days_remove = 30
+		modifier = {
+			political_power_gain = -0.1
+            country_resource_energy = -50
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		remove_effect = {
+			add_ideas = Purists_seed_the_land
+		}
+	}
+
+    Purists_sink_autodock = {
+		cost = 75
+		days_remove = 30
+        icon = decision_enc_propaganda
+		modifier = {
+			political_power_gain = -0.1
+            country_resource_energy = -50
+			research_speed_factor = -0.10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		remove_effect = {
+			add_ideas = Purists_autodocks
+            set_technology = {
+			    purists_autodock_tech = 1
+		    }
+		}
+	}
+
+    Purists_ai_weapon_integration = {
+		cost = 75
+		days_remove = 30
+        icon = decision_enc_propaganda
+		modifier = {
+			political_power_gain = -0.1
+            country_resource_energy = -50
+			research_speed_factor = -0.10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		remove_effect = {
+			set_technology = {
+			    purists_weapon_integration_tech = 1
+		    }
+		}
+	}
+
+    Purists_ai_armor_integration = {
+		cost = 75
+		days_remove = 30
+        icon = decision_enc_propaganda
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			political_power_gain = -0.1
+            country_resource_energy = -50
+			research_speed_factor = -0.10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		remove_effect = {
+			set_technology = {
+			    purists_armor_integration_tech = 1
+		    }
+		}
+	}
+
+	Purists_blind_jefferson = {
+		cost = 75
+		days_remove = 30
+        icon = decision_enc_propaganda
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			political_power_gain = -0.1
+            country_resource_energy = -50
+			research_speed_factor = -0.10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		remove_effect = {
+			add_ideas = Purists_blind_diode_jefferson
+		}
+	}
+}

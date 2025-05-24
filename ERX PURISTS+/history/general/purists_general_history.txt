@@ -514,4 +514,120 @@ every_possible_country = {
             legacy_id = -1
         }
     }
+
+	generate_character = {
+        token_base = ead_paladin_ramzi
+		name = ead_paladin_ramzi_name
+		portraits = {
+			army = {
+				small = GFX_idea_BOS_generic1
+				large = GFX_Portrait_BOS_cannon
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ead_paladin_ramzi
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_rogue_paladin_desc
+			traits = { ead_bos_scum, ead_rogue_paladin }
+		}
+		corps_commander = {
+            skill = 4
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 3
+            logistics_skill = 3
+            traits = {
+                charismatic_trait
+            }
+            legacy_id = -1
+        }
+    }
+
+	generate_character = {
+        token_base = ead_knight_echo
+		name = ead_knight_echo_name
+		portraits = {
+			army = {
+				small = GFX_idea_BOS_generic3
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = ead_knight_echo
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_rogue_knight_desc
+			traits = { ead_bos_scum, ead_rogue_knight }
+		}
+    }
+
+	generate_character = {
+        token_base = ead_scribe_hellen
+		name = ead_scribe_hellen_name
+		portraits = {
+			army = {
+				small = GFX_idea_BOS_generic2
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ead_scribe_hellen
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_rogue_scribe_desc
+			traits = { ead_bos_scum, ead_rogue_scribe }
+		}
+    }
+
+	generate_character = {
+        token_base = ead_mobius
+		name = ead_mobius_name
+		portraits = {
+			army = {
+				small = GFX_idea_tnk_mobius
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ead_mobius
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = forbidden_dom_master_desc
+			traits = { forbidden_dom_master }
+			research_bonus = { support_medical_tech_category = 0.25 }
+		}
+    }
+
+	generate_character = {
+        token_base = ead_allen_morgan
+		name = ead_allen_morgan_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_allen_morgan.dds
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = ead_allen_morgan
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_voice_of_america_desc
+			traits = { ead_voice_of_america }
+			available = {
+				has_completed_focus = enc_radio_purity
+			}
+		}
+    }
 }

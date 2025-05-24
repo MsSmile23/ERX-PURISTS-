@@ -14,6 +14,101 @@ spriteTypes = {
 		name = "GFX_ead_military_reviving"
 		textureFile = "gfx/interface/events_pictures/ead_military_reviving.tga"
 	}
+	
+	spriteType = {
+		name = "GFX_ead_bloatfly"
+		textureFile = "gfx/interface/events_pictures/ead_legendary_bloatfly.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_enclave_hazmat"
+		textureFile = "gfx/interface/events_pictures/ead_enclave_hazmat.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_enclave_roboscorpions"
+		textureFile = "gfx/interface/events_pictures/ead_enclave_roboscorpions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_forbidden_dom"
+		textureFile = "gfx/interface/events_pictures/ead_forbidden_dom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_metal_giant"
+		textureFile = "gfx/interface/events_pictures/ead_metal_giant.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_red_cloud"
+		textureFile = "gfx/interface/events_pictures/ead_red_cloud.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_sink"
+		textureFile = "gfx/interface/events_pictures/ead_sink.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_teleportation"
+		textureFile = "gfx/interface/events_pictures/ead_teleportation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_wanamingo"
+		textureFile = "gfx/interface/events_pictures/ead_wanamingo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_cloud_event"
+		textureFile = "gfx/interface/events_pictures/ead_cloud_event.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_dust"
+		textureFile = "gfx/interface/ideas/ead_dust_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_cloud_surv"
+		textureFile = "gfx/interface/ideas/ead_cloud_survivors.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_cloud_unleashed"
+		textureFile = "gfx/interface/ideas/ead_cloud_unleashed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_spore_carrier"
+		textureFile = "gfx/interface/ideas/ead_spore_carrier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_ghost_people"
+		textureFile = "gfx/interface/ideas/ead_ghost_people.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_red_cloud_ammunition"
+		textureFile = "gfx/interface/ideas/ead_red_cloud_ammunition.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_wanamingo_attack"
+		textureFile = "gfx/interface/ideas/ead_wanamingo_attack.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_transponder_tele"
+		textureFile = "gfx/interface/ideas/ead_transponder_tele.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_horrigan_spirit"
+		textureFile = "gfx/interface/icons/ead_horrigan_spirit.dds"
+	}
 
 }
 
