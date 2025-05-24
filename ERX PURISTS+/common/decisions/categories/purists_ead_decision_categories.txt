@@ -1,0 +1,24 @@
+Purists_BigMT_Journey = {
+	icon = GFX_idea_enc_science_team
+	allowed = { tag = ERB }
+	priority = 2
+	visible = {	has_completed_focus = ENC_Big_MT_Restored_purity }
+}
+
+Purists_Monsters_Unleashed = {
+	icon = GFX_idea_ead_horrigan_spirit
+	allowed = { tag = ERB }
+	priority = 2
+	visible = {	has_completed_focus = ENC_Big_MT_Restored_purity }
+}
+
+Purists_Sink_Interactions = {
+	icon = enc_civilian_economy
+	allowed = {
+		tag = ERB
+	}
+	priority = 2
+	visible = {
+		has_country_flag = purists_sink_active
+	}
+}

@@ -1,0 +1,112 @@
+﻿l_english:
+################################## Big MT Content ##############################################
+################################################################################################################ -<
+Purists_BigMT_Journey: "Big Mountain Facility"
+Purists_BigMT_Journey_desc: "Big MT stands as an enigmatic and maddening place, a sprawling labyrinth of twisted experiments and forgotten technology that defies comprehension. Its eerie landscapes hide countless secrets—teleportation anomalies, bio-engineered horrors, and the remnants of the Think Tank’s deranged genius—waiting to be uncovered. The Enclave faces the daunting task of unraveling its mysteries, with dozens of uncharted secrets promising both peril and power for those bold enough to delve deeper."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_explore_strange_cave: "Strange Cave"
+Purists_explore_strange_cave_desc: "During reconnaissance, the garrison of Big MT discovered a strange cave. It is known that radioactive waste was previously stored there, but this is all the available information in the archive. For the sake of safety and eliminating possible threats, we must explore it."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_new_hazmat_suite: "Hazmat Suit"
+Purists_new_hazmat_suite_desc: "As we know, the Big MT was the center of research of many things, including interesting prototypes of hazmat suits. Our scientific division proposes to continue the research of pre-war scientists and improve their design."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_forbidden_dome: "Forbidden Dome"
+Purists_forbidden_dome_desc: "When we arrived to the Big MT, we had found that some of the scientists did survive the Great War, only to find out that every single one of them is insane. Along with insanity, they spouted that they were in a constant fight with another surviving scientist, Dr. Mobius.For the sake of BMT security, we must investigate this source of a problems"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_sink: "The Sink"
+Purists_sink_desc: "The so-called 'Sink' is a very strange place. As we know from the archives of this place, this space used to be a personal room of Dr. Mobius. After himself, he left behind many strange devices, whose purpose is not entirely clear to us. We must investigate this."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_z43_plant: "Z-43 Plant"
+Purists_z43_plant_desc: "Prior to the Great War, the Z-43 staff were performing research on the production of various substances poisonous to humans. Some of our chemical corps guys would like to explore all this stuff, that was left here"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_teleporter: "Big MT Transponder"
+Purists_teleporter_desc: "Teleportation. Even before the war, some of our best scientist was experimenting in this field, trying to find a way to an instant transportation. Big MT was one of those places and according to archives, maybe those scientist has finally managed to crack it. We must find so called transponder"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_wanamingo: "Guess, who is back?"
+Purists_wanamingo_desc: "With the reopening of our biological corps, some scientists are proposing to use the data from Big MT to resurrect the ancient monster that terrorized the wasteland many years ago: Wanamingo"
+################################################################################################################ -<
+
+################################## Warcrimes ##############################################
+################################################################################################################ -<
+Purists_Monsters_Unleashed: "We do, what we must."
+Purists_Monsters_Unleashed_desc: "We recognize the obvious. Despite our best efforts, traitors, mutants, and other scum far outnumber us. For the survival of humanity and the victory of the Enclave, we must use all resources and methods available to us, no matter how brutal they are."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_release_wanamingo: "Use Wanamingos."
+Purists_release_wanamingo_desc: "Latest creation of Big MT research facility, which thought to be extinct on the West Coast, more dangerous than ever before. With right amount of cybernatic and other tools, to control those beasts, we can unleash them upon our enemies, using various forms of transportation. But everything has a price"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_release_robots: "Use Robo-Scorpions."
+Purists_release_robots_desc: "Thanks to doctor Mobius and our robotic teams, we manage to accumilate enough robots, to use them. High Command suggest to deploy them behind enemy lines, to wreak havoc upon mutant population"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_red_cloud: "Use SM-7."
+Purists_red_cloud_desc: "The pride of our chemical corps: SM-7. One of the last wonder weapons of the Enclave. A modified, combat version of the so-called 'Red Cloud', which was told about by random wastelanders, who were unlucky enough to find themselves near the Sierra Madre. Unlike its older brother, this version of the cloud is much more dangerous and is capable of killing even the most protected person in a matter of seconds. But this is also a risk for us. If we decide to use this weapon, we must act with extreme caution."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_release_ghost_people: "Ghost People."
+Purists_release_ghost_people_desc: "During our successful operation in the Sierra Madre, our forces encountered the so-called Ghosts People. Despite the fact that they are just mutants armed with primitive weapons, they, surprisingly, turned out to be a serious opponent, which was almost impossible to kill. After examining their bodies, as well as studies, carried out in the Big Mountain, some of our scientists and military suggest a clever trick. We can use pre-damaged suits with neuro-toxic gas, which will drive the wearer crazy in a matter of hours, as a gift for the mutants. Our vertibirds will drop packages on the outskirts of mutant settlements, and they, unknowingly, will decide to use them. In this way, we will create a small ghost people force that will terrorize the local population."
+################################################################################################################ -<
+
+################################## Sink ##############################################
+################################################################################################################ -<
+Purists_Sink_Interactions: "Our little friends."
+Purists_Sink_Interactions_desc: "Conquering the Big Mountain gave us an unexpected find. In his research, Dr. Mobius created a truly interesting technology - AI assistants. Based on the data we have and experiments on mutants and volunteers from pure people, we came to the conclusion that the use of such devices has various positive effects."
+################################################################################################################ -<
+################################################################################################################ -<
+Purity_Smart_Lights: "Smart Lights."
+Purity_Smart_Lights_desc: "Light Switch 01 has a rather interesting feature. As our scientists discovered, after being under its light for some time, their mental and scientific abilities increase significantly. Having tested everything first on mutants, and then on people, the employees of Big Mountain came to the conclusion that this technology can be scaled up, using it in our other complexes to increase the output of staff."
+################################################################################################################ -<
+################################################################################################################ -<
+Purity_Mood_Lights: "Mood Lights."
+PPurity_Mood_Lights_desc: "Like its 'sister', Light Switch 02 has similar and simultaneously opposite features. Like 01, this technology is capable of changing human behavior, but it does so on a different level. On a social level. As we have found out, after being exposed to the light of this device, people's social skills and sociability improve. This can help us with improving birth rate and the growth of a new generation of purebred Americans."
+################################################################################################################ -<
+################################################################################################################ -<
+Purity_central_intel: "Sink Central Intelligence Unit."
+Purity_central_intel_desc: "Being connected and the controlling personality of all of Sink, the Central Intelligence has truly impressive computing power. We can use this to solve our military and logistical problems in important directions."
+################################################################################################################ -<
+################################################################################################################ -<
+Purity_book_chute: "I smell sedition!."
+Purity_book_chute_desc: "Designed as a means of destroying unwanted literature, this device is of particular interest to us. Given its vigilance, we can scale it up to our production facilities to pull in slaves and purebred Americans."
+################################################################################################################ -<
+################################################################################################################ -<
+Purity_toaster: "Destroyer of Toasters!"
+Purity_toaster_desc: "When our scientists first saw this device, they honestly didn't know what to do with it. What was the point of this creation of Dr. Mobius? But everything changed when we saw how effectively it deals with toasters and other garbage. We can use this to improve the collection and recycling of resources."
+################################################################################################################ -<
+################################################################################################################ -<
+Purity_sink_sink: "Clean water for everyone!"
+Purity_sink_sink_desc: "The ability of the Sink to create clean water is truly amazing. With this device, we can solve the future problem of clean water and bring life back to the dead."
+################################################################################################################ -<
+################################################################################################################ -<
+Purity_muggy: "Muggy is here for you."
+Purity_muggy_desc: "When we first discovered this device, we thought it was a small, miniature combat robot - a smaller version of the Securitrons. Imagine our surprise when it turned out to be a real robot assistant. We can use them in households. They just need to be made less crazy."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_bio_station: "Biological Research Station."
+Purists_bio_station_desc: "It's no secret that American soil is not in the best shape right now. It's poisoned by radiation and other crap that settled in it after the War. But this device will help us solve our problems. A real miracle, capable of processing any plant and making another one out of it. With it, we definitely won't be afraid of hunger."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_ai_weapon_integration: "Auto-Doc."
+Purists_ai_weapon_integration_desc: "We've seen auto-docs before. Advanced pre-war devices. Experimental. But never anything this advanced. Scientists believe we can integrate it into our medical facilities to save the lives of even the most hopeless soldiers."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_ai_weapon_integration: "A new kind of weapons."
+Purists_ai_weapon_integration_desc: "During our exploration of Big Mountain, we encountered a number of interesting weapons that had built-in artificial intelligence. Field studies have already shown that interaction with such weapons significantly increases a soldier's morale, even when he is acting alone."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_ai_armor_integration: "A new kind of armor."
+Purists_ai_armor_integration_desc: "During our exploration of Big Mountain, we encountered a number of interesting weapons that had built-in artificial intelligence, including a stealth suit that actively interacted with the user. After some minor adjustments, our scientists decided to scale this discovery and the results show a significant improvement in soldier performance."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_blind_jefferson: "Sound Waves!"
+Purists_blind_jefferson_desc: "Sound weapons are nothing new to us, but what we found in Sink exceeded our expectations. This music box has excellent capabilities in calibrating different sounds. With its help, we can solve the problem of dissenters"
+################################################################################################################ -<
+
+

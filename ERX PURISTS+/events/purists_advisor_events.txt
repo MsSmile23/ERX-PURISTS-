@@ -20,6 +20,7 @@ country_event = { #Recruiting default characters
 	}
 	option = { 
 		name = purists_advisor.1.a
+		custom_effect_tooltip = purists_advisor.1.a.tt
 		generate_character = {
 			token_base = ead_secretary_malone
 		} 
@@ -62,6 +63,9 @@ country_event = { #Recruiting default characters
 		generate_character = {
 			token_base = ead_dr_davidson
 		}
+		generate_character = {
+			token_base = ead_allen_morgan
+		}
 	}
 	option = { 
 		name = purists_advisor.1.b
@@ -86,6 +90,7 @@ country_event = { #Recruiting some of the Vault-City advisors
 	}
 	option = { 
 		name = purists_advisor.2.a
+		custom_effect_tooltip = purists_advisor.2.a.tt
 		generate_character = {
 			token_base = ead_lynette
 		} 
@@ -128,6 +133,7 @@ country_event = { #Ace from Texas
 	}
 	option = { 
 		name = purists_advisor.3.a
+		custom_effect_tooltip = purists_advisor.3.a.tt
 		generate_character = {
 			token_base = ead_col_holmes
 		}
@@ -160,6 +166,7 @@ country_event = { #Aid from MacAurthur
 	}
 	option = { 
 		name = purists_advisor.4.a
+		custom_effect_tooltip = purists_advisor.4.a.tt
 		generate_character = {
 			token_base = ead_agent_gerald
 		}
