@@ -17,9 +17,13 @@ Purists_BigMT_Journey = {
 
 	Purists_new_hazmat_suite = {
 		cost = 25
-		days_remove = 10
+		days_remove = 30
 		ai_will_do = {
 			factor = 10
+		}
+		modifier = {
+			research_speed_factor = -0.1
+			civilian_factory_use = 4
 		}
 		days_re_enable = 30
 		fire_only_once = yes
@@ -33,7 +37,7 @@ Purists_BigMT_Journey = {
 
 	Purists_forbidden_dome = {
 		cost = 25
-		days_remove = 20
+		days_remove = 30
 		ai_will_do = {
 			factor = 10
 		}
@@ -42,8 +46,11 @@ Purists_BigMT_Journey = {
 		visible = {
 			original_tag = ERB
 		}
-		remove_effect = {
+		complete_effect = {
 			country_event = { id = purists_ead_bigmt.3 }
+		}
+		remove_effect = {
+			country_event = { id = purists_ead_bigmt.5 }
 		}
 	}
 
@@ -65,7 +72,11 @@ Purists_BigMT_Journey = {
 
 	Purists_z43_plant = {
 		cost = 25
-		days_remove = 20
+		days_remove = 60
+		modifier = {
+			research_speed_factor = -0.15
+			civilian_factory_use = 6
+		}
 		ai_will_do = {
 			factor = 10
 		}
@@ -96,10 +107,14 @@ Purists_BigMT_Journey = {
 	}
 
 	Purists_wanamingo = {
-		cost = 25
-		days_remove = 20
+		cost = 100
+		days_remove = 60
 		ai_will_do = {
 			factor = 10
+		}
+		modifier = {
+			research_speed_factor = -0.2
+			civilian_factory_use = 10
 		}
 		days_re_enable = 30
 		fire_only_once = yes

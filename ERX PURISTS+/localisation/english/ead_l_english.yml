@@ -83,6 +83,12 @@ ead_rogue_knight_desc: "Knight Echo, a former Brotherhood soldier with a deep-se
 ead_rogue_scribe: "Rogue Scribe"
 ead_rogue_scribe_desc: "Scribe Hellen, once a Brotherhood researcher, abandoned her order for the Enclave following Lost Hills’ fall, driven by her extremist anti-mutant stance. Enrolled in Colonel Wagner’s program, she now serves under rigorous genetic scrutiny, her technical expertise aiding Enclave projects. Her sharp mind is an asset, though her fanatical beliefs and Brotherhood past make her a monitored ally."
 
+forbidden_dom_master: "Forbidden Dom Master"
+forbidden_dom_master_desc: "Doctor Mobius, once a brilliant yet eccentric scientist leading the robo-scorpion army in Big MT, has unexpectedly aligned himself with the Sierra Enclave. Known for his efforts to contain the Think Tank’s dangerous experiments by reprogramming their minds, Mobius now brings his vast pre-War knowledge and unconventional ingenuity to the Enclave’s cause. His decision to join stems from a shared vision of order, though his senile demeanor and addiction to Mentats raise questions about his reliability. Under strict oversight, he contributes to advanced weaponry and drone technology, bridging Big MT’s legacy with the Enclave’s ambitions."
+
+ead_voice_of_america: "Voice of America"
+ead_voice_of_america_desc: "This is a voice of the United States broadcasting in this desolate wastelands of the world. This is Encalve Radio and I am your host, Allen Morgan, and I like to welcome, welcome all of you that are listening throughout the wastelands. We have been off the air for far far too long, but its good to say, that we are back in action!"
+
 #Characters
 
 ead_trainer_james_adams_name: "Master sergeant James Adams"
@@ -110,6 +116,8 @@ ead_col_hammel_name: "Colonel Edward Hammel"
 ead_paladin_ramzi_name: "Paladin Ramzi"
 ead_knight_echo_name: "Knight Echo"
 ead_scribe_hellen_name: "Scribe Hellen"
+ead_mobius_name: "Doctor Mobius"
+ead_allen_morgan_name: "Allen Morgan"
 
 
 #Other

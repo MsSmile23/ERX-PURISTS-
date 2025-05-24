@@ -586,4 +586,48 @@ every_possible_country = {
 			traits = { ead_bos_scum, ead_rogue_scribe }
 		}
     }
+
+	generate_character = {
+        token_base = ead_mobius
+		name = ead_mobius_name
+		portraits = {
+			army = {
+				small = GFX_idea_tnk_mobius
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ead_mobius
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = forbidden_dom_master_desc
+			traits = { forbidden_dom_master }
+			research_bonus = { support_medical_tech_category = 0.25 }
+		}
+    }
+
+	generate_character = {
+        token_base = ead_allen_morgan
+		name = ead_allen_morgan_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_allen_morgan.dds
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = ead_allen_morgan
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_voice_of_america_desc
+			traits = { ead_voice_of_america }
+			available = {
+				has_completed_focus = enc_radio_purity
+			}
+		}
+    }
 }

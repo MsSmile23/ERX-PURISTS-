@@ -50,7 +50,12 @@ country_event = { #Mobius Start
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = purists_ead_bigmt.33.a
+		name = purists_ead_bigmt.3.a
+		army_experience = 10
+		add_manpower = -2
+		country_event = {
+			id = purists_ead_bigmt.4 days = 3
+		}
 	}
 }
 
@@ -63,6 +68,8 @@ country_event = { #Mobius Giant
 	is_triggered_only = yes
 	option = {
 		name = purists_ead_bigmt.4.a
+		army_experience = 25
+		add_manpower = -7
 	}
 }
 
@@ -75,6 +82,16 @@ country_event = { #Enclave Mobius
 	is_triggered_only = yes
 	option = {
 		name = purists_ead_bigmt.5.a
+		custom_effect_tooltip = purists_ead_bigmt.5.a.tt
+		set_country_flag = purists_roboscorpions_researched
+		generate_character = {
+			token_base = ead_mobius
+		}
+		add_tech_bonus = {
+			bonus = 1.5
+			uses = 3
+			category = robotics_tech_category
+		}
 	}
 }
 
@@ -87,6 +104,9 @@ country_event = { #Enclave Sink
 	is_triggered_only = yes
 	option = {
 		name = purists_ead_bigmt.6.a
+		custom_effect_tooltip = purists_ead_bigmt.6.a.tt
+		set_country_flag = purists_sink_active
+		add_ideas = Purists_Sink_BMT
 	}
 }
 
@@ -99,6 +119,9 @@ country_event = { #Enclave Red Cloud
 	is_triggered_only = yes
 	option = {
 		name = purists_ead_bigmt.7.a
+		custom_effect_tooltip = purists_ead_bigmt.7.a.tt
+		set_country_flag = enclave_red_cloud_researched
+		add_ideas = Purists_red_cloud_ammunition
 	}
 }
 
@@ -111,6 +134,7 @@ country_event = { #Enclave Teleporter
 	is_triggered_only = yes
 	option = {
 		name = purists_ead_bigmt.8.a
+		add_ideas = Purists_enclave_teleportation
 	}
 }
 
@@ -118,10 +142,26 @@ country_event = { #Enclave Wanamingo
 	id = purists_ead_bigmt.9
 	title = purists_ead_bigmt.9.t
 	desc = purists_ead_bigmt.9.d
-	picture = GFX_ead_teleportation
+	picture = GFX_ead_wanamingo
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
 		name = purists_ead_bigmt.9.a
+		custom_effect_tooltip = purists_ead_bigmt.9.a.tt
+		set_country_flag = purists_wanamingo_researched
 	}
+}
+
+country_event = { #Red Cloud Unleashed
+	id = purists_ead_bigmt.10
+	title = purists_ead_bigmt.10.t
+	desc = purists_ead_bigmt.10.d
+	picture = GFX_ead_cloud_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = purists_ead_bigmt.10.a
+		custom_effect_tooltip = purists_ead_bigmt.10.a.tt
+		add_ideas = Purists_enclave_red_cloud_unleashed
+	} 
 }

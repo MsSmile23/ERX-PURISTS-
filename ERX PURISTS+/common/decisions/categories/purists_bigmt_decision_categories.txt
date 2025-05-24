@@ -1,6 +1,0 @@
-Purists_BigMT_Journey = {
-	icon = GFX_idea_enc_science_team
-	allowed = { tag = ERB }
-	priority = 2
-	visible = {	has_completed_focus = ENC_Big_MT_Restored_purity }
-}
