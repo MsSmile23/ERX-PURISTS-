@@ -57,16 +57,8 @@ country_event = { #Shandy Sands has fallen
 	desc = purists_ead_vengeance.3.d
 	picture = GFX_enc_event_wheres_my_money
 	fire_only_once = yes
+	is_triggered_only = yes
 
-	trigger = {
-		tag = ERB
-		has_completed_focus = enc_purity
-		not = { country_exists = NCR }
-		controls_state = 253
-	}
-	mean_time_to_happen = {
-		days = 20
-	}
 	option = { 
 		name = purists_ead_vengeance.3.a
 		add_ideas = Purists_destruction_shady
@@ -77,30 +69,6 @@ country_event = { #Shandy Sands has fallen
 	}
 }
 
-country_event = { #Shandy Sands has fallen
-	id = purists_ead_vengeance.3
-	title = purists_ead_vengeance.3.t
-	desc = purists_ead_vengeance.3.d
-	picture = GFX_enc_event_wheres_my_money
-	fire_only_once = yes
-
-	trigger = {
-		tag = ERB
-		has_completed_focus = enc_purity
-		controls_state = 253
-	}
-	mean_time_to_happen = {
-		days = 20
-	}
-	option = { 
-		name = purists_ead_vengeance.3.a
-		add_ideas = Purists_destruction_shady
-		add_political_power = 200
-		253 = {
-			add_manpower = -20000
-		}
-	}
-}
 
 country_event = { #Hub has fallen
 	id = purists_ead_vengeance.4
@@ -108,15 +76,8 @@ country_event = { #Hub has fallen
 	desc = purists_ead_vengeance.4.d
 	picture = GFX_event_enc_urban_patrol
 	fire_only_once = yes
+	is_triggered_only = yes
 
-	trigger = {
-		tag = ERB
-		has_completed_focus = enc_purity
-		controls_state = 1
-	}
-	mean_time_to_happen = {
-		days = 20
-	}
 	option = { 
 		name = purists_ead_vengeance.4.a
 		add_ideas = Purists_destruction_hub
@@ -139,15 +100,8 @@ country_event = { #Boneyard has fallen
 	desc = purists_ead_vengeance.5.d
 	picture = GFX_event_enc_urban_patrol
 	fire_only_once = yes
+	is_triggered_only = yes
 
-	trigger = {
-		tag = ERB
-		has_completed_focus = enc_purity
-		controls_state = 350
-	}
-	mean_time_to_happen = {
-		days = 20
-	}
 	option = { 
 		name = purists_ead_vengeance.5.a
 		add_ideas = Purists_destruction_boneyard
@@ -171,15 +125,8 @@ country_event = { #Dayglow has fallen
 	desc = purists_ead_vengeance.6.d
 	picture = GFX_event_enc_urban_patrol
 	fire_only_once = yes
+	is_triggered_only = yes
 
-	trigger = {
-		tag = ERB
-		has_completed_focus = enc_purity
-		controls_state = 63
-	}
-	mean_time_to_happen = {
-		days = 20
-	}
 	option = { 
 		name = purists_ead_vengeance.6.a
 		add_ideas = Purists_destruction_dayglow
@@ -203,16 +150,8 @@ country_event = { #Brotherhood has fallen
 	desc = purists_ead_vengeance.7.d
 	picture = GFX_event_enc_dead_bos
 	fire_only_once = yes
+	is_triggered_only = yes
 
-	trigger = {
-		tag = ERB
-		has_completed_focus = enc_purity
-		not = { country_exists = BOS }
-		controls_state = 157
-	}
-	mean_time_to_happen = {
-		days = 20
-	}
 	option = { 
 		name = purists_ead_vengeance.7.a
 		add_ideas = Purists_bos_death
@@ -319,16 +258,8 @@ country_event = { #Fate of the Lost Hill
 	desc = purists_ead_vengeance.8.d
 	picture = GFX_event_us_sarmy_picture
 	fire_only_once = yes
+	is_triggered_only = yes
 
-	trigger = {
-		tag = ERB
-		has_completed_focus = enc_purity
-		not = { country_exists = BOS }
-		controls_state = 157
-	}
-	mean_time_to_happen = {
-		days = 20
-	}
 	option = { 
 		name = purists_ead_vengeance.8.a
 		add_ideas = Purists_bunker_ruined
@@ -366,5 +297,53 @@ country_event = { #Victory on the west
 	option = { 
 		name = purists_ead_vengeance.9.a
 		add_ideas = Purists_victory_west_coast
+	}
+}
+
+country_event = { #Fate of the NCR leadership
+	id = purists_ead_vengeance.10
+	title = purists_ead_vengeance.10.t
+	desc = purists_ead_vengeance.10.d
+	picture = GFX_event_enc_bloody_NCR
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_vengeance.10.a
+		add_political_power = 400
+		add_stability = 0.10
+		add_war_support = 0.05
+	}
+}
+
+country_event = { #Fate of the NCR useful idiots
+	id = purists_ead_vengeance.11
+	title = purists_ead_vengeance.11.t
+	desc = purists_ead_vengeance.11.d
+	picture = GFX_event_enc_minigun
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_vengeance.11.a
+		add_political_power = 300
+		add_stability = 0.05
+		add_war_support = 0.03
+	}
+
+	option = { 
+		name = purists_ead_vengeance.11.b
+		custom_effect_tooltip = purists_ead_vengeance.11.b.tt
+		add_ideas = Purists_enclave_ncr_science
+		add_ideas = Purists_enclave_penal_battalion
+		generate_character = {
+			token_base = ead_edwin_royst
+		}
+		generate_character = {
+			token_base = ead_lydia_bernard
+		}
+		set_technology = {
+			enc_cryo_trooper_tech = 1
+		}
 	}
 }

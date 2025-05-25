@@ -73,6 +73,7 @@ sigma_boy: "Secret Service Agent"
 sigma_boy_desc: "Former Secret Service Agent Colonel Hammel now seeks to redeem his tarnished reputation within the Sierra Enclave under the new administration. Once a trusted protector of high-ranking officials, a past failure drove him to prove his worth anew. Leveraging his expertise in security protocols, tactical planning, and covert operations, he offers his full skill set to President Anderson’s regime. His determination to restore his honor fuels his relentless service, earning cautious respect despite lingering doubts."
 
 ead_bos_scum: "Brotherhood Scum"
+ead_ncr_scum: "NCR Scum"
 
 ead_rogue_paladin: "Rogue Paladin"
 ead_rogue_paladin_desc: "Former Brotherhood Paladin Ramzi, a zealous anti-mutant hardliner, defected to the Sierra Enclave after the capture of Lost Hills. Known for his ferocity in battle and unyielding hatred of mutants, he joined Colonel Wagner’s integration program, undergoing strict genetic screening and constant surveillance. His combat prowess strengthens the Enclave, but his fiery temperament and radical views keep him under close watch."
@@ -88,6 +89,12 @@ forbidden_dom_master_desc: "Doctor Mobius, once a brilliant yet eccentric scient
 
 ead_voice_of_america: "Voice of America"
 ead_voice_of_america_desc: "This is a voice of the United States broadcasting in this desolate wastelands of the world. This is Encalve Radio and I am your host, Allen Morgan, and I like to welcome, welcome all of you that are listening throughout the wastelands. We have been off the air for far far too long, but its good to say, that we are back in action!"
+
+ead_cryo_genius: "Cryo Genius"
+ead_cryo_genius_desc: "A former NCR scientist, Dr. Edwin Royst has proven his worth by helping us solve our cryo-tech problem. Despite being a mutant bastard, some of our people are beginning to warm to him."
+
+ead_medical_expert: "Medical Expert"
+ead_medical_expert_desc: "As a student and close colleague of Dr. Royst, Bernard has also shown us her usefulness. Her experimental formulas for Rad-X and Rad-Away looks promising."
 
 #Characters
 
@@ -118,6 +125,8 @@ ead_knight_echo_name: "Knight Echo"
 ead_scribe_hellen_name: "Scribe Hellen"
 ead_mobius_name: "Doctor Mobius"
 ead_allen_morgan_name: "Allen Morgan"
+ead_edwin_royst_name: "Doctor Edwin Royst"
+ead_lydia_bernard_name: "Doctor Lydia Bernard"
 
 
 #Other

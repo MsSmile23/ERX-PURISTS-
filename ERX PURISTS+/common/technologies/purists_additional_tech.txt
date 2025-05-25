@@ -179,4 +179,68 @@ technologies = {
 			}
 		}
 	}
+
+	purists_force_field_robot_tech = {
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		category_infantry = {
+			max_strength = 0.05
+			defence =  0.05
+			armor_factor = 0.05
+			need = {
+				support_robot_equipment = 2
+				combat_robot_equipment = 3
+			}
+		}
+
+		category_demolitions = {
+			max_strength = 0.05
+			defence =  0.05
+			armor_factor = 0.05
+			need = {
+				support_robot_equipment = 2
+				combat_robot_equipment = 3
+			}
+		}
+		category_fireteams = {
+			max_strength = 0.05
+			defence =  0.05
+			armor_factor = 0.05
+			need = {
+				support_robot_equipment = 2
+				combat_robot_equipment = 3
+			}
+		}
+	}
+
+	purists_force_field_humans = {
+		dependencies = {
+			blocked_tech = 1
+		}
+
+		category_infantry = {
+			max_strength = 0.08
+			defence =  0.05
+			need = {
+				support_equipment = 3
+			}
+		}
+
+		category_demolitions = {
+			max_strength = 0.08
+			defence =  0.05
+			need = {
+				support_equipment = 3
+			}
+		}
+		category_fireteams = {
+			max_strength = 0.08
+			defence =  0.05
+			need = {
+				support_equipment = 3
+			}
+		}
+	}
 }

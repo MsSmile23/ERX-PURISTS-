@@ -1,7 +1,7 @@
 Purists_Monsters_Unleashed = {
 	Purists_release_wanamingo {
 		cost = 100
-		icon = decision_enc_officer
+		icon = GFX_idea_ead_icon_wanamingo_attack
 		days_remove = 90
 		ai_will_do = {
 			factor = 10
@@ -11,7 +11,12 @@ Purists_Monsters_Unleashed = {
 			civilian_factory_use = 10
 		}
 		fire_only_once = no
-		available = { has_country_flag = purists_wanamingo_researched }
+		available = { 
+			has_country_flag = purists_wanamingo_researched
+			has_equipment = {
+				support_equipment > 500
+			} 
+		}
 		visible = {
 			ERB = { has_war = yes }
 			every_other_country = {
@@ -46,7 +51,7 @@ Purists_Monsters_Unleashed = {
 
 	Purists_release_robots {
 		cost = 100
-		icon = decision_enc_officer
+		icon = GFX_idea_ead_icon_roboscorpion
 		days_remove = 90
 		ai_will_do = {
 			factor = 10
@@ -55,7 +60,15 @@ Purists_Monsters_Unleashed = {
 			civilian_factory_use = 15
 		}
 		fire_only_once = no
-		available = { has_country_flag = purists_roboscorpions_researched }
+		available = { 
+			has_country_flag = purists_roboscorpions_researched
+			has_equipment = {
+				combat_robot_equipment > 200
+			}
+			has_equipment = {
+				support_robot_equipment > 400
+			}
+		 }
 		visible = {
 			ERB = { has_war = yes }
 			every_other_country = {
@@ -94,7 +107,7 @@ Purists_Monsters_Unleashed = {
 
 	Purists_red_cloud {
 		cost = 400
-		icon = decision_enc_officer
+		icon = GFX_idea_ead_icon_red_cloud
 		days_remove = 360
 		ai_will_do = {
 			factor = 10
@@ -104,7 +117,12 @@ Purists_Monsters_Unleashed = {
 			research_speed_factor = -0.2
 		}
 		fire_only_once = no
-		available = { has_country_flag = enclave_red_cloud_researched }
+		available = { 
+			has_country_flag = enclave_red_cloud_researched 
+			has_equipment = {
+				support_equipment > 1000
+			}
+		}
 		visible = {
 			ERB = { has_war = yes }
 			every_other_country = {
@@ -145,7 +163,7 @@ Purists_Monsters_Unleashed = {
 
 	Purists_release_ghost_people {
 		cost = 200
-		icon = decision_enc_officer
+		icon = GFX_idea_ead_icon_ghosts
 		days_remove = 360
 		ai_will_do = {
 			factor = 10
@@ -161,6 +179,11 @@ Purists_Monsters_Unleashed = {
 				limit = {
 					has_war_with = ERB
 				}
+			}
+		}
+		available = {
+			has_equipment = {
+				support_equipment > 400
 			}
 		}
 		complete_effect = {
@@ -181,6 +204,42 @@ Purists_Monsters_Unleashed = {
 				has_war_with = ERB
 				}
 			remove_ideas = Purists_ghost_people
+			}
+		}
+	}
+
+	Purists_deploy_holograms {
+		cost = 100
+		icon = GFX_idea_ead_icon_hologram
+		days_remove = 60
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			civilian_factory_use = 5
+			country_resource_energy = -75
+			army_defence_factor = 0.3
+			army_org_factor = 0.3
+		}
+		fire_only_once = no
+		visible = {
+			ERB = { has_war = yes }
+			every_other_country = {
+				limit = {
+					has_war_with = ERB
+				}
+			}
+		}
+		available = {
+			has_country_flag = enclave_hologram_active
+			has_equipment = {
+				support_equipment > 200
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
 			}
 		}
 	}

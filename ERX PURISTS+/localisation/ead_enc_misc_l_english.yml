@@ -3,6 +3,8 @@
 cazaclaw_equipment: "Cazaclaws"
 cazaclaw_equipment_desc: "genetically-engineered creatures developed by the Post-War Enclave in BMT to replace humans during close-combat search-and-destroy missions. 
 
+enc_cryo_trooper_tech: "Cryo Troops"
+
 purists_hazmat_tech_1: "Hansen Combat Toxin Suit"
 purists_hazmat_tech_1_desc: "Hansen Combat Toxin Suit(HCTS) provides everything we need for our researchers in the field and those using chemical weaponry."
 
@@ -15,7 +17,14 @@ purists_weapon_integration_tech_desc: "Using the results of Big Mountain's resea
 purists_armor_integration_tech: "Personalities to armor intergration"
 purists_armor_integration_tech_desc: "Using the results of Big Mountain's research, we have embedded primitive artificial personalities into our soldiers' armor, improving their combat performance."
 
+purists_force_field_robot_tech: "Robotic hologram generator."
+purists_force_field_robot_tech_desc: "Persinal Project of Lieutenant Orwich. A unique kind of bots that, when in combat, projects multiple holographic Enclave soldiers to fight against its enemies, with it having the panels to do so all around its body."
+
+purists_force_field_humans: "Holograms grenades."
+purists_force_field_humans_desc: "Project of General Grimm. Special type of grenade that when thrown, projects a hologram of a Enclave soldier that’s almost a one to one copy of a soldier, allowing it to soak up fire from the enemy. But it does not last long, only lasting around 30 seconds before going out due to limited power."
+
 purists_wanamingo_researched: "Wanamingos were revived"
 purists_roboscorpions_researched: "Roboscorpions were researched"
 enclave_red_cloud_researched: "SM-7 is ready for use"
 purists_sink_active: "Sink personalities was found"
+enclave_hologram_active: "Holograms are active"
