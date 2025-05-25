@@ -1,0 +1,154 @@
+Purists_California_fate = {
+	Purists_Fate_Shady_Sands = {
+		cost = 50
+		days_remove = 10
+		icon = GFX_idea_enc_flg_ncr
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		remove_effect = {
+			country_event = { id = purists_ead_vengeance.3 }
+		}
+	}
+
+	Purists_Fate_NCR_Leadership = {
+		cost = 50
+		days_remove = 10
+		icon = GFX_idea_enc_flg_ncr
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		remove_effect = {
+			country_event = { id = purists_ead_vengeance.10 }
+		}
+	}
+
+	Purists_Fate_NCR_useful_idiots = {
+		cost = 50
+		days_remove = 10
+		icon = GFX_idea_enc_flg_ncr
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		remove_effect = {
+			country_event = { id = purists_ead_vengeance.11 }
+		}
+	}
+
+	Purists_Fate_Hub = {
+		cost = 50
+		days_remove = 10
+		icon = GFX_idea_enc_flg_ncr
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			controls_state = 1
+		}
+		remove_effect = {
+			country_event = { id = purists_ead_vengeance.4 }
+		}
+	}
+
+	Purists_Fate_Boneyard = {
+		cost = 50
+		days_remove = 10
+		icon = GFX_idea_enc_flg_ncr
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			controls_state = 350
+		}
+		remove_effect = {
+			country_event = { id = purists_ead_vengeance.5 }
+		}
+	}
+
+	Purists_Fate_Dayglow = {
+		cost = 50
+		days_remove = 10
+		icon = GFX_idea_enc_flg_ncr
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			controls_state = 63
+		}
+		remove_effect = {
+			country_event = { id = purists_ead_vengeance.6 }
+		}
+	}
+
+	Purists_Fate_BOS = {
+		cost = 50
+		days_remove = 10
+		icon = GFX_idea_enc_flg_bos
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			not = { country_exists = BOS }
+			controls_state = 157
+		}
+		remove_effect = {
+			country_event = { id = purists_ead_vengeance.7 }
+		}
+	}
+
+	Purists_Fate_Lost_Hill = {
+		cost = 50
+		days_remove = 10
+		icon = GFX_idea_enc_flg_bos
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			not = { country_exists = BOS }
+			controls_state = 157
+		}
+		remove_effect = {
+			country_event = { id = purists_ead_vengeance.8 }
+		}
+	}
+}

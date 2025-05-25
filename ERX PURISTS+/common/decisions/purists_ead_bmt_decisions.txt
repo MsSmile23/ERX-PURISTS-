@@ -1,7 +1,8 @@
 Purists_BigMT_Journey = {
 	Purists_explore_strange_cave = {
-		cost = 25
+		cost = 100
 		days_remove = 10
+		icon = GFX_idea_ead_icon_radioctive_barrel
 		ai_will_do = {
 			factor = 10
 		}
@@ -16,8 +17,9 @@ Purists_BigMT_Journey = {
 	}
 
 	Purists_new_hazmat_suite = {
-		cost = 25
+		cost = 100
 		days_remove = 30
+		icon = GFX_idea_ead_icon_bmt
 		ai_will_do = {
 			factor = 10
 		}
@@ -36,8 +38,9 @@ Purists_BigMT_Journey = {
 	}
 
 	Purists_forbidden_dome = {
-		cost = 25
+		cost = 100
 		days_remove = 30
+		icon = GFX_idea_ead_icon_forbidden_zone
 		ai_will_do = {
 			factor = 10
 		}
@@ -55,8 +58,9 @@ Purists_BigMT_Journey = {
 	}
 
 	Purists_sink = {
-		cost = 25
+		cost = 100
 		days_remove = 20
+		icon = GFX_idea_ead_icon_sink_central_intelligence
 		ai_will_do = {
 			factor = 10
 		}
@@ -71,8 +75,9 @@ Purists_BigMT_Journey = {
 	}
 
 	Purists_z43_plant = {
-		cost = 25
+		cost = 100
 		days_remove = 60
+		icon = GFX_idea_ead_icon_radioctive_barrel
 		modifier = {
 			research_speed_factor = -0.15
 			civilian_factory_use = 6
@@ -91,8 +96,9 @@ Purists_BigMT_Journey = {
 	}
 
 	Purists_teleporter = {
-		cost = 25
+		cost = 100
 		days_remove = 20
+		icon = GFX_idea_ead_icon_transponder_tele
 		ai_will_do = {
 			factor = 10
 		}
@@ -109,6 +115,7 @@ Purists_BigMT_Journey = {
 	Purists_wanamingo = {
 		cost = 100
 		days_remove = 60
+		icon = GFX_idea_ead_icon_wanamingo_attack
 		ai_will_do = {
 			factor = 10
 		}
@@ -123,6 +130,27 @@ Purists_BigMT_Journey = {
 		}
 		remove_effect = {
 			country_event = { id = purists_ead_bigmt.9 }
+		}
+	}
+
+	Purists_holograms = {
+		cost = 100
+		days_remove = 60
+		icon = GFX_idea_ead_icon_hologram
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			research_speed_factor = -0.2
+			civilian_factory_use = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		remove_effect = {
+			country_event = { id = purists_ead_bigmt.11 }
 		}
 	}
 }

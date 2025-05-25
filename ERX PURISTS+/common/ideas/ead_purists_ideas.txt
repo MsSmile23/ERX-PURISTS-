@@ -628,5 +628,52 @@ ideas = {
 				out_of_supply_factor = -0.3 
 			}
 		}
+
+		Purists_enclave_holograms = {
+			picture = MOJ_idea_holograms
+			name = "Enclave Holograms"
+			allowed = { always = no	}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+			 	stability_factor = 0.02
+				army_core_defence_factor = 0.3 
+				foreign_subversive_activites = -0.45
+				resistance_damage_to_garrison = -0.2
+				custom_modifier_tooltip = intelligence_defense_boost_dlc_weak_tt
+				hidden_modifier = {
+					intelligence_agency_defense = 2
+				}
+			}
+		}
+
+		Purists_enclave_ncr_science = {
+			picture = ead_ncr_science_teams
+			allowed = { always = no	}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+			 	stability_factor = -0.10
+				war_support_factor = -0.05
+				research_speed_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1 
+			}
+		}
+
+		Purists_enclave_penal_battalion = {
+			picture = ead_enclave_penal_battalions
+			allowed = { always = no	}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+			 	stability_factor = -0.05
+				war_support_factor = -0.1
+				global_building_slots_factor = 0.1 
+				weekly_manpower = 25 
+				industrial_capacity_dockyard = 0.15
+				industrial_capacity_factory = 0.15 
+				experience_gain_army = 0.05 
+			}
+		}
 	}
 }
