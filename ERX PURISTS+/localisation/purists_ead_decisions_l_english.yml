@@ -13,7 +13,7 @@ Purists_new_hazmat_suite: "Hazmat Suit"
 Purists_new_hazmat_suite_desc: "As we know, the Big MT was the center of research of many things, including interesting prototypes of hazmat suits. Our scientific division proposes to continue the research of pre-war scientists and improve their design."
 ################################################################################################################ -<
 ################################################################################################################ -<
-Purists_forbidden_dome: "Forbidden Dome"
+Purists_forbidden_dome: "Forbidden Zone"
 Purists_forbidden_dome_desc: "When we arrived to the Big MT, we had found that some of the scientists did survive the Great War, only to find out that every single one of them is insane. Along with insanity, they spouted that they were in a constant fight with another surviving scientist, Dr. Mobius.For the sake of BMT security, we must investigate this source of a problems"
 ################################################################################################################ -<
 ################################################################################################################ -<
@@ -31,6 +31,10 @@ Purists_teleporter_desc: "Teleportation. Even before the war, some of our best s
 ################################################################################################################ -<
 Purists_wanamingo: "Guess, who is back?"
 Purists_wanamingo_desc: "With the reopening of our biological corps, some scientists are proposing to use the data from Big MT to resurrect the ancient monster that terrorized the wasteland many years ago: Wanamingo"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_holograms: "Z-38 lightwave dynamics research"
+Purists_holograms_desc: "Prior to the Great War, the Z-38 staff were involved with researching and developing a line of hologram projectors to be installed at the Sierra Madre Casino & Resort. Our research teams can continue pre-war studies."
 ################################################################################################################ -<
 
 ################################## Warcrimes ##############################################
@@ -54,6 +58,10 @@ Purists_red_cloud_desc: "The pride of our chemical corps: SM-7. One of the last 
 Purists_release_ghost_people: "Ghost People."
 Purists_release_ghost_people_desc: "During our successful operation in the Sierra Madre, our forces encountered the so-called Ghosts People. Despite the fact that they are just mutants armed with primitive weapons, they, surprisingly, turned out to be a serious opponent, which was almost impossible to kill. After examining their bodies, as well as studies, carried out in the Big Mountain, some of our scientists and military suggest a clever trick. We can use pre-damaged suits with neuro-toxic gas, which will drive the wearer crazy in a matter of hours, as a gift for the mutants. Our vertibirds will drop packages on the outskirts of mutant settlements, and they, unknowingly, will decide to use them. In this way, we will create a small ghost people force that will terrorize the local population."
 ################################################################################################################ -<
+################################################################################################################ -<
+Purists_deploy_holograms: "Deploy Holograms."
+Purists_deploy_holograms_desc: "One of the many things that were made at the Big MT were holograms, ones that could be weaponized to fight against the Chinese. Back then they were promising but inherently expensive and limited in their uses, but now we may have found a different use for them. We can deploy them in strategic positions, to reinforce our already impressive defenses."
+################################################################################################################ -<
 
 ################################## Sink ##############################################
 ################################################################################################################ -<
@@ -73,7 +81,7 @@ Purity_central_intel: "Sink Central Intelligence Unit."
 Purity_central_intel_desc: "Being connected and the controlling personality of all of Sink, the Central Intelligence has truly impressive computing power. We can use this to solve our military and logistical problems in important directions."
 ################################################################################################################ -<
 ################################################################################################################ -<
-Purity_book_chute: "I smell sedition!."
+Purity_book_chute: "I smell sedition!"
 Purity_book_chute_desc: "Designed as a means of destroying unwanted literature, this device is of particular interest to us. Given its vigilance, we can scale it up to our production facilities to pull in slaves and purebred Americans."
 ################################################################################################################ -<
 ################################################################################################################ -<
@@ -93,8 +101,8 @@ Purists_bio_station: "Biological Research Station."
 Purists_bio_station_desc: "It's no secret that American soil is not in the best shape right now. It's poisoned by radiation and other crap that settled in it after the War. But this device will help us solve our problems. A real miracle, capable of processing any plant and making another one out of it. With it, we definitely won't be afraid of hunger."
 ################################################################################################################ -<
 ################################################################################################################ -<
-Purists_ai_weapon_integration: "Auto-Doc."
-Purists_ai_weapon_integration_desc: "We've seen auto-docs before. Advanced pre-war devices. Experimental. But never anything this advanced. Scientists believe we can integrate it into our medical facilities to save the lives of even the most hopeless soldiers."
+Purists_sink_autodock: "Auto-Doc."
+Purists_sink_autodock_desc: "We've seen auto-docs before. Advanced pre-war devices. Experimental. But never anything this advanced. Scientists believe we can integrate it into our medical facilities to save the lives of even the most hopeless soldiers."
 ################################################################################################################ -<
 ################################################################################################################ -<
 Purists_ai_weapon_integration: "A new kind of weapons."
@@ -107,6 +115,45 @@ Purists_ai_armor_integration_desc: "During our exploration of Big Mountain, we e
 ################################################################################################################ -<
 Purists_blind_jefferson: "Sound Waves!"
 Purists_blind_jefferson_desc: "Sound weapons are nothing new to us, but what we found in Sink exceeded our expectations. This music box has excellent capabilities in calibrating different sounds. With its help, we can solve the problem of dissenters"
+################################################################################################################ -<
+
+
+################################## Fate of California ##############################################
+################################################################################################################ -<
+Purists_California_fate: "Fate of California."
+Purists_California_fate_desc: "Our oldest enemy is no more. Enclave has crashed NCR armies and now has become a true super power of West Coast. The only thing left is to decided the fate of local muties and their punny cities."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_Fate_Shady_Sands: "Fate of Shady Sands."
+Purists_Fate_Shady_Sands_desc: "A former capital of NCR in our hands. Now, its time to do the only right thing..."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_Fate_Hub: "Fate of Hub."
+Purists_Fate_Hub_desc: "A former major center of trade and commerce in NCR. Now, its in our hands. What shall we do will of all those muties?"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_Fate_Boneyard: "Fate of Boneyard."
+Purists_Fate_Boneyard_desc: "A former Los Angels. Shame, what war and muties have done to this place. Now, we must decided what to do with local muties."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_Fate_Dayglow: "Fate of Dayglow."
+Purists_Fate_Dayglow_desc: "Another major city. Another place, infested with muties."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_Fate_BOS: "Fate of Brotherhood."
+Purists_Fate_BOS_desc: "Traitorous scums fought really well, but, even with all of their outdated shinnig power armor, they were no match for the might of the Enclave."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_Fate_Lost_Hill: "Fate of Lost Hill."
+Purists_Fate_Lost_Hill_desc: "Lost Hill. A former birth place of Brotherhood. Now, its in our hands. What shall we do with it?"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_Fate_NCR_Leadership: "Fate of NCR leadership."
+Purists_Fate_NCR_Leadership_desc: "Its time to do some justice. God knows, we were always right."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_Fate_NCR_useful_idiots: "Fate of the useful idiots."
+Purists_Fate_NCR_useful_idiots_desc: "While we commence rightfull justice upon mutant leadership of NCR, there are those, that could be some use for us."
 ################################################################################################################ -<
 
 

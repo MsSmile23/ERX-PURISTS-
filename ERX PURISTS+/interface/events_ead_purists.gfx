@@ -51,6 +51,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ead_event_hologramm"
+		textureFile = "gfx/interface/events_pictures/ead_event_hologramm.dds"
+	}
+
+	spriteType = {
 		name = "GFX_ead_teleportation"
 		textureFile = "gfx/interface/events_pictures/ead_teleportation.dds"
 	}
@@ -106,10 +111,129 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_ead_ncr_science_teams"
+		textureFile = "gfx/interface/ideas/ead_ncr_science_teams.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_enclave_penal_battalions"
+		textureFile = "gfx/interface/ideas/ead_enclave_penal_battalions.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_ead_horrigan_spirit"
 		textureFile = "gfx/interface/icons/ead_horrigan_spirit.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_ead_icon_armor_integration"
+		textureFile = "gfx/interface/icons/ead_icon_armor_integration.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_bmt"
+		textureFile = "gfx/interface/icons/ead_icon_bmt.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_cazaclaw"
+		textureFile = "gfx/interface/icons/ead_icon_cazaclaw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_forbidden_zone"
+		textureFile = "gfx/interface/icons/ead_icon_forbidden_zone.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_ghosts"
+		textureFile = "gfx/interface/icons/ead_icon_ghosts.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_hologram"
+		textureFile = "gfx/interface/icons/ead_icon_hologram.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_radioctive_barrel"
+		textureFile = "gfx/interface/icons/ead_icon_radioctive_barrel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_red_cloud"
+		textureFile = "gfx/interface/icons/ead_icon_red_cloud.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_rifle_integration"
+		textureFile = "gfx/interface/icons/ead_icon_rifle_integration.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_roboscorpion"
+		textureFile = "gfx/interface/icons/ead_icon_roboscorpion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_sink_autodoc"
+		textureFile = "gfx/interface/icons/ead_icon_sink_autodoc.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_sink_biological_research_station"
+		textureFile = "gfx/interface/icons/ead_icon_sink_biological_research_station.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_sink_blind_diode_jefferson"
+		textureFile = "gfx/interface/icons/ead_icon_sink_blind_diode_jefferson.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_sink_book_chute"
+		textureFile = "gfx/interface/icons/ead_icon_sink_book_chute.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_sink_central_intelligence"
+		textureFile = "gfx/interface/icons/ead_icon_sink_central_intelligence.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_sink_light_switch_01"
+		textureFile = "gfx/interface/icons/ead_icon_sink_light_switch_01.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_sink_light_switch_02"
+		textureFile = "gfx/interface/icons/ead_icon_sink_light_switch_02.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_sink_muggy"
+		textureFile = "gfx/interface/icons/ead_icon_sink_muggy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_sink_sink"
+		textureFile = "gfx/interface/icons/ead_icon_sink_sink.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_sink_toaster"
+		textureFile = "gfx/interface/icons/ead_icon_sink_toaster.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_transponder_tele"
+		textureFile = "gfx/interface/icons/ead_icon_transponder_tele.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_wanamingo_attack"
+		textureFile = "gfx/interface/icons/ead_icon_wanamingo_attack.dds"
+	}
 }
 
 

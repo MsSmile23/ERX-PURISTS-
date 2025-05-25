@@ -630,4 +630,44 @@ every_possible_country = {
 			}
 		}
     }
+
+	generate_character = {
+        token_base = ead_edwin_royst
+		name = ead_edwin_royst_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_edwin_royst.dds
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ead_edwin_royst
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_cryo_genius_desc
+			traits = { ead_cryo_genius, ead_ncr_scum }
+		}
+    }
+
+	generate_character = {
+        token_base = ead_lydia_bernard
+		name = ead_lydia_bernard_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_lydia_bernard.dds
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ead_lydia_bernard
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_medical_expert_desc
+			traits = { ead_medical_expert, ead_ncr_scum }
+		}
+    }
 }

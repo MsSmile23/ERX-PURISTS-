@@ -1,7 +1,7 @@
 Purists_Sink_Interactions = {
 	Purity_Smart_Lights = {
         cost = 75
-		icon = decision_enc_propaganda
+		icon = GFX_idea_ead_icon_sink_light_switch_01
 		modifier = {
 			political_power_gain = -0.1
             country_resource_energy = -50
@@ -28,7 +28,7 @@ Purists_Sink_Interactions = {
 
     Purity_Mood_Lights = {
         cost = 75
-		icon = decision_enc_propaganda
+		icon = GFX_idea_ead_icon_sink_light_switch_02
 		modifier = {
 			political_power_gain = -0.1
             country_resource_energy = -50
@@ -48,7 +48,7 @@ Purists_Sink_Interactions = {
 
     Purity_central_intel = {
         cost = 75
-		icon = decision_enc_propaganda
+		icon = GFX_idea_ead_icon_sink_central_intelligence
 		modifier = {
 			political_power_gain = -0.1
             country_resource_energy = -50
@@ -63,7 +63,7 @@ Purists_Sink_Interactions = {
 
     Purity_book_chute = {
         cost = 75
-		icon = decision_enc_propaganda
+		icon = GFX_idea_ead_icon_sink_book_chute
 		modifier = {
 			political_power_gain = -0.1
             country_resource_energy = -50
@@ -83,7 +83,7 @@ Purists_Sink_Interactions = {
 
     Purity_toaster = {
         cost = 75
-		icon = decision_enc_propaganda
+		icon = GFX_idea_ead_icon_sink_toaster
 		modifier = {
 			political_power_gain = -0.1
             country_resource_energy = -50
@@ -104,7 +104,7 @@ Purists_Sink_Interactions = {
 
     Purity_sink_sink = {
         cost = 75
-		icon = decision_enc_propaganda
+		icon = GFX_idea_ead_icon_sink_sink
 		modifier = {
 			political_power_gain = -0.1
             country_resource_energy = -50
@@ -125,7 +125,7 @@ Purists_Sink_Interactions = {
 
     Purity_muggy = {
         cost = 75
-		icon = decision_enc_propaganda
+		icon = GFX_idea_ead_icon_sink_muggy
 		modifier = {
 			political_power_gain = -0.1
             country_resource_energy = -50
@@ -155,7 +155,7 @@ Purists_Sink_Interactions = {
 
     Purists_bio_station = {
 		cost = 75
-        icon = decision_enc_propaganda
+        icon = GFX_idea_ead_icon_sink_biological_research_station
 		days_remove = 30
 		modifier = {
 			political_power_gain = -0.1
@@ -171,7 +171,7 @@ Purists_Sink_Interactions = {
     Purists_sink_autodock = {
 		cost = 75
 		days_remove = 30
-        icon = decision_enc_propaganda
+        icon = GFX_idea_ead_icon_sink_autodoc
 		modifier = {
 			political_power_gain = -0.1
             country_resource_energy = -50
@@ -193,7 +193,7 @@ Purists_Sink_Interactions = {
     Purists_ai_weapon_integration = {
 		cost = 75
 		days_remove = 30
-        icon = decision_enc_propaganda
+        icon = GFX_idea_ead_icon_rifle_integration
 		modifier = {
 			political_power_gain = -0.1
             country_resource_energy = -50
@@ -214,7 +214,7 @@ Purists_Sink_Interactions = {
     Purists_ai_armor_integration = {
 		cost = 75
 		days_remove = 30
-        icon = decision_enc_propaganda
+        icon = GFX_idea_ead_icon_armor_integration
 		ai_will_do = {
 			factor = 10
 		}
@@ -238,7 +238,7 @@ Purists_Sink_Interactions = {
 	Purists_blind_jefferson = {
 		cost = 75
 		days_remove = 30
-        icon = decision_enc_propaganda
+        icon = GFX_idea_ead_icon_sink_blind_diode_jefferson
 		ai_will_do = {
 			factor = 10
 		}
