@@ -151,4 +151,25 @@ Purists_California_fate = {
 			country_event = { id = purists_ead_vengeance.8 }
 		}
 	}
+
+	Puritsts_Fate_Divide = { 
+		cost = 50
+		days_remove = 10 
+		icon = GFX_idea_enc_flg_bos
+		ai_will_do = {
+			factor = 10 
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			not = { country_exists = BOS }
+			controls_state = 157
+		}
+		remove_effect = {
+			country_event = { id = purists_ead_vengeance.12 }
+		}
+	}
 }

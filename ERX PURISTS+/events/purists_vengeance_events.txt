@@ -347,3 +347,107 @@ country_event = { #Fate of the NCR useful idiots
 		}
 	}
 }
+
+country_event = { #The Divide
+	id = purists_ead_vengeance.12
+	title = purists_ead_vengeance.12.t
+	desc = purists_ead_vengeance.12.d
+	picture = GFX_event_enc_minigun
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_vengeance.12.a
+		add_manpower = -7
+		army_experience = 30
+		country_event = {
+			id = purists_ead_vengeance.13 days = 4
+		}
+	}
+}
+
+country_event = { #Below the surface
+	id = purists_ead_vengeance.13
+	title = purists_ead_vengeance.13.t
+	desc = purists_ead_vengeance.13.d
+	picture = GFX_event_enc_minigun
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_vengeance.13.a
+		add_manpower = -12
+		army_experience = 40
+		country_event = {
+			id = purists_ead_vengeance.14 days = 15
+		}
+	}
+}
+
+
+country_event = { #Way deeper down
+	id = purists_ead_vengeance.14
+	title = purists_ead_vengeance.14.t
+	desc = purists_ead_vengeance.14.d
+	picture = GFX_event_enc_minigun
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_vengeance.14.a
+		country_event = {
+			id = purists_ead_vengeance.15 days = 5
+		}
+	}
+
+}
+
+country_event = { #Robots and Mutants vs Mutants
+	id = purists_ead_vengeance.15
+	title = purists_ead_vengeance.15.t
+	desc = purists_ead_vengeance.15.d
+	picture = GFX_event_enc_minigun
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_vengeance.15.a
+		country_event = {
+			id = purists_ead_vengeance.16 days = 25
+		}
+	}
+
+}
+
+country_event = { #New Divide
+	id = purists_ead_vengeance.16
+	title = purists_ead_vengeance.16.t
+	desc = purists_ead_vengeance.16.d
+	picture = GFX_event_enc_minigun
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_vengeance.16.a
+		country_event = {
+			id = purists_ead_vengeance.17 days = 12
+		}
+	}
+
+}
+
+country_event = { #The Tunnelers
+	id = purists_ead_vengeance.17
+	title = purists_ead_vengeance.17.t
+	desc = purists_ead_vengeance.17.d
+	picture = GFX_event_enc_minigun
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_vengeance.17.a
+		custom_effect_tooltip = purists_ead_vengeance.17.a.tt
+		set_country_flag = tuunnelers_tamed
+	}
+
+}

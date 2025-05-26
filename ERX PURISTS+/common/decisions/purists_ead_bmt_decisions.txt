@@ -39,7 +39,7 @@ Purists_BigMT_Journey = {
 
 	Purists_forbidden_dome = {
 		cost = 100
-		days_remove = 30
+		days_remove = 5
 		icon = GFX_idea_ead_icon_forbidden_zone
 		ai_will_do = {
 			factor = 10
@@ -49,11 +49,8 @@ Purists_BigMT_Journey = {
 		visible = {
 			original_tag = ERB
 		}
-		complete_effect = {
-			country_event = { id = purists_ead_bigmt.3 }
-		}
 		remove_effect = {
-			country_event = { id = purists_ead_bigmt.5 }
+			country_event = { id = purists_ead_bigmt.3 }
 		}
 	}
 
