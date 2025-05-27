@@ -71,6 +71,9 @@ country_event = { #Mobius Giant
 		name = purists_ead_bigmt.4.a
 		army_experience = 25
 		add_manpower = -7
+		country_event = {
+			id = purists_ead_bigmt.5 days = 2
+		}
 	}
 }
 

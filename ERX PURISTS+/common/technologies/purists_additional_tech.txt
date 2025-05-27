@@ -6,7 +6,7 @@ technologies = {
 		category_army = {
 			defence = 0.05
 			supply_consumption = 0.05
-			casualty_trickleback = 0.05
+			max_strength = 0.10
 		}
 
 		heavy_infantry = {

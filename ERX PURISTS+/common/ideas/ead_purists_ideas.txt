@@ -319,7 +319,7 @@ ideas = {
 		}
 
 		Purists_victory_west_coast = {
-			picture = enc_idea_manpower_3
+			picture = ead_anderson_victory
 			name = "West Coast is Ours!"
 			allowed = { always = no	}
 			allowed_civil_war = { always = yes }
@@ -449,6 +449,7 @@ ideas = {
 				monthly_population = -1.45
 				supply_consumption_factor = 0.8
 				attrition = 0.6
+				max_dig_in_factor = -0.6
 				production_speed_buildings_factor = -0.8
 				recon_factor = -0.4
 				country_resource_water = -200
@@ -559,6 +560,75 @@ ideas = {
 				industrial_capacity_dockyard = -0.12
 				industrial_capacity_factory = -0.12
 				monthly_population = -0.2
+			}
+		}
+
+		Purists_tunnelers_attack = {
+			picture = ead_idea_tunneler
+			allowed = { always = no	}
+			allowed_civil_war = { always = yes }
+			cancel = {
+				NOT = {
+					has_war_with = ERB
+				}
+			}
+			removal_cost = 1
+			modifier = {
+				weekly_manpower = -35
+				army_attack_factor = -0.06
+				army_defence_factor = -0.06
+				max_dig_in_factor = -0.3
+				industrial_capacity_dockyard = -0.25
+				industrial_capacity_factory = -0.25
+				monthly_population = -0.4
+				supply_consumption_factor = 0.4
+				attrition = 0.3
+			}
+		}
+
+		Purists_deathclaw_attack = {
+			picture = ead_deathclaw_attack
+			allowed = { always = no	}
+			allowed_civil_war = { always = yes }
+			cancel = {
+				NOT = {
+					has_war_with = ERB
+				}
+			}
+			removal_cost = 1
+			modifier = {
+				weekly_manpower = -40
+				army_attack_factor = -0.07
+				army_defence_factor = -0.07
+				monthly_population = -0.4
+				supply_consumption_factor = 0.4
+				attrition = 0.3
+				planning_speed = -0.10
+				max_planning = -0.10
+			}
+		}
+
+		Purists_cazaclaws_attack = {
+			picture = ead_cazaclaw_attack
+			allowed = { always = no	}
+			allowed_civil_war = { always = yes }
+			cancel = {
+				NOT = {
+					has_war_with = ERB
+				}
+			}
+			removal_cost = 1
+			modifier = {
+				weekly_manpower = -55
+				army_attack_factor = -0.12
+				army_defence_factor = -0.12
+				monthly_population = -0.5
+				supply_consumption_factor = 0.4
+				attrition = 0.3
+				planning_speed = -0.10
+				max_planning = -0.10
+				stability_weekly = -0.004
+				war_support_weekly = -0.004
 			}
 		}
 
@@ -673,6 +743,17 @@ ideas = {
 				industrial_capacity_dockyard = 0.15
 				industrial_capacity_factory = 0.15 
 				experience_gain_army = 0.05 
+			}
+		}
+
+		Purists_riches_earth = {
+			picture = ead_tunneler_slaves
+			allowed = { always = no	}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+			 	conscription = -0.01
+				local_resources_factor = 0.5 
 			}
 		}
 	}
