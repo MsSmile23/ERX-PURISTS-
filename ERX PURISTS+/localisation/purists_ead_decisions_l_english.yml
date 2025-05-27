@@ -62,6 +62,18 @@ Purists_release_ghost_people_desc: "During our successful operation in the Sierr
 Purists_deploy_holograms: "Deploy Holograms."
 Purists_deploy_holograms_desc: "One of the many things that were made at the Big MT were holograms, ones that could be weaponized to fight against the Chinese. Back then they were promising but inherently expensive and limited in their uses, but now we may have found a different use for them. We can deploy them in strategic positions, to reinforce our already impressive defenses."
 ################################################################################################################ -<
+################################################################################################################ -<
+Purists_deploy_tunnelers: "Unleash tunneler horde."
+Purists_deploy_tunnelers_desc: "The tunnelers are under our thumb. Using cybernetics and other means of control, we can unleash these monsters on worthless mutants and make them bleed out slowly. Let the underground predators frolic."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_deploy_deathclaws: "Deploy deathclaws."
+Purists_deploy_deathclaws_desc: "Using our large fleet of vertibird and the manufacturing capabilities of our biolabs, we can deploy large numbers of beasts known as deathclaws behind mutant lines. Using alphas, we can direct these monsters to bring death and destruction in the name of America and the Enclave."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_deploy_cazaclaws: "Deploy cazaclaws."
+Purists_deploy_cazaclaws_desc: "A weapon more ravenous than any mutant army. Release the cazaclaws. Our enemies deserve no mercy."
+################################################################################################################ -<
 
 ################################## Sink ##############################################
 ################################################################################################################ -<

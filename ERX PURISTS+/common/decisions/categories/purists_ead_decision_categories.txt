@@ -24,7 +24,7 @@ Purists_Sink_Interactions = {
 }
 
 Purists_California_fate = { 
-	icon = GFX_idea_enc_flg_ncr
+	icon = decision_ncr_flag
 	allowed = {
 		tag = ERB
 	}
