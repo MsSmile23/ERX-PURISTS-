@@ -16,6 +16,9 @@ Purists_Monsters_Unleashed = {
 			has_equipment = {
 				support_equipment > 500
 			} 
+			has_equipment = {
+				implant_equipment > 500
+			} 
 		}
 		visible = {
 			ERB = { has_war = yes }
@@ -29,6 +32,10 @@ Purists_Monsters_Unleashed = {
 			add_ideas = Purists_enclave_wanamingo_unleashed
 			add_equipment_to_stockpile = {
 				type = support_equipment 
+				amount = -500
+			}
+			add_equipment_to_stockpile = {
+				type = implant_equipment 
 				amount = -500
 			}
 			every_other_country = {
@@ -141,8 +148,19 @@ Purists_Monsters_Unleashed = {
 				limit = {
 					has_war_with = ERB
 				}
-				add_ideas = Purists_red_cloud_unleashed 
-				add_ideas = Purists_fight_to_the_last
+				if = {
+					limit = {
+						has_idea = Purists_tunnelers_attack
+					}
+					swap_ideas = {
+						remove_idea = Purists_tunnelers_attack
+						add_idea = Purists_Fallout_Dust
+					}
+					add_ideas = Purists_fight_to_the_last
+				} else = {
+					add_ideas = Purists_red_cloud_unleashed 
+					add_ideas = Purists_fight_to_the_last		
+				}
 			}
 		}
 		remove_effect = {
@@ -153,6 +171,7 @@ Purists_Monsters_Unleashed = {
 				}
 				remove_ideas = Purists_red_cloud_unleashed
 				remove_ideas = Purists_fight_to_the_last
+				remove_ideas = Purists_Fallout_Dust
 				if = {
 					limit = { NOT = { has_idea = Purists_cloud_red_cloud_survivors }}
 					add_ideas = Purists_cloud_red_cloud_survivors
@@ -240,6 +259,181 @@ Purists_Monsters_Unleashed = {
 			add_equipment_to_stockpile = {
 				type = support_equipment
 				amount = -200
+			}
+		}
+	}
+
+	Purists_deploy_tunnelers {
+		cost = 200
+		icon = GFX_idea_ead_icon_tunneler
+		days_remove = 360
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			civilian_factory_use = 10
+		}
+		fire_only_once = no
+		visible = {
+			ERB = { has_war = yes }
+			every_other_country = {
+				limit = {
+					has_war_with = ERB
+				}
+			}
+		}
+		available = {
+			has_country_flag = tuunnelers_tamed
+			has_equipment = {
+				support_equipment > 500
+			} 
+			has_equipment = {
+				implant_equipment > 500
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment 
+				amount = -500
+			}
+			add_equipment_to_stockpile = {
+				type = implant_equipment 
+				amount = -500
+			}
+
+			every_other_country = {
+				limit = {
+					has_war_with = ERB
+				}
+				if = {
+					limit = {
+						has_idea = Purists_red_cloud_unleashed
+					}
+					swap_ideas = {
+						remove_idea = Purists_red_cloud_unleashed
+						add_idea = Purists_Fallout_Dust
+					}
+				} else = {
+					add_ideas = Purists_tunnelers_attack 		
+				}
+			}
+		}
+		remove_effect = {
+			every_other_country = {
+				limit = {
+					has_war_with = ERB
+				}
+				remove_ideas = Purists_tunnelers_attack
+				remove_ideas = Purists_Fallout_Dust
+			}
+		}
+	}
+
+	Purists_deploy_deathclaws {
+		cost = 200
+		icon = GFX_decision_deathclaw_icon
+		days_remove = 360
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			civilian_factory_use = 10
+		}
+		fire_only_once = no
+		visible = {
+			ERB = { has_war = yes }
+			every_other_country = {
+				limit = {
+					has_war_with = ERB
+				}
+			}
+		}
+		available = {
+			has_equipment = {
+				deathclaw_equipment > 500
+			} 
+			has_equipment = {
+				implant_equipment > 500
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = deathclaw_equipment 
+				amount = -500
+			}
+			add_equipment_to_stockpile = {
+				type = implant_equipment 
+				amount = -500
+			}
+
+			every_other_country = {
+				limit = {
+					has_war_with = ERB
+				}
+				add_ideas = Purists_deathclaw_attack 
+			}
+		}
+		remove_effect = {
+			every_other_country = {
+				limit = {
+				has_war_with = ERB
+				}
+				remove_ideas = Purists_deathclaw_attack
+			}
+		}
+	}
+
+	Purists_deploy_cazaclaws {
+		cost = 200
+		icon = GFX_idea_ead_icon_cazaclaw
+		days_remove = 360
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			civilian_factory_use = 15
+			country_resource_water = -75
+		}
+		fire_only_once = no
+		visible = {
+			ERB = { has_war = yes }
+			every_other_country = {
+				limit = {
+					has_war_with = ERB
+				}
+			}
+		}
+		available = {
+			has_equipment = {
+				cazaclaw_equipment > 500
+			} 
+			has_equipment = {
+				implant_equipment > 500
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = cazaclaw_equipment 
+				amount = -500
+			}
+			add_equipment_to_stockpile = {
+				type = implant_equipment 
+				amount = -500
+			}
+
+			every_other_country = {
+				limit = {
+					has_war_with = ERB
+				}
+				add_ideas = Purists_cazaclaws_attack 
+			}
+		}
+		remove_effect = {
+			every_other_country = {
+				limit = {
+				has_war_with = ERB
+				}
+				remove_ideas = Purists_cazaclaws_attack
 			}
 		}
 	}

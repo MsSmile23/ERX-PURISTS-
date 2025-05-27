@@ -71,6 +71,31 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ead_divide_01"
+		textureFile = "gfx/interface/events_pictures/ead_divide_01.tga"
+	}
+
+	spriteType = {
+		name = "GFX_ead_divide_02"
+		textureFile = "gfx/interface/events_pictures/ead_divide_02.tga"
+	}
+
+	spriteType = {
+		name = "GFX_ead_divide_03"
+		textureFile = "gfx/interface/events_pictures/ead_divide_03.tga"
+	}
+
+	spriteType = {
+		name = "GFX_ead_divide_04"
+		textureFile = "gfx/interface/events_pictures/ead_divide_04.tga"
+	}
+
+	spriteType = {
+		name = "GFX_ead_event_enclave_base"
+		textureFile = "gfx/interface/events_pictures/ead_event_enclave_base.tga"
+	}
+
+	spriteType = {
 		name = "GFX_idea_ead_dust"
 		textureFile = "gfx/interface/ideas/ead_dust_idea.dds"
 	}
@@ -118,6 +143,36 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ead_enclave_penal_battalions"
 		textureFile = "gfx/interface/ideas/ead_enclave_penal_battalions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_anderson_victory"
+		textureFile = "gfx/interface/ideas/ead_anderson_victory.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_tunneler_slaves"
+		textureFile = "gfx/interface/ideas/ead_tunneler_slaves.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_dark_cravings"
+		textureFile = "gfx/interface/ideas/ead_dark_cravings.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_idea_tunneler"
+		textureFile = "gfx/interface/ideas/ead_idea_tunneler.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_deathclaw_attack"
+		textureFile = "gfx/interface/ideas/ead_deathclaw_attack.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_cazaclaw_attack"
+		textureFile = "gfx/interface/ideas/ead_cazaclaw_attack.dds"
 	}
 
 	spriteType = {
@@ -233,6 +288,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ead_icon_wanamingo_attack"
 		textureFile = "gfx/interface/icons/ead_icon_wanamingo_attack.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_tunneler"
+		textureFile = "gfx/interface/icons/ead_icon_tunneler.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_cazaclaw"
+		textureFile = "gfx/interface/icons/ead_icon_cazaclaw.dds"
 	}
 }
 
