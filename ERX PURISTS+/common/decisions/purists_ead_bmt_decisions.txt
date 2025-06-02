@@ -150,4 +150,25 @@ Purists_BigMT_Journey = {
 			country_event = { id = purists_ead_bigmt.11 }
 		}
 	}
+
+	Purists_prton = {
+		cost = 100
+		days_remove = 60
+		icon = GFX_idea_ead_axe_icon
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			research_speed_factor = -0.2
+			civilian_factory_use = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		remove_effect = {
+			country_event = { id = purists_ead_bigmt.12 }
+		}
+	}
 }

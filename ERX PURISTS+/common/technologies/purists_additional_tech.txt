@@ -4,101 +4,35 @@ technologies = {
 			blocked_tech = 1
 		}
 		category_army = {
-			defence = 0.05
+			defense = 0.05
 			supply_consumption = 0.05
 			max_strength = 0.10
 		}
 
-		heavy_infantry = {
+		category_special_forces = {
 			need = {
 				support_equipment = 3
 			}
 		}
-		militia = {
+
+		category_fireteams = {
 			need = {
 				support_equipment = 3
 			}
 		}
-		police_infantry = {
+
+		category_demolitions = {
 			need = {
 				support_equipment = 3
 			}
 		}
-		infantry = {
+
+		category_infantry = {
 			need = {
 				support_equipment = 3
 			}
 		}
-		motorized = {
-			need = {
-				support_equipment = 3
-			}
-		}
-		motorized_heavy_infantry = {
-			need = {
-				support_equipment = 3
-			}
-		}
-		ghoul_infantry = {
-			need = {
-				support_equipment = 3
-			}
-		}
-		dog_infantry = {
-			need = {
-				support_equipment = 3
-			}
-		}
-		skate_infantry = {
-			need = {
-				support_equipment = 3
-			}
-		}
-		fireteam_infantry = {
-			need = {
-				support_equipment = 3
-			}
-		}
-		demolitions_infantry = {
-			need = {
-				support_equipment = 3
-			}
-		}
-		anti_armor_infantry = {
-			need = {
-				support_equipment = 3
-			}
-		}
-		spec_ops = {
-			need = {
-				support_equipment = 3
-			}
-		}
-		spec_ops_cavalry = {
-			need = {
-				support_equipment = 3
-			}
-		}
-		ghoul_paratrooper = {
-			need = {
-				support_equipment = 3
-			}
-		}
-		power_armour = {
-			need = {
-				support_equipment = 3
-			}
-		}
-		power_armour_fireteam_infantry = {
-			need = {
-				support_equipment = 3
-			}
-		}
-		power_armour_demolitions_infantry = {
-			need = {
-				support_equipment = 3
-			}
-		}
+
 	}
 
 	purists_autodock_tech = {
@@ -124,34 +58,9 @@ technologies = {
 			soft_attack = 0.05
 			hard_attack = 0.05
 			breakthrough = 0.05
+			supply_consumption = 0.03
 		}
 
-		equipment_bonus = {
-			infantry_equipment = {
-				build_cost_ic = 0.025
-				instant = yes
-			}
-
-			demolitions_equipment = {
-				build_cost_ic = 0.025
-				instant = yes
-			}
-
-			fireteam_equipment = {
-				build_cost_ic = 0.025
-				instant = yes
-			}
-
-			anti_tank_equipment = {
-				build_cost_ic = 0.025
-				instant = yes
-			}
-
-			anti_air_equipment = {
-				build_cost_ic = 0.025
-				instant = yes
-			}
-		}
 	}
 
 	purists_armor_integration_tech = {
@@ -159,25 +68,15 @@ technologies = {
 			blocked_tech = 1
 		}
 
-		equipment_bonus = {
-			heavy_infantry_equipment = {
-				breakthrough = 0.1
-				hard_attack = 0.08
-				soft_attack = 0.08
-				maximum_speed = 0.05
-				build_cost_ic = 0.025
-				instant = yes
-			}
-
-			power_armor_equipment = {
-				breakthrough = 0.1
-				hard_attack = 0.08
-				soft_attack = 0.08
-				maximum_speed = 0.05
-				build_cost_ic = 0.025
-				instant = yes
-			}
+		category_infantry_and_special_forces = {
+			breakthrough = 0.1
+			hard_attack = 0.08
+			soft_attack = 0.08
+			maximum_speed = 0.05
+			supply_consumption = 0.05
 		}
+
+
 	}
 
 	purists_force_field_robot_tech = {
@@ -186,9 +85,8 @@ technologies = {
 		}
 
 		category_infantry = {
-			max_strength = 0.05
-			defence =  0.05
-			armor_factor = 0.05
+			max_strength = 0.10
+			defense =  0.05
 			need = {
 				support_robot_equipment = 2
 				combat_robot_equipment = 3
@@ -196,18 +94,16 @@ technologies = {
 		}
 
 		category_demolitions = {
-			max_strength = 0.05
-			defence =  0.05
-			armor_factor = 0.05
+			max_strength = 0.10
+			defense = 0.05
 			need = {
 				support_robot_equipment = 2
 				combat_robot_equipment = 3
 			}
 		}
 		category_fireteams = {
-			max_strength = 0.05
-			defence =  0.05
-			armor_factor = 0.05
+			max_strength = 0.10
+			defense =  0.05
 			need = {
 				support_robot_equipment = 2
 				combat_robot_equipment = 3
@@ -222,7 +118,7 @@ technologies = {
 
 		category_infantry = {
 			max_strength = 0.08
-			defence =  0.05
+			defense =  0.05
 			need = {
 				support_equipment = 3
 			}
@@ -230,17 +126,60 @@ technologies = {
 
 		category_demolitions = {
 			max_strength = 0.08
-			defence =  0.05
+			defense =  0.05
 			need = {
 				support_equipment = 3
 			}
 		}
 		category_fireteams = {
 			max_strength = 0.08
-			defence =  0.05
+			defense =  0.05
 			need = {
 				support_equipment = 3
 			}
+		}
+	}
+
+	purists_marshall_tech_1 = {
+		dependencies = {
+			blocked_tech = 1
+		}
+		enable_subunits = {
+			marshall_fireteam_infantry_unit
+			marshall_demolitions_infantry_unit
+			marshall_infantry_unit
+			marshall_detachement_unit
+		}
+	}
+
+	purists_tech_proton_robots = { 
+		dependencies = {
+			blocked_tech = 1
+		}
+		category_robots = {
+			soft_attack = 0.30
+			ap_attack = 0.30
+			supply_consumption = 0.15
+		}
+	}
+
+	purists_tech_proton_infantry = { 
+		dependencies = {
+			blocked_tech = 1
+		}
+		category_infantry = {
+			soft_attack = 0.15
+			defense = 0.15
+		}
+	}
+
+	purists_tech_proton_sf = { 
+		dependencies = {
+			blocked_tech = 1
+		}
+		category_special_forces = {
+			hard_attack =  0.20
+			breakthrough = 0.20
 		}
 	}
 }

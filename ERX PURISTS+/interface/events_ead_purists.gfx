@@ -72,27 +72,122 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_ead_divide_01"
-		textureFile = "gfx/interface/events_pictures/ead_divide_01.tga"
+		textureFile = "gfx/interface/events_pictures/ead_divide_01.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ead_divide_02"
-		textureFile = "gfx/interface/events_pictures/ead_divide_02.tga"
+		textureFile = "gfx/interface/events_pictures/ead_divide_02.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ead_divide_03"
-		textureFile = "gfx/interface/events_pictures/ead_divide_03.tga"
+		textureFile = "gfx/interface/events_pictures/ead_divide_03.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ead_divide_04"
-		textureFile = "gfx/interface/events_pictures/ead_divide_04.tga"
+		textureFile = "gfx/interface/events_pictures/ead_divide_04.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_rookies02"
+		textureFile = "gfx/interface/events_pictures/ead_rookies02.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_bloomfield_01"
+		textureFile = "gfx/interface/events_pictures/ead_bloomfield_01.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_bloomfield_02"
+		textureFile = "gfx/interface/events_pictures/ead_bloomfield_02.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_bloomfield_03"
+		textureFile = "gfx/interface/events_pictures/ead_bloomfield_03.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_mojave01"
+		textureFile = "gfx/interface/events_pictures/ead_mojave01.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_mojave02"
+		textureFile = "gfx/interface/events_pictures/ead_mojave02.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_mojave03"
+		textureFile = "gfx/interface/events_pictures/ead_mojave03.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_mojave04"
+		textureFile = "gfx/interface/events_pictures/ead_mojave04.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_mojave05"
+		textureFile = "gfx/interface/events_pictures/ead_mojave05.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_mojave06"
+		textureFile = "gfx/interface/events_pictures/ead_mojave06.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_mojave07"
+		textureFile = "gfx/interface/events_pictures/ead_mojave07.dds"
 	}
 
 	spriteType = {
 		name = "GFX_ead_event_enclave_base"
 		textureFile = "gfx/interface/events_pictures/ead_event_enclave_base.tga"
+	}
+
+	spriteType = {
+		name = "GFX_ead_marshalls01"
+		textureFile = "gfx/interface/events_pictures/ead_marshalls01.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_marshalls02"
+		textureFile = "gfx/interface/events_pictures/ead_marshalls02.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_proton_axe_pic"
+		textureFile = "gfx/interface/events_pictures/ead_proton_axe_pic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_bos01"
+		textureFile = "gfx/interface/events_pictures/ead_bos01.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_bos02"
+		textureFile = "gfx/interface/events_pictures/ead_bos02.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_safespings01"
+		textureFile = "gfx/interface/events_pictures/ead_safespings01.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_iron01"
+		textureFile = "gfx/interface/events_pictures/ead_iron01.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_iron02"
+		textureFile = "gfx/interface/events_pictures/ead_iron02.dds"
 	}
 
 	spriteType = {
@@ -173,6 +268,41 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ead_cazaclaw_attack"
 		textureFile = "gfx/interface/ideas/ead_cazaclaw_attack.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_enclave_facilities"
+		textureFile = "gfx/interface/ideas/ead_enclave_facilities.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_idea_orbital_strike"
+		textureFile = "gfx/interface/ideas/ead_idea_orbital_strike.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_idea_bomb"
+		textureFile = "gfx/interface/ideas/ead_idea_bomb.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_redemned_traitors"
+		textureFile = "gfx/interface/ideas/ead_redemned_traitors.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_bos_skull"
+		textureFile = "gfx/interface/ideas/ead_bos_skull.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_enclave_marshalls"
+		textureFile = "gfx/interface/ideas/ead_enclave_marshalls.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_safe_springs_idea"
+		textureFile = "gfx/interface/ideas/ead_safe_springs_idea.dds"
 	}
 
 	spriteType = {
@@ -295,9 +425,80 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/ead_icon_tunneler.dds"
 	}
 
+
 	spriteType = {
-		name = "GFX_idea_ead_icon_cazaclaw"
-		textureFile = "gfx/interface/icons/ead_icon_cazaclaw.dds"
+		name = "GFX_idea_ead_icon_facilities"
+		textureFile = "gfx/interface/icons/ead_icon_facilities.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_science"
+		textureFile = "gfx/interface/icons/ead_icon_science.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_major_bunker"
+		textureFile = "gfx/interface/icons/ead_icon_major_bunker.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_intell"
+		textureFile = "gfx/interface/icons/ead_icon_intell.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_air"
+		textureFile = "gfx/interface/icons/ead_icon_air.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_air02"
+		textureFile = "gfx/interface/icons/ead_icon_air02.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_sigma"
+		textureFile = "gfx/interface/icons/ead_icon_sigma.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_training"
+		textureFile = "gfx/interface/icons/ead_icon_training.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_command"
+		textureFile = "gfx/interface/icons/ead_icon_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_production"
+		textureFile = "gfx/interface/icons/ead_icon_production.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_trafic"
+		textureFile = "gfx/interface/icons/ead_icon_trafic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_orbital_strike"
+		textureFile = "gfx/interface/icons/ead_icon_orbital_strike.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_rogue_rangers"
+		textureFile = "gfx/interface/icons/ead_rogue_rangers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_axe_icon"
+		textureFile = "gfx/interface/icons/ead_axe_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_icon_protectron"
+		textureFile = "gfx/interface/icons/ead_icon_protectron.dds"
 	}
 }
 
