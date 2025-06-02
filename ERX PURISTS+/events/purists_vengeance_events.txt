@@ -169,7 +169,24 @@ country_event = { #Brotherhood has fallen
 	}
 	option = { 
 		name = purists_ead_vengeance.7.c
-		add_ideas = Purists_bos_recruite
+		trigger = {
+			has_completed_focus = enc_vlt_core
+		}
+		custom_effect_tooltip = honory_humans_tt
+		add_dynamic_modifier = {
+			modifier = ead_traitors_and_mutants
+		}
+		add_to_variable = { traitor_garrison = 0.20 }
+		add_to_variable = { traitors_partisan_active = 0.10 }
+		add_to_variable = { traitors_partisan = -0.20 }
+		add_to_variable = { traitros_st_pen = -0.10 }
+		add_to_variable = { traitors_ws_pen = -0.10 }
+		add_to_variable = { traitors_pp_pen = -0.20 }
+		add_to_variable = { traitors_org = -0.20 }
+		add_to_variable = { traitors_org_reg = -0.20 }
+		add_to_variable = { traitors_special_cap = 0.20 }
+		add_to_variable = { traitors_special_min = 200 }
+		add_manpower = 3000
 		generate_character = {
 			token_base = ead_scribe_hellen
 		} 
@@ -333,6 +350,10 @@ country_event = { #Fate of the NCR useful idiots
 
 	option = { 
 		name = purists_ead_vengeance.11.b
+		trigger = {
+			has_completed_focus = enc_vlt_core
+		}
+		custom_effect_tooltip = honory_humans_tt
 		custom_effect_tooltip = purists_ead_vengeance.11.b.tt
 		add_ideas = Purists_enclave_ncr_science
 		add_ideas = Purists_enclave_penal_battalion
@@ -457,5 +478,108 @@ country_event = { #The Tunnelers
 		add_ideas = Purists_riches_earth
 		set_country_flag = tuunnelers_tamed
 	}
+}
 
+country_event = { #Fate Maxson
+	id = purists_ead_vengeance.18
+	title = purists_ead_vengeance.18.t
+	desc = purists_ead_vengeance.18.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_vengeance.18.a
+		country_event = {
+			id = purists_ead_vengeance.19 days = 5
+		} 
+	}
+
+	option = { 
+		name = purists_ead_vengeance.18.b
+		custom_effect_tooltip = honory_humans_tt
+		trigger = {
+				has_completed_focus = enc_vlt_core
+		}
+		country_event = {
+			id = purists_ead_vengeance.20 days = 5
+		} 
+	}
+
+	option = { 
+		name = purists_ead_vengeance.18.c
+		custom_effect_tooltip = honory_humans_tt
+		custom_effect_tooltip = traitors_tt
+		trigger = {
+				has_completed_focus = enc_vlt_core
+				has_dynamic_modifier = { modifier = ead_traitors_and_mutants }
+		}
+		country_event = {
+			id = purists_ead_vengeance.21 days = 5
+		} 
+	}
+}
+
+country_event = { #Fate Maxson Purify
+	id = purists_ead_vengeance.19
+	title = purists_ead_vengeance.19.t
+	desc = purists_ead_vengeance.19.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_vengeance.19.a
+		245 = {
+			add_manpower = -20000
+		}
+		add_ideas = Purists_message_sent
+	}
+}
+
+country_event = { #Fate Maxson Less Killing
+	id = purists_ead_vengeance.20
+	title = purists_ead_vengeance.20.t
+	desc = purists_ead_vengeance.20.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_vengeance.20.a
+		245 = {
+			add_manpower = -10000
+		}
+		add_political_power = 300
+		add_war_support = 0.05
+		add_stability = 0.05
+	}
+}
+
+country_event = { #Fate Maxson BoS
+	id = purists_ead_vengeance.21
+	title = purists_ead_vengeance.21.t
+	desc = purists_ead_vengeance.21.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_vengeance.21.a
+		custom_effect_tooltip = purists_ead_vengeance.21.a.tt
+		add_state_core = 245
+		245 = {
+			set_state_name = "Maxson to Refuge of Steel"
+		}
+
+		set_province_name = {
+			id = 3424
+			name = "Maxson to Refuge of Steel"
+		}
+
+		add_to_variable = { traitor_garrison = 0.05 }
+		add_to_variable = { traitors_partisan_active = 0.10 }
+		add_to_variable = { traitors_partisan = -0.05 }
+		add_to_variable = { traitros_st_pen = -0.03 }
+		add_to_variable = { traitors_ws_pen = -0.03 }
+		add_to_variable = { traitors_pp_pen = -0.05 }
+		add_to_variable = { traitors_special_cap = 0.05 }
+		add_to_variable = { traitors_special_min = 50 }
+	}
 }

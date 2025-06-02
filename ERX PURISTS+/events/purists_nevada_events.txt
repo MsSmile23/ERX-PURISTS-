@@ -1,0 +1,174 @@
+#######################################
+# Nevada Events 
+#######################################
+
+add_namespace = purists_ead_nevada
+
+country_event = { #Desert Rangers were dead
+	id = purists_ead_nevada.1
+	title = purists_ead_nevada.1.t
+	desc = purists_ead_nevada.1.d
+	picture = GFX_ead_marshalls01
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_nevada.1.a
+		set_country_flag = ranger_citadel_enclave
+		add_ideas = Purists_enclave_marshalls
+		custom_effect_tooltip = enclave_facilities_tt
+		set_technology = {
+			purists_marshall_tech_1 = 1
+		}
+	}
+}
+
+country_event = { #Desert Rangers were alive
+	id = purists_ead_nevada.2
+	title = purists_ead_nevada.2.t
+	desc = purists_ead_nevada.2.d
+	picture = GFX_ead_marshalls02
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_nevada.2.a
+		set_country_flag = ranger_citadel_enclave
+		add_ideas = Purists_enclave_marshalls
+		custom_effect_tooltip = enclave_facilities_tt
+		set_technology = {
+			purists_marshall_tech_1 = 1
+		}
+	}
+}
+
+country_event = { #Guardians were dead
+	id = purists_ead_nevada.3
+	title = purists_ead_nevada.3.t
+	desc = purists_ead_nevada.3.d
+	picture = GFX_ead_bos01
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_nevada.3.a
+		set_country_flag = gdr_secured
+		custom_effect_tooltip = enclave_facilities_tt
+	}
+}
+
+country_event = { #Guardians were alive
+	id = purists_ead_nevada.4
+	title = purists_ead_nevada.4.t
+	desc = purists_ead_nevada.4.d
+	picture = GFX_ead_bos01
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_nevada.4.a
+		set_country_flag = gdr_secured
+		custom_effect_tooltip = enclave_facilities_tt
+	}
+}
+
+country_event = { #Mojave BoS were dead
+	id = purists_ead_nevada.5
+	title = purists_ead_nevada.5.t
+	desc = purists_ead_nevada.5.d
+	picture = GFX_ead_bos02
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_nevada.5.a
+		set_country_flag = hid_val_secured
+		custom_effect_tooltip = enclave_facilities_tt
+	}
+}
+
+country_event = { #Gas the BOS
+	id = purists_ead_nevada.6
+	title = purists_ead_nevada.6.t
+	desc = purists_ead_nevada.6.d
+	picture = GFX_ead_bos02
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_nevada.6.a
+		set_country_flag = hid_val_secured
+		custom_effect_tooltip = enclave_facilities_tt
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = 200
+	}
+}
+
+country_event = { #Save the BoS?
+	id = purists_ead_nevada.7
+	title = purists_ead_nevada.7.t
+	desc = purists_ead_nevada.7.d
+	picture = GFX_ead_bos02
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_nevada.7.a
+		add_stability = -0.05
+		add_war_support = -0.05
+		custom_effect_tooltip = traitors_tt
+		country_event = {
+			id = purists_ead_nevada.8
+			days = 5
+		}
+	}
+	option = { 
+		name = purists_ead_nevada.7.b
+		country_event = {
+			id = purists_ead_nevada.9
+			days = 5
+		}
+	}
+}
+
+country_event = { #You are a good boy)
+	id = purists_ead_nevada.8
+	title = purists_ead_nevada.8.t
+	desc = purists_ead_nevada.8.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_nevada.8.a
+		set_country_flag = hid_val_secured
+		custom_effect_tooltip = enclave_facilities_tt
+		add_manpower = 600
+		add_to_variable = { traitor_garrison = 0.05 }
+		add_to_variable = { traitors_partisan_active = 0.10 }
+		add_to_variable = { traitors_partisan = -0.05 }
+		add_to_variable = { traitros_st_pen = -0.03 }
+		add_to_variable = { traitors_ws_pen = -0.03 }
+		add_to_variable = { traitors_pp_pen = -0.05 }
+		add_to_variable = { traitors_special_cap = 0.05 }
+		add_to_variable = { traitors_special_min = 100 }
+	}
+}
+
+country_event = { #BoS is dead. Again
+	id = purists_ead_nevada.9
+	title = purists_ead_nevada.9.t
+	desc = purists_ead_nevada.9.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_nevada.9.a
+		set_country_flag = hid_val_secured
+		custom_effect_tooltip = enclave_facilities_tt
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = 200
+	}
+}
+

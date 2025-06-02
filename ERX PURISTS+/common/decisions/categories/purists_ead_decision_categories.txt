@@ -35,3 +35,27 @@ Purists_California_fate = {
 		controls_state = 253
 	}
 }
+
+Purists_Enclave_Facilities = { 
+	icon = GFX_idea_ead_icon_facilities
+	allowed = {
+		tag = ERB
+	}
+	priority = 2
+	visible = {
+		has_completed_focus = enc_purity
+		has_completed_focus = enc_DoD_start
+		has_country_flag = purists_restore_facilities
+	}
+}
+
+Purists_Fate_Nevada = { 
+	icon = GFX_idea_enc_nevada_protectron_hub
+	allowed = {
+		tag = ERB
+	}
+	priority = 2
+	visible = {
+		has_completed_focus = enc_purity
+	}
+}

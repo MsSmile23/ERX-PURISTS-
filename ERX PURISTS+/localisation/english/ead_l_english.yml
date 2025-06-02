@@ -96,6 +96,37 @@ ead_cryo_genius_desc: "A former NCR scientist, Dr. Edwin Royst has proven his wo
 ead_medical_expert: "Medical Expert"
 ead_medical_expert_desc: "As a student and close colleague of Dr. Royst, Bernard has also shown us her usefulness. Her experimental formulas for Rad-X and Rad-Away looks promising."
 
+ead_death_to_the_aliens: "Alien Killer"
+
+ead_traitor_scum: "Jameson's Traitor"
+
+ead_general_elite: "General of the Elite"
+ead_general_elite_desc: "Former leader of so called Richardson Elite, general Rowlandson proved to be a valuable addition to Enclave armed forces. With his fast expertise and know-how, his commands skill are invaluable"
+
+ead_sciense_elite: "Plasma Researcher"
+ead_sciense_elite_desc: "Adam Smitt was one of the men, responsible for keeping Richardson Elites armed and well supplied. He conducted numerous researches in plasma field, and now is willing to share with us."
+
+ead_science_jameson: "Mojave Ingenuity"
+ead_science_jameson_desc: "Despite being one of the Jameson's traitors, Albert Derral is surely glad, that we didnt kill him. And he already proved himself useful, by sharing his vast expertise in energy field."
+
+ead_air_jameson: "Mojave Air Marshall"
+ead_air_jameson_desc: "Former commander of the Mojave Enclave Air Arm. Marshal Swanson has had to make due with little, and has learned a great deal of rationing fuel and conducting wasteland aerial warfare. Wagner was right, by choosing him. His expertise is more than welcome. "
+
+ead_air_hemmers: "Richardson Elite Air Marshall"
+ead_air_hemmers_desc: "Air Marshal James Hemmers was a main lead of air power of Richardson Elite. While his counterpart was focused on resourcefulness, James, under orders of his general, was more concern of covering more ground, to deal with evergrowing NCR presense."
+
+ead_site28_general: "The Man Who Saved the World"
+ead_site28_general_desc: "General Tower. Proud and stoic defender of human race, who managed to repeal numerous alien invasions. Only through his skill and abilities we can still speak. While, in the past years he was mostly dealing with extra-terrestrial threates, he is a welcome addition to our High Command."
+
+ead_site28_sciense: "Field Research of Enclave Fortress"
+ead_site28_sciense_desc: "Being a decorate pre war scientist, who exceeded in power armor research, Adam found a lot of interesting stuff, while dealing with aliens. He managed to integrate some of their technologies in Enclave APA. And now, when he have all the riches of post war America, he can go as wild as he can."
+
+ead_site28_locals: "People Person"
+ead_site28_locals_desc: "Shepherd is a strange commander. According to his supperious, who often use locals, to complete various tasks. While, in the past, even during Richardson administration, we use to deal with wastelanders, but now... Hm. But still, his results never desopoints."
+
+ead_robo_spring_plant: "Flesh is weak"
+ead_robo_spring_plant_desc: "Z-52 is a controll unit of Safe Spings production plant. He offered several interesting ideas on how to improve our combat robots."
+
 #Characters
 
 ead_trainer_james_adams_name: "Master sergeant James Adams"
@@ -127,9 +158,25 @@ ead_mobius_name: "Doctor Mobius"
 ead_allen_morgan_name: "Allen Morgan"
 ead_edwin_royst_name: "Doctor Edwin Royst"
 ead_lydia_bernard_name: "Doctor Lydia Bernard"
+ead_field_researcher_goodspeed_name: "Chief Field Researcher Stanley Goodspeed"
+ead_researcher_smitt_name: "Chief Research Adam Smitt"
+ead_commander_shephard_name: "Commnder John Shepherd"
+ead_general_tower_name: "General Francis Tower"
+ead_general_rowlandson_name: "General Rowlandson"
+ead_james_hemmers_name: "Air Marshall James Hemmers"
+eead_prcessor_z52_name: "Unit Z-52"
 
 
 #Other
 
 purists_sigma: "Sigma Units"
+marshall_fireteam_infantry_unit: "Marshalls Fireteam"
+marshall_demolitions_infantry_unit: "Marshalls Demolition Team"
+marshall_infantry_unit: "Marshalls Team"
+marshall_detachement_unit: "Marshalls Detachment"
+
+
+honory_humans_tt: "Avialable because you decided to to expand human definition."
+traitors_tt: "Avialable because you decided to use Brotherhood."
+enclave_facilities_tt: "New facility unlocked."
 

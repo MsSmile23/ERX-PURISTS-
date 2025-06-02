@@ -1,0 +1,52 @@
+spriteTypes = {
+	spriteType = { 
+		name = "GFX_unit_marshall_detachement_unit_icon_medium"						
+		texturefile = "gfx/interface/counters/divisions_large/unit_marshall_detachement_unit_icon.dds"		
+		noOfFrames = 2 
+	}
+
+	spriteType = { 
+		name = "GFX_unit_marshall_demolitions_infantry_unit_icon_medium"						
+		texturefile = "gfx/interface/counters/divisions_large/unit_marshall_demo_icon.dds"		
+		noOfFrames = 2 
+	}
+
+	spriteType = { 
+		name = "GFX_unit_marshall_fireteam_infantry_unit_icon_medium"						
+		texturefile = "gfx/interface/counters/divisions_large/unit_marshall_fireteam_icon.dds"		
+		noOfFrames = 2 
+	}
+
+	spriteType = { 
+		name = "GFX_unit_marshall_infantry_unit_icon_medium"						
+		texturefile = "gfx/interface/counters/divisions_large/unit_marshall_infantry_icon.dds"		
+		noOfFrames = 2 
+	}
+
+	#############################################################################
+	### Small Icons													      ###
+
+	spriteType = { 
+		name = "GFX_unit_marshall_detachement_icon_white"							
+		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_marshall_detachement_unit_icon.dds"		
+		noOfFrames = 2 
+	}
+
+	spriteType = { 
+		name = "GFX_unit_marshall_demolitions_infantry_icon_white"							
+		texturefile = "gfx/interface/counters/divisions_small/small_unit_marshall_demo_icon.dds"		
+		noOfFrames = 2 
+	}
+
+	spriteType = { 
+		name = "GFX_unit_marshall_fireteam_infantry_icon_white"							
+		texturefile = "gfx/interface/counters/divisions_small/small_unit_marshall_fireteam_icon.dds"		
+		noOfFrames = 2 
+	}
+
+	spriteType = { 
+		name = "GFX_unit_marshall_infantry_infantry_icon_white"							
+		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_marshall_inf_unit_icon.dds"		
+		noOfFrames = 2 
+	}
+}

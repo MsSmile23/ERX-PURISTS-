@@ -1,0 +1,367 @@
+sub_units = {
+
+	marshall_fireteam_infantry_unit = {
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 600
+		active = no
+
+		type = {
+			infantry
+			artillery
+		}
+
+		group = special_forces_group
+
+		categories = {
+			category_army
+			category_front_line
+			category_special_forces
+			category_infantry_and_special_forces
+			category_fireteams
+		}
+
+		combat_width = 2
+
+		#Size Definitions
+		max_strength = 50
+		max_organisation = 85
+		default_morale = 0.35
+		manpower = 15 # 1000
+
+		soft_attack = 0.1
+		hard_attack = 0.1
+		defense = 0.2
+		breakthrough = 0.1
+
+		#Misc Abilities
+		training_time = 150
+		suppression = 1
+		weight = 0.6
+		can_be_parachuted = yes
+
+		supply_consumption = 0.25
+		can_be_parachuted = yes
+		need = {
+			fireteam_equipment = 15
+			spec_ops_equipment  = 15
+			dogs_equipment = 5
+			support_robot_equipment = 5
+		}
+
+		transport = spec_ops_equipment
+			
+		jungle = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		marsh = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		mountain = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		desert = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		amphibious = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		river = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		essential = {
+			fireteam_equipment
+			spec_ops_equipment
+		}
+	}
+
+	marshall_demolitions_infantry_unit = {
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 600
+		active = no
+
+		type = {
+			infantry
+			artillery
+		}
+
+		group = special_forces_group
+
+		categories = {
+			category_army
+			category_front_line
+			category_special_forces
+			category_infantry_and_special_forces
+			category_demolitions
+		}
+
+		combat_width = 2
+
+		#Size Definitions
+		max_strength = 50
+		max_organisation = 85
+		default_morale = 0.35
+		manpower = 15 # 1000
+
+		soft_attack = 0.1
+		hard_attack = 0.1
+		defense = 0.1
+		breakthrough = 0.2
+
+		#Misc Abilities
+		training_time = 150
+		suppression = 1.2
+		weight = 0.6
+		can_be_parachuted = yes
+
+		supply_consumption = 0.25
+
+		can_be_parachuted = yes
+		essential = {
+			demolitions_equipment
+			spec_ops_equipment
+		}
+
+		transport = spec_ops_equipment
+
+		jungle = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		marsh = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		mountain = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		desert = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		amphibious = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		river = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+
+		need = {
+			demolitions_equipment = 15
+			spec_ops_equipment  = 15
+			dogs_equipment = 5
+			support_robot_equipment = 5
+		}
+	}
+
+	marshall_infantry_unit = {
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 600
+		active = no
+
+		type = {
+			infantry
+			artillery
+		}
+
+		group = special_forces_group
+
+		categories = {
+			category_army
+			category_front_line
+			category_special_forces
+			category_infantry_and_special_forces
+		}
+
+		combat_width = 2
+
+		#Size Definitions
+		max_strength = 50
+		max_organisation = 85
+		default_morale = 0.35
+		manpower = 15 # 1000
+
+		soft_attack = 0.1
+		hard_attack = 0.1
+		defense = 0.1
+		breakthrough = 0.2
+
+		#Misc Abilities
+		training_time = 150
+		suppression = 1.2
+		weight = 0.6
+		can_be_parachuted = yes
+
+		supply_consumption = 0.25
+
+		can_be_parachuted = yes
+		essential = {
+			infantry_equipment
+			spec_ops_equipment
+		}
+
+		transport = spec_ops_equipment
+
+		jungle = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		marsh = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		mountain = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		desert = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		amphibious = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		river = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+
+		need = {
+			infantry_equipment = 15
+			spec_ops_equipment  = 15
+			dogs_equipment = 5
+			support_robot_equipment = 5
+		}
+	}
+
+	marshall_detachement_unit = {
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 600
+		active = no
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+			armor
+		}
+
+		group = support
+
+		categories = {
+			category_army
+			category_front_line
+			category_special_forces
+			category_infantry_and_special_forces
+		}
+
+		combat_width = 5
+
+		#Size Definitions
+		max_strength = 70
+		max_organisation = 100
+		default_morale = 0.35
+		manpower = 60 # 1000
+
+		soft_attack = 0.1
+		hard_attack = 0.1
+		defense = 0.2
+		breakthrough = 0.1
+
+		#Misc Abilities
+		training_time = 150
+		suppression = 5
+		weight = 1.2
+		can_be_parachuted = yes
+
+		recon = 1.7
+		initiative = 0.2
+		supply_consumption_factor = 0.3
+
+		supply_consumption = 1.25
+		can_be_parachuted = yes
+		need = {
+			fireteam_equipment = 10
+			spec_ops_equipment  = 60
+			demolitions_equipment = 10
+			anti_tank_equipment = 5
+			anti_air_equipment = 5
+			infantry_equipment = 30
+			dogs_equipment = 15
+			support_robot_equipment = 15
+			combat_robot_equipment = 10
+		}
+
+		transport = spec_ops_equipment
+			
+		jungle = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		marsh = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		mountain = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		desert = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		amphibious = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		river = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		essential = {
+			spec_ops_equipment
+		}
+	}
+	
+}

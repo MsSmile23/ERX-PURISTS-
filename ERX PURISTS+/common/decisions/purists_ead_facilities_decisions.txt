@@ -1,0 +1,856 @@
+Purists_Enclave_Facilities = {
+	Purists_restore_sad = {
+		cost = 100
+		days_remove = 60
+		icon = GFX_idea_ead_icon_major_bunker
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			has_completed_focus = enc_fortress_sierra
+		}
+		remove_effect = {
+			country_event = { id = purists_enclave_facilities.2 }
+			add_offsite_building = {
+					type = arms_factory
+					level = 3
+			}
+
+			add_offsite_building = {
+					type = industrial_complex
+					level = 3
+			}
+		}
+	}
+
+	Purists_restore_site28 = {
+		cost = 100
+		days_remove = 20
+		icon = GFX_idea_ead_icon_science
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+			controls_state = 364
+		}
+		remove_effect = {
+			country_event = { id = purists_enclave_facilities.3 }
+		}
+	}
+
+	Purists_restore_bloomfield = {
+		cost = 100
+		days_remove = 20
+		icon = GFX_idea_ead_icon_air02
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+			controls_state = 381
+		}
+		remove_effect = {
+			country_event = { id = purists_enclave_facilities.6 }
+		}
+	}
+
+	Purists_restore_fte = {
+		cost = 100
+		days_remove = 20
+		icon = GFX_idea_ead_icon_major_bunker
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+			controls_state = 67
+			controls_state = 106
+		}
+		remove_effect = {
+			country_event = { id = purists_enclave_facilities.9 }
+		}
+	}
+
+	Purists_restore_guradian = {
+		cost = 100
+		days_remove = 60
+		icon = GFX_idea_ead_icon_major_bunker
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+			controls_state = 210
+			has_country_flag = gdr_secured
+		}
+		remove_effect = {
+			country_event = { id = purists_enclave_facilities.16 }
+		}
+	}
+
+	Purists_restore_hidden = {
+		cost = 100
+		days_remove = 60
+		icon = GFX_idea_ead_icon_major_bunker
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+			controls_state = 46
+			has_country_flag = hid_val_secured
+		}
+		remove_effect = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+			46 = {
+				add_building_construction = {
+						type = air_base
+						level = 10
+						instant_build = yes
+				}
+				add_building_construction = {
+						type = anti_air_building
+						level = 5
+						instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 5
+			}
+			
+			add_to_variable = { ead_weekly_manpower = 1 }
+			add_to_variable = { ead_special_forces_min = 40 }
+			add_to_variable = { ead_research_speed_factor = 0.01 }
+			add_to_variable = { ead_max_command_power = 50 }
+			add_to_variable = { ead_supply_node_range = 0.08 }
+			add_to_variable = { ead_supply_factor = 0.08 }
+			add_to_variable = { ead_industrial_capacity_factory = 0.06 }
+		}
+	}
+
+	Purists_restore_sechub = {
+		cost = 100
+		days_remove = 60
+		icon = GFX_idea_ead_icon_major_bunker
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+			controls_state = 371
+		}
+		remove_effect = {
+			country_event = { id = purists_enclave_facilities.17 }
+		}
+	}
+
+	Purists_restore_iron_mountain = {
+		cost = 100
+		days_remove = 60
+		icon = GFX_idea_ead_icon_major_bunker
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+			controls_state = 337
+			has_country_flag = ead_site28_restored
+		}
+		remove_effect = {
+			country_event = { id = purists_enclave_facilities.18 }
+		}
+	}
+
+	Purists_build_major_base = {
+        cost = 400
+		icon = GFX_idea_ead_icon_major_bunker
+		modifier = {
+			civilian_factory_use = 20
+		}
+		days_remove = 120
+		days_re_enable = 20
+		available = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 100
+			}
+
+			has_equipment = {
+				power_armor_equipment > 50
+			}
+
+			has_equipment = {
+				spec_ops_equipment > 50
+			}
+
+			has_equipment = {
+				vb_transport_plane_equipment > 20
+			}
+
+			has_equipment = {
+				combat_robot_equipment > 50
+			}
+
+			has_equipment = {
+				demolitions_equipment > 30
+			}
+
+			has_equipment = {
+				fireteam_equipment > 30
+			}
+
+			has_equipment = {
+				anti_tank_equipment > 30
+			}
+		}
+        remove_effect = {
+			add_manpower = -500
+			add_equipment_to_stockpile = {
+				type = power_armor_equipment
+				amount = -50
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -100
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+			add_equipment_to_stockpile = {
+				type = demolitions_equipment
+				amount = -30
+			}
+			add_equipment_to_stockpile = {
+				type = fireteam_equipment
+				amount = -30
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = -30
+			}
+			add_equipment_to_stockpile = {
+				type = combat_robot_equipment
+				amount = -50
+			}
+			add_equipment_to_stockpile = {
+				type = vb_transport_plane_equipment
+				amount = -20
+			}
+			add_equipment_to_stockpile = {
+				type = spec_ops_equipment
+				amount = -50
+			}
+			add_to_variable = { ead_country_resource_energy = -15 }
+			add_to_variable = { ead_country_resource_water = -25 }
+			add_to_variable = { ead_country_resource_advanced = -5 }
+			add_to_variable = { ead_country_resource_composites = -5 }
+			add_to_variable = { ead_country_resource_circuitry = -5 }
+			add_to_variable = { ead_country_resource_metal = -25 }
+			add_to_variable = { ead_civilian_factory_use = 1 }
+			add_to_variable = { ead_enclave_aa_power = 0.05 }
+			add_to_variable = { ead_enclave_aa_hit = 0.025 }
+			add_to_variable = { ead_max_command_power = 15 }
+			add_to_variable = { ead_research_speed_factor = 0.015 }
+			add_to_variable = { ead_max_planning = 0.025 }
+			add_to_variable = { ead_special_forces_min = 10 }
+			add_to_variable = { ead_supply_factor = 0.025 }
+			add_to_variable = { ead_supply_node_range = 0.025 }
+			add_to_variable = { ead_crypto_strength = 0.02 }
+			add_to_variable = { ead_decryption_power = 5 }
+			add_to_variable = { ead_planning_speed = 0.025 }
+			add_to_variable = { ead_industrial_capacity_factory = 0.035 }
+			add_to_variable = { ead_industrial_capacity_dockyard = 0.035 }
+
+			add_offsite_building = {
+					type = arms_factory
+					level = 2
+			}
+
+			add_offsite_building = {
+					type = industrial_complex
+					level = 2
+			}
+
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+    }
+
+	Purists_build_research_facility = {
+        cost = 100
+		icon = GFX_idea_ead_icon_science
+		modifier = {
+			civilian_factory_use = 4
+		}
+		available = {
+			has_equipment = {
+				support_equipment > 30
+			}
+
+			has_equipment = {
+				infantry_equipment > 20
+			}
+
+			has_equipment = {
+				power_armor_equipment > 10
+			}
+		}
+		days_remove = 60
+		days_re_enable = 20
+        remove_effect = {
+			add_manpower = -50
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -30
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -20
+			}
+			add_equipment_to_stockpile = {
+				type = power_armor_equipment
+				amount = -10
+			}
+			add_to_variable = { ead_country_resource_energy = -10 }
+			add_to_variable = { ead_country_resource_water = -10 }
+			add_to_variable = { ead_country_resource_circuitry = -2 }
+			add_to_variable = { ead_research_speed_factor = 0.025 }
+		}
+    }
+
+	Purists_build_intell_bunker = {
+        cost = 100
+		icon = GFX_idea_ead_icon_intell
+		modifier = {
+			civilian_factory_use = 4
+		}
+		available = {
+			has_equipment = {
+				support_equipment > 30
+			}
+
+			has_equipment = {
+				infantry_equipment > 20
+			}
+
+			has_equipment = {
+				power_armor_equipment > 10
+			}
+		}
+		days_remove = 60
+		days_re_enable = 20
+        remove_effect = {
+			add_manpower = -50
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -30
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -20
+			}
+			add_equipment_to_stockpile = {
+				type = power_armor_equipment
+				amount = -10
+			}
+			add_to_variable = { ead_country_resource_energy = -5 }
+			add_to_variable = { ead_country_resource_water = -10 }
+			add_to_variable = { ead_air_intelligence = 0.015 }
+			add_to_variable = { ead_navy_intelligence = 0.015 }
+			add_to_variable = { ead_army_intelligence = 0.015 }
+			add_to_variable = { ead_crypto_strength = 0.025 }
+			add_to_variable = { ead_decryption_power = 2 }
+		}
+    }
+
+	Purists_build_supply_depo = {
+        cost = 100
+		icon = GFX_idea_ead_icon_air
+		modifier = {
+			civilian_factory_use = 4
+		}
+		days_remove = 60
+		days_re_enable = 20
+		available = {
+			has_equipment = {
+				support_equipment > 100
+			}
+
+			has_equipment = {
+				infantry_equipment > 20
+			}
+
+			has_equipment = {
+				power_armor_equipment > 10
+			}
+
+			has_equipment = {
+				vb_transport_plane_equipment > 50
+			}
+		}
+        remove_effect = {
+			add_manpower = -100
+			add_equipment_to_stockpile = {
+				type = vb_transport_plane_equipment
+				amount = -50
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -100
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -20
+			}
+			add_equipment_to_stockpile = {
+				type = power_armor_equipment
+				amount = -10
+			}
+			add_to_variable = { ead_country_resource_energy = -2 }
+			add_to_variable = { ead_country_resource_water = -10 }
+			add_to_variable = { ead_country_resource_metal = -10 }
+			add_to_variable = { ead_supply_node_range = 0.025 }
+			add_to_variable = { ead_supply_factor = 0.025 }
+		}
+    }
+
+	Purists_build_air_service = {
+        cost = 100
+		icon = GFX_idea_ead_icon_air02
+		modifier = {
+			civilian_factory_use = 4
+		}
+		available = {
+			has_equipment = {
+				support_equipment > 100
+			}
+
+			has_equipment = {
+				infantry_equipment > 20
+			}
+
+			has_equipment = {
+				power_armor_equipment > 10
+			}
+
+			has_equipment = {
+				vb_transport_plane_equipment > 20
+			}
+		}
+		days_remove = 60
+		days_re_enable = 20
+        remove_effect = {
+			add_manpower = -100
+			add_equipment_to_stockpile = {
+				type = vb_transport_plane_equipment
+				amount = -20
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -100
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -20
+			}
+			add_equipment_to_stockpile = {
+				type = power_armor_equipment
+				amount = -10
+			}
+			add_to_variable = { ead_country_resource_energy = -2 }
+			add_to_variable = { ead_country_resource_water = -10 }
+			add_to_variable = { ead_country_resource_metal = -10 }
+			add_to_variable = { ead_air_range_factor = 0.035 }
+			add_to_variable = { ead_ground_attack_factor = 0.035 }
+		}
+    }
+
+	Purists_build_special_forces = {
+        cost = 100
+		icon = GFX_idea_ead_icon_sigma
+		modifier = {
+			civilian_factory_use = 4
+		}
+		days_remove = 60
+		days_re_enable = 20
+		available = {
+			has_equipment = {
+				support_equipment > 100
+			}
+
+			has_equipment = {
+				infantry_equipment > 200
+			}
+
+			has_equipment = {
+				power_armor_equipment > 100
+			}
+
+			has_equipment = {
+				spec_ops_equipment > 100
+			}
+
+			has_equipment = {
+				demolitions_equipment > 100
+			}
+
+			has_equipment = {
+				fireteam_equipment > 100
+			}
+
+			has_equipment = {
+				anti_tank_equipment > 100
+			}
+		}
+        remove_effect = {
+			add_manpower = -50
+			add_equipment_to_stockpile = {
+				type = power_armor_equipment
+				amount = -100
+			}
+			add_equipment_to_stockpile = {
+				type = spec_ops_equipment
+				amount = -100
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -100
+			}
+			add_equipment_to_stockpile = {
+				type = demolitions_equipment
+				amount = -50
+			}
+			add_equipment_to_stockpile = {
+				type = fireteam_equipment
+				amount = -50
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = -50
+			}
+			add_to_variable = { ead_country_resource_energy = -2 }
+			add_to_variable = { ead_country_resource_water = -10 }
+			add_to_variable = { ead_special_forces_min = 15 }
+		}
+    }
+
+	Purists_build_command_center = {
+        cost = 150
+		icon = GFX_idea_ead_icon_command
+		modifier = {
+			civilian_factory_use = 4
+		}
+		days_remove = 60
+		days_re_enable = 20
+		available = {
+			has_equipment = {
+				support_equipment > 100
+			}
+
+			has_equipment = {
+				infantry_equipment > 100
+			}
+
+			has_equipment = {
+				power_armor_equipment > 40
+			}
+
+			has_equipment = {
+				spec_ops_equipment > 40
+			}
+		}
+        remove_effect = {
+			add_manpower = -50
+			add_equipment_to_stockpile = {
+				type = power_armor_equipment
+				amount = -40
+			}
+			add_equipment_to_stockpile = {
+				type = spec_ops_equipment
+				amount = -40
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -100
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -100
+			}
+			add_to_variable = { ead_country_resource_energy = -7 }
+			add_to_variable = { ead_country_resource_water = -15 }
+			add_to_variable = { ead_country_resource_composites = -2}
+			add_to_variable = { ead_country_resource_advanced = -2}
+			add_to_variable = { ead_civilian_factory_use = 1}
+			add_to_variable = { ead_max_planning = 0.05 }
+			add_to_variable = { ead_planning_speed = 0.02 }
+			add_to_variable = { ead_max_command_power = 10 }
+			add_to_variable = { ead_command_power_gain_mult = 0.03 }
+		}
+    }
+
+	Purists_build_training_center = {
+        cost = 100
+		icon = GFX_idea_ead_icon_training
+		modifier = {
+			civilian_factory_use = 4
+		}
+		days_remove = 60
+		days_re_enable = 20
+		available = {
+			has_equipment = {
+				support_equipment > 100
+			}
+
+			has_equipment = {
+				infantry_equipment > 200
+			}
+
+			has_equipment = {
+				power_armor_equipment > 30
+			}
+
+			has_equipment = {
+				spec_ops_equipment > 30
+			}
+
+			has_completed_focus = enc_vlt_core
+		}
+        remove_effect = {
+			add_manpower = -50
+			add_equipment_to_stockpile = {
+				type = power_armor_equipment
+				amount = -30
+			}
+			add_equipment_to_stockpile = {
+				type = spec_ops_equipment
+				amount = -30
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -200
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -100
+			}
+			add_to_variable = { ead_country_resource_energy = -2 }
+			add_to_variable = { ead_country_resource_water = -15 }
+			add_to_variable = { ead_special_forces_min = 2 }
+			add_to_variable = { ead_weekly_manpower = 2 }
+		}
+    }
+
+	Purists_build_production_center = {
+        cost = 100
+		icon = GFX_idea_ead_icon_production
+		modifier = {
+			civilian_factory_use = 4
+		}
+		days_remove = 60
+		days_re_enable = 20
+		available = {
+			has_equipment = {
+				support_equipment > 100
+			}
+
+			has_equipment = {
+				infantry_equipment > 50
+			}
+
+			has_equipment = {
+				power_armor_equipment > 30
+			}
+
+			has_equipment = {
+				support_robot_equipment > 50
+			}
+
+		}
+        remove_effect = {
+			add_manpower = -100
+			add_equipment_to_stockpile = {
+				type = power_armor_equipment
+				amount = -30
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -50
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -100
+			}
+			add_equipment_to_stockpile = {
+				type = support_robot_equipment
+				amount = -50
+			}
+			add_to_variable = { ead_country_resource_energy = -15 }
+			add_to_variable = { ead_country_resource_water = -15 }
+			add_to_variable = { ead_country_resource_metal = -25 }
+			add_to_variable = { ead_industrial_capacity_dockyard = 0.10 }
+			add_to_variable = { ead_industrial_capacity_factory = 0.10 }
+			add_offsite_building = {
+					type = arms_factory
+					level = 3
+			}
+
+			add_offsite_building = {
+					type = industrial_complex
+					level = 3
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+			}
+		}
+    }
+
+	Purists_build_trafic_control = {
+        cost = 100
+		icon = GFX_idea_ead_icon_trafic
+		modifier = {
+			civilian_factory_use = 4
+		}
+		days_remove = 60
+		days_re_enable = 20
+		available = {
+			has_equipment = {
+				support_equipment > 100
+			}
+
+			has_equipment = {
+				infantry_equipment > 50
+			}
+
+			has_equipment = {
+				power_armor_equipment > 30
+			}
+
+			has_equipment = {
+				anti_air_equipment > 50
+			}
+
+		}
+        remove_effect = {
+			add_manpower = -50
+			add_equipment_to_stockpile = {
+				type = power_armor_equipment
+				amount = -30
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -50
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -100
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = -50
+			}
+			add_to_variable = { ead_country_resource_energy = -5 }
+			add_to_variable = { ead_country_resource_water = -15 }
+			add_to_variable = { ead_enclave_aa_power = 0.1 }
+			add_to_variable = { ead_enclave_aa_hit = 0.05 }
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+    }
+
+	Purists_build_teleportation = {
+        cost = 100
+		icon = GFX_idea_ead_icon_science
+		modifier = {
+			civilian_factory_use = 4
+		}
+		days_remove = 60
+		days_re_enable = 20
+		available = {
+			has_equipment = {
+				support_equipment > 100
+			}
+
+			has_equipment = {
+				infantry_equipment > 50
+			}
+
+			has_equipment = {
+				power_armor_equipment > 30
+			}
+
+			has_equipment = {
+				anti_air_equipment > 50
+			}
+
+			has_idea = Purists_enclave_teleportation
+		}
+        remove_effect = {
+			add_manpower = -50
+			add_equipment_to_stockpile = {
+				type = power_armor_equipment
+				amount = -30
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -50
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -100
+			}
+			add_to_variable = { ead_country_resource_energy = -50 }
+			add_to_variable = { ead_country_resource_water = -15 }
+			add_to_variable = { ead_country_resource_advanced = -10 }
+			add_to_variable = { ead_supply_node_range = 0.055 }
+			add_to_variable = { ead_supply_factor = 0.055 }
+			add_to_variable = { ead_research_speed_factor = 0.025 }
+			add_to_variable = { ead_reinforce = 0.01 }
+		}
+    }
+}

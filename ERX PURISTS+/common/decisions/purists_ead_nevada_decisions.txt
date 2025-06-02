@@ -1,0 +1,108 @@
+Purists_Fate_Nevada = {
+	Purists_Rogue_Rangers = {
+		cost = 100
+		days_remove = 10
+		icon = GFX_idea_ead_rogue_rangers
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+			controls_state = 307
+			not = { country_exists = DES }
+		}
+		remove_effect = {
+			if = {
+				limit = { has_country_flag = war_with_des }
+				country_event = { id = purists_ead_nevada.2 }
+			} else = {
+				country_event = { id = purists_ead_nevada.1 }
+			}
+		}
+	}
+
+	Purists_Guardians = {
+		cost = 100
+		days_remove = 10
+		icon = GFX_idea_enc_flg_bos
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+			controls_state = 210
+			not = { country_exists = GRD }
+		}
+		remove_effect = {
+			if = {
+				limit = { has_country_flag = war_with_grd }
+				country_event = { id = purists_ead_nevada.4 }
+			} else = {
+				country_event = { id = purists_ead_nevada.3 }
+			}
+		}
+	}
+
+	Purists_Mojave_BoS = {
+		cost = 100
+		days_remove = 10
+		icon = GFX_idea_enc_flg_bos
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+			controls_state = 46
+			not = { country_exists = MOJ }
+		}
+		remove_effect = {
+			if = {
+				limit = { has_country_flag = war_with_moj }
+				if = {
+					limit = { 
+						has_dynamic_modifier = { modifier = ead_traitors_and_mutants }
+					}
+					country_event = { id = purists_ead_nevada.7 }
+				} else = {
+					country_event = { id = purists_ead_nevada.6 }
+				}
+			} else = {
+				country_event = { id = purists_ead_nevada.5 }
+			}
+		}
+	}
+
+	Purists_SecHub = {
+		cost = 100
+		days_remove = 10
+		icon = GFX_idea_ead_icon_protectron
+		ai_will_do = {
+			factor = 10
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			is_neighbor_of = PSH
+		}
+		remove_effect = {
+			if = {
+				limit = { country_exists = PSH }
+				ERB = { annex_country = { target = PSH }}
+        	}
+			hidden_effect = {
+				load_oob = enc_security_hub
+			}
+			set_country_flag = enc_protectron_hub_online
+		}
+	}
+
+}

@@ -36,6 +36,10 @@ Purists_wanamingo_desc: "With the reopening of our biological corps, some scient
 Purists_holograms: "Z-38 lightwave dynamics research"
 Purists_holograms_desc: "Prior to the Great War, the Z-38 staff were involved with researching and developing a line of hologram projectors to be installed at the Sierra Madre Casino & Resort. Our research teams can continue pre-war studies."
 ################################################################################################################ -<
+################################################################################################################ -<
+Purists_prton: "Proton weaponry"
+Purists_prton_desc: "During our clearing of operation of BMT, we discovered that some of the lobotomites were using a strange weapons. Although in shape they were no different from primitive stone age junk, their glowing field was an unpleasant surprise for some of our soldiers who decided to try their luck in close combat. In the complex archive, those tools were called a proton weapons. We must investigate them."
+################################################################################################################ -<
 
 ################################## Warcrimes ##############################################
 ################################################################################################################ -<
@@ -73,6 +77,10 @@ Purists_deploy_deathclaws_desc: "Using our large fleet of vertibird and the manu
 ################################################################################################################ -<
 Purists_deploy_cazaclaws: "Deploy cazaclaws."
 Purists_deploy_cazaclaws_desc: "A weapon more ravenous than any mutant army. Release the cazaclaws. Our enemies deserve no mercy."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_fire_missiles: "Use orbital strike."
+Purists_fire_missiles_desc: "Our B.O.M.B. MKII orbital satellite have managed to accumulate enough nuclear payload to annihilate any mutant nation. We only await your order, mister president."
 ################################################################################################################ -<
 
 ################################## Sink ##############################################
@@ -171,5 +179,110 @@ Purists_Fate_NCR_useful_idiots_desc: "While we commence rightfull justice upon m
 Puritsts_Fate_Divide: "Divide exploration."
 Puritsts_Fate_Divide_desc: "The infamous hellhole, the Divide, is now very close to our holdings. Before the war, this place was of strategic importance due to the nuclear arsenal and warheads that were stored there. According to the latest reports and our data, all of that pre-war wealth is still there. We must take it back."
 ################################################################################################################ -<
+################################################################################################################ -<
+Purists_Fate_Maxson: "Fate of Maxson."
+Purists_Fate_Maxson_desc: "Major populated NCR port-city, which carries the name of the infamous traitor. What shell we do with this place?"
+################################################################################################################ -<
 
+################################## Enclave Facilities ##############################################
+################################################################################################################ -<
+Purists_restore_sad: "Restore Sierra Army Depot."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_restore_site28: "Restore Site 28."
+Purists_restore_site28_desc: "Before the Great War, America had many enemies, whether those be the commies over the pacific, the traitors in the states or its former allies, but the enemy that few knew about was not one on the earth, but in the stars. We knew about the zetans for awhile, having kept an eye on any activity that could be related to them and we even have some corpses and equipment of theirs. With this knowledge, we made preparations since our old plan was to head to the stars. One of those preparations was Site-28, or what it was commonly referred to before the war, ‘Fortress Enclave’ or ‘Enclave Fortress,’ a massive mountain complex built in the side of a mountain."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_restore_bloomfield: "Restore Bloomfield base."
+Purists_restore_bloomfield_desc: "Homecoming."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_restore_fte: "Mojave Enclave?"
+Purists_restore_fte_desc: "We receive strange, but familier signal. Could it be one of ours?"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_restore_guradian: "Restore Citadel AFB"
+Purists_restore_guradian_desc: "One of the many facilities lay in the sands of the Wasteland is Citadel AFB, a planned facility meant to house some of our forces when we would retake the mainland, however we didn’t taken into account that the personnel there that was planned to be rotated out heard the call of the traitorous Captain Maxson and had become cultists. They had lasted a long, long time in the wastes, and lasted long enough to meet us."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_restore_hidden: "Restore Hidden Valley bunker"
+Purists_restore_hidden_desc: "With Brotherhood dealt with, we can finally restore Hidden Valley to what it suppose to be"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_restore_sechub: "Restore Safe Springs"
+Purists_restore_sechub_desc: "With Safe Springs firmly under our control, we can reestablish ourself here."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_restore_iron_mountain: "Restore Iron Mountain"
+Purists_restore_iron_mountain_desc: "Before the start of the Great War, The United States tried many things to find the magic bullet to finish off the commies, whether that be space born assets or super soldiers, we had tried many things and in the end none of it really mattered. One of those magic bullets was stored at Iron Mountain on the west coast, which doubled as an Advanced Medical Facility based on improving humanity without FEV and research on unexplained creatures found before the war, though there weren’t really many of those outside of the Zetans and most of those were sent to Area 51."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_Enclave_Facilities: "Enclave Facilities."
+Purists_Enclave_Facilities_desc: "At the peak of our power, Enclave created a huge number of spare and support bases scattered along the continent. Mostly they were a fallback positions, if something happens with Control Station. Unfortunately, everything went according to the worst scenario and many of these bases were either forgotten or abandoned. Fortunately, now that we have recovered, we have the opportunity to return these bases to former greatness."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_build_major_base: "Build central Bunker."
+Purists_build_major_base_desc: "With significant resources, we can build a new, massive underground facility, similar to Raven Rock. It will require significant effort, but the results will be worth it. Essentially provides a wide variety of bonuses, in exchange for resources"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_build_research_facility: "Build underground research facility."
+Purists_build_research_facility_desc: "Our scientists constantly lack a specialized place to conduct their research. By creating such a bunker, we can help. Provides a research speed bonus."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_build_intell_bunker: "Build a reconnaissance bunker."
+Purists_build_intell_bunker_desc: "Our intelligence services have proposed the idea of creating bunkers that will be used to monitor mutant activity throughout the wasteland. Provides intelligence bonuses"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_build_supply_depo: "Build supply depot."
+Purists_build_supply_depo_desc: "Our boys in the field need the best supplies. By creating a supply depot, with a small fleet of vertibirds, we will provide our soldiers with everything they need. Provides supply bonuses"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_build_air_service: "Build air maintenance bunker."
+Purists_build_air_service_desc: "It is no secret that our pilots have to cover a considerable distance between the combat zone and the nearest base, and their flight does not always take place through friendly territory. By creating such bunkers, we will provide our air fleet with safe havens where they can refuel and rearm. Provides air range and ground attack bonuses"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_build_special_forces: "Power Armor training ground."
+Purists_build_special_forces_desc: "Mastering power armor is a real science that takes a long time. We are not some raiders who teach pilots how to walk - no. For our boys and girls, power armor becomes their second skin. By creating such bunkers, we provide our future defenders with everything they need to use power armor and other special equipment. Provides additional slots for special forces."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_build_command_center: "Build a command center."
+Purists_build_command_center_desc: "Our officers need special places where they can properly assess the tactical situation and make the right decision. This bunker will help them with this, providing them with everything they need. Provides command power and planning."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_build_training_center: "Build a training center."
+Purists_build_training_center_desc: "Our latest recruits, whether it was the former residents of the Vault-City or yesterday wastelander, who were healthy enough to pass genetic screening, need brutal training that will claim their spirit and adjust to battle. Therefore, Colonel Wagner proposed the idea of ​​creating such field camps, where the training of the future Enclave soldiers will conduct."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_build_production_center: "Build a production center."
+Purists_build_production_center_desc: "An underground manufacturing facility where robots and slaves work around the clock to produce everything our military needs. Provides production bonuses"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_build_trafic_control: "Build anti-air bunker."
+Purists_build_trafic_control_desc: "Over the past decades, the situation in the wasteland has changed dramatically. We are no longer the only power with a fully-fledged air force. The mutants of the NCR, the Brotherhood of Steel, and even the savages of Caesar's Legion all have their own air fleets that we will have to deal with. By creating bunkers like these, we ensure that the mutants will not be able to harm us. Improves static air defenses."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_build_teleportation: "Build teleportation site."
+Purists_build_teleportation_desc: "Thanks to one of our last finds in the BMT, namely, to the transponders, the Enclave took possession of the teleportation tool. Creating special bunkers, we can prepare in advance a point where supplies and replenishment will be teleported. Warning, those site requires a massive amount of energy"
+################################################################################################################ -<
 
+################################## Fate of Nevada ##############################################
+################################################################################################################ -<
+Purists_Fate_Nevada: "Fate of Nevada."
+Purists_Fate_Nevada_desc: "Nevada holds a great many secrets and riches that we are sure to acquire."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_Rogue_Rangers: "Rogue Rangers."
+Purists_Rogue_Rangers_desc: "The so-called Rangers are a major thorn in our side. Their vigilance and caution always puts at risk our expansion into Nevada due to the possibility of an NCR attack. Imagine our surprise when we learned of a breakaway group, who operates near our borders."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_Guardians: "Guardians."
+Purists_Guardians_desc: "Over the decades, the Brotherhood has managed to put down roots in almost every inch of American soil. We don't even have a clue about the exact number of all their chapters. The Guardians are one of those orders that got a little too close than we would like."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_Mojave_BoS: "Mojave Brotherhood."
+Purists_Mojave_BoS_desc: "Over the decades, the Brotherhood has managed to put down roots in almost every inch of American soil. We don't even have a clue about the exact number of all their chapters. The Brotherhood of Steel from the Mojave is a second chapter, that was operating in Nevada. Why?"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_SecHub: "Security Hub override command."
+Purists_SecHub_desc: "Using our old, pre-war codes and our technical knowledge, we can easily subjugate the robot territory known as [PSH.GetName]."
+################################################################################################################ -<

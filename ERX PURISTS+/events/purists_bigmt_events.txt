@@ -196,3 +196,34 @@ country_event = { #Holograms
 		}
 	} 
 }
+
+country_event = { #Proton weapons
+	id = purists_ead_bigmt.12
+	title = purists_ead_bigmt.12.t
+	desc = purists_ead_bigmt.12.d
+	picture = GFX_ead_proton_axe_pic
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = purists_ead_bigmt.12.a
+		custom_effect_tooltip = purists_ead_bigmt.12.a.tt
+		set_technology = {
+			purists_tech_proton_robots = 1
+		}
+	} 
+	option = {
+		name = purists_ead_bigmt.12.b
+		custom_effect_tooltip = purists_ead_bigmt.12.b.tt
+		set_technology = {
+			purists_tech_proton_infantry = 1
+		}
+	} 
+
+	option = {
+		name = purists_ead_bigmt.12.c
+		custom_effect_tooltip = purists_ead_bigmt.12.c.tt
+		set_technology = {
+			purists_tech_proton_sf = 1
+		}
+	} 
+}

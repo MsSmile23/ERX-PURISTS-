@@ -179,3 +179,21 @@ country_event = { #Aid from MacAurthur
 		add_equipment_to_stockpile = { type = vb_gunship_equipment amount = 200 producer = USA }
 	}
 }
+
+country_event = { #First Wagner Event 
+	id = purists_advisor.5
+	title = purists_advisor.5.t
+	desc = purists_advisor.5.d
+	fire_only_once = yes
+
+	trigger = {
+		tag = ERB
+		has_completed_focus = enc_vlt_core
+	}
+	mean_time_to_happen = {
+		days = 6
+	}
+	option = { 
+		name = purists_advisor.5.a
+	}
+}
