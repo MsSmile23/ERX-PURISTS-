@@ -23,9 +23,30 @@ purists_force_field_robot_tech_desc: "Persinal Project of Lieutenant Orwich. A u
 purists_force_field_humans: "Holograms grenades."
 purists_force_field_humans_desc: "Project of General Grimm. Special type of grenade that when thrown, projects a hologram of a Enclave soldier that’s almost a one to one copy of a soldier, allowing it to soak up fire from the enemy. But it does not last long, only lasting around 30 seconds before going out due to limited power."
 
+purists_marshall_tech_1: "Enclave Marshalls"
+purists_marshall_tech_1_desc: "A new breed of Enclave special forces, who exceeds in 'peacekeeping' operations and wasteland warfare."
+
+purists_tech_proton_robots: "Proton blades for robots"
+purists_tech_proton_robots_desc: "Our robots are now equiped with mighty proton blades, which can cut in half even the most experianced Brotherhood paladin in second."
+
+purists_tech_proton_infantry: "Proton weaponry for infantry"
+purists_tech_proton_infantry_desc: "Our infantry is now equiped with proton weaponry for cqc. Should enemies of the State reach them, they are up for nasty surprise."
+
+purists_tech_proton_sf: "Proton weaponry for special forces"
+purists_tech_proton_sf_desc: "Our power armored units and other special task-forces are now equiped with proton weaponry, to deal massive damaged in cqc."
+
 purists_wanamingo_researched: "Wanamingos were revived"
 purists_roboscorpions_researched: "Roboscorpions were researched"
 enclave_red_cloud_researched: "SM-7 is ready for use"
 purists_sink_active: "Sink personalities was found"
 enclave_hologram_active: "Holograms are active"
 tuunnelers_tamed: "Tunneler were tammed"
+purists_restore_facilities: "We will restore what we lost"
+orbital_strike: "B.O.M.B. MKII is active"
+war_with_moj: "There was a war with Mojave BoS"
+war_with_des: "There was a war with Rogue Rangers"
+war_with_grd: "There was a war with Guardians"
+hid_val_secured: "Hidden Valley is secure"
+ranger_citadel_enclave: "Ranger Citadel is secure"
+gdr_secured: "Guardian Citadel is secure"
+ead_site28_restored: "Site-28 is fully restored"

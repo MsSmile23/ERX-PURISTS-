@@ -1,0 +1,696 @@
+#######################################
+# Enclave Facilities events 
+#######################################
+
+
+add_namespace = purists_enclave_facilities 
+
+country_event = { #Event triggered for modifier
+	id = purists_enclave_facilities.1
+	title = purists_enclave_facilities.1.t
+	desc = purists_enclave_facilities.1.d
+	picture = GFX_ead_event_enclave_base
+	fire_only_once = yes
+
+	trigger = {
+		tag = ERB
+		has_completed_focus = enc_purity
+		has_completed_focus = enc_DoD_start
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = { 
+		name = purists_enclave_facilities.1.a
+		set_country_flag = purists_restore_facilities
+		add_dynamic_modifier = { modifier = ead_facilities }
+	}
+}
+
+country_event = { #SAD
+	id = purists_enclave_facilities.2
+	title = purists_enclave_facilities.2.t
+	desc = purists_enclave_facilities.2.d
+	picture = GFX_ead_event_enclave_base
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = purists_enclave_facilities.2.a
+		custom_effect_tooltip = purists_enclave_facilities.2.a.tt
+		add_to_variable = { ead_weekly_manpower = 2 }
+		add_to_variable = { ead_special_forces_min = 25 }
+		add_to_variable = { ead_ground_attack_factor = 0.02 }
+		add_to_variable = { ead_experience_gain_army = 0.03 }
+		add_to_variable = { ead_experience_gain_navy = 0.02 }
+		add_to_variable = { ead_research_speed_factor = 0.04 }
+		add_to_variable = { ead_industrial_capacity_factory = 0.07 }
+	}
+}
+
+country_event = { #Site-28
+	id = purists_enclave_facilities.3
+	title = purists_enclave_facilities.3.t
+	desc = purists_enclave_facilities.3.d
+	picture = GFX_ead_event_enclave_base
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = purists_enclave_facilities.3.a
+		country_event = {
+			id = purists_enclave_facilities.4 days = 5
+		} 
+	}
+}
+
+country_event = { #Site-28
+	id = purists_enclave_facilities.4
+	title = purists_enclave_facilities.4.t
+	desc = purists_enclave_facilities.4.d
+	picture = GFX_ead_rookies02
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = purists_enclave_facilities.4.a
+		country_event = {
+			id = purists_enclave_facilities.5 days = 5
+		}
+	}
+}
+
+country_event = { #Site-28
+	id = purists_enclave_facilities.5
+	title = purists_enclave_facilities.5.t
+	desc = purists_enclave_facilities.5.d
+	picture = GFX_event_ENC_fallout3_Enclave
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = purists_enclave_facilities.5.a
+		set_country_flag = ead_site28_restored
+		custom_effect_tooltip = purists_enclave_facilities.5.a.tt
+		add_manpower = 2000
+		add_equipment_to_stockpile = { type = vb_transport_plane_equipment amount = 200 producer = USA }
+		add_equipment_to_stockpile = { type = vb_gunship_equipment amount = 300 producer = USA }
+		add_to_variable = { ead_weekly_manpower = 2 }
+		add_to_variable = { ead_special_forces_min = 50 }
+		add_to_variable = { ead_ground_attack_factor = 0.02 }
+		add_to_variable = { ead_experience_gain_army = 0.03 }
+		add_to_variable = { ead_experience_gain_air = 0.02 }
+		add_to_variable = { ead_research_speed_factor = 0.15 }
+		add_to_variable = { ead_max_planning = 0.04 }
+		add_to_variable = { ead_planning_speed = 0.04 }
+		add_to_variable = { ead_max_command_power = 50 }
+		add_to_variable = { ead_enclave_aa_power = 0.25 }
+		add_to_variable = { ead_enclave_aa_hit = 0.25 }
+		add_offsite_building = {
+			type = arms_factory
+			level = 5
+		}
+
+		add_offsite_building = {
+			type = industrial_complex
+			level = 5
+		}
+		generate_character = {
+			token_base = ead_general_tower
+		}
+		generate_character = {
+			token_base = ead_commander_shephard
+		}
+		generate_character = {
+			token_base = ead_field_researcher_goodspeed
+		}
+
+		364 = {
+			add_building_construction = {
+					type = air_base
+					level = 10
+					instant_build = yes
+			}
+			add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 10
+		}
+
+		create_field_marshal = {
+			name = "Colonel Logan"
+			traits = { 
+				enc_purist
+				intelligent_trait
+				
+			}
+			portrait_path = "gfx/leaders/ead_commander_logan.dss"
+			skill = 7
+			attack_skill = 8
+			defense_skill = 6
+			planning_skill = 2
+			logistics_skill = 5
+			legacy_id = -1
+			
+		}
+		create_corps_commander = {
+			name = "Major Rogers"
+			traits = { 
+				enc_purist
+				local_leader_trait
+				inspirational_trait
+				
+			}
+			portrait_path = "gfx/leaders/ead_major_rogers.dss"
+			skill = 6
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 6
+			logistics_skill = 3
+			legacy_id = -1
+			
+		}
+		create_corps_commander = {
+			name = "Major Harrington"
+			traits = { 
+				enc_purist
+				charismatic_trait
+				life_giver_trait
+				
+			}
+			portrait_path = "gfx/leaders/ead_major_harrington.dss"
+			skill = 6
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 3
+			legacy_id = -1
+			
+		}
+		create_corps_commander = {
+			name = "Major Lloyd"
+			traits = { 
+				enc_purist
+				perceptive_trait
+				intelligent_trait
+				
+			}
+			portrait_path = "gfx/leaders/ead_major_lloyd.dss"
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 3
+			legacy_id = -1
+			
+		}
+	}
+}
+
+country_event = { #Bloomfield
+	id = purists_enclave_facilities.6
+	title = purists_enclave_facilities.6.t
+	desc = purists_enclave_facilities.6.d
+	picture = GFX_ead_bloomfield_01
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = purists_enclave_facilities.6.a
+		country_event = {
+			id = purists_enclave_facilities.7 days = 5
+		}
+		
+	}
+}
+
+country_event = { #Bloomfield
+	id = purists_enclave_facilities.7
+	title = purists_enclave_facilities.7.t
+	desc = purists_enclave_facilities.7.d
+	picture = GFX_ead_bloomfield_02
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = purists_enclave_facilities.7.a
+		country_event = {
+			id = purists_enclave_facilities.8 days = 5
+		}
+		
+	}
+}
+
+country_event = { #Bloomfield
+	id = purists_enclave_facilities.8
+	title = purists_enclave_facilities.8.t
+	desc = purists_enclave_facilities.8.d
+	picture = GFX_ead_bloomfield_03
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = purists_enclave_facilities.8.a
+		custom_effect_tooltip = purists_enclave_facilities.8.a.tt
+		set_country_flag = orbital_strike
+		add_ideas = Purists_protected_bomb
+		add_offsite_building = {
+			type = arms_factory
+			level = 4
+		}
+
+		add_offsite_building = {
+			type = industrial_complex
+			level = 4
+		}
+        381 = {
+			add_building_construction = {
+					type = air_base
+					level = 10
+					instant_build = yes
+			}
+			add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 10
+		}
+
+		add_to_variable = { ead_weekly_manpower = 2 }
+		add_to_variable = { ead_special_forces_min = 30 }
+		add_to_variable = { ead_ground_attack_factor = 0.03 }
+		add_to_variable = { ead_experience_gain_air = 0.10 }
+		add_to_variable = { ead_research_speed_factor = 0.07 }
+		add_to_variable = { ead_max_command_power = 50 }
+		add_to_variable = { ead_enclave_aa_power = 0.25 }
+		add_to_variable = { ead_enclave_aa_hit = 0.25 }
+		add_to_variable = { ead_supply_node_range = 0.15 }
+		add_to_variable = { ead_supply_factor = 0.15 }
+
+	}
+}
+
+country_event = { #FTE
+	id = purists_enclave_facilities.9
+	title = purists_enclave_facilities.9.t
+	desc = purists_enclave_facilities.9.d
+	picture = GFX_ead_mojave01
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = purists_enclave_facilities.9.a
+		custom_effect_tooltip = purists_enclave_facilities.9.a.tt
+		country_event = {
+			id = purists_enclave_facilities.10 days = 2
+		}
+		add_manpower = 600
+		add_equipment_to_stockpile = { type = vb_transport_plane_equipment amount = 50 producer = USA }
+		add_equipment_to_stockpile = { type = vb_gunship_equipment amount = 200 producer = USA }
+		generate_character = {
+			token_base = ead_general_rowlandson
+		}
+		generate_character = {
+			token_base = ead_researcher_smitt
+		}
+		generate_character = {
+			token_base = ead_james_hemmers
+		}
+		create_corps_commander = {
+			name = "Colonel Sanders"
+			traits = { 
+				enc_purist
+				local_leader_trait
+				inspirational_trait
+				
+			}
+			portrait_path = "gfx/leaders/ead_colonel_sanders.dss"
+			skill = 4
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 6
+			logistics_skill = 3
+			legacy_id = -1
+			
+		}
+		create_corps_commander = {
+			name = "Major MacGee"
+			traits = { 
+				enc_purist
+				charismatic_trait
+				life_giver_trait
+				
+			}
+			portrait_path = "gfx/leaders/ead_major_macgee.dss"
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 3
+			legacy_id = -1
+			
+		}
+		create_corps_commander = {
+			name = "Major Martin"
+			traits = { 
+				enc_purist
+				perceptive_trait
+				intelligent_trait
+				
+			}
+			portrait_path = "gfx/leaders/ead_major_martin.dss"
+			skill = 3
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 3
+			legacy_id = -1
+			
+		}
+	}
+}
+
+country_event = { #FTE
+	id = purists_enclave_facilities.10
+	title = purists_enclave_facilities.10.t
+	desc = purists_enclave_facilities.10.d
+	picture = GFX_ead_mojave02
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = purists_enclave_facilities.10.a
+		country_event = {
+			id = purists_enclave_facilities.11 days = 5
+		}
+	}
+	option = { 
+		name = purists_enclave_facilities.10.b
+		country_event = {
+			id = purists_enclave_facilities.14 days = 5
+		}
+	}
+}
+
+country_event = { #FTE
+	id = purists_enclave_facilities.11
+	title = purists_enclave_facilities.11.t
+	desc = purists_enclave_facilities.11.d
+	picture = GFX_ead_mojave03
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = purists_enclave_facilities.11.a
+		custom_effect_tooltip = honory_humans_tt
+		trigger = {
+			has_completed_focus = enc_vlt_core
+		}
+		country_event = {
+			id = purists_enclave_facilities.12 days = 2
+		}
+		add_stability = -0.05
+		add_war_support = -0.10
+	}
+
+	option = { 
+		name = purists_enclave_facilities.11.b
+		country_event = {
+			id = purists_enclave_facilities.13 days = 2
+		}
+	}
+}
+
+country_event = { #FTE
+	id = purists_enclave_facilities.12
+	title = purists_enclave_facilities.12.t
+	desc = purists_enclave_facilities.12.d
+	picture = GFX_ead_mojave04
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = purists_enclave_facilities.12.a
+		custom_effect_tooltip = purists_enclave_facilities.12.a.tt
+		country_event = {
+			id = purists_enclave_facilities.15 days = 15
+		}
+		add_manpower = 600
+		add_equipment_to_stockpile = { type = vb_transport_plane_equipment amount = 50 producer = USA }
+		add_equipment_to_stockpile = { type = vb_gunship_equipment amount = 200 producer = USA }
+		generate_character = {
+			token_base = ead_john_swanson
+		}
+		generate_character = {
+			token_base = ead_albert_derrel
+		}
+		create_corps_commander = {
+			name = "Major Norris"
+			traits = { 
+				local_leader_trait
+				inspirational_trait
+			}
+			portrait_path = "gfx/leaders/ead_major_norris.dss"
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 3
+			legacy_id = -1
+			
+		}
+
+		if = {
+			limit = {
+				has_dynamic_modifier = { modifier = ead_traitors_and_mutants }
+			}
+
+			add_to_variable = {
+				traitors_special_min = 20
+			}
+		}
+	}
+}
+
+country_event = { #FTE
+	id = purists_enclave_facilities.13
+	title = purists_enclave_facilities.13.t
+	desc = purists_enclave_facilities.13.d
+	picture = GFX_ead_mojave05
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = purists_enclave_facilities.13.a
+		custom_effect_tooltip = purists_enclave_facilities.13.a.tt
+		country_event = {
+			id = purists_enclave_facilities.15 days = 15
+		}
+		add_equipment_to_stockpile = { type = vb_transport_plane_equipment amount = 50 producer = USA }
+		add_equipment_to_stockpile = { type = vb_gunship_equipment amount = 200 producer = USA }
+		add_equipment_to_stockpile = { type = enclave_power_armour_equipment_1 amount = 300 producer = ERB }
+		add_to_variable = { ead_research_speed_factor = 0.07 }
+	}
+}
+
+country_event = { #FTE
+	id = purists_enclave_facilities.14
+	title = purists_enclave_facilities.14.t
+	desc = purists_enclave_facilities.14.d
+	picture = GFX_ead_mojave06
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = purists_enclave_facilities.14.a
+		country_event = {
+			id = purists_enclave_facilities.15 days = 15
+		}
+	}
+}
+
+country_event = { #FTE
+	id = purists_enclave_facilities.15
+	title = purists_enclave_facilities.15.t
+	desc = purists_enclave_facilities.15.d
+	picture = GFX_ead_mojave07
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = purists_enclave_facilities.15.a
+		custom_effect_tooltip = purists_enclave_facilities.15.a.tt
+		add_offsite_building = {
+			type = arms_factory
+			level = 4
+		}
+
+		add_offsite_building = {
+			type = industrial_complex
+			level = 4
+		}
+        67 = {
+			add_building_construction = {
+					type = air_base
+					level = 10
+					instant_build = yes
+			}
+			add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 10
+		}
+
+		106 = {
+			add_building_construction = {
+					type = air_base
+					level = 10
+					instant_build = yes
+			}
+			add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 10
+		}
+
+		add_to_variable = { ead_weekly_manpower = 2 }
+		add_to_variable = { ead_special_forces_min = 30 }
+		add_to_variable = { ead_research_speed_factor = 0.02 }
+		add_to_variable = { ead_max_command_power = 50 }
+		add_to_variable = { ead_supply_node_range = 0.08 }
+		add_to_variable = { ead_supply_factor = 0.08 }
+		add_to_variable = { ead_industrial_capacity_factory = 0.35 }
+		add_to_variable = { ead_industrial_capacity_dockyard = 0.15 }
+	}
+}
+
+country_event = { #Guardian
+	id = purists_enclave_facilities.16
+	title = purists_enclave_facilities.16.t
+	desc = purists_enclave_facilities.16.d
+	picture = GFX_ead_event_enclave_base
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = purists_enclave_facilities.16.a
+		custom_effect_tooltip = purists_enclave_facilities.16.a.tt
+		add_offsite_building = {
+			type = arms_factory
+			level = 2
+		}
+
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
+        210 = {
+			add_building_construction = {
+					type = air_base
+					level = 10
+					instant_build = yes
+			}
+			add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 5
+		}
+
+		set_province_name = {
+			id = 3519
+			name = "Citadel AFB"
+		}
+
+		add_to_variable = { ead_weekly_manpower = 1 }
+		add_to_variable = { ead_special_forces_min = 30 }
+		add_to_variable = { ead_research_speed_factor = 0.01 }
+		add_to_variable = { ead_max_command_power = 50 }
+		add_to_variable = { ead_supply_node_range = 0.08 }
+		add_to_variable = { ead_supply_factor = 0.08 }
+		add_to_variable = { ead_air_range_factor = 0.05 }
+		add_to_variable = { ead_industrial_capacity_factory = 0.09 }
+	}
+}
+
+country_event = { #Safe Springs
+	id = purists_enclave_facilities.17
+	title = purists_enclave_facilities.17.t
+	desc = purists_enclave_facilities.17.d
+	picture = GFX_ead_safespings01
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = purists_enclave_facilities.17.a
+		custom_effect_tooltip = purists_enclave_facilities.17.a.tt
+		add_ideas = Purists_safespings_plant
+		generate_character = {
+			token_base = ead_prcessor_z52
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = 5
+		}
+
+		add_offsite_building = {
+			type = industrial_complex
+			level = 5
+		}
+        371 = {
+			add_building_construction = {
+					type = air_base
+					level = 10
+					instant_build = yes
+			}
+			add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 10
+		}
+
+		add_to_variable = { ead_supply_node_range = 0.10 }
+		add_to_variable = { ead_supply_factor = 0.10 }
+		add_to_variable = { ead_industrial_capacity_dockyard = 0.30 }
+		add_to_variable = { ead_industrial_capacity_factory = 0.30 }
+	}
+}
+
+country_event = { #Iron Mountain
+	id = purists_enclave_facilities.18
+	title = purists_enclave_facilities.18.t
+	desc = purists_enclave_facilities.18.d
+	picture = GFX_ead_iron01
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = purists_enclave_facilities.18.a
+		country_event = {
+			id = purists_enclave_facilities.19 days = 15
+		}
+	}
+}
+
+country_event = { #Iron Mountain
+	id = purists_enclave_facilities.19
+	title = purists_enclave_facilities.19.t
+	desc = purists_enclave_facilities.19.d
+	picture = GFX_ead_iron02
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = purists_enclave_facilities.19.a
+	}
+}
