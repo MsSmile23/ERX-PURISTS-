@@ -38,7 +38,11 @@ Purists_holograms_desc: "Prior to the Great War, the Z-38 staff were involved wi
 ################################################################################################################ -<
 ################################################################################################################ -<
 Purists_prton: "Proton weaponry"
-Purists_prton_desc: "During our clearing of operation of BMT, we discovered that some of the lobotomites were using a strange weapons. Although in shape they were no different from primitive stone age junk, their glowing field was an unpleasant surprise for some of our soldiers who decided to try their luck in close combat. In the complex archive, those tools were called a proton weapons. We must investigate them."
+Purists_prton_desc: "During our clearing operation of BMT, we discovered that some of the lobotomites were using a strange weapons. Although in shape they were no different from primitive stone age junk, their glowing field was an unpleasant surprise for some of our soldiers who decided to try their luck in close combat. In the complex archive, those tools were called a proton weapons. We must investigate them."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_valence: "Atomic-valence tri-radii-oscillator"
+Purists_valence_desc: "During our clearing operation of BMT, we discovered a strange device in lightwave dynamics research. We dont know excactly what is that, but, according to the Sink, it some kind of healing item. We must investigate it."
 ################################################################################################################ -<
 
 ################################## Warcrimes ##############################################
@@ -218,7 +222,7 @@ Purists_restore_iron_mountain_desc: "Before the start of the Great War, The Unit
 ################################################################################################################ -<
 ################################################################################################################ -<
 Purists_Enclave_Facilities: "Enclave Facilities."
-Purists_Enclave_Facilities_desc: "At the peak of our power, Enclave created a huge number of spare and support bases scattered along the continent. Mostly they were a fallback positions, if something happens with Control Station. Unfortunately, everything went according to the worst scenario and many of these bases were either forgotten or abandoned. Fortunately, now that we have recovered, we have the opportunity to return these bases to former greatness."
+Purists_Enclave_Facilities_desc: "At the peak of our power, Enclave created a huge number of spare and support bases scattered along the continent. Mostly they were a fallback positions, if something happens with Control Station. Unfortunately, everything went according to the worst scenario and many of these bases were either forgotten or abandoned. Fortunately, now that we have recovered, we have the opportunity to return these bases to former greatness. Be wary - those facilities requires various resources, to operate them. Majority of them need water."
 ################################################################################################################ -<
 ################################################################################################################ -<
 Purists_build_major_base: "Build central Bunker."
@@ -285,4 +289,11 @@ Purists_Mojave_BoS_desc: "Over the decades, the Brotherhood has managed to put d
 ################################################################################################################ -<
 Purists_SecHub: "Security Hub override command."
 Purists_SecHub_desc: "Using our old, pre-war codes and our technical knowledge, we can easily subjugate the robot territory known as [PSH.GetName]."
+################################################################################################################ -<
+
+
+################################## Sigma Actions ##############################################
+################################################################################################################ -<
+Purists_Sigma_Action: "Sigma Command Pannel."
+Purists_Sigma_Action_desc: "Our enemies are many. We are surrounded by mutants on all sides. But the men and women of Sigma Squads are prepared to wage war in the shadows, weakening those we deem a priority target. They only await your order, [ERB.GetLeader]"
 ################################################################################################################ -<

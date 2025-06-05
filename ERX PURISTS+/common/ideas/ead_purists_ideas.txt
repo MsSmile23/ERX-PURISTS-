@@ -856,5 +856,25 @@ ideas = {
 				industry_air_damage_factor = -0.15
 			}
 		}
+
+		Purists_eternal_war = {
+			picture = ead_war_never_changes
+			allowed = { always = no	}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				required_garrison_factor = 0.50
+				resistance_activity = 0.50
+				resistance_damage_to_garrison = 0.30
+				compliance_gain = -0.20
+				resistance_decay = -0.50
+				weekly_manpower = -10
+				war_support_factor = 0.05
+				political_power_factor = 0.20
+				experience_gain_army = 0.2
+				experience_gain_air = 0.2
+				experience_gain_factor = 0.5
+			}
+		}
 	}
 }

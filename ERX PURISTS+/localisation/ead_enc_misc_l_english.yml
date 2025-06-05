@@ -1,5 +1,7 @@
 ﻿l_english:
 
+###### Tech #########
+
 cazaclaw_equipment: "Cazaclaws"
 cazaclaw_equipment_desc: "genetically-engineered creatures developed by the Post-War Enclave in BMT to replace humans during close-combat search-and-destroy missions. 
 
@@ -35,6 +37,67 @@ purists_tech_proton_infantry_desc: "Our infantry is now equiped with proton weap
 purists_tech_proton_sf: "Proton weaponry for special forces"
 purists_tech_proton_sf_desc: "Our power armored units and other special task-forces are now equiped with proton weaponry, to deal massive damaged in cqc."
 
+purists_tech_blue_halo: "Atomic-valence tri-radii-oscillator"
+purists_tech_blue_halo_desc: "Advanced healing item, that was found during capturing of BMT. Now, this technology was introduced to Enclave, greatly improving soldiers survivability"
+
+########################
+
+######### Companies ################
+
+ead_purists_medical_iron: "Medical Research Center"
+
+ead_purists_iron_mountain_facility: "Iron Mountain Medical Research Center"
+ead_purists_iron_mountain_facility_desc: "One of the most advanced medical research facility, with all equipment, needed to save american lives"
+
+ead_purists_epa_research: "EPA Beasts"
+
+ead_purists_mojave_epa: "Mojave EPA Facility"
+ead_purists_mojave_epa_desc: "Before the Great War, Mojave EPA facility was center of rather cruel experiments on chineese POW. Now, fully restored, its become a full branch of BMT research center"
+
+ead_purists_chri_factory: "Chrysalis factory"
+
+ead_purists_mojave_chrysalis: "Chrysalis Production Plant"
+ead_purists_mojave_chrysalis_desc: "Support robotic production center, which can boost our robotic force."
+
+ead_purists_demo_research: "Explosion is an Art"
+
+ead_purists_demo_boom: "BMT Demolition Science Division"
+ead_purists_demo_boom_desc: "One of the scientific divisions of Big MT, thanks to which we were able to reintroduce the Fatman into our armed forces."
+
+ead_purists_pa_team: "Power Armor R&R"
+
+ead_purists_power_armor: "BMT Power Armor Research Team"
+ead_purists_power_armor_desc: "One of the scientific divisions of Big MT, thanks to which we were able to reintroduce and continue R&R of Advanced Power Armor."
+
+ead_purists_pa_tesla_team: "Tesla Power Armor R&R"
+
+ead_purists_power_armor_tesla: "BMT Tesla Power Armor Research Team"
+ead_purists_power_armor_tesla_desc: "One of the scientific divisions of Big MT, thanks to which we were able to reintroduce and continue R&R of Advanced Power Armor. Thanks to our contacts with Chicago, we were able to continue development of Tesla Power Armor"
+
+ead_purists_pa_chicago_team: "Chicago Power Armor R&R"
+
+ead_purists_power_armor_chicago: "Chicago Power Armor Science Team"
+ead_purists_power_armor_chicago_desc: "Thanks to our contacts with Chicago, we were able to request some of their scientist in order to improve our R&R of power armor."
+
+ead_purists_new_vb: "Advanced Vertibirds"
+
+ead_purists_site28_air: "Site-28 Vertibirds"
+ead_purists_site28_air_desc: "With 'Enclave Fortress' under our control, their science team is willing to provide ur their advanced Vertibirds designs"
+
+ead_purists_new_cryo_coprs: "Eternal Winter"
+
+ead_purists_cryo_corp: "Enclave Cryo Corp"
+ead_purists_cryo_corp_desc: "Thanks to Dr. Royst's dedication and hard work, we were able to turn the beginnings of cryo department into a full-fledged scientific division that was able to make significant advances in cryo-research."
+
+ead_purists_new_vehicle: "Enclave Land Vehicles"
+
+ead_purists_texas_motorisation: "TexClave Vehicles"
+ead_purists_texas_motorisation_desc: "Thanks to arrival of our brothers and sisters from Texas and their expertise, we were able to greatly improve our designs of armored vehicles"
+
+########################################
+
+####### Flags #####
+
 purists_wanamingo_researched: "Wanamingos were revived"
 purists_roboscorpions_researched: "Roboscorpions were researched"
 enclave_red_cloud_researched: "SM-7 is ready for use"
@@ -47,6 +110,12 @@ war_with_moj: "There was a war with Mojave BoS"
 war_with_des: "There was a war with Rogue Rangers"
 war_with_grd: "There was a war with Guardians"
 hid_val_secured: "Hidden Valley is secure"
+ead_fte_finished: "Enclave facilites in Mojave were secured"
 ranger_citadel_enclave: "Ranger Citadel is secure"
 gdr_secured: "Guardian Citadel is secure"
 ead_site28_restored: "Site-28 is fully restored"
+ead_iron_mountain_restored: "Iron Mountain medical facility is fully active"
+ead_royst_recruited: "Edwin Royst was recruited by the Enclave"
+ead_air_from_texas: "Aid from Texas has arrived!"
+
+##########################

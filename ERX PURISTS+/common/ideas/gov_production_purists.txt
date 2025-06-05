@@ -1,0 +1,235 @@
+ideas = {
+###############################
+# Pre-War Designs
+###############################
+	engineering_firm = {
+
+	}
+###############################
+# Major Businesses
+###############################
+	construction_firm = {
+		ead_purists_iron_mountain_facility = {
+
+			picture = ead_iron_medical_icon
+
+			allowed = {
+				tag = ERB
+			}
+
+			available = {
+				has_country_flag = ead_iron_mountain_restored
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				support_medical_tech_category = 1
+			}
+
+			traits = { ead_purists_medical_iron }
+
+		}
+			
+		ead_purists_mojave_epa = {
+
+			picture = ead_mojave_epa_icon
+
+			allowed = {
+				tag = ERB
+			}
+
+			available = {
+				has_country_flag = ead_fte_finished
+				has_completed_focus = ENC_Big_MT_Restored_purity
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			traits = { ead_purists_epa_research }
+
+		}
+
+		ead_purists_mojave_chrysalis = {
+
+			picture = ead_chryslus_factory_icon
+
+			allowed = {
+				tag = ERB
+			}
+
+			available = {
+				has_country_flag = ead_fte_finished
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			traits = { ead_purists_chri_factory }
+
+		}
+
+		ead_purists_demo_boom = {
+
+			picture = ead_fatman_company_icon
+
+			allowed = {
+				tag = ERB
+			}
+
+			available = {
+				has_completed_focus = enc_m42fatman
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				support_demolitions_tech_category = 0.25
+			}
+
+			traits = { ead_purists_demo_research }
+
+		}
+
+		ead_purists_cryo_corp = {
+
+			picture = ead_cryo_corps_icon
+
+			allowed = {
+				tag = ERB
+			}
+
+			available = {
+				has_country_flag = ead_royst_recruited
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			traits = { ead_purists_new_cryo_coprs }
+
+		}
+
+		ead_purists_texas_motorisation = {
+
+			picture = ead_texas_mot_icon
+
+			allowed = {
+				tag = ERB
+			}
+
+			available = {
+				has_country_flag = ead_air_from_texas
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			traits = { ead_purists_new_vehicle }
+
+		}
+		
+	}
+###############################
+# Vehicle Companies
+###############################
+	vehicle_restoration_advisor = {
+		ead_purists_power_armor = {
+			picture = ead_bmt_power_armor_icon
+
+			allowed = {
+				tag = ERB
+			}
+
+			available = {
+				has_completed_focus = enc_power_armor_research
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				power_armor_tech_category = 0.25
+			}
+
+			traits = { ead_purists_pa_team }
+		}
+
+		ead_purists_power_armor_tesla = {
+			picture = ead_bmt_tesla_power_icon
+
+			allowed = {
+				tag = ERB
+			}
+
+			available = {
+				has_completed_focus = enc_power_armor_research
+				has_completed_focus = enc_were_all_enclave
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			research_bonus = {
+				power_armor_tech_category = 0.25
+			}
+
+			traits = { ead_purists_pa_tesla_team }
+		}
+
+		ead_purists_power_armor_chicago = {
+			picture = ead_east_coast_power_icon
+
+			allowed = {
+				tag = ERB
+			}
+
+			available = {
+				has_completed_focus = enc_were_all_enclave
+			}
+
+			research_bonus = {
+				power_armor_tech_category = 0.25
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			traits = { ead_purists_pa_chicago_team }
+		}
+	}
+###############################
+# Navy Companies
+###############################
+	navy_restoration_advisor = {
+
+	}
+###############################
+# Aircraft Companies
+###############################
+	aircraft_restoration_advisor = {
+		ead_purists_site28_air = {
+			picture = ead_site28_vertibirds
+
+			allowed = {
+				tag = ERB
+			}
+
+			available = {
+				has_country_flag = ead_site28_restored
+			}
+
+			research_bonus = {
+				air_tech_category = 0.15
+			}
+
+			cost = 150
+			removal_cost = 10
+
+			traits = { ead_purists_new_vb }
+		}
+	}
+}
