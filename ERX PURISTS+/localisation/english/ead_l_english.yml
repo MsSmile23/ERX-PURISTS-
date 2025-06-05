@@ -122,10 +122,19 @@ ead_site28_sciense: "Field Research of Enclave Fortress"
 ead_site28_sciense_desc: "Being a decorate pre war scientist, who exceeded in power armor research, Adam found a lot of interesting stuff, while dealing with aliens. He managed to integrate some of their technologies in Enclave APA. And now, when he have all the riches of post war America, he can go as wild as he can."
 
 ead_site28_locals: "People Person"
-ead_site28_locals_desc: "Shepherd is a strange commander. According to his supperious, who often use locals, to complete various tasks. While, in the past, even during Richardson administration, we use to deal with wastelanders, but now... Hm. But still, his results never desopoints."
+ead_site28_locals_desc: "Shepherd is a strange commander. According to his supperious, he often use locals, to complete various tasks. While, in the past, even during Richardson administration, we used to deal with wastelanders, but now... Hm. But still, man do his job well."
 
 ead_robo_spring_plant: "Flesh is weak"
 ead_robo_spring_plant_desc: "Z-52 is a controll unit of Safe Spings production plant. He offered several interesting ideas on how to improve our combat robots."
+
+ead_iron_mountain_clone: "Clone Production"
+ead_iron_mountain_clone_desc: "Dr. Peter Anderson, a brilliant and enigmatic geneticist at the Iron Mountain advanced medical facility, spearheads the Enclave’s clandestine cloning program. With a cold dedication to preserving the “pure” human lineage, he crafts genetically identical soldiers to replenish Enclave ranks, his work shrouded in secrecy. His unorthodox methods and obsession with perfection unsettle even his peers, yet his results make him indispensable."
+
+ead_iron_mountain_cyborgs: "Enclave Cyborg Programm"
+ead_iron_mountain_cyborgs_desc: "Dr. Amy Parks, a prodigious cybernetic engineer at Iron Mountain, pushes the boundaries of human augmentation with her advanced prosthetic designs. Her creations—enhancing strength, reflexes, and resilience—equip Enclave troops for the wasteland’s harsh realities. A meticulous and driven innovator, her relentless pursuit of biomechanical perfection occasionally borders on fanaticism, earning her both admiration and wariness."
+
+ead_iron_mountain_medic: "New age of Enclave medicine"
+ead_iron_mountain_medic_desc: "Dr. Betty Fox, a compassionate yet resolute expert in advanced medicine at Iron Mountain, focuses on developing cutting-edge treatments to sustain Enclave personnel. Her innovations in radiation therapy, regenerative drugs, and battlefield surgery keep soldiers alive where others would perish. Though her empathy sets her apart, her unwavering commitment to the Enclave’s cause ensures her skills serve their militaristic goals."
 
 #Characters
 
@@ -161,10 +170,13 @@ ead_lydia_bernard_name: "Doctor Lydia Bernard"
 ead_field_researcher_goodspeed_name: "Chief Field Researcher Stanley Goodspeed"
 ead_researcher_smitt_name: "Chief Research Adam Smitt"
 ead_commander_shephard_name: "Commnder John Shepherd"
-ead_general_tower_name: "General Francis Tower"
+ead_general_tower_name: "General Abraham Tower"
 ead_general_rowlandson_name: "General Rowlandson"
 ead_james_hemmers_name: "Air Marshall James Hemmers"
 eead_prcessor_z52_name: "Unit Z-52"
+ead_peter_anderson_name: "Dr. Peter Anderson"
+ead_amy_parks_name: "Dr. Amy Parks"
+ead_betty_fox_name: "Dr. Betty Fox"
 
 
 #Other

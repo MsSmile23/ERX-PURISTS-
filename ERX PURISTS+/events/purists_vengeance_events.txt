@@ -357,6 +357,7 @@ country_event = { #Fate of the NCR useful idiots
 		custom_effect_tooltip = purists_ead_vengeance.11.b.tt
 		add_ideas = Purists_enclave_ncr_science
 		add_ideas = Purists_enclave_penal_battalion
+		set_country_flag = ead_royst_recruited 
 		generate_character = {
 			token_base = ead_edwin_royst
 		}
@@ -581,5 +582,27 @@ country_event = { #Fate Maxson BoS
 		add_to_variable = { traitors_pp_pen = -0.05 }
 		add_to_variable = { traitors_special_cap = 0.05 }
 		add_to_variable = { traitors_special_min = 50 }
+	}
+}
+
+
+country_event = { #Arroyo wargoal
+	id = purists_ead_vengeance.22
+	title = purists_ead_vengeance.22.t
+	desc = purists_ead_vengeance.22.d
+	picture = GFX_ead_eternal_war
+	fire_only_once = yes
+
+	trigger = {
+		tag = ERB
+		has_completed_focus = enc_purity
+		not = { country_exists = NCR }
+		controls_state = 253
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = { 
+		name = purists_ead_vengeance.22.a
 	}
 }

@@ -182,4 +182,72 @@ technologies = {
 			breakthrough = 0.20
 		}
 	}
+
+	purists_tech_blue_halo = { 
+		dependencies = {
+			blocked_tech = 1
+		}
+		category_special_forces = {
+			max_strength = 0.08
+			need = {
+				support_equipment = 1
+			}
+		}
+
+		heavy_infantry = {
+			max_strength = 0.08
+			need = {
+				support_equipment = 1
+			}
+		}
+
+		motorized_heavy_infantry = {
+			max_strength = 0.08
+			need = {
+				support_equipment = 1
+			}
+		}
+
+		infantry = {
+			max_strength = 0.08
+			need = {
+				support_equipment = 1
+			}
+		}
+
+		motorized = {
+			max_strength = 0.08
+			need = {
+				support_equipment = 1
+			}
+		}
+
+		fireteam_infantry = {
+			max_strength = 0.08
+			need = {
+				support_equipment = 1
+			}
+		}
+
+		motorized_fireteam = {
+			max_strength = 0.08
+			need = {
+				support_equipment = 1
+			}
+		}
+
+		demolitions_infantry = {
+			max_strength = 0.08
+			need = {
+				support_equipment = 1
+			}
+		}
+
+		motorized_demoteam = {
+			max_strength = 0.08
+			need = {
+				support_equipment = 1
+			}
+		}
+	}
 }
