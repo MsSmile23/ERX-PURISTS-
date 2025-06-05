@@ -45,6 +45,12 @@ country_event = { #SAD
 		add_to_variable = { ead_experience_gain_navy = 0.02 }
 		add_to_variable = { ead_research_speed_factor = 0.04 }
 		add_to_variable = { ead_industrial_capacity_factory = 0.07 }
+		add_to_variable = { ead_country_resource_energy = -15 }
+		add_to_variable = { ead_country_resource_water = -25 }
+		add_to_variable = { ead_country_resource_advanced = -5 }
+		add_to_variable = { ead_country_resource_composites = -5 }
+		add_to_variable = { ead_country_resource_circuitry = -5 }
+		add_to_variable = { ead_country_resource_metal = -25 }
 	}
 }
 
@@ -106,6 +112,12 @@ country_event = { #Site-28
 		add_to_variable = { ead_max_command_power = 50 }
 		add_to_variable = { ead_enclave_aa_power = 0.25 }
 		add_to_variable = { ead_enclave_aa_hit = 0.25 }
+		add_to_variable = { ead_country_resource_energy = -15 }
+		add_to_variable = { ead_country_resource_water = -25 }
+		add_to_variable = { ead_country_resource_advanced = -5 }
+		add_to_variable = { ead_country_resource_composites = -5 }
+		add_to_variable = { ead_country_resource_circuitry = -5 }
+		add_to_variable = { ead_country_resource_metal = -25 }
 		add_offsite_building = {
 			type = arms_factory
 			level = 5
@@ -140,7 +152,7 @@ country_event = { #Site-28
 		}
 
 		create_field_marshal = {
-			name = "Colonel Logan"
+			name = "Commander Walters"
 			traits = { 
 				enc_purist
 				intelligent_trait
@@ -156,7 +168,7 @@ country_event = { #Site-28
 			
 		}
 		create_corps_commander = {
-			name = "Major Rogers"
+			name = "Agent Topaz"
 			traits = { 
 				enc_purist
 				local_leader_trait
@@ -173,7 +185,7 @@ country_event = { #Site-28
 			
 		}
 		create_corps_commander = {
-			name = "Major Harrington"
+			name = "Major Forge"
 			traits = { 
 				enc_purist
 				charismatic_trait
@@ -190,7 +202,7 @@ country_event = { #Site-28
 			
 		}
 		create_corps_commander = {
-			name = "Major Lloyd"
+			name = "Specialist Tygan"
 			traits = { 
 				enc_purist
 				perceptive_trait
@@ -289,6 +301,12 @@ country_event = { #Bloomfield
 		add_to_variable = { ead_enclave_aa_hit = 0.25 }
 		add_to_variable = { ead_supply_node_range = 0.15 }
 		add_to_variable = { ead_supply_factor = 0.15 }
+		add_to_variable = { ead_country_resource_energy = -15 }
+		add_to_variable = { ead_country_resource_water = -25 }
+		add_to_variable = { ead_country_resource_advanced = -5 }
+		add_to_variable = { ead_country_resource_composites = -5 }
+		add_to_variable = { ead_country_resource_circuitry = -5 }
+		add_to_variable = { ead_country_resource_metal = -25 }
 
 	}
 }
@@ -523,6 +541,7 @@ country_event = { #FTE
 	option = { 
 		name = purists_enclave_facilities.15.a
 		custom_effect_tooltip = purists_enclave_facilities.15.a.tt
+		set_country_flag = ead_fte_finished
 		add_offsite_building = {
 			type = arms_factory
 			level = 4
@@ -568,6 +587,12 @@ country_event = { #FTE
 		add_to_variable = { ead_supply_factor = 0.08 }
 		add_to_variable = { ead_industrial_capacity_factory = 0.35 }
 		add_to_variable = { ead_industrial_capacity_dockyard = 0.15 }
+		add_to_variable = { ead_country_resource_energy = -15 }
+		add_to_variable = { ead_country_resource_water = -25 }
+		add_to_variable = { ead_country_resource_advanced = -5 }
+		add_to_variable = { ead_country_resource_composites = -5 }
+		add_to_variable = { ead_country_resource_circuitry = -5 }
+		add_to_variable = { ead_country_resource_metal = -25 }
 	}
 }
 
@@ -618,6 +643,12 @@ country_event = { #Guardian
 		add_to_variable = { ead_supply_factor = 0.08 }
 		add_to_variable = { ead_air_range_factor = 0.05 }
 		add_to_variable = { ead_industrial_capacity_factory = 0.09 }
+		add_to_variable = { ead_country_resource_energy = -15 }
+		add_to_variable = { ead_country_resource_water = -25 }
+		add_to_variable = { ead_country_resource_advanced = -5 }
+		add_to_variable = { ead_country_resource_composites = -5 }
+		add_to_variable = { ead_country_resource_circuitry = -5 }
+		add_to_variable = { ead_country_resource_metal = -25 }
 	}
 }
 
@@ -663,6 +694,8 @@ country_event = { #Safe Springs
 		add_to_variable = { ead_supply_factor = 0.10 }
 		add_to_variable = { ead_industrial_capacity_dockyard = 0.30 }
 		add_to_variable = { ead_industrial_capacity_factory = 0.30 }
+		add_to_variable = { ead_country_resource_energy = -15 }
+		add_to_variable = { ead_country_resource_metal = -25 }
 	}
 }
 
@@ -692,5 +725,48 @@ country_event = { #Iron Mountain
 	
 	option = { 
 		name = purists_enclave_facilities.19.a
+		custom_effect_tooltip = purists_enclave_facilities.19.a.tt
+		set_country_flag = ead_iron_mountain_restored
+		generate_character = {
+			token_base = ead_betty_fox
+		}
+		generate_character = {
+			token_base = ead_amy_parks
+		}
+		generate_character = {
+			token_base = ead_peter_anderson
+		}
+
+		add_to_variable = { ead_country_resource_energy = -15 }
+		add_to_variable = { ead_country_resource_water = -25 }
+		add_to_variable = { ead_country_resource_advanced = -5 }
+		add_to_variable = { ead_country_resource_composites = -5 }
+		add_to_variable = { ead_country_resource_circuitry = -5 }
+		add_to_variable = { ead_country_resource_metal = -25 }
+		add_to_variable = { ead_research_speed_factor = 0.1 }
+		add_to_variable = { ead_weekly_manpower = 2 }
+		add_to_variable = { ead_special_forces_min = 40 }
+		add_offsite_building = {
+			type = arms_factory
+			level = 5
+		}
+
+		add_offsite_building = {
+			type = industrial_complex
+			level = 5
+		}
+        337 = {
+			add_building_construction = {
+					type = air_base
+					level = 10
+					instant_build = yes
+			}
+			add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 10
+		}
 	}
 }

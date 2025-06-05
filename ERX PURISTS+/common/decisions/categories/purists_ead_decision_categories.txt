@@ -59,3 +59,14 @@ Purists_Fate_Nevada = {
 		has_completed_focus = enc_purity
 	}
 }
+
+Purists_Sigma_Action = { 
+	icon = GFX_idea_ead_icon_sigma
+	allowed = {
+		tag = ERB
+	}
+	priority = 2
+	visible = {
+		has_completed_focus = enc_sigma
+	}
+}

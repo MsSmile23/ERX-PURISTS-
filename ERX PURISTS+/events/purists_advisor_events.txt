@@ -134,6 +134,7 @@ country_event = { #Ace from Texas
 	option = { 
 		name = purists_advisor.3.a
 		custom_effect_tooltip = purists_advisor.3.a.tt
+		set_country_flag = ead_air_from_texas
 		generate_character = {
 			token_base = ead_col_holmes
 		}

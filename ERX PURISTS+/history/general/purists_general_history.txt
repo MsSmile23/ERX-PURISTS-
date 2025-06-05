@@ -532,7 +532,7 @@ every_possible_country = {
 				original_tag = ERB
 			}
 			desc = ead_rogue_paladin_desc
-			traits = { ead_bos_scum, ead_rogue_paladin }
+			traits = { ead_bos_scum }
 		}
 		corps_commander = {
             skill = 4
@@ -563,7 +563,7 @@ every_possible_country = {
 				original_tag = ERB
 			}
 			desc = ead_rogue_knight_desc
-			traits = { ead_bos_scum, ead_rogue_knight }
+			traits = { ead_bos_scum }
 		}
     }
 
@@ -583,7 +583,7 @@ every_possible_country = {
 				original_tag = ERB
 			}
 			desc = ead_rogue_scribe_desc
-			traits = { ead_bos_scum, ead_rogue_scribe }
+			traits = { ead_bos_scum }
 		}
     }
 
@@ -647,7 +647,7 @@ every_possible_country = {
 				original_tag = ERB
 			}
 			desc = ead_cryo_genius_desc
-			traits = { ead_cryo_genius, ead_ncr_scum }
+			traits = { ead_cryo_genius }
 		}
     }
 
@@ -667,7 +667,7 @@ every_possible_country = {
 				original_tag = ERB
 			}
 			desc = ead_medical_expert_desc
-			traits = { ead_medical_expert, ead_ncr_scum }
+			traits = { ead_medical_expert }
 		}
     }
 
@@ -710,8 +710,8 @@ every_possible_country = {
 		name = ead_general_tower_name
 		portraits = {
 			army = {
-				small = gfx/interface/ideas/ead_general_rowlandson.dds
-				large = gfx/leaders/ead_general_rowlandson.dds
+				small = gfx/interface/ideas/ead_general_tower.dds
+				large = gfx/leaders/ead_general_tower.dds
 			}
 		}
 		advisor = {
@@ -722,7 +722,7 @@ every_possible_country = {
 				original_tag = ERB
 			}
 			desc = ead_site28_general_desc
-			traits = { ead_site28_general, ead_death_to_the_aliens }
+			traits = { ead_site28_general  }
 		}
 		field_marshal = {
             skill = 6
@@ -755,7 +755,7 @@ every_possible_country = {
 				original_tag = ERB
 			}
 			desc = ead_site28_locals_desc
-			traits = { ead_site28_locals, ead_death_to_the_aliens }
+			traits = { ead_site28_locals }
 		}
 		corps_commander = {
             skill = 5
@@ -807,7 +807,7 @@ every_possible_country = {
 				original_tag = ERB
 			}
 			desc = ead_air_jameson_desc
-			traits = { ead_air_jameson, ead_traitor_scum }
+			traits = { ead_air_jameson }
 		}
     }
 
@@ -827,7 +827,7 @@ every_possible_country = {
 				original_tag = ERB
 			}
 			desc = ead_science_jameson_desc
-			traits = { ead_science_jameson, ead_traitor_scum }
+			traits = { ead_science_jameson }
 		}
     }
 
@@ -867,7 +867,7 @@ every_possible_country = {
 				original_tag = ERB
 			}
 			desc = ead_site28_sciense_desc
-			traits = { ead_site28_sciense, ead_death_to_the_aliens }
+			traits = { ead_site28_sciense }
 		}
     }
 
@@ -888,6 +888,66 @@ every_possible_country = {
 			}
 			desc = ead_robo_spring_plant_desc
 			traits = { ead_robo_spring_plant  }
+		}
+    }
+
+	generate_character = {
+        token_base = ead_peter_anderson
+		name = ead_peter_anderson_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_peter_anderson.dds
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ead_peter_anderson
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_iron_mountain_clone_desc
+			traits = { ead_iron_mountain_clone  }
+		}
+    }
+
+	generate_character = {
+        token_base = ead_amy_parks
+		name = ead_amy_parks_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_amy_parks.dds
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ead_amy_parks
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_iron_mountain_cyborgs_desc
+			traits = { ead_iron_mountain_cyborgs }
+		}
+    }
+
+	generate_character = {
+        token_base = ead_betty_fox
+		name = ead_betty_fox_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_betty_fox.dds
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ead_betty_fox
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_iron_mountain_medic_desc
+			traits = { ead_iron_mountain_medic  }
 		}
     }
 }

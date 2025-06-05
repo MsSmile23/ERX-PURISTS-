@@ -191,6 +191,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ead_eternal_war"
+		textureFile = "gfx/interface/events_pictures/ead_eternal_war.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_ead_dust"
 		textureFile = "gfx/interface/ideas/ead_dust_idea.dds"
 	}
@@ -303,6 +308,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ead_safe_springs_idea"
 		textureFile = "gfx/interface/ideas/ead_safe_springs_idea.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_war_never_changes"
+		textureFile = "gfx/interface/ideas/ead_war_never_changes.dds"
 	}
 
 	spriteType = {
@@ -499,6 +509,61 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ead_icon_protectron"
 		textureFile = "gfx/interface/icons/ead_icon_protectron.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_iron_medical_icon"
+		textureFile = "gfx/interface/icons/ead_iron_medical_icon.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_mojave_epa_icon"
+		textureFile = "gfx/interface/icons/ead_mojave_epa_icon.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_chryslus_factory_icon"
+		textureFile = "gfx/interface/icons/ead_chryslus_factory_icon.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_fatman_company_icon"
+		textureFile = "gfx/interface/icons/ead_fatman_company_icon.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_bmt_power_armor_icon"
+		textureFile = "gfx/interface/icons/ead_bmt_power_armor_icon.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_bmt_tesla_power_icon"
+		textureFile = "gfx/interface/icons/ead_bmt_tesla_power_icon.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_east_coast_power_icon"
+		textureFile = "gfx/interface/icons/ead_east_coast_power_icon.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_site28_vertibirds"
+		textureFile = "gfx/interface/icons/ead_site28_vertibirds.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_cryo_corps_icon"
+		textureFile = "gfx/interface/icons/ead_cryo_corps_icon.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_texas_mot_icon"
+		textureFile = "gfx/interface/icons/ead_texas_mot_icon.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_blue_heal"
+		textureFile = "gfx/interface/icons/ead_blue_heal.tga"
 	}
 }
 

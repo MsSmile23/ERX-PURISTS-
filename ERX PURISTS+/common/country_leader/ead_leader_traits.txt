@@ -278,12 +278,20 @@ leader_traits = {
 		special_forces_cap = 0.1
 		special_forces_attack_factor = 0.1
 		special_forces_defence_factor = 0.1
+		stability_weekly = -0.002
+		war_support_weekly = -0.002
+		war_support_factor = -0.05
+		stability_factor = -0.05
 		recon_factor = 0.15
 	}
 
 	ead_rogue_scribe = {
 		random = no 
 		research_speed_factor = 0.1 
+		stability_weekly = -0.002
+		war_support_weekly = -0.002
+		war_support_factor = -0.05
+		stability_factor = -0.05
 		equipment_bonus = {
 			power_armor_equipment = {
 				build_cost_ic = -0.1
@@ -299,6 +307,10 @@ leader_traits = {
 		production_speed_buildings_factor = 0.10
 		industrial_capacity_dockyard = 0.10
 		industrial_capacity_factory = 0.10
+		stability_weekly = -0.002
+		war_support_weekly = -0.002
+		war_support_factor = -0.05
+		stability_factor = -0.05
 	}
 
 	forbidden_dom_master = {
@@ -343,6 +355,8 @@ leader_traits = {
 	ead_cryo_genius = {
 		random = no 
 		research_speed_factor = 0.07
+		stability_factor = -0.03
+		war_support_factor = -0.03
 		equipment_bonus = {
 			enc_cryo_equipment = {
 				instant = yes
@@ -360,6 +374,8 @@ leader_traits = {
 		research_speed_factor = 0.06
 		country_resource_water = 45
 		experience_loss_factor = -0.03
+		stability_factor = -0.03
+		war_support_factor = -0.03
 		monthly_population = 0.1
 		equipment_bonus = {
 			support_equipment = {
@@ -396,6 +412,8 @@ leader_traits = {
 	ead_science_jameson = {
 		random = no
 		research_speed_factor = 0.06
+		stability_factor = -0.05
+		war_support_factor = -0.05
 		country_resource_energy = 25
 		max_fuel_factor = 0.05
 	}
@@ -403,6 +421,8 @@ leader_traits = {
 	ead_air_jameson = {
 		random = no
 		air_fuel_consumption_factor = -0.2
+		stability_factor = -0.05
+		war_support_factor = -0.05
 		experience_gain_air = 0.1
 		CAS_equipment = {
 				instant = yes
@@ -432,6 +452,7 @@ leader_traits = {
 	ead_site28_general = {
 		random = no 
 		special_forces_min = 40
+		war_support_factor = 0.10 
 		max_command_power = 60
 		army_attack_factor = 0.15
 		org_loss_when_moving = -0.10
@@ -439,7 +460,8 @@ leader_traits = {
 
 	ead_site28_sciense = {
 		random = no
-		research_speed_factor = 0.10 
+		research_speed_factor = 0.10
+		war_support_factor = 0.10  
 		equipment_bonus = {
 			power_armor_equipment = {
 				instant = yes
@@ -463,7 +485,8 @@ leader_traits = {
 		random = no
 		recon_factor = 0.10
 		required_garrison_factor = -0.10 
-		compliance_gain = 0.40 
+		compliance_gain = 0.40
+		war_support_factor = 0.10  
 	}
 
 	ead_robo_spring_plant = {
@@ -505,5 +528,324 @@ leader_traits = {
 				build_cost_ic = 0.40
 			} 
 		}
+	}
+
+	ead_purists_medical_iron = {
+		random = no
+		weekly_manpower = 2
+		experience_loss_factor = -0.10
+		research_speed_factor = 0.08
+		monthly_population = 0.15
+		stability_weekly = 0.003
+		equipment_bonus = {
+			support_equipment = {
+				instant = yes
+				build_cost_ic = -0.10
+			}
+		}
+	}
+
+	ead_purists_epa_research = {
+		random = no
+		research_speed_factor = 0.03
+		equipment_bonus = {
+			deathclaw_equipment = {
+				instant = yes
+				maximum_speed = 0.5
+				breakthrough = 0.05
+				soft_attack = 0.05
+				hard_attack = 0.05
+				hardness = 0.1
+				build_cost_ic = 0.75
+			}
+			cazaclaw_equipment = {
+				instant = yes
+				maximum_speed = 0.5
+				breakthrough = 0.05
+				soft_attack = 0.05
+				hard_attack = 0.05
+				hardness = 0.1
+				build_cost_ic = 0.75
+			}
+			enclave_clone_equipment = {
+				instant = yes
+				maximum_speed = 0.5
+				breakthrough = 0.05
+				soft_attack = 0.05
+				hard_attack = 0.05
+				hardness = 0.1
+				build_cost_ic = 0.75
+			}
+
+			behemoth_equipment = {
+				instant = yes
+				maximum_speed = 0.5
+				breakthrough = 0.05
+				soft_attack = 0.05
+				hard_attack = 0.05
+				hardness = 0.1
+				build_cost_ic = 0.75
+			}
+		}
+	}
+
+	ead_purists_chri_factory = {
+		random = no
+		production_factory_max_efficiency_factor = 0.10
+		production_factory_efficiency_gain_factor = 0.10
+		equipment_bonus = {
+			combat_robot_equipment = {
+				instant = yes
+				build_cost_ic = -0.10
+			}
+	
+			support_robot_equipment = {
+				instant = yes
+				build_cost_ic = -0.10
+			}
+	
+			security_robot_equipment = {
+				instant = yes
+				build_cost_ic = -0.10
+			}
+		}
+	}
+
+	ead_purists_demo_research = {
+		random = no
+		research_speed_factor = 0.03
+		equipment_bonus = {
+			demolitions_equipment = {
+				instant = yes 
+				breakthrough = 0.20 
+				hard_attack = 0.20
+				soft_attack = 0.20 
+				reliability = 0.10
+				build_cost_ic = 0.50
+			}
+			enc_fatman_equipment = {
+				instant = yes
+				breakthrough = 0.30 
+				hard_attack = 0.30
+				soft_attack = 0.30 
+				reliability = 0.20
+				build_cost_ic = 0.50
+			}
+		}
+	}
+
+	ead_purists_pa_team = {
+		random = no
+		recon_factor = 0.03
+		equipment_bonus = {
+			power_armor_equipment = {
+				instant = yes 
+				breakthrough = 0.20 
+				armor_value = 0.20
+				hardness = 0.20 
+				reliability = 0.10
+				build_cost_ic = 0.40
+			}
+			horrigan_PA_equipment = {
+				instant = yes
+				breakthrough = 0.30
+				armor_value = 0.20 
+				maximum_speed = 0.20
+				hardness = 0.20  
+				reliability = 0.20
+				build_cost_ic = 0.40
+			}
+		}
+	}
+
+	ead_purists_pa_tesla_team = {
+		random = no
+		recon_factor = 0.03
+		equipment_bonus = {
+			power_armor_equipment = {
+				instant = yes 
+				breakthrough = 0.10 
+				armor_value = 0.20
+				hardness = 0.10 
+				reliability = 0.10
+				defense = 0.30
+				build_cost_ic = 0.50
+			}
+			horrigan_PA_equipment = {
+				instant = yes
+				breakthrough = 0.20
+				armor_value = 0.20 
+				maximum_speed = 0.20
+				hardness = 0.10
+				defense = 0.30  
+				reliability = 0.20
+				build_cost_ic = 0.50
+			}
+		}
+	}
+
+	ead_purists_pa_chicago_team = {
+		random = no
+		recon_factor = 0.03
+		equipment_bonus = {
+			power_armor_equipment = {
+				instant = yes 
+				breakthrough = 0.15 
+				armor_value = 0.15
+				hardness = 0.15 
+				reliability = 0.15
+				defense = 0.15
+				build_cost_ic = 0.35
+			}
+			horrigan_PA_equipment = {
+				instant = yes
+				breakthrough = 0.15
+				armor_value = 0.15 
+				maximum_speed = 0.15
+				hardness = 0.15
+				defense = 0.15  
+				reliability = 0.15
+				build_cost_ic = 0.35
+			}
+		}
+	}
+
+	ead_purists_new_vb = {
+		random = no
+		recon_factor = 0.03
+		equipment_bonus = {
+			vb_gunship_equipment = {
+				instant = yes
+				build_cost_ic = 1
+				reliability = 0.2
+				air_agility = 0.15
+				maximum_speed = 0.15
+				air_bombing = 0.05
+				air_range = 0.7
+				fuel_consumption = 0.5
+				air_attack = 0.3
+			}
+
+			land_vertibird_equipment = {
+				instant = yes
+				build_cost_ic = 0.3
+				reliability = 0.2
+				maximum_speed = 0.2 
+				breakthrough = 0.2 
+				armor_value = 0.2 
+			}
+
+			vb_transport_plane_equipment = {
+				instant = yes
+				build_cost_ic = 1
+				reliability = 0.2
+				air_agility = 0.15
+				maximum_speed = 0.15
+				fuel_consumption = 0.5
+				air_range = 0.7
+			}
+
+			car_vb_gunship_equipment = {
+				instant = yes
+				build_cost_ic = 1
+				reliability = 0.2
+				air_agility = 0.15
+				maximum_speed = 0.15
+				air_bombing = 0.05
+				air_range = 0.7
+				air_attack = 0.3
+				fuel_consumption = 0.5
+				naval_strike_attack = 0.3
+				naval_strike_targetting = 0.3
+			}
+		}
+	}
+
+	ead_purists_new_cryo_coprs = {
+		random = no
+		recon_factor = 0.03
+		equipment_bonus = {
+			power_armor_equipment = {
+				instant = yes 
+				breakthrough = 0.10 
+				armor_value = 0.20
+				hardness = 0.25 
+				reliability = 0.25
+				defense = 0.25
+				build_cost_ic = 0.5
+			}
+			enc_cryo_equipment = {
+				instant = yes
+				soft_attack = 0.25
+				ap_attack = 0.15
+				hard_attack = 0.15
+				defense = 0.15
+				build_cost_ic = 0.35
+			}
+		}
+	}
+
+	ead_purists_new_vehicle = {
+		random = no
+		recon_factor = 0.03
+		equipment_bonus = {
+			tank_equipment = {
+				instant = yes
+				maximum_speed = 0.1
+				breakthrough = 0.1
+				armor_value = 0.1
+				hardness = 0.1
+				fuel_consumption = 0.1
+				build_cost_ic = 0.3
+			}
+			assault_tank_equipment = {
+				instant = yes
+				maximum_speed = 0.1
+				breakthrough = 0.1
+				armor_value = 0.1
+				hardness = 0.1
+				fuel_consumption = 0.1
+				build_cost_ic = 0.3
+			}
+			motorized_equipment = {
+				instant = yes
+				maximum_speed = 0.1
+				breakthrough = 0.1
+				armor_value = 0.1
+				hardness = 0.1
+				fuel_consumption = 0.1
+				build_cost_ic = 0.3
+			}
+		}
+	}
+
+	ead_iron_mountain_clone = {
+		random = no
+		weekly_manpower = 20 
+		research_speed_factor = 0.08
+		country_resource_energy = -50
+		country_resource_water = -50
+	}
+
+	ead_iron_mountain_cyborgs = {
+		random = no
+		research_speed_factor = 0.08
+		equipment_bonus = {
+			implant_equipment = {
+				build_cost_ic = 0.25
+				soft_attack = 0.2
+				hard_attack = 0.2
+				defense = 0.2
+				instant = yes
+			}
+		}
+	}
+
+	ead_iron_mountain_medic = {
+		random = no
+		research_speed_factor = 0.10
+		experience_loss_factor = -0.10
+		land_night_attack = 0.15
+		weekly_manpower = 3
 	}
 }

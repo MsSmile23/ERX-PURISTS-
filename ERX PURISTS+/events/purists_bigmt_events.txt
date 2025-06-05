@@ -227,3 +227,19 @@ country_event = { #Proton weapons
 		}
 	} 
 }
+
+country_event = { #Atomic-valence
+	id = purists_ead_bigmt.13
+	title = purists_ead_bigmt.13.t
+	desc = purists_ead_bigmt.13.d
+	picture = GFX_ead_cloud_event
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = purists_ead_bigmt.13.a
+		custom_effect_tooltip = purists_ead_bigmt.13.a.tt
+		set_technology = {
+			purists_tech_blue_halo = 1
+		}
+	} 
+}
