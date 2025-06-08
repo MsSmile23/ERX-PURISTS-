@@ -1,3 +1,1683 @@
 Purists_Sigma_Action = {
+	Sigma_Field_Training = {
+		icon = decision_enc_officer
+		allowed = {
+			original_tag = ERB
+		}
+		visible = {
+			has_idea = Purists_sigma_on_the_field
+		}
+		days_remove = 20
+		days_re_enable = 30
+		custom_cost_text = command_power_max
+		custom_cost_trigger = {
+			command_power > 99.9
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -100
+			}
+		}
+		modifier = {
+			experience_gain_army = 1
+			experience_gain_air = 0.5
+		}
+	}
+	Sigma_Field_Theoretic = {
+		icon = decision_enc_officer
+		allowed = {
+			original_tag = ERB
+		}
+		visible = {
+			has_idea = Purists_sigma_on_the_field
+		}
+		days_remove = 20
+		days_re_enable = 30
+		cost = 200
+		modifier = {
+			command_power_gain = 1
+		}
+	}
+
+	Sigma_field_SAD = {
+		icon = GFX_decision_enc_helmet
+		allowed = {
+			tag = ERB
+		}
+		cost = 50
+		days_remove = 5
+		visible = {
+			has_idea = Purists_sigma_on_the_field
+			check_variable = {
+				var = purists_sigma_sad_deploy
+				value = 4
+				compare = not_equals
+			}
+		}
+		available = {
+			has_manpower > 300
+		}
+		complete_effect = {
+			add_manpower = -300
+		}
+		remove_effect = {
+		custom_effect_tooltip = sigma_deployed_tt
+		hidden_effect = {
+				load_oob = purists_sigma_sad
+			}
+			add_to_variable = {
+				var = purists_sigma_sad_deploy
+				value = 1
+			}
+		}
+	}
+
+	Sigma_field_Navarro = {
+		icon = GFX_decision_enc_helmet
+		allowed = {
+			tag = ERB
+		}
+		cost = 50
+		days_remove = 5
+		visible = {
+			has_idea = Purists_sigma_on_the_field
+			has_completed_focus = enc_a_new_beginning
+			check_variable = {
+				var = purists_sigma_navarro_deploy
+				value = 4
+				compare = not_equals
+			}
+		}
+		available = {
+			has_manpower > 300
+		}
+		complete_effect = {
+			add_manpower = -300
+		}
+		remove_effect = {
+		custom_effect_tooltip = sigma_deployed_tt
+		hidden_effect = {
+				load_oob = purists_sigma_navarro
+			}
+			add_to_variable = {
+				var = purists_sigma_navarro_deploy
+				value = 1
+			}
+		}
+	}
+
+	Sigma_field_Site28 = {
+		icon = GFX_decision_enc_helmet
+		allowed = {
+			tag = ERB
+		}
+		cost = 50
+		days_remove = 5
+		visible = {
+			has_idea = Purists_sigma_on_the_field
+			has_country_flag = ead_site28_restored
+			check_variable = {
+				var = purists_sigma_site28_deploy
+				value = 6
+				compare = not_equals
+			}
+		}
+		available = {
+			has_manpower > 300
+		}
+		complete_effect = {
+			add_manpower = -300
+		}
+		remove_effect = {
+		custom_effect_tooltip = sigma_deployed_tt
+		hidden_effect = {
+				load_oob = purists_sigma_site28
+			}
+			add_to_variable = {
+				var = purists_sigma_site28_deploy
+				value = 1
+			}
+		}
+	}
+
+	Sigma_field_MacArthur = {
+		icon = GFX_decision_enc_helmet
+		allowed = {
+			tag = ERB
+		}
+		cost = 50
+		days_remove = 5
+		visible = {
+			has_idea = Purists_sigma_on_the_field
+			controls_state = 656
+			check_variable = {
+				var = purists_sigma_mac_deploy
+				value = 3
+				compare = not_equals
+			}
+		}
+		available = {
+			has_manpower > 300
+		}
+		complete_effect = {
+			add_manpower = -300
+		}
+		remove_effect = {
+		custom_effect_tooltip = sigma_deployed_tt
+		hidden_effect = {
+				load_oob = purists_sigma_mac
+			}
+			add_to_variable = {
+				var = purists_sigma_mac_deploy
+				value = 1
+			}
+		}
+	}
+
+	Sigma_shadow_recon = {
+		icon = decision_enc_officer
+		allowed = {
+			tag = ERB
+		}
+		cost = 50
+		days_remove = 5
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Purists_sigma_as_reacon
+			}
+			check_variable = {
+				var = purists_sigma_recon
+				value = 5
+				compare = not_equals
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = sigma_deployed_tt
+			add_to_variable = {
+				var = purists_sigma_recon
+				value = 1
+			}
+			add_to_variable = { sigma_civil_intel = 0.05 }
+			add_to_variable = { sigma_army_intel = 0.05 }
+			add_to_variable = { sigma_navy_intel = 0.05 }
+			add_to_variable = { sigma_rec = 0.10 }
+			add_to_variable = { sigma_civic = 2 }
+		}
+	}
+
+	Sigma_shadow_intel_defence = {
+		icon = decision_enc_officer
+		allowed = {
+			tag = ERB
+		}
+		cost = 50
+		days_remove = 5
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Purists_sigma_as_reacon
+			}
+			check_variable = {
+				var = purists_sigma_defen
+				value = 5
+				compare = not_equals
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = sigma_deployed_tt
+			add_to_variable = {
+				var = purists_sigma_defen
+				value = 1
+			}
+			add_to_variable = { sigma_crypto_strength = 0.5 }
+			add_to_variable = { sigma_intell_defenc = 0.5 }
+			add_to_variable = { sigma_civic = 3 }
+		}
+	}
+
+	Sigma_shadow_intel_decryption = {
+		icon = decision_enc_officer
+		allowed = {
+			tag = ERB
+		}
+		cost = 50
+		days_remove = 5
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Purists_sigma_as_reacon
+			}
+			check_variable = {
+				var = purists_sigma_decr
+				value = 5
+				compare = not_equals
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = sigma_deployed_tt
+			add_to_variable = {
+				var = purists_sigma_decr
+				value = 1
+			}
+			add_to_variable = { sigma_decryption_power = 20 }
+			add_to_variable = { sigma_civic = 3 }
+		}
+	}
+
+	Sigma_shadow_partisan = {
+		icon = decision_enc_officer
+		allowed = {
+			tag = ERB
+		}
+		cost = 50
+		days_remove = 5
+		visible = {
+			has_dynamic_modifier = {
+				modifier = Purists_sigma_as_reacon
+			}
+			check_variable = {
+				var = purists_sigma_part
+				value = 5
+				compare = not_equals
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = sigma_deployed_tt
+			add_to_variable = {
+				var = purists_sigma_part
+				value = 1
+			}
+			add_to_variable = { sigma_gar_damage = -0.05 }
+			add_to_variable = { sigma_gar_size = -0.10 }
+			add_to_variable = { sigma_res_act = -0.10 }
+			add_to_variable = { sigma_solders = -0.5 }
+		}
+	}
+
+	Sigma_allow_intervine = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		days_remove = 15
+		complete_effect = {
+			set_country_flag = purists_sigma_allowed
+			add_to_variable = { sabotage_attack = -0.10 }
+			add_to_variable = { sabotage_defence = -0.10 }
+			add_to_variable = { sabotage_org = -0.10 }
+			add_to_variable = { sabotage_morale = -0.10 }
+		}
+	}
+
+	Sigma_allow_intervine_red = {
+		icon = GFX_idea_ead_sigma_red_beret
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+		}
+		available = {
+			has_completed_focus = enc_sigma_red_team
+		}
+		days_remove = 15
+		complete_effect = {
+			add_to_variable = { sabotage_attack = -0.05 }
+			add_to_variable = { sabotage_defence = -0.05 }
+			add_to_variable = { sabotage_org = -0.15 }
+			add_to_variable = { sabotage_attr = 0.05 }
+		}
+	}
+
+	Sigma_allow_intervine_blue = {
+		icon = GFX_idea_ead_sigma_blue_beret
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+		}
+		available = {
+			has_completed_focus = enc_sigma_blue_team
+		}
+		days_remove = 15
+		complete_effect = {
+			add_to_variable = { sabotage_recon = -0.15 }
+			add_to_variable = { sabotage_civi_intel = -0.05 }
+			add_to_variable = { sabotage_army_intel = -0.05 }
+			add_to_variable = { sabotage_navy_intel = -0.05 }
+			add_to_variable = { sabotage_air_intel = -0.05 }
+			add_to_variable = { sabotage_oper_intel = -0.05 }
+			add_to_variable = { sabotage_navy_intel_dec = -0.15 }
+			add_to_variable = { sabotage_army_intel_dec = -0.05 }
+			add_to_variable = { sabotage_air_intel_dec = -0.05 }
+			add_to_variable = { sabotage_intel_def = -0.5 }
+		}
+	}
+
+	Sigma_allow_intervine_white = {
+		icon = GFX_idea_ead_sigma_white_beret
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+		}
+		available = {
+			has_completed_focus = enc_sigma_white_team
+		}
+		days_remove = 15
+		complete_effect = {
+			add_to_variable = { sabotage_attr = 0.20 }
+			add_to_variable = { sabotage_supp = 0.5 }
+		}
+	}
+
+	Sigma_allow_intervine_green = {
+		icon = GFX_idea_ead_sigma_green_beret
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+		}
+		available = {
+			has_completed_focus = enc_sigma_green_team
+		}
+		days_remove = 15
+		complete_effect = {
+			add_to_variable = { sabotage_exper = 0.25 }
+			add_to_variable = { sabotage_dig_in = -2 }
+			add_to_variable = { sabotage_command_power = -0.5 }
+			add_to_variable = { sabotage_speed = -0.35 }
+			add_to_variable = { sabotage_resis = 0.5 }
+			add_to_variable = { sabotage_resis_dec = -0.35 }
+			add_to_variable = { sabotage_attr = 0.20 }
+			add_to_variable = { sabotage_supp = 0.5 }
+		}
+	}
+
+	Sigma_allow_intervine_red = {
+		icon = GFX_idea_ead_sigma_red_beret
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+		}
+		available = {
+			has_completed_focus = enc_sigma_red_team
+		}
+		days_remove = 15
+		complete_effect = {
+			add_to_variable = { sabotage_attack = -0.05 }
+			add_to_variable = { sabotage_defence = -0.05 }
+			add_to_variable = { sabotage_org = -0.15 }
+			add_to_variable = { sabotage_attr = 0.05 }
+		}
+	}
+
+	Sigma_inter_rangers = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			DES = { has_war_with = GRD }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = GRD }
+			 ERB = { has_war_with = DES }
+			}
+			country_exists = DES
+			country_exists = GRD
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.3
+		}
+	}
+
+	Sigma_inter_kaga = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			TOF = { has_war_with = SOK }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = TOF }
+			 ERB = { has_war_with = SOK }
+			}
+			country_exists = TOF
+			country_exists = SOK
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.4
+		}
+	}
+
+	Sigma_inter_grd1 = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			GRD = { has_war_with = SOK }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = GRD }
+			 ERB = { has_war_with = SOK }
+			}
+			country_exists = GRD
+			country_exists = SOK
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.5
+		}
+	}
+
+	Sigma_inter_grd2 = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			GRD = { has_war_with = TOF }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = GRD }
+			 ERB = { has_war_with = TOF }
+			}
+			country_exists = GRD
+			country_exists = TOF
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.6
+		}
+	}
+
+	Sigma_inter_rangers1 = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			DES = { has_war_with = SOK }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = DES }
+			 ERB = { has_war_with = SOK }
+			}
+			country_exists = DES
+			country_exists = SOK
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.7
+		}
+	}
+
+	Sigma_inter_rangers2 = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			DES = { has_war_with = TOF }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = DES }
+			 ERB = { has_war_with = TOF }
+			}
+			country_exists = DES
+			country_exists = TOF
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.8
+		}
+	}
+
+	Sigma_inter_tvtown1 = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			DES = { has_war_with = TVT }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = DES }
+			 ERB = { has_war_with = TVT }
+			}
+			country_exists = DES
+			country_exists = TVT
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.9
+		}
+	}
+
+	Sigma_inter_tvtown2 = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			TOF = { has_war_with = TVT }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = TOF }
+			 ERB = { has_war_with = TVT }
+			}
+			country_exists = TOF
+			country_exists = TVT
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.10
+		}
+	}
+
+	Sigma_inter_tvtown3 = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			SOK = { has_war_with = TVT }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = SOK }
+			 ERB = { has_war_with = TVT }
+			}
+			country_exists = SOK
+			country_exists = TVT
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.11
+		}
+	}
+
+	Sigma_inter_tvtown4 = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			GRD = { has_war_with = TVT }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = GRD }
+			 ERB = { has_war_with = TVT }
+			}
+			country_exists = GRD
+			country_exists = TVT
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.12
+		}
+	}
+
+	Sigma_inter_mojave = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			MOJ = { has_war_with = MOT }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = MOJ }
+			 ERB = { has_war_with = MOT }
+			}
+			country_exists = MOJ
+			country_exists = MOT
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.13
+		}
+	}
+
+	Sigma_inter_legion_mbos = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			MOJ = { has_war_with = CES }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = MOJ }
+			 ERB = { has_war_with = CES }
+			}
+			country_exists = MOJ
+			country_exists = CES
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.14
+		}
+	}
+
+	Sigma_inter_divide = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			NCR = { has_war_with = MOS }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = MOS }
+			 ERB = { has_war_with = NCR }
+			}
+			country_exists = MOS
+			country_exists = NCR
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.15
+		}
+	}
+
+	Sigma_inter_rapid = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			NCR = { has_war_with = RAP }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = RAP }
+			 ERB = { has_war_with = NCR }
+			}
+			country_exists = RAP
+			country_exists = NCR
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.16
+		}
+	}
+
+	Sigma_inter_baja = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			NCR = { has_war_with = BVC }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = BVC }
+			 ERB = { has_war_with = NCR }
+			}
+			country_exists = BVC
+			country_exists = NCR
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.17
+		}
+	}
+
+	Sigma_inter_ncr_los = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			NCR = { has_war_with = BOS }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = BOS }
+			 ERB = { has_war_with = NCR }
+			}
+			country_exists = BOS
+			country_exists = NCR
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.18
+		}
+	}
+
+	Sigma_inter_leg_ranchers = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			CES = { has_war_with = RBD }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = RBD }
+			 ERB = { has_war_with = CES }
+			}
+			country_exists = RBD
+			country_exists = CES
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.19
+		}
+	}
+
+	Sigma_inter_leg_cowboy = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			CES = { has_war_with = COW }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = COW }
+			 ERB = { has_war_with = CES }
+			}
+			country_exists = COW
+			country_exists = CES
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.20
+		}
+	}
+
+	Sigma_inter_leg_tohono = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			CES = { has_war_with = TON }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = TON }
+			 ERB = { has_war_with = CES }
+			}
+			country_exists = TON
+			country_exists = CES
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.21
+		}
+	}
+
+	Sigma_inter_leg_granja = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			CES = { has_war_with = LGS }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = LGS }
+			 ERB = { has_war_with = CES }
+			}
+			country_exists = LGS
+			country_exists = CES
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.22
+		}
+	}
+
+	Sigma_inter_leg_veg = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			CES = { has_war_with = VEG }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = VEG }
+			 ERB = { has_war_with = CES }
+			}
+			country_exists = VEG
+			country_exists = CES
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.23
+		}
+	}
+
+	Sigma_inter_mbos_veg = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			MOJ = { has_war_with = VEG }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = VEG }
+			 ERB = { has_war_with = MOJ }
+			}
+			country_exists = VEG
+			country_exists = MOJ
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.24
+		}
+	}
+
+	Sigma_inter_wash_caus = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			WBH = { has_war_with = TCA }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = WBH }
+			 ERB = { has_war_with = TCA }
+			}
+			country_exists = WBH
+			country_exists = TCA
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.25
+		}
+	}
+
+	Sigma_inter_80s_ruby = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			EHT = { has_war_with = RUB }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = EHT }
+			 ERB = { has_war_with = RUB }
+			}
+			country_exists = EHT
+			country_exists = RUB
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.26
+		}
+	}
+
 	
+	Sigma_inter_80s_riperult = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			EHT = { has_war_with = RIP }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = EHT }
+			 ERB = { has_war_with = RIP }
+			}
+			country_exists = EHT
+			country_exists = RIP
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.27
+		}
+	}
+
+	
+	Sigma_inter_80s_graber = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			EHT = { has_war_with = GRA }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = EHT }
+			 ERB = { has_war_with = GRA }
+			}
+			country_exists = EHT
+			country_exists = GRA
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.28
+		}
+	}
+
+	Sigma_inter_white_time = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			WHT = { has_war_with = CLK }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = WHT }
+			 ERB = { has_war_with = CLK }
+			}
+			country_exists = WHT
+			country_exists = CLK
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.29
+		}
+	}
+
+	Sigma_inter_white_tar = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			WHT = { has_war_with = TAR }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = WHT }
+			 ERB = { has_war_with = TAR }
+			}
+			country_exists = WHT
+			country_exists = TAR
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.30
+		}
+	}
+
+	Sigma_inter_lan_rose = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			LAC = { has_war_with = EDA }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = LAC }
+			 ERB = { has_war_with = EDA }
+			}
+			country_exists = LAC
+			country_exists = EDA
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.31
+		}
+	}
+
+	Sigma_inter_lan_mesca = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			LAC = { has_war_with = MES }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = LAC }
+			 ERB = { has_war_with = MES }
+			}
+			country_exists = LAC
+			country_exists = MES
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.32
+		}
+	}
+
+	Sigma_inter_lan_santa = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			LAC = { has_war_with = ASF }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = LAC }
+			 ERB = { has_war_with = ASF }
+			}
+			country_exists = LAC
+			country_exists = ASF
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.33
+		}
+	}
+
+	Sigma_inter_lan_summer = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			LAC = { has_war_with = SUF }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = LAC }
+			 ERB = { has_war_with = SUF }
+			}
+			country_exists = LAC
+			country_exists = SUF
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.34
+		}
+	}
+
+	Sigma_inter_lan_exec = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			LAC = { has_war_with = EXE }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = LAC }
+			 ERB = { has_war_with = EXE }
+			}
+			country_exists = LAC
+			country_exists = EXE
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.35
+		}
+	}
+
+	Sigma_inter_lan_sundog = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			LAC = { has_war_with = SUN }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = LAC }
+			 ERB = { has_war_with = SUN }
+			}
+			country_exists = LAC
+			country_exists = SUN
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.36
+		}
+	}
+
+	Sigma_inter_lan_max = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			LAC = { has_war_with = MXC }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = LAC }
+			 ERB = { has_war_with = MXC }
+			}
+			country_exists = LAC
+			country_exists = MXC
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.37
+		}
+	}
+
+	Sigma_inter_lan_robo = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			LAC = { has_war_with = ROB }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = LAC }
+			 ERB = { has_war_with = ROB }
+			}
+			country_exists = LAC
+			country_exists = ROB
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.38
+		}
+	}
+
+	Sigma_inter_lan_mother = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			LAC = { has_war_with = TTM }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = LAC }
+			 ERB = { has_war_with = TTM }
+			}
+			country_exists = LAC
+			country_exists = TTM
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.39
+		}
+	}
+
+	Sigma_inter_lan_han = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			LAC = { has_war_with = HAN }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = LAC }
+			 ERB = { has_war_with = HAN }
+			}
+			country_exists = LAC
+			country_exists = HAN
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.40
+		}
+	}
+
+	Sigma_inter_maxon_bite = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			MXC = { has_war_with = SCO }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = SCO }
+			 ERB = { has_war_with = MXC }
+			}
+			country_exists = SCO
+			country_exists = MXC
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.41
+		}
+	}
+
+	Sigma_inter_maxon_robo = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			MXC = { has_war_with = ROB }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = ROB }
+			 ERB = { has_war_with = MXC }
+			}
+			country_exists = ROB
+			country_exists = MXC
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.42
+		}
+	}
+
+	Sigma_inter_maxon_han = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			MXC = { has_war_with = HAN }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = HAN }
+			 ERB = { has_war_with = MXC }
+			}
+			country_exists = HAN
+			country_exists = MXC
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.43
+		}
+	}
+
+	Sigma_inter_warden = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			HAN = {
+				NOT = {
+					controls_state = 1423
+				}
+			}
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = HAN }
+			}
+			country_exists = HAN
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.44
+		}
+	}
+
+	Sigma_inter_navarro = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			NAT = { 
+				NOT = {
+					has_idea = NAT_unstable_region 
+				}
+			}
+		}
+		available = {
+			country_exists = NAT
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.45
+		}
+	}
+
+	Sigma_inter_troll_car = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			TRL = { has_war_with = CCW }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = CCW }
+			 ERB = { has_war_with = TRL }
+			}
+			country_exists = CCW
+			country_exists = TRL
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.46
+		}
+	}
+
+	Sigma_inter_troll_marrow = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			TRL = { has_war_with = MDT }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = MDT }
+			 ERB = { has_war_with = TRL }
+			}
+			country_exists = MDT
+			country_exists = TRL
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.47
+		}
+	}
+
+	Sigma_inter_troll_bone = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			TRL = { has_war_with = BDT }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = BDT }
+			 ERB = { has_war_with = TRL }
+			}
+			country_exists = BDT
+			country_exists = TRL
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.48
+		}
+	}
+
+	Sigma_inter_bone_chem = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			BDT = { has_war_with = CHE }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = BDT }
+			 ERB = { has_war_with = CHE }
+			}
+			country_exists = BDT
+			country_exists = CHE
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.49
+		}
+	}
+
+	Sigma_inter_bone_sho = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			BDT = { has_war_with = SHO }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = BDT }
+			 ERB = { has_war_with = SHO }
+			}
+			country_exists = BDT
+			country_exists = SHO
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.50
+		}
+	}
+
+	Sigma_inter_troll_wash = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			WBH = { has_war_with = TRL }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = WBH }
+			 ERB = { has_war_with = TRL }
+			}
+			country_exists = WBH
+			country_exists = TRL
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.51
+		}
+	}
+
+	Sigma_inter_troll_cas = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			TCA = { has_war_with = TRL }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = TCA }
+			 ERB = { has_war_with = TRL }
+			}
+			country_exists = TCA
+			country_exists = TRL
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.52
+		}
+	}
+
+	Sigma_inter_cannan_legs = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			NCN = { has_war_with = WHT }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = NCN }
+			 ERB = { has_war_with = WHT }
+			}
+			country_exists = NCN
+			country_exists = WHT
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.53
+		}
+	}
+
+	Sigma_inter_cannan_80s = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			NCN = { has_war_with = EHT }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = NCN }
+			 ERB = { has_war_with = EHT }
+			}
+			country_exists = NCN
+			country_exists = EHT
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.54
+		}
+	}
+
+	Sigma_inter_legs_80s = {
+		icon = GFX_idea_ead_icon_sigma
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			WHT = { has_war_with = WHT }
+		}
+		available = {
+			NOT = { 
+			 ERB = { has_war_with = WHT }
+			 ERB = { has_war_with = EHT }
+			}
+			country_exists = WHT
+			country_exists = EHT
+		}
+		days_remove = 15
+		complete_effect = {
+			country_event = purists_ead_military.55
+		}
+	}
+
+	Sigma_legion_civil_war = {
+		icon = GFX_idea_ead_legion_civil_war
+		cost = 300
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			NOT = {
+				country_exists = NCR
+				has_country_flag = ead_trigged_ncr_civil_war
+			}
+		}
+		available = {
+			has_completed_focus = enc_cesar_start
+			has_completed_focus = enc_rubicon
+		}
+		modifier = {
+			political_power_gain = -0.5
+		}
+		days_remove = 100
+		remove_effect = {
+			country_event = purists_ead_military.56
+		}
+	}
+
+	Sigma_legion_civil_war_ncr = {
+		icon = GFX_idea_ead_legion_civil_war
+		cost = 300
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			has_country_flag = ead_trigged_ncr_civil_war
+			NOT = {
+				country_exists = NCR
+			}
+		}
+		available = {
+			has_completed_focus = enc_cesar_start
+			has_completed_focus = enc_rubicon
+		}
+		modifier = {
+			political_power_gain = -0.5
+		}
+		days_remove = 100
+		remove_effect = {
+			country_event = purists_ead_military.57
+		}
+	}
+
+	Sigma_inter_legion_civil_war = {
+		icon = GFX_idea_ead_legion_civil_war
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			has_country_flag = ead_legion_civil_war
+		}
+		available = {
+
+		}
+		days_remove = 15
+		remove_effect = {
+			country_event = purists_ead_military.61
+		}
+	}
+
+	Sigma_ncr_civil_war = {
+		icon = GFX_idea_ead_ncr_civil_war
+		cost = 300
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+		}
+		available = {
+			has_completed_focus = enc_rubicon
+			date > 2276.01.01
+			date < 2277.01.01
+		}
+		modifier = {
+			political_power_gain = -0.5
+		}
+		days_remove = 100
+		remove_effect = {
+			country_event = purists_ead_military.58
+		}
+	}
+
+	Sigma_interv_ncr_civil_war = {
+		icon = GFX_idea_ead_ncr_civil_war
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = purists_sigma_allowed
+			has_country_flag = ead_trigged_ncr_civil_war
+		}
+		available = {
+		
+		}
+		days_remove = 15
+		remove_effect = {
+			country_event = purists_ead_military.60
+		}
+	}
 }

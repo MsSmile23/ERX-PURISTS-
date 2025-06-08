@@ -950,4 +950,71 @@ every_possible_country = {
 			traits = { ead_iron_mountain_medic  }
 		}
     }
+
+	generate_character = {
+        token_base = ead_major_walker
+		name = ead_major_walker_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_major_walker.dds
+				large = gfx/leaders/ead_major_walker.dds
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ead_major_walker
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_enclave_police_desc
+			traits = { ead_enclave_police }
+		}
+		field_marshal = {
+            skill = 5
+            attack_skill = 5
+            defense_skill = 5
+            planning_skill = 5
+            logistics_skill = 5
+            traits = {
+                enc_purist
+                charismatic_trait
+            }
+            legacy_id = -1
+        }
+    }
+
+	generate_character = {
+        token_base = ead_major_wood
+		name = ead_major_wood_name
+		portraits = {
+			army = {
+				small = gfx/interface/ideas/ead_major_wood.dds
+				large = gfx/leaders/ead_major_wood.dds
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = ead_major_wood
+			cost = 50
+			allowed = {
+				original_tag = ERB
+			}
+			desc = ead_advanced_recon_gear_desc
+			traits = { ead_advanced_recon_gear }
+		}
+		field_marshal = {
+            skill = 5
+            attack_skill = 5
+            defense_skill = 5
+            planning_skill = 5
+            logistics_skill = 5
+            traits = {
+                enc_purist
+                charismatic_trait
+
+            }
+            legacy_id = -1
+        }
+    }
 }
