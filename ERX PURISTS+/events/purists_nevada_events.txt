@@ -17,6 +17,12 @@ country_event = { #Desert Rangers were dead
 		set_country_flag = ranger_citadel_enclave
 		add_ideas = Purists_enclave_marshalls
 		custom_effect_tooltip = enclave_facilities_tt
+		generate_character = {
+			token_base = ead_major_walker
+		}
+		generate_character = {
+			token_base = ead_major_wood
+		}
 		set_technology = {
 			purists_marshall_tech_1 = 1
 		}
@@ -35,6 +41,12 @@ country_event = { #Desert Rangers were alive
 		name = purists_ead_nevada.2.a
 		set_country_flag = ranger_citadel_enclave
 		add_ideas = Purists_enclave_marshalls
+		generate_character = {
+			token_base = ead_major_walker
+		}
+		generate_character = {
+			token_base = ead_major_wood
+		}
 		custom_effect_tooltip = enclave_facilities_tt
 		set_technology = {
 			purists_marshall_tech_1 = 1

@@ -636,7 +636,7 @@ leader_traits = {
 
 	ead_purists_pa_team = {
 		random = no
-		recon_factor = 0.03
+		research_speed_factor = 0.03
 		equipment_bonus = {
 			power_armor_equipment = {
 				instant = yes 
@@ -660,7 +660,7 @@ leader_traits = {
 
 	ead_purists_pa_tesla_team = {
 		random = no
-		recon_factor = 0.03
+		research_speed_factor = 0.03
 		equipment_bonus = {
 			power_armor_equipment = {
 				instant = yes 
@@ -686,7 +686,7 @@ leader_traits = {
 
 	ead_purists_pa_chicago_team = {
 		random = no
-		recon_factor = 0.03
+		research_speed_factor = 0.03
 		equipment_bonus = {
 			power_armor_equipment = {
 				instant = yes 
@@ -712,7 +712,7 @@ leader_traits = {
 
 	ead_purists_new_vb = {
 		random = no
-		recon_factor = 0.03
+		research_speed_factor = 0.03
 		equipment_bonus = {
 			vb_gunship_equipment = {
 				instant = yes
@@ -763,7 +763,7 @@ leader_traits = {
 
 	ead_purists_new_cryo_coprs = {
 		random = no
-		recon_factor = 0.03
+		research_speed_factor = 0.03
 		equipment_bonus = {
 			power_armor_equipment = {
 				instant = yes 
@@ -787,7 +787,7 @@ leader_traits = {
 
 	ead_purists_new_vehicle = {
 		random = no
-		recon_factor = 0.03
+		research_speed_factor = 0.03
 		equipment_bonus = {
 			tank_equipment = {
 				instant = yes
@@ -847,5 +847,39 @@ leader_traits = {
 		experience_loss_factor = -0.10
 		land_night_attack = 0.15
 		weekly_manpower = 3
+	}
+
+	ead_enclave_police = {
+		random = no
+		recon_factor = 0.10
+		army_org_regain = 0.10
+		army_speed_factor = 0.10
+		resistance_activity = -0.10
+		special_forces_min = 20
+	}
+
+	ead_advanced_recon_gear = {
+		random = no
+		equipment_bonus = {
+			spec_ops_equipment = {
+				instant = yes
+				build_cost_ic = 0.50 
+				armor_value = 0.30
+				maximum_speed = 0.30
+				breakthrough = 0.20 
+				soft_attack = 0.20
+				hard_attack = 0.20
+			}
+
+			heavy_infantry_equipment = {
+				instant = yes
+				build_cost_ic = 0.50 
+				armor_value = 0.30
+				maximum_speed = 0.30
+				breakthrough = 0.20 
+				soft_attack = 0.20
+				hard_attack = 0.20
+			}
+		}
 	}
 }

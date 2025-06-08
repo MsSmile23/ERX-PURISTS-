@@ -1,7 +1,7 @@
 division_template = {
 	is_locked = yes
 	template_counter= 90
-	name = "Deployed Sigma Squad"
+	name = "Sigma Squad Reinforsment"
 	regiments = {
 		sigma_unit = { x = 0 y = 0 }
 		sigma_unit = { x = 0 y = 1 }
@@ -24,24 +24,9 @@ division_template = {
 
 units = {
 	division {
-		name = "SIGMA Team Alpha"
+		name = "SIGMA Team"
 		location = 8805
-		division_template = "Deployed Sigma Squad"
-		start_experience_factor = 1.0
-		start_equipment_factor = 1.0
-		force_equipment_variants = { 
-			plasma_equipment_2 = { owner = "USA" } 
-			enclave_power_armour_equipment_2 = { owner = "USA" } 
-			energy_fireteam_equipment_4 = { owner = "USA" }  
-			flamer_demolitions_equipment_4 = { owner = "USA" } 
-			anti_tank_equipment_3 = {owner = "USA" }
-			spec_ops_equipment_5 = { owner = "USA" }
-		}
-    }
-	division {
-		name = "SIGMA Team Bravo"
-		location = 8805
-		division_template = "Deployed Sigma Squad"
+		division_template = "Sigma Squad Reinforsment"
 		start_experience_factor = 1.0
 		start_equipment_factor = 1.0
 		force_equipment_variants = { 

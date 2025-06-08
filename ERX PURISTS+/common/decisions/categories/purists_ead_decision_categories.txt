@@ -62,6 +62,7 @@ Purists_Fate_Nevada = {
 
 Purists_Sigma_Action = { 
 	icon = GFX_idea_ead_icon_sigma
+	picture = GFX_decision_ead_squad_sigma_actions
 	allowed = {
 		tag = ERB
 	}
