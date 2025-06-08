@@ -193,9 +193,4876 @@ country_event = { #Sigma Boys
 	option = { 
 		name = purists_ead_military.2.b
 		custom_effect_tooltip = purists_ead_military.2.a.tt
-		add_ideas = Purists_sigma_as_reacon
+		add_dynamic_modifier = {
+			modifier = Purists_sigma_as_reacon
+		}
+		add_to_variable = { sigma_civil_intel = 0.15 }
+		add_to_variable = { sigma_army_intel = 0.15 }
+		add_to_variable = { sigma_navy_intel = 0.15 }
+		add_to_variable = { sigma_intell_defenc = 0.50 }
+		add_to_variable = { sigma_gar_damage = -0.10 }
+		add_to_variable = { sigma_gar_size = -0.10 }
+		add_to_variable = { sigma_res_act = -0.10 }
+		add_to_variable = { sigma_rec = 0.15 }
 		generate_character = {
 			token_base = ead_col_hammel
 		} 
+	}
+}
+
+country_event = { #Sigma Intervention GRD vs DES
+	id = purists_ead_military.3
+	title = purists_ead_military.3.t
+	desc = purists_ead_military.3.d
+	picture = GFX_ead_nevada_royl
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.3.a
+		custom_effect_tooltip = purists_ead_military.3.a.tt
+		DES = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.3.b
+		custom_effect_tooltip = purists_ead_military.3.b.tt
+		GRD = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.3.c
+		custom_effect_tooltip = purists_ead_military.3.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		DES = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		GRD = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.3.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention SOK vs TOF
+	id = purists_ead_military.4
+	title = purists_ead_military.4.t
+	desc = purists_ead_military.4.d
+	picture = GFX_ead_nevada_royl
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.4.a
+		custom_effect_tooltip = purists_ead_military.4.a.tt
+		SOK = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.4.b
+		custom_effect_tooltip = purists_ead_military.4.b.tt
+		TOF = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.4.c
+		custom_effect_tooltip = purists_ead_military.4.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		TOF = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		SOK = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.4.f
+		custom_effect_tooltip = purists_ead_military.4.f.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		SOK = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		TOF = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.4.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention SOK vs GRD
+	id = purists_ead_military.5
+	title = purists_ead_military.5.t
+	desc = purists_ead_military.5.d
+	picture = GFX_ead_nevada_royl
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.5.a
+		custom_effect_tooltip = purists_ead_military.5.a.tt
+		SOK = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.5.b
+		custom_effect_tooltip = purists_ead_military.5.b.tt
+		GRD = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.5.c
+		custom_effect_tooltip = purists_ead_military.5.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		SOK = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		GRD = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+
+	option = { 
+		name = purists_ead_military.5.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention TOF vs GRD
+	id = purists_ead_military.6
+	title = purists_ead_military.6.t
+	desc = purists_ead_military.6.d
+	picture = GFX_ead_nevada_royl
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.6.a
+		custom_effect_tooltip = purists_ead_military.6.a.tt
+		TOF = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.6.b
+		custom_effect_tooltip = purists_ead_military.6.b.tt
+		GRD = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.6.c
+		custom_effect_tooltip = purists_ead_military.6.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		TOF = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		GRD = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+
+	option = { 
+		name = purists_ead_military.6.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention SOK vs DES
+	id = purists_ead_military.7
+	title = purists_ead_military.7.t
+	desc = purists_ead_military.7.d
+	picture = GFX_ead_nevada_royl
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.7.a
+		custom_effect_tooltip = purists_ead_military.7.a.tt
+		SOK = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.7.b
+		custom_effect_tooltip = purists_ead_military.7.b.tt
+		DES = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.7.c
+		custom_effect_tooltip = purists_ead_military.7.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		DES = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		SOK = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.7.f
+		custom_effect_tooltip = purists_ead_military.7.f.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		SOK = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		DES = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.7.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention TOF vs DES
+	id = purists_ead_military.8
+	title = purists_ead_military.8.t
+	desc = purists_ead_military.8.d
+	picture = GFX_ead_nevada_royl
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.8.a
+		custom_effect_tooltip = purists_ead_military.8.a.tt
+		TOF = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.8.b
+		custom_effect_tooltip = purists_ead_military.8.b.tt
+		DES = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.8.c
+		custom_effect_tooltip = purists_ead_military.8.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		DES = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		TOF = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.8.f
+		custom_effect_tooltip = purists_ead_military.8.f.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		TOF = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		DES = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.8.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention TVT vs DES
+	id = purists_ead_military.9
+	title = purists_ead_military.9.t
+	desc = purists_ead_military.9.d
+	picture = GFX_ead_nevada_royl
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.9.a
+		custom_effect_tooltip = purists_ead_military.9.a.tt
+		DES = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.9.b
+		custom_effect_tooltip = purists_ead_military.9.b.tt
+		TVT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.9.c
+		custom_effect_tooltip = purists_ead_military.9.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		DES = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		TVT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.9.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention TVT vs TOF
+	id = purists_ead_military.10
+	title = purists_ead_military.10.t
+	desc = purists_ead_military.10.d
+	picture = GFX_ead_nevada_royl
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.10.a
+		custom_effect_tooltip = purists_ead_military.10.a.tt
+		TOF = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.10.b
+		custom_effect_tooltip = purists_ead_military.10.b.tt
+		TVT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.10.c
+		custom_effect_tooltip = purists_ead_military.10.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		TOF = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		TVT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.10.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention TVT vs SOK
+	id = purists_ead_military.11
+	title = purists_ead_military.11.t
+	desc = purists_ead_military.11.d
+	picture = GFX_ead_nevada_royl
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.11.a
+		custom_effect_tooltip = purists_ead_military.11.a.tt
+		SOK = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.11.b
+		custom_effect_tooltip = purists_ead_military.11.b.tt
+		TVT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.11.c
+		custom_effect_tooltip = purists_ead_military.11.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		SOK = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		TVT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.11.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention TVT vs GRD
+	id = purists_ead_military.12
+	title = purists_ead_military.12.t
+	desc = purists_ead_military.12.d
+	picture = GFX_ead_nevada_royl
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.12.a
+		custom_effect_tooltip = purists_ead_military.12.a.tt
+		GRD = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.12.b
+		custom_effect_tooltip = purists_ead_military.12.b.tt
+		TVT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.12.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention MOJ vs MOT
+	id = purists_ead_military.13
+	title = purists_ead_military.13.t
+	desc = purists_ead_military.13.d
+	picture = GFX_ead_sunburst
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.13.a
+		custom_effect_tooltip = purists_ead_military.13.a.tt
+		MOJ = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.13.b
+		custom_effect_tooltip = purists_ead_military.13.b.tt
+		MOT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+		set_temp_variable = {
+			suspicion_change_var = 25
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.13.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention MOJ vs CES
+	id = purists_ead_military.14
+	title = purists_ead_military.14.t
+	desc = purists_ead_military.14.d
+	picture = GFX_ead_legion_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.14.a
+		custom_effect_tooltip = purists_ead_military.14.a.tt
+		MOJ = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.14.b
+		custom_effect_tooltip = purists_ead_military.14.b.tt
+		CES = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.14.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention NCR vs MOS
+	id = purists_ead_military.15
+	title = purists_ead_military.15.t
+	desc = purists_ead_military.15.d
+	picture = GFX_ead_ncr_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.15.a
+		custom_effect_tooltip = purists_ead_military.15.a.tt
+		NCR = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+		set_temp_variable = {
+			suspicion_change_var = 25
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.15.b
+		custom_effect_tooltip = purists_ead_military.15.b.tt
+		MOS = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.15.c
+		custom_effect_tooltip = purists_ead_military.15.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		MOS = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		NCR = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		set_temp_variable = {
+			suspicion_change_var = 45
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.15.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention NCR vs RAP
+	id = purists_ead_military.16
+	title = purists_ead_military.16.t
+	desc = purists_ead_military.16.d
+	picture = GFX_ead_ncr_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.16.a
+		custom_effect_tooltip = purists_ead_military.16.a.tt
+		NCR = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+		set_temp_variable = {
+			suspicion_change_var = 25
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.16.b
+		custom_effect_tooltip = purists_ead_military.16.b.tt
+		RAP = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.16.c
+		custom_effect_tooltip = purists_ead_military.16.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		RAP = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		NCR = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		set_temp_variable = {
+			suspicion_change_var = 45
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.16.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention NCR vs Baja
+	id = purists_ead_military.17
+	title = purists_ead_military.17.t
+	desc = purists_ead_military.17.d
+	fire_only_once = yes
+	picture = GFX_ead_ncr_expen
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.17.a
+		custom_effect_tooltip = purists_ead_military.17.a.tt
+		NCR = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+		set_temp_variable = {
+			suspicion_change_var = 25
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.17.b
+		custom_effect_tooltip = purists_ead_military.17.b.tt
+		BVC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+		BLP = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.17.c
+		custom_effect_tooltip = purists_ead_military.17.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 400
+			}
+
+			has_equipment = {
+				infantry_equipment > 2000
+			}
+		}
+		BVC = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		BLP = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		NCR = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		set_temp_variable = {
+			suspicion_change_var = 45
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -400
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.17.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention NCR vs BOS
+	id = purists_ead_military.18
+	title = purists_ead_military.18.t
+	desc = purists_ead_military.18.d
+	fire_only_once = yes
+	picture = GFX_ead_bos_ncr
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.18.a
+		custom_effect_tooltip = purists_ead_military.18.a.tt
+		NCR = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+		set_temp_variable = {
+			suspicion_change_var = 25
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.18.b
+		custom_effect_tooltip = purists_ead_military.18.b.tt
+		BOS = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.18.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention CES vs RBD
+	id = purists_ead_military.19
+	title = purists_ead_military.19.t
+	desc = purists_ead_military.19.d
+	picture = GFX_ead_legion_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.19.a
+		custom_effect_tooltip = purists_ead_military.19.a.tt
+		CES = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.19.b
+		custom_effect_tooltip = purists_ead_military.19.b.tt
+		RBD = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.19.c
+		custom_effect_tooltip = purists_ead_military.19.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		RBD = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		CES = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.19.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention CES vs COW
+	id = purists_ead_military.20
+	title = purists_ead_military.20.t
+	desc = purists_ead_military.20.d
+	picture = GFX_ead_legion_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.20.a
+		custom_effect_tooltip = purists_ead_military.20.a.tt
+		CES = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.20.b
+		custom_effect_tooltip = purists_ead_military.20.b.tt
+		COW = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.20.c
+		custom_effect_tooltip = purists_ead_military.20.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		COW = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		CES = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.20.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention CES vs TON
+	id = purists_ead_military.21
+	title = purists_ead_military.21.t
+	desc = purists_ead_military.21.d
+	picture = GFX_ead_legion_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.21.a
+		custom_effect_tooltip = purists_ead_military.21.a.tt
+		CES = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.21.b
+		custom_effect_tooltip = purists_ead_military.21.b.tt
+		TON = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.21.c
+		custom_effect_tooltip = purists_ead_military.21.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		TON = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		CES = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.21.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention CES vs LGS
+	id = purists_ead_military.22
+	title = purists_ead_military.22.t
+	desc = purists_ead_military.22.d
+	picture = GFX_ead_legion_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.22.a
+		custom_effect_tooltip = purists_ead_military.22.a.tt
+		CES = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.22.b
+		custom_effect_tooltip = purists_ead_military.22.b.tt
+		LGS = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.22.c
+		custom_effect_tooltip = purists_ead_military.22.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		LGS = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		CES = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.22.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention CES vs VEG
+	id = purists_ead_military.23
+	title = purists_ead_military.23.t
+	desc = purists_ead_military.23.d
+	picture = GFX_ead_legion_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.23.a
+		custom_effect_tooltip = purists_ead_military.23.a.tt
+		CES = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.23.b
+		custom_effect_tooltip = purists_ead_military.23.b.tt
+		VEG = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.23.c
+		custom_effect_tooltip = purists_ead_military.23.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		VEG = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		CES = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.23.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention MOJ vs VEG
+	id = purists_ead_military.24
+	title = purists_ead_military.24.t
+	desc = purists_ead_military.24.d
+	picture = GFX_ead_brotherhood_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.24.a
+		custom_effect_tooltip = purists_ead_military.24.a.tt
+		MOJ = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.24.b
+		custom_effect_tooltip = purists_ead_military.24.b.tt
+		VEG = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.24.c
+		custom_effect_tooltip = purists_ead_military.24.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		VEG = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		MOJ = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.24.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention WBH vs TCA
+	id = purists_ead_military.25
+	title = purists_ead_military.25.t
+	desc = purists_ead_military.25.d
+	picture = GFX_ead_brotherhood_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.25.a
+		custom_effect_tooltip = purists_ead_military.25.a.tt
+		WBH = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.25.b
+		custom_effect_tooltip = purists_ead_military.25.b.tt
+		TCA = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.25.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention EHT vs RUB
+	id = purists_ead_military.26
+	title = purists_ead_military.26.t
+	desc = purists_ead_military.26.d
+	picture = GFX_ead_80s_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.26.a
+		custom_effect_tooltip = purists_ead_military.26.a.tt
+		EHT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.26.b
+		custom_effect_tooltip = purists_ead_military.26.b.tt
+		RUB = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.26.c
+		custom_effect_tooltip = purists_ead_military.26.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		RUB = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		EHT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.26.f
+		custom_effect_tooltip = purists_ead_military.26.f.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		EHT = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		RUB = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.26.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention EHT vs RIP
+	id = purists_ead_military.27
+	title = purists_ead_military.27.t
+	desc = purists_ead_military.27.d
+	picture = GFX_ead_80s_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.27.a
+		custom_effect_tooltip = purists_ead_military.27.a.tt
+		EHT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.27.b
+		custom_effect_tooltip = purists_ead_military.27.b.tt
+		RIP = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.27.c
+		custom_effect_tooltip = purists_ead_military.27.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		RIP = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		EHT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.27.f
+		custom_effect_tooltip = purists_ead_military.27.f.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		EHT = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		RIP = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.27.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention EHT vs GRA
+	id = purists_ead_military.28
+	title = purists_ead_military.28.t
+	desc = purists_ead_military.28.d
+	picture = GFX_ead_80s_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.28.a
+		custom_effect_tooltip = purists_ead_military.28.a.tt
+		EHT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.28.b
+		custom_effect_tooltip = purists_ead_military.28.b.tt
+		GRA = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.28.c
+		custom_effect_tooltip = purists_ead_military.28.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		GRA = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		EHT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.28.f
+		custom_effect_tooltip = purists_ead_military.28.f.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		EHT = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		GRA = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.28.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention WHT vs CLK
+	id = purists_ead_military.29
+	title = purists_ead_military.29.t
+	desc = purists_ead_military.29.d
+	picture = GFX_ead_whitelegs_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.29.a
+		custom_effect_tooltip = purists_ead_military.29.a.tt
+		WHT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.29.b
+		custom_effect_tooltip = purists_ead_military.29.b.tt
+		CLK = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.29.c
+		custom_effect_tooltip = purists_ead_military.29.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		CLK = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		WHT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.29.f
+		custom_effect_tooltip = purists_ead_military.29.f.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		WHT = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		CLK = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.29.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention WHT vs TAR
+	id = purists_ead_military.30
+	title = purists_ead_military.30.t
+	desc = purists_ead_military.30.d
+	picture = GFX_ead_whitelegs_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.30.a
+		custom_effect_tooltip = purists_ead_military.30.a.tt
+		WHT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.30.b
+		custom_effect_tooltip = purists_ead_military.30.b.tt
+		TAR = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.30.c
+		custom_effect_tooltip = purists_ead_military.30.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		TAR = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		WHT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.30.f
+		custom_effect_tooltip = purists_ead_military.30.f.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		WHT = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		TAR = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.30.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention LAC vs EDA
+	id = purists_ead_military.31
+	title = purists_ead_military.31.t
+	desc = purists_ead_military.31.d
+	picture = GFX_ead_lanuis_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.31.a
+		custom_effect_tooltip = purists_ead_military.31.a.tt
+		LAC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.31.b
+		custom_effect_tooltip = purists_ead_military.31.b.tt
+		EDA = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.31.c
+		custom_effect_tooltip = purists_ead_military.31.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		EDA = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		LAC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.31.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention LAC vs MES
+	id = purists_ead_military.32
+	title = purists_ead_military.32.t
+	desc = purists_ead_military.32.d
+	picture = GFX_ead_lanuis_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.32.a
+		custom_effect_tooltip = purists_ead_military.32.a.tt
+		LAC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.32.b
+		custom_effect_tooltip = purists_ead_military.32.b.tt
+		MES = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.32.c
+		custom_effect_tooltip = purists_ead_military.32.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		MES = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		LAC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.32.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention LAC vs ASF
+	id = purists_ead_military.33
+	title = purists_ead_military.33.t
+	desc = purists_ead_military.33.d
+	picture = GFX_ead_lanuis_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.33.a
+		custom_effect_tooltip = purists_ead_military.33.a.tt
+		LAC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.33.b
+		custom_effect_tooltip = purists_ead_military.33.b.tt
+		ASF = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.33.c
+		custom_effect_tooltip = purists_ead_military.33.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		ASF = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		LAC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.33.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention LAC vs SUF
+	id = purists_ead_military.34
+	title = purists_ead_military.34.t
+	desc = purists_ead_military.34.d
+	picture = GFX_ead_lanuis_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.34.a
+		custom_effect_tooltip = purists_ead_military.34.a.tt
+		LAC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.34.b
+		custom_effect_tooltip = purists_ead_military.34.b.tt
+		SUF = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.34.c
+		custom_effect_tooltip = purists_ead_military.34.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		SUF = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		LAC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.34.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention LAC vs EXE
+	id = purists_ead_military.35
+	title = purists_ead_military.35.t
+	desc = purists_ead_military.35.d
+	picture = GFX_ead_lanuis_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.35.a
+		custom_effect_tooltip = purists_ead_military.35.a.tt
+		LAC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.35.b
+		custom_effect_tooltip = purists_ead_military.35.b.tt
+		EXE = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.35.c
+		custom_effect_tooltip = purists_ead_military.35.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		EXE = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		LAC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.35.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention LAC vs SUN
+	id = purists_ead_military.36
+	title = purists_ead_military.36.t
+	desc = purists_ead_military.36.d
+	picture = GFX_ead_lanuis_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.36.a
+		custom_effect_tooltip = purists_ead_military.36.a.tt
+		LAC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.36.b
+		custom_effect_tooltip = purists_ead_military.36.b.tt
+		SUN = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.36.c
+		custom_effect_tooltip = purists_ead_military.36.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		SUN = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		LAC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.36.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention LAC vs MXC
+	id = purists_ead_military.37
+	title = purists_ead_military.37.t
+	desc = purists_ead_military.37.d
+	picture = GFX_ead_lanuis_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.37.a
+		custom_effect_tooltip = purists_ead_military.37.a.tt
+		LAC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.37.b
+		custom_effect_tooltip = purists_ead_military.37.b.tt
+		MXC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.37.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention LAC vs ROB
+	id = purists_ead_military.38
+	title = purists_ead_military.38.t
+	desc = purists_ead_military.38.d
+	picture = GFX_ead_lanuis_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.38.a
+		custom_effect_tooltip = purists_ead_military.38.a.tt
+		LAC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.38.b
+		custom_effect_tooltip = purists_ead_military.38.b.tt
+		ROB = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.38.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention LAC vs TTM
+	id = purists_ead_military.39
+	title = purists_ead_military.39.t
+	desc = purists_ead_military.39.d
+	picture = GFX_ead_lanuis_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.39.a
+		custom_effect_tooltip = purists_ead_military.39.a.tt
+		LAC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.39.b
+		custom_effect_tooltip = purists_ead_military.39.b.tt
+		TTM = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.39.c
+		custom_effect_tooltip = purists_ead_military.39.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		TTM = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		LAC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.39.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention LAC vs HAN
+	id = purists_ead_military.40
+	title = purists_ead_military.40.t
+	desc = purists_ead_military.40.d
+	picture = GFX_ead_lanuis_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.40.a
+		custom_effect_tooltip = purists_ead_military.40.a.tt
+		LAC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.40.b
+		custom_effect_tooltip = purists_ead_military.40.b.tt
+		HAN = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.40.c
+		custom_effect_tooltip = purists_ead_military.40.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		HAN = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		LAC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.40.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention MXC vs SCO
+	id = purists_ead_military.41
+	title = purists_ead_military.41.t
+	desc = purists_ead_military.41.d
+	picture = GFX_ead_brotherhood_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.41.a
+		custom_effect_tooltip = purists_ead_military.41.a.tt
+		MXC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.41.b
+		custom_effect_tooltip = purists_ead_military.41.b.tt
+		SCO = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.41.c
+		custom_effect_tooltip = purists_ead_military.41.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		SCO = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		MXC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.41.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention MXC vs ROB
+	id = purists_ead_military.42
+	title = purists_ead_military.42.t
+	desc = purists_ead_military.42.d
+	picture = GFX_ead_brotherhood_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.42.a
+		custom_effect_tooltip = purists_ead_military.42.a.tt
+		MXC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.42.b
+		custom_effect_tooltip = purists_ead_military.42.b.tt
+		ROB = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.42.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention MXC vs HAN
+	id = purists_ead_military.43
+	title = purists_ead_military.43.t
+	desc = purists_ead_military.43.d
+	picture = GFX_ead_brotherhood_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.43.a
+		custom_effect_tooltip = purists_ead_military.43.a.tt
+		MXC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.43.b
+		custom_effect_tooltip = purists_ead_military.43.b.tt
+		HAN = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.43.c
+		custom_effect_tooltip = purists_ead_military.43.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		HAN = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		MXC = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.43.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention Warden
+	id = purists_ead_military.44
+	title = purists_ead_military.44.t
+	desc = purists_ead_military.44.d
+	picture = GFX_ead_nevada_royl
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.44.a
+		custom_effect_tooltip = purists_ead_military.44.a.tt
+		HAN = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.44.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Navarro
+	id = purists_ead_military.45
+	title = purists_ead_military.45.t
+	desc = purists_ead_military.45.d
+	picture = GFX_ead_ncr_expen
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.45.a
+		custom_effect_tooltip = purists_ead_military.45.a.tt
+		NAT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+		set_temp_variable = {
+			suspicion_change_var = 25
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.45.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention TRL vs CCW
+	id = purists_ead_military.46
+	title = purists_ead_military.46.t
+	desc = purists_ead_military.46.d
+	picture = GFX_ead_oregon
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.46.a
+		custom_effect_tooltip = purists_ead_military.46.a.tt
+		TRL = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.46.b
+		custom_effect_tooltip = purists_ead_military.46.b.tt
+		CCW = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.46.c
+		custom_effect_tooltip = purists_ead_military.46.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		CCW = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		TRL = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.46.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention TRL vs MDT
+	id = purists_ead_military.47
+	title = purists_ead_military.47.t
+	desc = purists_ead_military.47.d
+	picture = GFX_ead_oregon
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.47.a
+		custom_effect_tooltip = purists_ead_military.47.a.tt
+		TRL = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.47.b
+		custom_effect_tooltip = purists_ead_military.47.b.tt
+		MDT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.47.c
+		custom_effect_tooltip = purists_ead_military.47.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		MDT = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		TRL = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.47.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention TRL vs BDT
+	id = purists_ead_military.48
+	title = purists_ead_military.48.t
+	desc = purists_ead_military.48.d
+	picture = GFX_ead_oregon
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.48.a
+		custom_effect_tooltip = purists_ead_military.48.a.tt
+		TRL = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.48.b
+		custom_effect_tooltip = purists_ead_military.48.b.tt
+		BDT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.48.c
+		custom_effect_tooltip = purists_ead_military.48.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		BDT = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		TRL = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.48.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention BDT vs CHE
+	id = purists_ead_military.49
+	title = purists_ead_military.49.t
+	desc = purists_ead_military.49.d
+	picture = GFX_ead_oregon
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.49.a
+		custom_effect_tooltip = purists_ead_military.49.a.tt
+		BDT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.49.b
+		custom_effect_tooltip = purists_ead_military.49.b.tt
+		CHE = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.49.c
+		custom_effect_tooltip = purists_ead_military.49.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		CHE = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		BDT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.49.f
+		custom_effect_tooltip = purists_ead_military.49.f.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		BDT = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		CHE = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.49.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention BDT vs SHO
+	id = purists_ead_military.50
+	title = purists_ead_military.50.t
+	desc = purists_ead_military.50.d
+	picture = GFX_ead_oregon
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.50.a
+		custom_effect_tooltip = purists_ead_military.50.a.tt
+		BDT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.50.b
+		custom_effect_tooltip = purists_ead_military.50.b.tt
+		SHO = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.50.c
+		custom_effect_tooltip = purists_ead_military.50.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		SHO = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		BDT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.50.f
+		custom_effect_tooltip = purists_ead_military.50.f.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		BDT = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		SHO = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.50.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention TRL vs WBH
+	id = purists_ead_military.51
+	title = purists_ead_military.51.t
+	desc = purists_ead_military.51.d
+	picture = GFX_ead_oregon
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.51.a
+		custom_effect_tooltip = purists_ead_military.51.a.tt
+		TRL = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.51.b
+		custom_effect_tooltip = purists_ead_military.51.b.tt
+		WBH = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.51.c
+		custom_effect_tooltip = purists_ead_military.51.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		WBH = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+		TRL = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+	}
+	option = { 
+		name = purists_ead_military.51.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention TRL vs TCA
+	id = purists_ead_military.52
+	title = purists_ead_military.52.t
+	desc = purists_ead_military.52.d
+	picture = GFX_ead_oregon
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.52.a
+		custom_effect_tooltip = purists_ead_military.52.a.tt
+		TRL = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.52.b
+		custom_effect_tooltip = purists_ead_military.52.b.tt
+		TCA = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.52.c
+		custom_effect_tooltip = purists_ead_military.52.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		TCA = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+		TRL = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+	}
+	option = { 
+		name = purists_ead_military.52.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention WHT vs NCN
+	id = purists_ead_military.53
+	title = purists_ead_military.53.t
+	desc = purists_ead_military.53.d
+	picture = GFX_ead_newcaanan_fate
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.53.a
+		custom_effect_tooltip = purists_ead_military.53.a.tt
+		WHT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.53.b
+		custom_effect_tooltip = purists_ead_military.53.b.tt
+		NCN = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.53.c
+		custom_effect_tooltip = purists_ead_military.53.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		NCN = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		WHT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.53.f
+		custom_effect_tooltip = purists_ead_military.53.f.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		WHT = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		NCN = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.53.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention EHT vs NCN
+	id = purists_ead_military.54
+	title = purists_ead_military.54.t
+	desc = purists_ead_military.54.d
+	picture = GFX_ead_newcaanan_fate
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.54.a
+		custom_effect_tooltip = purists_ead_military.54.a.tt
+		EHT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.54.b
+		custom_effect_tooltip = purists_ead_military.54.b.tt
+		NCN = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.54.c
+		custom_effect_tooltip = purists_ead_military.54.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		NCN = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		EHT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.54.f
+		custom_effect_tooltip = purists_ead_military.54.f.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		EHT = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		NCN = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.54.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Sigma Intervention EHT vs WHT
+	id = purists_ead_military.55
+	title = purists_ead_military.55.t
+	desc = purists_ead_military.55.d
+	picture = GFX_ead_newcaanan_fate
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.55.a
+		custom_effect_tooltip = purists_ead_military.55.a.tt
+		EHT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.55.b
+		custom_effect_tooltip = purists_ead_military.55.b.tt
+		WHT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.55.c
+		custom_effect_tooltip = purists_ead_military.55.c.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		WHT = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		EHT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.55.f
+		custom_effect_tooltip = purists_ead_military.55.f.tt
+		custom_effect_tooltip = purists_extra_weapons.tt
+		trigger = {
+			has_equipment = {
+				support_equipment > 200
+			}
+
+			has_equipment = {
+				infantry_equipment > 1000
+			}
+		}
+		EHT = {
+			add_timed_idea = {
+				idea = Purists_mercenary_support
+				days = 180
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = ERB
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+				producer = ERB
+			}
+		}
+		WHT = {
+			add_dynamic_modifier = {
+				modifier = Purists_sigma_subotaje_active
+				scope = ERB  
+				days = 180
+    		}
+		}
+
+		ERB = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -200
+			}
+		}
+	}
+
+	option = { 
+		name = purists_ead_military.55.e
+		add_political_power = 50
+	}
+}
+
+country_event = { #Legion Civil war without NCR Civil War
+	id = purists_ead_military.56
+	title = purists_ead_military.56.t
+	desc = purists_ead_military.56.d
+	picture = GFX_ead_bull_event
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.56.a
+		set_country_flag = ead_legion_civil_war
+		CES = {
+			set_variable = { CES_lucius_glory = 0 }
+			set_variable = { CES_vulpes_glory = 0 }
+			set_variable = { CES_aurelius_glory = 0 }
+			set_variable = { CES_malp_glory = 0 }
+			news_event = nf_legion.70
+			hidden_effect = {
+				news_event = nf_legion.82 days = 5
+			}
+		}
+	}
+
+
+	option = { 
+		name = purists_ead_military.56.b
+		custom_effect_tooltip = purists_ead_military.56.b.tt
+	}
+}
+
+country_event = { #Legion Civil war with NCR Civil War
+	id = purists_ead_military.57
+	title = purists_ead_military.57.t
+	desc = purists_ead_military.57.d
+	picture = GFX_ead_bull_event
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.57.a
+		set_country_flag = ead_legion_civil_war
+		CES = {
+			set_variable = { CES_lucius_glory = 0 }
+			set_variable = { CES_vulpes_glory = 0 }
+			set_variable = { CES_aurelius_glory = 0 }
+			set_variable = { CES_malp_glory = 0 }
+			news_event = nf_legion.70
+			hidden_effect = {
+				news_event = nf_legion.82 days = 5
+			}
+		}
+	}
+
+
+	option = { 
+		name = purists_ead_military.57.b
+		custom_effect_tooltip = purists_ead_military.57.b.tt
+	}
+}
+
+country_event = { # NCR Civil War
+	id = purists_ead_military.58
+	title = purists_ead_military.58.t
+	desc = purists_ead_military.58.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.58.a
+		country_event = {
+			id = purists_ead_military.59 days = 10
+		} 
+	}
+
+
+	option = { 
+		name = purists_ead_military.58.b
+	}
+}
+
+country_event = { # NCR Civil War Started
+	id = purists_ead_military.59
+	title = purists_ead_military.59.t
+	desc = purists_ead_military.59.d
+	picture = GFX_event_enc_bloody_NCR
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.59.a
+		set_country_flag = ead_trigged_ncr_civil_war
+		NCR = {
+			complete_national_focus = ncr_california_in_crisis
+		}
+	}
+}
+
+country_event = { # Return to Navarro
+	id = purists_ead_military.60
+	title = purists_ead_military.60.t
+	desc = purists_ead_military.60.d
+	picture = GFX_event_enc_navarro_memorial
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.60.a
+		complete_national_focus = enc_reclaim_navarro
+		transfer_state = 548
+	}
+}
+
+country_event = { # Return to Bloomfield
+	id = purists_ead_military.61
+	title = purists_ead_military.61.t
+	desc = purists_ead_military.61.d
+	picture = GFX_event_enc_urban_patrol
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 
+		name = purists_ead_military.61.a
+		transfer_state = 381
 	}
 }

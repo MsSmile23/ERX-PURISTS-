@@ -196,6 +196,66 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ead_bos_ncr"
+		textureFile = "gfx/interface/events_pictures/ead_bos-ncr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_80s_attack"
+		textureFile = "gfx/interface/events_pictures/ead_80s_attack.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_legion_expen"
+		textureFile = "gfx/interface/events_pictures/ead_legion_expen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_brotherhood_attack"
+		textureFile = "gfx/interface/events_pictures/ead_brotherhood_attack.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_lanuis_expen"
+		textureFile = "gfx/interface/events_pictures/ead_lanuis_expen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_newcaanan_fate"
+		textureFile = "gfx/interface/events_pictures/ead_newcaanan_fate.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_nevada_royl"
+		textureFile = "gfx/interface/events_pictures/ead_nevada_royl.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_ncr_expen"
+		textureFile = "gfx/interface/events_pictures/ead_ncr_expen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_oregon"
+		textureFile = "gfx/interface/events_pictures/ead_oregon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_whitelegs_attack"
+		textureFile = "gfx/interface/events_pictures/ead_whitelegs_attack.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_sunburst"
+		textureFile = "gfx/interface/events_pictures/ead_sunburst.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ead_bull_event"
+		textureFile = "gfx/interface/events_pictures/ead_bull_event.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_ead_dust"
 		textureFile = "gfx/interface/ideas/ead_dust_idea.dds"
 	}
@@ -313,6 +373,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ead_war_never_changes"
 		textureFile = "gfx/interface/ideas/ead_war_never_changes.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_sigma_intervention"
+		textureFile = "gfx/interface/ideas/ead_sigma_intervention.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_sigma_support"
+		textureFile = "gfx/interface/ideas/ead_sigma_support.dds"
 	}
 
 	spriteType = {
@@ -563,7 +633,42 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_ead_blue_heal"
-		textureFile = "gfx/interface/icons/ead_blue_heal.tga"
+		textureFile = "gfx/interface/icons/ead_blue_heal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_sigma_red_beret"
+		textureFile = "gfx/interface/icons/ead_sigma_red_beret.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_sigma_blue_beret"
+		textureFile = "gfx/interface/icons/ead_sigma_blue_beret.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_sigma_white_beret"
+		textureFile = "gfx/interface/icons/ead_sigma_white_beret.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_sigma_green_beret"
+		textureFile = "gfx/interface/icons/ead_sigma_green_beret.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_legion_civil_war"
+		textureFile = "gfx/interface/icons/ead_legion_civil_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ead_ncr_civil_war"
+		textureFile = "gfx/interface/icons/ead_ncr_civil_war.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_ead_squad_sigma_actions"
+		texturefile = "gfx/interface/decisions/ead_squad_sigma_actions.dds"
 	}
 }
 

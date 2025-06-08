@@ -30,23 +30,6 @@ ideas = {
 			}
 		}
 
-		Purists_sigma_as_reacon = {
-			picture = enc_usa_paoptimization
-			name = "Squad Sigma: In Shadows"
-			allowed = { always = no	}
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			modifier = {
-			 	civilian_intel_factor = 0.15
-				army_intel_factor = 0.15
-				navy_intel_factor = 0.15
-				intelligence_agency_defense = 0.50
-			 	resistance_damage_to_garrison = -0.1
-				required_garrison_factor = -0.10
-				resistance_activity = -0.10
-				recon_factor = 0.15
-			}
-		}
 
 		Purists_destruction_shady = {
 			picture = generic_catastrophe
@@ -329,6 +312,22 @@ ideas = {
 			 	stability_weekly = 0.02
 				war_support_weekly = 0.02
 				political_power_gain = 1
+			}
+		}
+
+		Purists_mercenary_support = {
+			picture = ead_sigma_support
+			name = "Mercenary Support"
+			allowed = { always = no	}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+			 	army_attack_factor = 0.20 
+				army_defence_factor = 0.20
+				army_speed_factor = 0.20
+				army_org_factor = 0.20
+				army_speed_factor = 0.20
+				army_org_regain = 0.20
 			}
 		}
 

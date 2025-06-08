@@ -297,3 +297,291 @@ Purists_SecHub_desc: "Using our old, pre-war codes and our technical knowledge, 
 Purists_Sigma_Action: "Sigma Command Pannel."
 Purists_Sigma_Action_desc: "Our enemies are many. We are surrounded by mutants on all sides. But the men and women of Sigma Squads are prepared to wage war in the shadows, weakening those we deem a priority target. They only await your order, [ERB.GetLeader]"
 ################################################################################################################ -<
+################################################################################################################ -<
+Sigma_Field_Training: "Field Training."
+Sigma_Field_Training_desc: "Our special forces must always be in best form. Sigma squads will conduct a special exercise, using both ground and air vehicles."
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_Field_Theoretic: "Sigma Command Games."
+Sigma_Field_Theoretic_desc: "Using our extensive technologies of vr-simulator and tactical map, we will conduct a command excersice, in order to sharpen skills of squads Sigma officers."
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_field_SAD: "Deploy additional Sigma Teams in Sierra Army Depot ([?Root.purists_sigma_sad_deploy]/4)"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_field_Navarro: "Deploy additional Sigma Teams in Navarro ([?Root.purists_sigma_navarro_deploy]/4)"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_field_Site28: "Deploy additional Sigma Teams in `Enclave Fortress` ([?Root.purists_sigma_site28_deploy]/6)"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_field_MacArthur: "Deploy additional Sigma Teams in MacArthur Air Base ([?Root.purists_sigma_mac_deploy]/3)"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_shadow_recon: "Allocate additional resources to recon department ([?Root.purists_sigma_recon]/5)"
+Sigma_shadow_recon_desc: "By providing our Sigma Teams with additional resource, we could improve their recon capabilities.\n\n Will increase all intels by 5% and recon by 10%, but will take 2 civilian factories"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_shadow_intel_defence: "Allocate additional resources to intelligence department ([?Root.purists_sigma_defen]/5)"
+Sigma_shadow_intel_defence_desc: "By providing our Sigma Teams with additional resource, we could improve their usefulness to our intelligence.\n\n Will increase crypto and intelligence defense by 0.5, but will take 3 civilian factories"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_shadow_intel_decryption: "Allocate additional resources to science department ([?Root.purists_sigma_decr]/5)"
+Sigma_shadow_intel_decryption_desc: "By providing our Sigma Teams with additional resource, we could improve their usefulness in cracking enemies codes.\n\n Will increase decription power by 20, but will take 3 civilian factories"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_shadow_partisan: "Allocate additional manpower to anti-mutant department ([?Root.purists_sigma_part]/5)"
+Sigma_shadow_partisan_desc: "By providing our Sigma Teams with additional men, we could improve their usefulness in dealing with mutie resistance.\n\n Will reduce resistance damage by 5%, resistance activities and required garrison by 10%, but will reduce our conscription by 0.5%"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_allow_intervine: "Allow Interventions"
+Sigma_allow_intervine_desc: "The time has come to allow our special forces to intervine into a many mutant conflicts, that surround us."
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_allow_intervine_red: "Integration of Red Team"
+Sigma_allow_intervine_red_desc: "We should integrate Red Team in Special Sigma Operations.\n\n By doing so, you will improve Sigma Intervention by: -5% to attack and defence, +5% to attrition, -15% to organisation"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_allow_intervine_blue: "Integration of Blue Team"
+Sigma_allow_intervine_blue_desc: "We should integrate Blue Team in Special Sigma Operations.\n\n By doing so, you will improve Sigma Intervention by: -5% to all intelligence, -0.5 to intelligence defence, -15% to army recon"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_allow_intervine_white: "Integration of White Team"
+Sigma_allow_intervine_white_desc: "We should integrate White Team in Special Sigma Operations.\n\n By doing so, you will improve Sigma Intervention by: 50% to supply consumtion and 20% to attrition"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_allow_intervine_green: "Integration of Green Team"
+Sigma_allow_intervine_green_desc: "We should integrate Green Team in Special Sigma Operations.\n\n By doing so, you will improve Sigma Intervention by: 50% to supply consumtion and resistance activities, 20% to attrition, 25% to experiance loss, -2 to dig in, -50% to command power gain, -35% to army speed and resistance decline"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_rangers: "Sigma Intervention in North Esmeralda"
+Sigma_inter_rangers_desc: "That conflict, that is raging near our border, could be proved problematic in future. We should decided, what to do."
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_kaga: "Sigma Intervention in South Esmeralda"
+Sigma_inter_kaga_desc: "That conflict, that is raging near our border, could be proved problematic in future. We should decided, what to do."
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_grd1: "Sigma Intervention in Esmeralda"
+Sigma_inter_grd1_desc: "That conflict, that is raging near our border, could be proved problematic in future. We should decided, what to do."
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_grd2: "Sigma Intervention in Esmeralda"
+Sigma_inter_grd2_desc: "That conflict, that is raging near our border, could be proved problematic in future. We should decided, what to do."
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_rangers1: "Sigma Intervention in Esmeralda"
+Sigma_inter_rangers1_desc: "That conflict, that is raging near our border, could be proved problematic in future. We should decided, what to do."
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_rangers2: "Sigma Intervention in Esmeralda"
+Sigma_inter_rangers2_desc: "That conflict, that is raging near our border, could be proved problematic in future. We should decided, what to do."
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_tvtown1: "Sigma Intervention in Esmeralda"
+Sigma_inter_tvtown1_desc: "That conflict, that is raging near our border, could be proved problematic in future. We should decided, what to do."
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_tvtown2: "Sigma Intervention in Esmeralda"
+Sigma_inter_tvtown2_desc: "That conflict, that is raging near our border, could be proved problematic in future. We should decided, what to do."
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_tvtown3: "Sigma Intervention in Esmeralda"
+Sigma_inter_tvtown3_desc: "That conflict, that is raging near our border, could be proved problematic in future. We should decided, what to do."
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_tvtown4: "Sigma Intervention in Esmeralda"
+Sigma_inter_tvtown4_desc: "That conflict, that is raging near our border, could be proved problematic in future. We should decided, what to do."
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_mojave: "Sigma Intervention in Sunburst"
+Sigma_inter_mojave_desc: "Our intelligence teams have received reliable information about an ongoing conflict between [MOJ.GetName] and [MOT.GetName]. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_legion_mbos: "Sigma Intervention in [MOJ.GetName]-[CES.GetName] war"
+Sigma_inter_legion_mbos_desc: "Our intelligence teams have received reliable information about an ongoing conflict between [MOJ.GetName] and [CES.GetName]. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_divide: "Sigma Intervention in [NCR.GetName]-[MOS.GetName] war"
+Sigma_inter_divide_desc: "Our intelligence teams have received reliable information about an ongoing conflict between [NCR.GetName] and [MOS.GetName]. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_rapid: "Sigma Intervention in [NCR.GetName]-[RAP.GetName] war"
+Sigma_inter_rapid_desc: "Our intelligence teams have received reliable information about an ongoing conflict between [NCR.GetName] and [RAP.GetName]. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_baja: "Sigma Intervention in [NCR.GetName]-Baja war"
+Sigma_inter_baja_desc: "Our intelligence teams have received reliable information about an ongoing conflict between [NCR.GetName] and Baja raiders. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_ncr_los: "Sigma Intervention in [NCR.GetName]-[BOS.GetName] war"
+Sigma_inter_ncr_los_desc: "Our intelligence teams have received reliable information about an ongoing conflict between [NCR.GetName] and [BOS.GetName]. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_leg_ranchers: "Sigma Intervention in [CES.GetName] expention"
+Sigma_inter_leg_ranchers_desc: "Our intelligence teams have received reliable information about an ongoing conflict in Arizona, where [CES.GetName] continue to grow. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_leg_cowboy: "Sigma Intervention in [CES.GetName] expention"
+Sigma_inter_leg_cowboy_desc: "Our intelligence teams have received reliable information about an ongoing conflict in Arizona, where [CES.GetName] continue to grow. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_leg_tohono: "Sigma Intervention in [CES.GetName] expention"
+Sigma_inter_leg_tohono_desc: "Our intelligence teams have received reliable information about an ongoing conflict in Arizona, where [CES.GetName] continue to grow. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_leg_granja: "Sigma Intervention in [CES.GetName] expention"
+Sigma_inter_leg_granja_desc: "Our intelligence teams have received reliable information about an ongoing conflict in Arizona, where [CES.GetName] continue to grow. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_leg_veg: "Sigma Intervention in [CES.GetName] expention"
+Sigma_inter_leg_veg_desc: "Our intelligence teams have received reliable information about an ongoing conflict in Mojave, where [CES.GetName] continue to grow. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_mbos_veg: "Sigma Intervention in [VEG.GetName]-[MOJ.GetName] war"
+Sigma_inter_mbos_veg_desc: "Our intelligence teams have received reliable information about an ongoing conflict in Mojave, where [VEG.GetName] is defending from [MOJ.GetName] onslaught. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_wash_caus: "Sigma Intervention in [WBH.GetName]-[TCA.GetName] war"
+Sigma_inter_wash_caus_desc: "Our intelligence teams have received reliable information about an ongoing conflict in Washington, where the mighty [WBH.GetName] is bogged down in civil war with [TCA.GetName]. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_80s_ruby: "Sigma Intervention in Utah conflicts"
+Sigma_inter_80s_ruby_desc: "Our intelligence teams have received reliable information about an ongoing conflict in Utah, between those savages. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_80s_riperult: "Sigma Intervention in Utah conflicts"
+Sigma_inter_80s_riperult_desc: "Our intelligence teams have received reliable information about an ongoing conflict in Utah, between those savages. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_80s_graber: "Sigma Intervention in Utah conflicts"
+Sigma_inter_80s_graber_desc: "Our intelligence teams have received reliable information about an ongoing conflict in Utah, between those savages. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_white_time: "Sigma Intervention in Utah conflicts"
+Sigma_inter_white_time_desc: "Our intelligence teams have received reliable information about an ongoing conflict in Utah, between those savages. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_white_tar: "Sigma Intervention in Utah conflicts"
+Sigma_inter_white_tar_desc: "Our intelligence teams have received reliable information about an ongoing conflict in Utah, between those savages. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_lan_rose: "Sigma Intervention in [LAC.GetName] expansion"
+Sigma_inter_lan_rose_desc: "Our intelligence teams have received reliable information about an ongoing conflict on the East, where, one of the [CES.GetName] talanted generals leading a charge. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_lan_mesca: "Sigma Intervention in [LAC.GetName] expansion"
+Sigma_inter_lan_mesca_desc: "Our intelligence teams have received reliable information about an ongoing conflict on the East, where, one of the [CES.GetName] talanted generals leading a charge. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_lan_santa: "Sigma Intervention in [LAC.GetName] expansion"
+Sigma_inter_lan_santa_desc: "Our intelligence teams have received reliable information about an ongoing conflict on the East, where, one of the [CES.GetName] talanted generals leading a charge. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_lan_summer: "Sigma Intervention in [LAC.GetName] expansion"
+Sigma_inter_lan_summer_desc: "Our intelligence teams have received reliable information about an ongoing conflict on the East, where, one of the [CES.GetName] talanted generals leading a charge. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_lan_exec: "Sigma Intervention in [LAC.GetName] expansion"
+Sigma_inter_lan_exec_desc: "Our intelligence teams have received reliable information about an ongoing conflict on the East, where, one of the [CES.GetName] talanted generals leading a charge. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_lan_sundog: "Sigma Intervention in [LAC.GetName] expansion"
+Sigma_inter_lan_sundog_desc: "Our intelligence teams have received reliable information about an ongoing conflict on the East, where, one of the [CES.GetName] talanted generals leading a charge. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_lan_max: "Sigma Intervention in [LAC.GetName] expansion"
+Sigma_inter_lan_max_desc: "Our intelligence teams have received reliable information about an ongoing conflict on the East, where, one of the [CES.GetName] talanted generals leading a charge. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_lan_robo: "Sigma Intervention in [LAC.GetName] expansion"
+Sigma_inter_lan_robo_desc: "Our intelligence teams have received reliable information about an ongoing conflict on the East, where, one of the [CES.GetName] talanted generals leading a charge. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_lan_mother: "Sigma Intervention in [LAC.GetName] expansion"
+Sigma_inter_lan_mother_desc: "Our intelligence teams have received reliable information about an ongoing conflict on the East, where, one of the [CES.GetName] talanted generals leading a charge. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_lan_han: "Sigma Intervention in [LAC.GetName] expansion"
+Sigma_inter_lan_han_desc: "Our intelligence teams have received reliable information about an ongoing conflict on the East, where, one of the [CES.GetName] talanted generals leading a charge. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_maxon_bite: "Sigma Intervention in Colorado war"
+Sigma_inter_maxon_bite_desc: "Our intelligence teams have received reliable information about an ongoing conflict on the East, where, another one of Brotherhood Chapters, [MXC.GetName], decided to expend. Should we intervene and put an end to them?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_maxon_robo: "Sigma Intervention in Colorado war"
+Sigma_inter_maxon_robo_desc: "Our intelligence teams have received reliable information about an ongoing conflict on the East, where, another one of Brotherhood Chapters, [MXC.GetName], decided to expend. Should we intervene and put an end to them?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_maxon_han: "Sigma Intervention in Colorado war"
+Sigma_inter_maxon_han_desc: "Our intelligence teams have received reliable information about an ongoing conflict on the East, where, another one of Brotherhood Chapters, [MXC.GetName], decided to expend. Should we intervene and put an end to them?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_warden: "Sigma Intervention in Colorado war"
+Sigma_inter_warden_desc: "Our intelligence teams have received reliable information about an ongoing conflict on the East. According to the info, some rogue AI managed to rebel from [HAN.GetName]. Should we intervene and use this situation?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_navarro: "Sigma Intervention in Navarro conflict"
+Sigma_inter_navarro_desc: "Our intelligence teams have received reliable information about an ongoing conflict near our former base, Navarro. According to intel, [NCR.GetName] finally lost control of situation, and now this land become a warzone between three proxy groups. Unfortunately, we dont have any means to secure Navarro ourself, but, its doesnt mean that we cant make Bear suffer"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_troll_car: "Sigma Intervention in Northen Wasteland"
+Sigma_inter_troll_car_desc: "Our intelligence teams have received reliable information about an ongoing conflict north of our border. Perhaps, we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_troll_marrow: "Sigma Intervention in Northen Wasteland"
+Sigma_inter_troll_marrow_desc: "Our intelligence teams have received reliable information about an ongoing conflict north of our border. Perhaps, we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_troll_bone: "Sigma Intervention in Northen Wasteland"
+Sigma_inter_troll_bone_desc: "Our intelligence teams have received reliable information about an ongoing conflict north of our border. Perhaps, we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_bone_chem: "Sigma Intervention in Northen Wasteland"
+Sigma_inter_bone_chem_desc: "Our intelligence teams have received reliable information about an ongoing conflict north of our border. Perhaps, we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_bone_sho: "Sigma Intervention in Northen Wasteland"
+Sigma_inter_bone_sho_desc: "Our intelligence teams have received reliable information about an ongoing conflict north of our border. Perhaps, we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_troll_wash: "Sigma Intervention in Northen Wasteland"
+Sigma_inter_troll_wash_desc: "Our intelligence teams have received reliable information about an ongoing conflict north of our border. Perhaps, we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_troll_cas: "Sigma Intervention in Northen Wasteland"
+Sigma_inter_troll_cas_desc: "Our intelligence teams have received reliable information about an ongoing conflict north of our border. Perhaps, we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_cannan_legs: "Sigma Intervention in Utah conflicts"
+Sigma_inter_cannan_legs_desc: "Our intelligence teams have received reliable information about an ongoing conflict in Utah, between those savages. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_cannan_80s: "Sigma Intervention in Utah conflicts"
+Sigma_inter_cannan_80s_desc: "Our intelligence teams have received reliable information about an ongoing conflict in Utah, between those savages. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_legs_80s: "Sigma Intervention in Utah conflicts"
+Sigma_inter_legs_80s_desc: "Our intelligence teams have received reliable information about an ongoing conflict in Utah, between those savages. Perhaps we should intervene?"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_legion_civil_war: "Sic Semper Caesar"
+Sigma_legion_civil_war_desc: "Ceaser Legion is mighty empire of savages. Even with our the most advanced weaponry, it will cost a great amount of resource and american lives to deal with this threat. Because of that our Sigma Command created a plan to assinate Ceaser himself, which will put a Legion in a state civil war."
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_legion_civil_war_ncr: "Sic Semper Caesar"
+Sigma_legion_civil_war_ncr_desc: "Ceaser Legion is mighty empire of savages. Even with our the most advanced weaponry, it will cost a great amount of resource and american lives to deal with this threat. Because of that our Sigma Command created a plan to assinate Ceaser himself, which will put a Legion in a state civil war."
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_ncr_civil_war: "Bear Darkest Hour"
+Sigma_ncr_civil_war_desc: "[NCR.GetName] is soft. Weak. Corrupted by so called `democracy`. Their population enjoying peaceful life, unware of what is coming for them. Sigma command can remind them what true suffering is."
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_interv_ncr_civil_war: "Reclaiming what is ours"
+Sigma_interv_ncr_civil_war_desc: "While California is burning in a bloody conflict, we can return what was rightfuly ours! Navarro, we are coming"
+################################################################################################################ -<
+################################################################################################################ -<
+Sigma_inter_legion_civil_war: "Reclaiming what is ours"
+Sigma_inter_legion_civil_war_desc: "While Arizona is burning in a bloody conflict, we can return what was rightfuly ours! Bloomfield, we are coming"
+################################################################################################################ -<

@@ -82,3 +82,46 @@ ead_traitors_and_mutants = {
 	special_forces_cap = traitors_special_cap
 	special_forces_min = traitors_special_min
 }
+
+Purists_sigma_as_reacon = {
+	icon = GFX_idea_enc_usa_paoptimization
+	civilian_intel_factor = sigma_civil_intel
+	army_intel_factor = sigma_army_intel
+	navy_intel_factor = sigma_navy_intel
+	intelligence_agency_defense = sigma_intell_defenc
+	crypto_strength = sigma_crypto_strength
+	decryption_power = sigma_decryption_power
+	resistance_damage_to_garrison = sigma_gar_damage
+	required_garrison_factor = sigma_gar_size
+	resistance_activity = sigma_res_act
+	recon_factor = sigma_rec
+	conscription = sigma_solders
+	civilian_factory_use = sigma_civic
+}
+
+Purists_sigma_subotaje_active = {
+	icon = GFX_idea_ead_sigma_intervention
+	army_attack_factor = sabotage_attack
+	army_defence_factor  = sabotage_defence
+	army_org_factor = sabotage_org
+	army_morale_factor = sabotage_morale
+	attrition = sabotage_attr
+	experience_loss_factor = sabotage_exper
+	max_dig_in = sabotage_dig_in
+	command_power_gain = sabotage_command_power
+	resistance_activity = sabotage_resis
+	resistance_decay = sabotage_resis_dec
+	army_speed_factor = sabotage_speed
+	supply_consumption_factor = sabotage_supp
+	recon_factor = sabotage_recon
+	civilian_intel_factor = sabotage_civi_intel
+	army_intel_factor = sabotage_army_intel
+	navy_intel_factor = sabotage_navy_intel
+	airforce_intel_factor = sabotage_air_intel
+	intel_from_operatives_factor = sabotage_oper_intel
+	army_intel_decryption_bonus = sabotage_army_intel_dec
+	navy_intel_decryption_bonus = sabotage_navy_intel_dec
+	airforce_intel_decryption_bonus = sabotage_air_intel_dec
+	intelligence_agency_defense = sabotage_intel_def
+
+}

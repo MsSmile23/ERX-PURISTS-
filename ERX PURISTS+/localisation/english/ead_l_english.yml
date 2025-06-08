@@ -136,6 +136,12 @@ ead_iron_mountain_cyborgs_desc: "Dr. Amy Parks, a prodigious cybernetic engineer
 ead_iron_mountain_medic: "New age of Enclave medicine"
 ead_iron_mountain_medic_desc: "Dr. Betty Fox, a compassionate yet resolute expert in advanced medicine at Iron Mountain, focuses on developing cutting-edge treatments to sustain Enclave personnel. Her innovations in radiation therapy, regenerative drugs, and battlefield surgery keep soldiers alive where others would perish. Though her empathy sets her apart, her unwavering commitment to the Enclave’s cause ensures her skills serve their militaristic goals."
 
+ead_enclave_police: "Wasteland Police"
+ead_enclave_police_desc: "Major Walker, a hardened veteran of the Enclave Marshalls, excels in pacifying the hostile Wasteland territories under Sierra Enclave control. With a reputation for ruthless efficiency, he employs a mix of intimidation, strategic raids, and psychological tactics to subdue rebellious settlements, ensuring compliance through fear. His unyielding approach makes him a feared figure among wastelanders, securing the Enclave’s grip on contested regions."
+
+ead_advanced_recon_gear: "Better gear for Marshalls!"
+ead_advanced_recon_gear_desc: "Major Wood, a resourceful and innovative officer of the Enclave Marshalls, dedicates himself to designing superior gear for his fellow operatives. Specializing in lightweight armor, enhanced weaponry, and survival equipment tailored for the Wasteland’s harsh conditions, he ensures the Marshalls remain a step ahead of their enemies. His meticulous craftsmanship and focus on functionality make him a vital asset to the Enclave’s law enforcement arm."
+
 #Characters
 
 ead_trainer_james_adams_name: "Master sergeant James Adams"
@@ -177,6 +183,8 @@ eead_prcessor_z52_name: "Unit Z-52"
 ead_peter_anderson_name: "Dr. Peter Anderson"
 ead_amy_parks_name: "Dr. Amy Parks"
 ead_betty_fox_name: "Dr. Betty Fox"
+ead_major_wood_name: "Major Wood"
+ead_major_walker: "Major Walker"
 
 
 #Other
@@ -191,4 +199,6 @@ marshall_detachement_unit: "Marshalls Detachment"
 honory_humans_tt: "Avialable because you decided to to expand human definition."
 traitors_tt: "Avialable because you decided to use Brotherhood."
 enclave_facilities_tt: "New facility unlocked."
+sigma_deployed_tt: "Unit of Sigma was deployed"
+purists_extra_weapons.tt: "Avialable because you have a suprlus of equipment"
 
