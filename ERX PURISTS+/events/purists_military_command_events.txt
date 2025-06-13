@@ -1213,6 +1213,7 @@ country_event = { #Sigma Intervention MOJ vs MOT
 		set_temp_variable = {
 			suspicion_change_var = 25
 		}
+		change_suspicion = yes
 	}
 
 	option = { 
@@ -1280,6 +1281,7 @@ country_event = { #Sigma Intervention NCR vs MOS
 		set_temp_variable = {
 			suspicion_change_var = 25
 		}
+		change_suspicion = yes
 	}
 
 	option = { 
@@ -1334,6 +1336,7 @@ country_event = { #Sigma Intervention NCR vs MOS
 		set_temp_variable = {
 			suspicion_change_var = 45
 		}
+		change_suspicion = yes
 
 		ERB = {
 			add_equipment_to_stockpile = {
@@ -1374,6 +1377,7 @@ country_event = { #Sigma Intervention NCR vs RAP
 		set_temp_variable = {
 			suspicion_change_var = 25
 		}
+		change_suspicion = yes
 	}
 
 	option = { 
@@ -1428,6 +1432,7 @@ country_event = { #Sigma Intervention NCR vs RAP
 		set_temp_variable = {
 			suspicion_change_var = 45
 		}
+		change_suspicion = yes
 
 		ERB = {
 			add_equipment_to_stockpile = {
@@ -1468,6 +1473,7 @@ country_event = { #Sigma Intervention NCR vs Baja
 		set_temp_variable = {
 			suspicion_change_var = 25
 		}
+		change_suspicion = yes
 	}
 
 	option = { 
@@ -1545,6 +1551,7 @@ country_event = { #Sigma Intervention NCR vs Baja
 		set_temp_variable = {
 			suspicion_change_var = 45
 		}
+		change_suspicion = yes
 
 		ERB = {
 			add_equipment_to_stockpile = {
@@ -1585,6 +1592,7 @@ country_event = { #Sigma Intervention NCR vs BOS
 		set_temp_variable = {
 			suspicion_change_var = 25
 		}
+		change_suspicion = yes
 	}
 
 	option = { 
@@ -3876,6 +3884,7 @@ country_event = { #Navarro
 		set_temp_variable = {
 			suspicion_change_var = 25
 		}
+		change_suspicion = yes
 	}
 
 	option = { 

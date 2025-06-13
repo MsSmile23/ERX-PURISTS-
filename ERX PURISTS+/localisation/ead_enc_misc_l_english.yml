@@ -28,6 +28,39 @@ purists_force_field_humans_desc: "Project of General Grimm. Special type of gren
 purists_marshall_tech_1: "Enclave Marshalls"
 purists_marshall_tech_1_desc: "A new breed of Enclave special forces, who exceeds in 'peacekeeping' operations and wasteland warfare."
 
+purists_pa_detachment_tech: "Power Armor Detachemnt"
+purists_pa_detachment_tech_desc: "With a lack of pure human personal in our rank, our military considered to use a Detachment size units to reinforce and coordinate expendable units"
+
+purists_pa_heavy_detachment_tech: "Assault Power Armor Detachemnt"
+purists_pa_heavy_detachment_tech_desc: "Power Armor Detachemnt armed with M42 Fatmans and FEV Sprayers"
+
+purists_pa_cryo_detachment_tech: "Cryo Corp Power Armor Detachemnt"
+purists_pa_cryo_detachment_tech_desc: "Cryo Corp Detachemnt of Power Armor Troops"
+
+purists_command_tech: "Enclave Command Unit"
+purists_command_tech_desc: "Basic command unit of our growing military."
+
+purists_command_mot_tech: "Enclave Motorised Command Unit"
+purists_command_mot_tech_desc: "Motorised Enclave Units, that used for faster coordination"
+
+purists_command_air_tech: "Enclave Air-based Command Unit"
+purists_command_air_tech_desc: "Enclave Command Unit, that coordinate efforts of our military on board of vertibird"
+
+purists_command_tank_tech: "Enclave Armored Command Unit"
+purists_command_tank_tech_desc: "Armored Command Unit, with extra support"
+
+purists_command_fort_tech: "Mobile Fortress"
+purists_command_fort_tech_desc: "A full fledged mobile Enclave Base with all equipment, that needed for command"
+
+purists_pa_behe_tech: "Project X-76"
+purists_pa_behe_tech_desc: "A personal project of Mojave Enclave."
+
+purists_pa_death_tech: "Armored Deathclaws"
+purists_pa_death_tech_desc: "Deathclaws with implants and power armor"
+
+purists_pa_caza_tech: "Armored Cazaclaws"
+purists_pa_caza_tech_desc: "Cazaclaws with implants and power armor"
+
 purists_tech_proton_robots: "Proton blades for robots"
 purists_tech_proton_robots_desc: "Our robots are now equiped with mighty proton blades, which can cut in half even the most experianced Brotherhood paladin in second."
 
@@ -120,4 +153,24 @@ ead_air_from_texas: "Aid from Texas has arrived!"
 purists_sigma_allowed: "Sigma was allowed to intervine!"
 ead_trigged_ncr_civil_war: "NCR Civil War was triggered"
 ead_legion_civil_war: "Legion Civil War started"
+erb_vlt_disguise: "Enclave become Vault City"
 ##########################
+
+
+################################## Country stuff ##################################### 
+ERB_VLT:0 "Vault City"
+ERB_VLT_DEF:0 "Vault City"
+ERB_VLT_ADJ:0 "Vault City"
+ERB_VLT_intellectuals:0 "Vault City"
+ERB_VLT_intellectuals_DEF:0 "Vault City"
+ERB_VLT_intellectuals_ADJ:0 "Vault City"
+ERB_VLT_elites:0 "Vault City"
+ERB_VLT_elites_DEF:0 "Vault City"
+ERB_VLT_elites_ADJ:0 "Vault City"
+ERB_VLT_people:0 "Vault City"
+ERB_VLT_people_DEF:0 "Vault City"
+ERB_VLT_people_ADJ:0 "Vault City"
+ERB_VLT_ruler:0 "Vault City"
+ERB_VLT_ruler_DEF:0 "Vault City"
+ERB_VLT_ruler_ADJ:0 "Vault City"
+######################################################################################

@@ -324,7 +324,6 @@ ideas = {
 			modifier = {
 			 	army_attack_factor = 0.20 
 				army_defence_factor = 0.20
-				army_speed_factor = 0.20
 				army_org_factor = 0.20
 				army_speed_factor = 0.20
 				army_org_regain = 0.20
@@ -873,6 +872,44 @@ ideas = {
 				experience_gain_army = 0.2
 				experience_gain_air = 0.2
 				experience_gain_factor = 0.5
+			}
+		}
+
+		purists_sunset = {
+			picture = enc_nev_sunset
+			name = "Sunset Sarsaparilla"
+			allowed = { always = no	}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				caps_country_trade_modifier = 0.02
+				stability_weekly = 0.002				
+			}
+		}
+
+		purists_silverstate = {
+			name = "Enclave Silver"
+			picture = generic_gold_bars
+			allowed = { always = no	}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				caps_country_trade_modifier = 0.10
+				caps_income_modifier = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+
+		purists_goldstate= {
+			name = "Enclave Gold"
+			picture = generic_gold_bars
+			allowed = { always = no	}
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			modifier = {
+				caps_country_trade_modifier = 0.15
+				caps_income_modifier = 0.08
+				local_resources_factor = 0.05
 			}
 		}
 	}
