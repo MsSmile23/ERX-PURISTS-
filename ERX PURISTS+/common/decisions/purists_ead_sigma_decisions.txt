@@ -288,7 +288,7 @@ Purists_Sigma_Action = {
 			add_to_variable = { sigma_gar_damage = -0.05 }
 			add_to_variable = { sigma_gar_size = -0.10 }
 			add_to_variable = { sigma_res_act = -0.10 }
-			add_to_variable = { sigma_solders = -0.5 }
+			add_to_variable = { sigma_solders = -0.005 }
 		}
 	}
 
@@ -1649,11 +1649,13 @@ Purists_Sigma_Action = {
 		fire_only_once = yes
 		visible = {
 			has_country_flag = purists_sigma_allowed
+			date > 2278.01.01
+			date < 2279.01.01
 		}
 		available = {
 			has_completed_focus = enc_rubicon
-			date > 2276.01.01
-			date < 2277.01.01
+			date > 2278.01.01
+			date < 2279.01.01
 		}
 		modifier = {
 			political_power_gain = -0.5

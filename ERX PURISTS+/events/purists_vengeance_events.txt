@@ -566,12 +566,12 @@ country_event = { #Fate Maxson BoS
 		custom_effect_tooltip = purists_ead_vengeance.21.a.tt
 		add_state_core = 245
 		245 = {
-			set_state_name = "Maxson to Refuge of Steel"
+			set_state_name = "Refuge of Steel"
 		}
 
 		set_province_name = {
 			id = 3424
-			name = "Maxson to Refuge of Steel"
+			name = "Refuge of Steel"
 		}
 
 		add_to_variable = { traitor_garrison = 0.05 }

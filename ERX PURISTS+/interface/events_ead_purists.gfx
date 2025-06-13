@@ -256,6 +256,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ead_become_vault"
+		textureFile = "gfx/interface/events_pictures/ead_become_vault.tga"
+	}
+
+	spriteType = {
 		name = "GFX_idea_ead_dust"
 		textureFile = "gfx/interface/ideas/ead_dust_idea.dds"
 	}
@@ -665,10 +670,20 @@ spriteTypes = {
 		name = "GFX_idea_ead_ncr_civil_war"
 		textureFile = "gfx/interface/icons/ead_ncr_civil_war.dds"
 	}
+
+	spriteType = {
+		name = "GFX_idea_ead_shadow_goverment_icon"
+		textureFile = "gfx/interface/icons/ead_shadow_goverment_icon.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_decision_ead_squad_sigma_actions"
 		texturefile = "gfx/interface/decisions/ead_squad_sigma_actions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_ead_enclave_military"
+		texturefile = "gfx/interface/decisions/ead_enclave_military.dds"
 	}
 }
 

@@ -184,3 +184,139 @@ country_event = { #BoS is dead. Again
 	}
 }
 
+country_event = { #US Ordanance
+	id = purists_ead_nevada.10
+	title = purists_ead_nevada.10.t
+	desc = purists_ead_nevada.10.d
+	picture = GFX_event__enc_1_soldier
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #	Yayy
+		name = purists_ead_nevada.10.a	
+		add_ideas = ENC_USordanance_energy
+	}
+	option = { #	Yayy
+		name = purists_ead_nevada.10.b	
+		add_ideas = ENC_USordanance_support
+	}
+}
+
+country_event = { # Turqoise Project
+	id = purists_ead_nevada.11
+	title = purists_ead_nevada.11.t
+	desc = purists_ead_nevada.11.d
+	picture = GFX_event_event_ENC_solararray
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #	Yayy
+		name = purists_ead_nevada.11.a	
+		285 = {
+			add_resource = {
+				type = energy
+				amount = 24
+			}
+			add_resistance = 20
+		}
+	}
+}
+
+country_event = { #Sunset Sasparilla
+	id = purists_ead_nevada.12
+	title = purists_ead_nevada.12.t
+	desc = purists_ead_nevada.12.d
+	picture = GFX_event_enc_sunset_softdrink
+	fire_only_once = yes
+	is_triggered_only =yes
+	option = { #	Yayy
+		name = purists_ead_nevada.12.a		
+		add_ideas = purists_sunset
+	}
+}
+
+country_event = { #USGS Service
+	id = purists_ead_nevada.13
+	title = purists_ead_nevada.13.t
+	desc = purists_ead_nevada.13.d
+	picture = GFX_event_event_ENC_waterpump
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #	Yayy
+		name = purists_ead_nevada.13.a
+		285 = {
+			add_resource = {
+				type = water
+				amount = 20
+			}
+			add_resistance = 20
+		}
+	}
+}
+
+country_event = { #Silver State
+	id = purists_ead_nevada.14
+	title = purists_ead_nevada.14.t
+	desc = purists_ead_nevada.14.d
+	picture = GFX_event_silver_state
+	fire_only_once = yes
+	is_triggered_only =yes
+	option = { #	Yayy
+		name = purists_ead_nevada.14.a
+		add_ideas = purists_silverstate
+		
+	}
+}
+
+country_event = { #Elko Problems
+	id = purists_ead_nevada.15
+	title = purists_ead_nevada.15.t
+	desc = purists_ead_nevada.15.d
+	picture = GFX_event_generic_caravan
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #	Yayy
+		name = purists_ead_nevada.15.a	
+		ERB = {
+			create_wargoal = { type = annex_everything target = PAL }
+		}
+	}
+}
+
+country_event = { #Elko Gold
+	id = purists_ead_nevada.16
+	title = purists_ead_nevada.16.t
+	desc = purists_ead_nevada.16.d
+	picture = GFX_event_silver_state
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { #	Yayy
+		name = purists_ead_nevada.16.a	
+		add_ideas = purists_goldstate
+	}
+}
+
+country_event = { #Vault City Time 
+	id = purists_ead_nevada.17
+	title = purists_ead_nevada.17.t
+	desc = purists_ead_nevada.17.d
+	picture = GFX_ead_become_vault
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = purists_ead_nevada.17.a	
+		set_temp_variable = {
+				suspicion_change_var = -55
+			}
+		change_suspicion = yes
+		set_cosmetic_tag = ERB_VLT
+		add_stability = -0.10
+		add_war_support = -0.15
+		set_country_flag = erb_vlt_disguise
+	}
+
+	option = {
+		name = purists_ead_nevada.17.b
+		add_political_power = 200
+		add_war_support =  0.10
+		add_stability = 0.05	
+	}
+}

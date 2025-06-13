@@ -105,4 +105,269 @@ Purists_Fate_Nevada = {
 		}
 	}
 
+	Purists_gov_reno = {
+		cost = 200
+		days_remove = 30
+		icon = GFX_idea_ead_shadow_goverment_icon
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			experience_gain_army = 0.1
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+			controls_state = 285
+			NOT = {
+				country_exists = NEW
+			}
+		}
+		remove_effect = {
+			set_temp_variable = {
+				suspicion_change_var = -35
+			}
+			change_suspicion = yes
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+	}
+
+	Purists_gov_vault = {
+		cost = 200
+		days_remove = 30
+		icon = GFX_idea_ead_shadow_goverment_icon
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			experience_gain_army = 0.1
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+			controls_state = 291
+			NOT = {
+				country_exists = VLT
+				has_completed_focus = enc_vlt_core
+			}
+		}
+		available = {
+			has_completed_focus = enc_vlt_pure
+		}
+		remove_effect = {
+			set_temp_variable = {
+				suspicion_change_var = -35
+			}
+			change_suspicion = yes
+			add_stability = -0.05
+			add_war_support = -0.05
+		}
+	}
+
+	Purists_disguise_vault = {
+		cost = 200
+		days_remove = 30
+		icon = GFX_idea_ead_shadow_goverment_icon
+		ai_will_do = {
+			factor = 10
+		}
+		modifier = {
+			experience_gain_army = 0.1
+		}
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+			controls_state = 291
+			has_completed_focus = enc_vlt_core
+			NOT = {
+				country_exists = VLT
+			}
+		}
+		remove_effect = {
+			country_event = {
+				id = purists_ead_nevada.17
+			}
+		}
+	}
+
+	Purists_us_ordanance = {
+		icon = GFX_decision_ammo_box
+		cost = 25
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+			controls_state = 285
+			NOT = {
+				country_exists = NEW
+			}
+		}
+		remove_effect = {
+			country_event = {
+				id = purists_ead_nevada.10
+			}
+		}
+	}
+
+	Purists_turquoise_project = {
+		icon = GFX_decision_solar_panel
+		cost = 25
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+			controls_state = 285
+			NOT = {
+				country_exists = NEW
+			}
+		}
+		remove_effect = {
+			614 = {
+				add_resource = {
+					type = energy
+					amount = 100
+				}
+			}
+			country_event = {
+				id = purists_ead_nevada.11
+			}
+		}
+	}
+
+	Purists_sunset_sassparilla = {
+		icon = GFX_decision_sunset_sassparillaorhoweveritsspelled
+		cost = 25
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+			controls_state = 285
+			NOT = {
+				country_exists = NEW
+			}
+		}
+		available = {
+			owns_state = 613
+		}
+		remove_effect = {
+			country_event = {
+				id = purists_ead_nevada.12
+			}
+		}
+	}
+
+	Purists_water_town = {
+		icon = GFX_decision_generic_water
+		cost = 25
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+			controls_state = 285
+			NOT = {
+				country_exists = NEW
+			}
+		}
+		remove_effect = {
+			country_event = {
+				id = purists_ead_nevada.13
+			}
+		}
+	}
+
+	Purists_vault_mining = { #silver state mining
+		icon = GFX_decision_mining_hat
+		cost = 25
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		fire_only_once = yes
+		available = {
+			owns_state = 223 
+			original_tag = ERB
+		}
+		visible = {
+			original_tag = ERB
+			controls_state = 285
+			NOT = {
+				country_exists = NEW
+			}
+		}
+		remove_effect = {
+			country_event = {
+				id = purists_ead_nevada.14
+			}
+		}
+	}
+
+	Purists_elko_posse_problems = {
+		icon = GFX_decision_raider_helmet
+		cost = 25
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		fire_only_once = yes
+		visible = {
+			controls_state = 285
+			NOT = {
+				country_exists = NEW
+			}
+		}
+		available = {
+			OR = {
+				owns_state = 223
+				is_neighbor_of = PAL
+			}
+		}
+		remove_effect = {
+			country_event = {
+				id = purists_ead_nevada.15
+			}
+		}
+	}
+
+	Purists_elko_gold_mine = {
+		icon = GFX_decision_raider_helmet
+		cost = 25
+		days_remove = 10
+		ai_will_do = {
+			factor = 10
+		}
+		fire_only_once = yes
+		visible = {
+			NOT = {
+				country_exists = PAL
+			}
+		}
+		available = {
+			NOT = {
+				country_exists = PAL
+			}
+			controls_state = 223
+		}
+		remove_effect = {
+			country_event = {
+				id = purists_ead_nevada.16
+			}
+		}
+	}
+
 }

@@ -152,6 +152,110 @@ technologies = {
 		}
 	}
 
+	purists_pa_detachment_tech = {
+		dependencies = {
+			blocked_tech = 1
+		}
+		enable_subunits = {
+			power_armor_detachement_unit
+		}
+	}
+
+	purists_pa_heavy_detachment_tech = {
+		dependencies = {
+			blocked_tech = 1
+		}
+		enable_subunits = {
+			power_armor_detachement_heavy_unit
+		}
+	}
+
+	purists_pa_cryo_detachment_tech = {
+		dependencies = {
+			blocked_tech = 1
+		}
+		enable_subunits = {
+			power_cryo_detachement_unit
+		}
+	}
+
+	purists_command_tech = {
+		dependencies = {
+			blocked_tech = 1
+		}
+		enable_subunits = {
+			enclave_command_unit
+		}
+	}
+
+	purists_command_mot_tech = {
+		dependencies = {
+			blocked_tech = 1
+		}
+		enable_subunits = {
+			enclave_command_mot_unit
+		}
+	}
+
+	purists_command_air_tech = {
+		dependencies = {
+			blocked_tech = 1
+		}
+		enable_subunits = {
+			enclave_command_air_unit
+		}
+	}
+
+	purists_command_tank_tech = {
+		dependencies = {
+			blocked_tech = 1
+		}
+		enable_subunits = {
+			enclave_command_armored_unit
+		}
+	}
+
+	purists_command_fort_tech = {
+		dependencies = {
+			blocked_tech = 1
+		}
+		enable_subunits = {
+			enclave_command_posts_unit
+		}
+
+		enable_equipments = {
+			enclave_mobile_base_equipment
+			enclave_mobile_base_equipment_1
+		}
+	}
+
+	purists_pa_behe_tech = {
+		dependencies = {
+			blocked_tech = 1
+		}
+		enable_subunits = {
+			enclave_behemoth_unit
+		}
+	}
+
+	purists_pa_death_tech = {
+		dependencies = {
+			blocked_tech = 1
+		}
+		enable_subunits = {
+			enclave_deathclaw_pa_unit
+		}
+	}
+
+	purists_pa_caza_tech = {
+		dependencies = {
+			blocked_tech = 1
+		}
+		enable_subunits = {
+			enclave_cazaclaw_pa_unit
+		}
+	}
+
 	purists_tech_proton_robots = { 
 		dependencies = {
 			blocked_tech = 1
