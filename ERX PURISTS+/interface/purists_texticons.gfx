@@ -26,4 +26,81 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+
+	spriteType = {
+		name = "GFX_unit_power_armor_detachement_unit_icon_small"
+		texturefile = "gfx/texticons/unit_detachment_power_armor_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_power_armor_detachement_heavy_unit_icon_small"
+		texturefile = "gfx/texticons/unit_shktrooper_detachment_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_power_cryo_detachement_unit_icon_small"
+		texturefile = "gfx/texticons/unit_cryo_detachment_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_enclave_command_unit_icon_small"
+		texturefile = "gfx/texticons/unit_command_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_enclave_command_mot_unit_icon_small"
+		texturefile = "gfx/texticons/unit_command_motorised_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_enclave_command_air_unit_icon_small"
+		texturefile = "gfx/texticons/unit_command_air_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_enclave_command_armored_unit_icon_small"
+		texturefile = "gfx/texticons/unit_command_armored_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_enclave_command_posts_unit_icon_small"
+		texturefile = "gfx/texticons/unit_command_base_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_enclave_behemoth_unit_icon_small"
+		texturefile = "gfx/texticons/unit_pa_behemoth_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_enclave_deathclaw_pa_unit_icon_small"
+		texturefile = "gfx/texticons/unit_deathclaws_pa_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_enclave_cazaclaw_pa_unit_icon_small"
+		texturefile = "gfx/texticons/unit_cazaclaws_pa_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
 }

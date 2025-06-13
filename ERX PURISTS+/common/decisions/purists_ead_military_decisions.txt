@@ -1,0 +1,334 @@
+Purists_Additional_units = {
+	Purists_deploy_command_unit = {
+		days_remove = 30
+		icon = decision_enc_officer
+		ai_will_do = {
+			factor = 10
+		}
+		custom_cost_trigger = {
+			has_army_experience > 20
+		}
+		custom_cost_text = has_xp_20
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			has_completed_focus = enc_ATLAS_start
+		}
+		complete_effect = {
+			army_experience = -20
+		}
+		remove_effect = {
+			set_technology = {
+				purists_command_tech = 1
+			}
+		}
+	}
+
+	Purists_deploy_command_mot_unit = {
+		days_remove = 30
+		icon = decision_enc_officer
+		ai_will_do = {
+			factor = 10
+		}
+		custom_cost_trigger = {
+			has_army_experience > 20
+		}
+		custom_cost_text = has_xp_20
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			has_tech = purists_command_tech
+			has_tech = motorisation_vehicle_tech
+		}
+		complete_effect = {
+			army_experience = -20
+		}
+		remove_effect = {
+			set_technology = {
+				purists_command_mot_tech = 1
+			}
+		}
+	}
+
+	Purists_deploy_command_air_unit = {
+		days_remove = 30
+		icon = decision_enc_officer
+		ai_will_do = {
+			factor = 10
+		}
+		custom_cost_trigger = {
+			has_army_experience > 20
+		}
+		custom_cost_text = has_xp_20
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			has_tech = purists_command_tech
+			has_completed_focus = enc_depot_airport
+		}
+		complete_effect = {
+			army_experience = -20
+		}
+		remove_effect = {
+			set_technology = {
+				purists_command_air_tech = 1
+			}
+		}
+	}
+
+	Purists_deploy_command_tank_unit = {
+		days_remove = 30
+		icon = decision_enc_officer
+		ai_will_do = {
+			factor = 10
+		}
+		custom_cost_trigger = {
+			has_army_experience > 20
+		}
+		custom_cost_text = has_xp_20
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			has_tech = purists_command_tech
+			has_completed_focus = enc_armored_war
+			has_tech = tank_equipment_vehicle_tech_1
+		}
+		complete_effect = {
+			army_experience = -20
+		}
+		remove_effect = {
+			set_technology = {
+				purists_command_tank_tech = 1
+			}
+		}
+	}
+
+	Purists_deploy_command_fort_unit = {
+		days_remove = 30
+		icon = decision_enc_officer
+		ai_will_do = {
+			factor = 10
+		}
+		custom_cost_trigger = {
+			has_army_experience > 20
+		}
+		custom_cost_text = has_xp_20
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			has_tech = purists_command_tech
+			has_completed_focus = enc_freedom_guns
+			has_completed_focus = enc_depot_airport 
+		}
+		complete_effect = {
+			army_experience = -20
+		}
+		remove_effect = {
+			set_technology = {
+				purists_command_fort_tech = 1
+			}
+		}
+	}
+
+	Purists_deploy_pa_det_unit = {
+		days_remove = 30
+		icon = GFX_decision_enc_helmet
+		ai_will_do = {
+			factor = 10
+		}
+		custom_cost_trigger = {
+			has_army_experience > 20
+		}
+		custom_cost_text = has_xp_20
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			has_tech = fireteam_weaponry_tech
+			has_tech = demolitions_weaponry_tech
+			has_tech = anti_tank_equipment_tech_1
+			has_tech = aa_fireteam_equipment_tech
+		}
+		complete_effect = {
+			army_experience = -20
+		}
+		remove_effect = {
+			set_technology = {
+				purists_pa_detachment_tech = 1
+			}
+		}
+	}
+
+	Purists_deploy_pa_assault_unit = {
+		days_remove = 30
+		icon = GFX_decision_enc_helmet
+		ai_will_do = {
+			factor = 10
+		}
+		custom_cost_trigger = {
+			has_army_experience > 20
+		}
+		custom_cost_text = has_xp_20
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			has_completed_focus = enc_m42fatman
+			has_completed_focus = enc_FEV_troopers
+			has_tech = anti_tank_equipment_tech_1
+			has_tech = aa_fireteam_equipment_tech
+		}
+		complete_effect = {
+			army_experience = -20
+		}
+		remove_effect = {
+			set_technology = {
+				purists_pa_heavy_detachment_tech = 1
+			}
+		}
+	}
+
+	Purists_deploy_pa_cryo_det_unit = {
+		days_remove = 30
+		icon = GFX_decision_enc_helmet
+		ai_will_do = {
+			factor = 10
+		}
+		custom_cost_trigger = {
+			has_army_experience > 20
+		}
+		custom_cost_text = has_xp_20
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			has_tech = enc_cryo_trooper_tech
+			has_tech = anti_tank_equipment_tech_1
+			has_tech = aa_fireteam_equipment_tech
+		}
+		complete_effect = {
+			army_experience = -20
+		}
+		remove_effect = {
+			set_technology = {
+				purists_pa_cryo_detachment_tech = 1
+			}
+		}
+	}
+
+	Purists_deploy_enclave_behemo = {
+		days_remove = 30
+		icon = GFX_idea_ead_horrigan_spirit
+		ai_will_do = {
+			factor = 10
+		}
+		custom_cost_trigger = {
+			has_army_experience > 20
+		}
+		custom_cost_text = has_xp_20
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			has_completed_focus = enc_ATLAS_end
+			has_country_flag = ead_fte_finished
+			has_tech = mutant_horrigan_tech
+
+		}
+		complete_effect = {
+			army_experience = -20
+		}
+		remove_effect = {
+			set_technology = {
+				purists_pa_behe_tech = 1
+			}
+		}
+	}
+
+	Purists_deploy_pa_deathclaw_unit = {
+		days_remove = 30
+		icon = GFX_idea_ead_horrigan_spirit
+		ai_will_do = {
+			factor = 10
+		}
+		custom_cost_trigger = {
+			has_army_experience > 20
+		}
+		custom_cost_text = has_xp_20
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			has_completed_focus = enc_ATLAS_end
+			has_country_flag = ead_fte_finished
+			has_tech = mutant_horrigan_tech
+			has_tech = enc_deathclaw_tech
+
+		}
+		complete_effect = {
+			army_experience = -20
+		}
+		remove_effect = {
+			set_technology = {
+				purists_pa_death_tech = 1
+			}
+		}
+	}
+
+	Purists_deploy_pa_cazaclaw_unit = {
+		days_remove = 30
+		icon = GFX_idea_ead_horrigan_spirit
+		ai_will_do = {
+			factor = 10
+		}
+		custom_cost_trigger = {
+			has_army_experience > 20
+		}
+		custom_cost_text = has_xp_20
+		days_re_enable = 30
+		fire_only_once = yes
+		visible = {
+			original_tag = ERB
+		}
+		available = {
+			has_completed_focus = enc_ATLAS_end
+			has_country_flag = ead_fte_finished
+			has_tech = mutant_horrigan_tech
+			has_tech = enc_cazaclaw_tech
+		}
+		complete_effect = {
+			army_experience = -20
+		}
+		remove_effect = {
+			set_technology = {
+				purists_pa_caza_tech = 1
+			}
+		}
+	}
+
+}

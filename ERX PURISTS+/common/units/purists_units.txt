@@ -40,9 +40,8 @@ sub_units = {
 		suppression = 1
 		weight = 0.6
 		can_be_parachuted = yes
+		supply_consumption = 0.45
 
-		supply_consumption = 0.25
-		can_be_parachuted = yes
 		need = {
 			fireteam_equipment = 15
 			spec_ops_equipment  = 15
@@ -128,10 +127,8 @@ sub_units = {
 		suppression = 1.2
 		weight = 0.6
 		can_be_parachuted = yes
+		supply_consumption = 0.45
 
-		supply_consumption = 0.25
-
-		can_be_parachuted = yes
 		essential = {
 			demolitions_equipment
 			spec_ops_equipment
@@ -217,10 +214,8 @@ sub_units = {
 		suppression = 1.2
 		weight = 0.6
 		can_be_parachuted = yes
+		supply_consumption = 0.45
 
-		supply_consumption = 0.25
-
-		can_be_parachuted = yes
 		essential = {
 			infantry_equipment
 			spec_ops_equipment
@@ -308,13 +303,11 @@ sub_units = {
 		suppression = 5
 		weight = 1.2
 		can_be_parachuted = yes
-
 		recon = 1.7
 		initiative = 0.2
 		supply_consumption_factor = 0.3
+		supply_consumption = 2
 
-		supply_consumption = 1.25
-		can_be_parachuted = yes
 		need = {
 			fireteam_equipment = 10
 			spec_ops_equipment  = 60
@@ -361,6 +354,861 @@ sub_units = {
 		}
 		essential = {
 			spec_ops_equipment
+		}
+	}
+
+	power_armor_detachement_unit = {
+		sprite = power_armour
+		map_icon_category = infantry
+
+		priority = 600
+		active = no
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+			armor
+		}
+
+		group = support
+
+		categories = {
+			category_army
+			category_front_line
+			category_special_forces
+			category_infantry_and_special_forces
+		}
+
+		combat_width = 5
+
+		#Size Definitions
+		max_strength = 80
+		max_organisation = 100
+		default_morale = 0.35
+		manpower = 60 # 1000
+		soft_attack = 0.1
+		hard_attack = 0.1
+		defense = 0.2
+		breakthrough = 0.1
+
+		#Misc Abilities
+		training_time = 150
+		weight = 1.2
+		can_be_parachuted = yes
+		supply_consumption_factor = 0.3
+		supply_consumption = 2
+
+		need = {
+			fireteam_equipment = 10
+			power_armor_equipment  = 60
+			demolitions_equipment = 10
+			anti_tank_equipment = 5
+			anti_air_equipment = 5
+			infantry_equipment = 30
+		}
+
+		transport = power_armor_equipment
+			
+		
+		essential = {
+			power_armor_equipment
+		}
+	}
+
+	power_armor_detachement_heavy_unit = {
+		sprite = power_armour
+		map_icon_category = infantry
+
+		priority = 600
+		active = no
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+			armor
+		}
+
+		group = support
+
+		categories = {
+			category_army
+			category_front_line
+			category_special_forces
+			category_infantry_and_special_forces
+		}
+
+		combat_width = 5
+
+		#Size Definitions
+		max_strength = 80
+		max_organisation = 100
+		default_morale = 0.35
+		manpower = 60 # 1000
+
+		soft_attack = 0.1
+		hard_attack = 0.1
+		defense = 0.2
+		breakthrough = 0.1
+
+		#Misc Abilities
+		training_time = 150
+		weight = 1.2
+		can_be_parachuted = yes
+		supply_consumption_factor = 0.3
+		supply_consumption = 2
+
+		need = {
+			enc_fev_sprayer_equipment = 10
+			power_armor_equipment  = 60
+			enc_fatman_equipment = 10
+			anti_tank_equipment = 5
+			anti_air_equipment = 5
+			infantry_equipment = 30
+		}
+
+		transport = power_armor_equipment
+			
+		
+		essential = {
+			power_armor_equipment
+		}
+	}
+
+	power_cryo_detachement_unit = {
+		sprite = power_armour
+		map_icon_category = infantry
+
+		priority = 600
+		active = no
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+			armor
+		}
+
+		group = support
+
+		categories = {
+			category_army
+			category_front_line
+			category_special_forces
+			category_infantry_and_special_forces
+		}
+
+		combat_width = 5
+
+		#Size Definitions
+		max_strength = 80
+		max_organisation = 100
+		default_morale = 0.35
+		manpower = 60 # 1000
+
+
+		#Misc Abilities
+		training_time = 150
+		weight = 1.2
+		can_be_parachuted = yes
+		supply_consumption_factor = 0.3
+		supply_consumption = 2
+
+		need = {
+			fireteam_equipment = 10
+			power_armor_equipment  = 60
+			demolitions_equipment = 10
+			anti_tank_equipment = 5
+			anti_air_equipment = 5
+			enc_cryo_equipment = 30
+		}
+
+		transport = power_armor_equipment
+			
+		
+		essential = {
+			power_armor_equipment
+		}
+	}
+
+	enclave_command_unit = {
+		sprite = power_armour
+		map_icon_category = infantry
+
+		priority = 600
+		active = no
+		affects_speed = yes
+
+		type = {
+			infantry
+			support
+			armor
+		}
+
+		group = support
+
+		categories = {
+			category_army
+			category_front_line
+			category_support
+		}
+
+		combat_width = -3
+
+		#Size Definitions
+		max_strength = 50
+		max_organisation = 70
+		default_morale = 0.35
+		manpower = 30 # 1000
+
+		#Misc Abilities
+		training_time = 150
+		weight = 1.2
+		recon = 1
+		entrenchment  = 2
+		initiative = 0.03
+		can_be_parachuted = yes
+
+		supply_consumption_factor = 0.05
+
+		supply_consumption = 0.3
+		can_be_parachuted = yes
+		need = {
+			power_armor_equipment  = 15
+			infantry_equipment = 15
+			support_equipment = 30 
+		}
+
+		transport = power_armor_equipment
+			
+		
+		essential = {
+			power_armor_equipment
+		}
+
+		jungle = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		marsh = {
+			attack = 0.01
+			defence = 0.01
+			movement = 0.01
+		}
+		mountain = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		desert = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		amphibious = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+		river = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.05
+		}
+
+		battalion_mult = {
+			category = category_front_line
+			
+			max_organisation = 2
+			add = yes
+		}
+
+		same_support_type = enclave_command
+	}
+
+	enclave_command_mot_unit = {
+		sprite = motorized
+		map_icon_category = infantry
+
+		priority = 600
+		active = no
+		affects_speed = yes
+
+		type = {
+			infantry
+			support
+			armor
+		}
+
+		group = support
+
+		categories = {
+			category_army
+			category_front_line
+			category_vehicles
+			category_support
+		}
+
+		combat_width = -7
+
+		#Size Definitions
+		max_strength = 50
+		max_organisation = 70
+		default_morale = 0.35
+		manpower = 60 # 1000
+
+		#Misc Abilities
+		training_time = 150
+		weight = 1.2
+		recon = 1
+		entrenchment  = 1.05
+		initiative = 0.1
+		can_be_parachuted = yes
+
+		supply_consumption_factor = 0.05
+
+		supply_consumption = 0.3
+		can_be_parachuted = yes
+		need = {
+			power_armor_equipment  = 15
+			infantry_equipment = 15
+			support_equipment = 30
+			motorized_equipment = 20 
+		}
+
+		transport = motorized_equipment
+			
+		
+		essential = {
+			power_armor_equipment
+		}
+
+		jungle = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.10
+		}
+		marsh = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.10
+		}
+		mountain = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.10
+		}
+		desert = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.10
+		}
+		amphibious = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.10
+		}
+		river = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.10
+		}
+
+		battalion_mult = {
+			category = category_front_line
+			
+			max_organisation = 4
+			add = yes
+		}
+
+		same_support_type = enclave_command
+	}
+
+	enclave_command_air_unit = {
+		sprite = infantry
+		map_icon_category = infantry
+
+		priority = 600
+		active = no
+		affects_speed = yes
+
+		type = {
+			infantry
+			support
+			armor
+		}
+
+		group = support
+
+		categories = {
+			category_army
+			category_front_line
+			category_vehicles
+			category_support
+		}
+
+		combat_width = -5
+
+		#Size Definitions
+		max_strength = 50
+		max_organisation = 70
+		default_morale = 0.35
+		manpower = 60 # 1000
+
+		#Misc Abilities
+		training_time = 150
+		weight = 1.2
+		recon = 1.2
+		initiative = 0.2
+		can_be_parachuted = yes
+
+		supply_consumption_factor = 0.05
+
+		supply_consumption = 0.3
+		can_be_parachuted = yes
+		need = {
+			power_armor_equipment  = 15
+			infantry_equipment = 15
+			support_equipment = 30
+			land_vertibird_equipment = 20 
+		}
+
+		transport = land_vertibird_equipment
+			
+		
+		essential = {
+			power_armor_equipment
+		}
+
+		jungle = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.15
+		}
+		marsh = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.15
+		}
+		mountain = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.15
+		}
+		desert = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.15
+		}
+		amphibious = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.15
+		}
+		river = {
+			attack = 0.05
+			defence = 0.05
+			movement = 0.15
+		}
+
+		battalion_mult = {
+			category = category_front_line
+			
+			max_organisation = 5
+			add = yes
+		}
+
+		same_support_type = enclave_command
+	}
+
+	enclave_command_armored_unit = {
+		sprite = heavy_armor
+		map_icon_category = infantry
+
+		priority = 600
+		active = no
+		affects_speed = yes
+
+		type = {
+			infantry
+			support
+			armor
+		}
+
+		group = support
+
+		categories = {
+			category_army
+			category_front_line
+			category_vehicles
+			category_support
+		}
+
+		combat_width = -4
+
+		#Size Definitions
+		max_strength = 50
+		max_organisation = 70
+		default_morale = 0.35
+		manpower = 60 # 1000
+
+		#Misc Abilities
+		training_time = 150
+		weight = 1.2
+		recon = 1
+		entrenchment  = 2
+		initiative = 0.1
+		can_be_parachuted = yes
+
+		supply_consumption_factor = 0.15
+
+		supply_consumption = 0.5
+		can_be_parachuted = yes
+		need = {
+			power_armor_equipment  = 15
+			infantry_equipment = 15
+			support_equipment = 30
+			motorized_equipment = 10
+			assault_tank_equipment = 5
+			tank_equipment = 5 
+		}
+
+		transport = tank_equipment
+			
+		
+		essential = {
+			power_armor_equipment
+		}
+
+		jungle = {
+			attack = 0.05
+			defence = 0.05
+			movement = -0.10
+		}
+		marsh = {
+			attack = 0.05
+			defence = 0.05
+			movement = -0.10
+		}
+		mountain = {
+			attack = 0.05
+			defence = 0.05
+			movement = -0.10
+		}
+		desert = {
+			attack = 0.05
+			defence = 0.05
+			movement = -0.10
+		}
+		amphibious = {
+			attack = 0.05
+			defence = 0.05
+			movement = -0.10
+		}
+		river = {
+			attack = 0.05
+			defence = 0.05
+			movement = -0.10
+		}
+
+		battalion_mult = {
+			category = category_front_line
+			
+			max_organisation = 4
+			add = yes
+		}
+
+		same_support_type = enclave_command
+	}
+
+	enclave_command_posts_unit = {
+		sprite = heavy_armor
+		map_icon_category = armored
+
+		priority = 600
+		active = no
+		affects_speed = yes
+
+		type = {
+			infantry
+			support
+			armor
+		}
+
+		group = support
+
+		categories = {
+			category_army
+			category_front_line
+			category_vehicles
+			category_support
+		}
+
+		combat_width = -20
+
+		#Size Definitions
+		max_strength = 80
+		max_organisation = 100
+		default_morale = 0.35
+		manpower = 100 # 1000
+
+		#Misc Abilities
+		training_time = 150
+		weight = 1.2
+		recon = 1
+		entrenchment  = 7
+		can_be_parachuted = yes
+
+		supply_consumption_factor = 0.15
+
+		supply_consumption = 1
+		can_be_parachuted = yes
+		need = {
+			power_armor_equipment  = 15
+			infantry_equipment = 15
+			support_equipment = 100
+			enclave_mobile_base_equipment = 2
+			land_vertibird_equipment = 10 
+		}
+
+		transport = tank_equipment
+			
+		
+		essential = {
+			power_armor_equipment
+			enclave_mobile_base_equipment
+		}
+
+		jungle = {
+			movement = -0.20
+		}
+		marsh = {
+			movement = -0.20
+		}
+		mountain = {
+			movement = -0.20
+		}
+		desert = {
+			movement = -0.20
+		}
+		amphibious = {
+			movement = -0.20
+		}
+		river = {
+			movement = -0.20
+		}
+
+		battalion_mult = {
+			category = category_front_line
+			
+			max_organisation = 15
+			add = yes
+		}
+
+		same_support_type = enclave_command
+	}
+
+
+	enclave_behemoth_unit = {
+		sprite = behemoth
+		map_icon_category = armored
+		special_forces = yes
+		priority = 2503
+		ai_priority = 2503
+		active = yes
+		training_time = 180
+
+		type = {
+			armor
+		}
+
+		group = mutant_group
+
+		categories = {
+			category_army
+			category_front_line
+			category_behemoth
+			category_special_forces
+			category_mutants
+		}
+
+		urban = {
+			attack = 0.1
+		}
+		fort = {
+			attack = 0.2
+		}
+		mountain = {
+			attack = 0.05
+		}
+		hills = {
+			attack = 0.05
+		}
+
+		combat_width = 5
+
+		transport = horrigan_PA_equipment
+
+		need = {
+			behemoth_equipment = 25
+			horrigan_PA_equipment = 25
+			implant_equipment = 25
+		}
+
+		manpower = 25 # 500
+		max_organisation = 50
+		default_morale = 0.3
+		max_strength = 80
+		suppression = 1
+		weight = 2.2
+
+		supply_consumption = 1
+	} 
+
+	enclave_deathclaw_pa_unit = {
+		sprite = mirelurk_infantry
+		map_icon_category = infantry
+		special_forces = no
+
+		priority = 599
+		active = no
+
+		type = {
+			infantry
+		}
+
+		group = mutant_group
+
+		categories = {
+			category_army
+			category_front_line
+			category_mutants
+		}
+
+		combat_width = 5
+
+		#Size Definitions
+		max_strength = 100
+		max_organisation = 40
+		default_morale = 0.15
+		manpower = 15 # 1000
+
+		# Misc Abilities
+		training_time = 100
+		suppression = 1
+		weight = 1.8
+		supply_consumption = 0.25
+
+		jungle = {
+			attack = 0.05
+			defence = 0.05
+		}
+		marsh = {
+			attack = 0.05
+			defence = 0.05
+		}
+		mountain = {
+			attack = 0.05
+			defence = 0.05
+		}
+		desert = {
+			attack = 0.05
+			defence = 0.05
+		}
+		radiation = {
+			attack = 0.1
+			defence = 0.1
+			movement = 0.1
+		}
+		urban = {
+			attack = 0.3
+			defence = 0.1
+			movement = 0.45 
+		}
+
+		transport = horrigan_PA_equipment
+
+		need = {
+			deathclaw_equipment = 25
+			horrigan_PA_equipment = 25
+			implant_equipment = 25
+		}
+	}
+	
+	enclave_cazaclaw_pa_unit = {
+		sprite = ghoul_infantry
+		map_icon_category = infantry
+		special_forces = yes
+
+		priority = 599
+		active = no
+		type = {
+			infantry
+		}
+
+		group = mutant_group
+
+		categories = {
+			category_army
+			category_front_line
+			category_mutants
+		}
+
+		combat_width = 5
+
+		#Size Definitions
+		max_strength = 100
+		max_organisation = 40
+		default_morale = 0.15
+		manpower = 15 # 1000
+
+		# Misc Abilities
+		training_time = 150
+		suppression = 1
+		weight = 1.8
+		supply_consumption = 0.16
+
+		can_be_parachuted = yes
+
+		casualty_trickleback = 0.01
+		supply_consumption = 0.25
+
+		jungle = {
+			attack = 0.05
+			defence = 0.05
+		}
+		marsh = {
+			attack = 0.05
+			defence = 0.05
+		}
+		mountain = {
+			attack = 0.05
+			defence = 0.05
+		}
+		desert = {
+			attack = 0.05
+			defence = 0.05
+		}
+
+		radiation = {
+			attack = 0.1
+			defence = 0.1
+			movement = 0.1
+		}
+		urban = {
+			attack = 0.3
+			defence = 0.1
+			movement = 0.45 
+		}
+
+		transport = horrigan_PA_equipment
+
+		need = {
+			cazaclaw_equipment = 25
+			horrigan_PA_equipment = 25
+			implant_equipment = 25
 		}
 	}
 	

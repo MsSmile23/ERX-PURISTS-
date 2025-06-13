@@ -71,3 +71,15 @@ Purists_Sigma_Action = {
 		has_completed_focus = enc_sigma
 	}
 }
+
+Purists_Additional_units = { 
+	icon = GFX_idea_ead_icon_command
+	picture = GFX_decision_ead_enclave_military
+	allowed = {
+		tag = ERB
+	}
+	priority = 2
+	visible = {
+		has_completed_focus = enc_DoD_start
+	}
+}

@@ -287,15 +287,55 @@ Purists_Mojave_BoS: "Mojave Brotherhood."
 Purists_Mojave_BoS_desc: "Over the decades, the Brotherhood has managed to put down roots in almost every inch of American soil. We don't even have a clue about the exact number of all their chapters. The Brotherhood of Steel from the Mojave is a second chapter, that was operating in Nevada. Why?"
 ################################################################################################################ -<
 ################################################################################################################ -<
-Purists_SecHub: "Security Hub override command."
+Purists_SecHub: "Security Hub Override Command."
 Purists_SecHub_desc: "Using our old, pre-war codes and our technical knowledge, we can easily subjugate the robot territory known as [PSH.GetName]."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_gov_reno: "New Reno Puppet Government."
+Purists_gov_reno_desc: "With New Reno under our control, we face another problem - watchful eye of NCR. While we were hiding in Sierra Army Depot, it was easier for us to be unnoticed, but, with the second greatest city of Nevada in our hands, in order to secure our survival, we must use mutants. Fortunantly, we already have a number of 'motivated' canditands, who are agree to keep a show runnig, while we preparing for inavitable war with a Bear."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_gov_vault: "Vault City Puppet Government."
+Purists_gov_vault_desc: "With Vault City under our control, we face the same problem as in New Reno - watchful eye of NCR. Before our rightfull judjemnt upon local muties and their sympathizers, this city held a special place in NCR foreign police, if  you could call that. Fortunantly, we already have a number of 'motivated' canditands, who after a short conversation, agreed to keep a show runnig, while we preparing for inavitable war with a Bear."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_disguise_vault: "Vault City Fate."
+Purists_disguise_vault_desc: "With Vault City under our control, we face the same problem as in New Reno - watchful eye of NCR. With majority of population spared, some of our staff suggests a bold move. That, not only we should install a new officials, but - we SHOULD become a Vault City."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_us_ordanance: "US Ordnance."
+Purists_us_ordanance_desc: "A minor pre-war arms manufacturer, but it's equipment remains intact."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_turquoise_project: "Turquoise Solar Project."
+Purists_turquoise_project_desc: "Another forgotten pre-war facility. Our science and engineer corps should brink it back online."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_sunset_sassparilla: "Restart Sunset Sarsaparilla."
+Purists_sunset_sassparilla_desc: "One of the few competitors to Nuka Cola, and it's a Nevada Original! Could be useful to boost morale in our ranks."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_water_town: "USGS Reno Water Science Center."
+Purists_water_town_desc: "To the common wastelander, it appears a ruined government research center. To the Enclave, it's opportunity to drink!"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_vault_mining: "The Silver State."
+Purists_vault_mining_desc: "Nevada ancient mining industry can be reborn to aid us in reforging our military and more!"
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_elko_posse_problems: "Elko Posse Problems."
+Purists_elko_posse_problems_desc: "Seems Vault City did not exert as much control around Northern Nevada as it advertised..."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_elko_gold_mine: "Elko Gold."
+Purists_elko_gold_mine_desc: "With another raider gang dealt with, we can secure those valuable resource."
 ################################################################################################################ -<
 
 
 ################################## Sigma Actions ##############################################
 ################################################################################################################ -<
 Purists_Sigma_Action: "Sigma Command Pannel."
-Purists_Sigma_Action_desc: "Our enemies are many. We are surrounded by mutants on all sides. But the men and women of Sigma Squads are prepared to wage war in the shadows, weakening those we deem a priority target. They only await your order, [ERB.GetLeader]"
+Purists_Sigma_Action_desc: "Our enemies are many. We are surrounded by mutants on all sides. But the men and women of Sigma Squads are prepared to wage war in the shadows, weakening those we deem a priority target. They only await your order, president [ERB.GetLeader]"
 ################################################################################################################ -<
 ################################################################################################################ -<
 Sigma_Field_Training: "Field Training."
@@ -584,4 +624,54 @@ Sigma_interv_ncr_civil_war_desc: "While California is burning in a bloody confli
 ################################################################################################################ -<
 Sigma_inter_legion_civil_war: "Reclaiming what is ours"
 Sigma_inter_legion_civil_war_desc: "While Arizona is burning in a bloody conflict, we can return what was rightfuly ours! Bloomfield, we are coming"
+################################################################################################################ -<
+
+################################## Enclave Military ##############################################
+################################################################################################################ -<
+Purists_Additional_units: "Enclave Military."
+Purists_Additional_units_desc: "With our ever growing military, we can deploy additional units, which will be suited for various situations, we encounter during righteous conquest of US. "
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_deploy_command_unit: "Deploy Command Units."
+Purists_deploy_command_unit_desc: "With the beginning of the process of rebuilding our army and officer corps, our units have a need for field officers who will command large units. Opens a new support unit : Enclave Command Unit. Increase initiative, recon and entrenchment. Reduce combat width. Improves combat units organisation. Cant be used with other command units."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_deploy_command_mot_unit: "Deploy Motorised Command Units."
+Purists_deploy_command_mot_unit_desc: "With the beginning of the process of rebuilding our army and officer corps, our units have a need for field officers who will command large units. Opens a new support unit : Enclave Motorised Command Unit. Increase initiative, recon and entrenchment. Reduce combat width. Improves combat units organisation. Requires motorised equipment. Cant be used with other command units."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_deploy_command_air_unit: "Deploy Air-Based Command Units."
+Purists_deploy_command_air_unit_desc: "With the beginning of the process of rebuilding our army and officer corps, our units have a need for field officers who will command large units. Opens a new support unit : Enclave Air-based Command Unit. Increase initiative, recon and entrenchment. Reduce combat width. Improves combat units organisation. Requires land vertibirds. Cant be used with other command units."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_deploy_command_tank_unit: "Deploy Armored Command Units."
+Purists_deploy_command_tank_unit_desc: "With the beginning of the process of rebuilding our army and officer corps, our units have a need for field officers who will command large units. Opens a new support unit : Enclave Armored Command Unit. Increase initiative, recon and entrenchment. Reduce combat width. Improves combat units organisation. Requires tanks and assault tanks. Cant be used with other command units."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_deploy_command_fort_unit: "Deploy Command Units with Mobile Fortress."
+Purists_deploy_command_fort_unit_desc: "With the beginning of the process of rebuilding our army and officer corps, our units have a need for field officers who will command large units. Opens a new support unit : Enclave Armored Command Unit. Increase initiative, recon and entrenchment. Reduce combat width. Improves combat units organisation. Requires two mobile fortresses as well, as land vertibirds. Cant be used with other command units."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_deploy_pa_det_unit: "Deploy Power Armor Detachment."
+Purists_deploy_pa_det_unit_desc: "Unlock a new support unit: Power Armor Detachment. Heavily armored to the teeth, with all available weaponry. Essentially, four support units in one. Will take combat width and a lot of upkeep for its power."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_deploy_pa_assault_unit: "Deploy Assault Power Armor Detachment."
+Purists_deploy_pa_assault_unit_desc: "Unlock a new support unit: Assault Power Armor Detachment. Heavily armored to the teeth, with all available weaponry, plus M42 Fatmans and FEV sprayers. Essentially, four support units in one. Will take combat width and a lot of upkeep for its power."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_deploy_pa_cryo_det_unit: "Deploy Cryo Power Armor Detachment."
+Purists_deploy_pa_cryo_det_unit_desc: "Unlock a new support unit: Cryo Corps Detachment. Heavily armored to the teeth, with all available weaponry, plus cryolators. Essentially, four support units in one. Will take combat width and a lot of upkeep for its power."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_deploy_enclave_behemo: "Finish X-76 Project."
+Purists_deploy_enclave_behemo_desc: "Unlock a new frontline unit: Project X-76 Unit. Behemoth, clad in power armor with cybernetic implant."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_deploy_pa_deathclaw_unit: "Improve Enclave Deathclaws."
+Purists_deploy_pa_deathclaw_unit_desc: "Unlock a new frontline unit: Enclave Deathclaws with Power Armor. Deathclaws, clad in power armor with cybernetic implant."
+################################################################################################################ -<
+################################################################################################################ -<
+Purists_deploy_pa_cazaclaw_unit: "Improve Enclave Cazaclaws."
+Purists_deploy_pa_cazaclaw_unit_desc: "Unlock a new frontline unit: Enclave Cazaclaws with Power Armor. Cazaclaws, clad in power armor with cybernetic implant."
 ################################################################################################################ -<
