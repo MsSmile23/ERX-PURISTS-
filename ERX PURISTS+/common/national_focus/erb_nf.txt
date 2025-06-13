@@ -15087,7 +15087,7 @@ focus = {#
 		allow_branch = {
 			has_country_flag = erb_purist_unlock_focuses
 		}
-		x = -5
+		x = -7
 		y = 1
 		available = { has_completed_focus = enc_purity 
 		has_completed_focus = enc_were_all_enclave
@@ -15332,7 +15332,7 @@ focus = {#
 	}
 	focus = {# fear not the mutant
 		id = enc_die_mutie
-		icon = GFX_goal_WBH_mutant_purge
+		icon = GFX_enc_goal_reject_super_mutants
 		ai_will_do = { factor = 1 }
 		prerequisite = {focus = enc_last_americans}
 		relative_position_id = enc_last_americans
@@ -15354,7 +15354,7 @@ focus = {#
 		prerequisite = {focus = enc_die_mutie}
 		relative_position_id = enc_die_mutie
 		x = -1
-		y = 2
+		y = 3
 		cost = 10
 		completion_reward = {
 			country_event = { id = enc_east.122 }
@@ -15401,7 +15401,7 @@ focus = {#
 		ai_will_do = { factor = 1 }
 		relative_position_id = enc_defile_the_Mutant
 		x = 1
-		y = 2
+		y = 3
 		cost = 20
 		completion_reward = {
 		country_event = { id = enc_east.1605 }
@@ -15427,6 +15427,45 @@ focus = {#
 			custom_effect_tooltip = enc_boost_special_forces_tt
 		}
 	}
+	
+
+### ROBOT RIGHTS PURITY SUBMOD 
+
+
+	focus = {
+		id = enc_turing_test
+		icon = GFX_enc_goal_air_robots
+		prerequisite = {focus = enc_purge_the_mutie}
+		ai_will_do = { factor = 1 }
+		relative_position_id = enc_purge_the_mutie
+		x = 1
+		y = 1
+		cost = 40
+		mutually_exclusive = { focus = enc_no_robot_rights }		
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = enc_no_robot_rights
+		icon = GFX_goal_enc_crack_the_code
+		prerequisite = {focus = enc_purge_the_mutie}
+		ai_will_do = { factor = 1 }
+		relative_position_id = enc_purge_the_mutie
+		x = -1
+		y = 1
+		cost = 40
+		mutually_exclusive = { focus = enc_turing_test }
+		completion_reward = {
+
+		}
+	}
+
+
+
+##### BASE ERB	
+	
 	
 	focus = {#Purity - protectors of humanity
 		id = enc_protectors
@@ -15462,7 +15501,7 @@ focus = {#
 			has_country_flag = erb_purist_unlock_focuses
 		}
 		x = 0
-		y = 1
+		y = 2
 		cost = 45
 		completion_reward = {
 		country_event = { id = enc_east.1608 }
@@ -16113,7 +16152,7 @@ focus = {#
 		ai_will_do = { factor = 1 }
 		relative_position_id = enc_purity
 		
-		x = -13
+		x = -15
 		y = 1
 		cost = 20
 		completion_reward = {
@@ -21475,7 +21514,7 @@ focus = {#
 		has_completed_focus = enc_reclamation_america
 		}
 		x = 0
-		y = 2
+		y = 8
 		cost = 40
 		completion_reward = {
 		country_event = {
@@ -21705,7 +21744,7 @@ focus = {#
 		has_completed_focus = Enc_project_safe_haven
 			} 
 		x = 0
-		y = 6
+		y = 5
 		cost = 40
 		completion_reward = {
 		country_event = {
@@ -22092,7 +22131,7 @@ focus = {#
 		has_completed_focus = Enc_revise_the_state_system
 			}
 		x = 8
-		y = 3
+		y = 2
 		cost = 20
 		completion_reward = {
 		country_event = { id = enc_east.1387 }
@@ -22213,7 +22252,7 @@ focus = {#
 		has_completed_focus = Enc_revise_the_state_system
 		}
 		x = -8
-		y = 3
+		y = 2
 		cost = 20
 		completion_reward = {
 		country_event = { id = enc_east.1392 }
@@ -23691,6 +23730,162 @@ focus = {#Norfolk Naval Base
 		y = 2
 		relative_position_id = enc_the_endgames_of_all
 		prerequisite = { focus = enc_the_endgames_of_all }	
+		ai_will_do = { factor = 1 }	
+		allow_branch = {
+			has_country_flag = erb_purist_unlock_focuses
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+
+################# PUPPET MASTERS OF THE WASTELAND PURISTS+ 
+
+
+	focus = {
+		id = enc_puppetmasters
+		icon = GFX_goal_america_goal_eagle
+		cost = 20	
+		x = -8
+		y = 9
+		relative_position_id = enc_radio_purity		
+		ai_will_do = { factor = 1 }	
+		allow_branch = {
+			has_country_flag = erb_purist_unlock_focuses
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = enc_dia_new_purpose
+		icon = GFX_goal_enc_management
+		cost = 20	
+		x = 2
+		y = 1
+		prerequisite = { focus = enc_puppetmasters }			
+		relative_position_id = enc_puppetmasters
+		ai_will_do = { factor = 1 }	
+		allow_branch = {
+			has_country_flag = erb_purist_unlock_focuses
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = enc_the_enclave_doctrine
+		icon = GFX_goal_enc_military_sphere
+		cost = 20	
+		x = 0
+		y = 1
+		prerequisite = { focus = enc_puppetmasters }			
+		relative_position_id = enc_puppetmasters
+		ai_will_do = { factor = 1 }	
+		allow_branch = {
+			has_country_flag = erb_purist_unlock_focuses
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = enc_remembering_archives
+		icon = GFX_enc_focus_vr_training
+		cost = 20	
+		x = -2
+		y = 1
+		prerequisite = { focus = enc_puppetmasters }			
+		relative_position_id = enc_puppetmasters
+		ai_will_do = { factor = 1 }	
+		allow_branch = {
+			has_country_flag = erb_purist_unlock_focuses
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = enc_the_pure_deep_state
+		icon = GFX_goal_enc_flags
+		cost = 20	
+		x = 0
+		y = 2
+		prerequisite = { focus = enc_dia_new_purpose }
+		prerequisite = { focus = enc_the_enclave_doctrine }
+		prerequisite = { focus = enc_remembering_archives }				
+		relative_position_id = enc_puppetmasters
+		ai_will_do = { factor = 1 }	
+		allow_branch = {
+			has_country_flag = erb_purist_unlock_focuses
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = enc_raiders_puppets
+		icon = GFX_enc_raider_problems
+		cost = 20	
+		x = 2
+		y = 2
+		prerequisite = { focus = enc_the_pure_deep_state }			
+		relative_position_id = enc_the_pure_deep_state
+		ai_will_do = { factor = 1 }	
+		allow_branch = {
+			has_country_flag = erb_purist_unlock_focuses
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = enc_settlers_puppets
+		icon = GFX_goal_enc_education_civilian
+		cost = 20	
+		x = 0
+		y = 1
+		prerequisite = { focus = enc_the_pure_deep_state }			
+		relative_position_id = enc_the_pure_deep_state
+		ai_will_do = { factor = 1 }	
+		allow_branch = {
+			has_country_flag = erb_purist_unlock_focuses
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = enc_tribal_puppets
+		icon = GFX_goal_enc_reform_the_tribes
+		cost = 20	
+		x = -2
+		y = 2
+		prerequisite = { focus = enc_the_pure_deep_state }			
+		relative_position_id = enc_the_pure_deep_state
 		ai_will_do = { factor = 1 }	
 		allow_branch = {
 			has_country_flag = erb_purist_unlock_focuses

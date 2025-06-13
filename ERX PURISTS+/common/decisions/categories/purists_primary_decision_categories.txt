@@ -1,0 +1,7 @@
+Purists_Puppet_Raiders_System = {
+	icon = GFX_idea_ead_icon_bmt
+	allowed = { tag = ERB }
+	priority = 2
+	visible = {	has_completed_focus = enc_expansion }
+}
+

@@ -1,0 +1,224 @@
+Purists_Puppet_Raiders_System = {
+	ENC_puppet_jac = {
+		icon = decision_enc_officer
+		priority = 300
+		fire_only_once = yes
+		days_remove = 15
+		available = {
+			AND = {
+				strength_ratio = { tag = JAC ratio > 0.5 }
+				JAC = {
+				exists = yes
+				}
+			}
+		}
+		visible = {
+			has_country_flag = enc_vipjac_puppet
+		}
+		remove_effect = {
+			country_event = { id = enc_east.2045 }
+		}
+	}
+	
+	ENC_annex_jac = {
+		icon = decision_enc_officer
+		priority = 300
+		fire_only_once = yes
+		available = {
+				country_exists = JAC
+		}
+		visible = {
+			JAC = {
+			is_puppet_of = ERB
+				}
+		}
+		complete_effect = {
+			ERB = { 
+			annex_country = { 
+			target = JAC 
+			transfer_troops = no
+				}
+			}
+		}
+	}
+	
+	ENC_puppet_vip = {
+		icon = decision_enc_officer
+		priority = 300
+		fire_only_once = yes
+		days_remove = 15
+		available = {
+			AND = {
+				strength_ratio = { tag = VIP ratio > 0.5 }
+				VIP = {
+				exists = yes
+				}
+			}
+		}
+		visible = {
+			has_country_flag = enc_vipjac_puppet
+		}
+		remove_effect = {
+			country_event = { id = enc_east.2046 }
+		}
+	}
+	
+	ENC_annex_vip = {
+		icon = decision_enc_officer
+		priority = 300
+		fire_only_once = yes
+		available = {
+				country_exists = VIP
+		}
+		visible = {
+			VIP = {
+			is_puppet_of = ERB
+				}
+		}
+		complete_effect = {
+			ERB = { 
+			annex_country = { 
+			target = VIP 
+			transfer_troops = no
+				}
+			}
+		}
+	}
+
+
+	ENC_puppet_tdn = {
+		icon = decision_enc_officer
+		priority = 300
+		fire_only_once = yes
+		days_remove = 15
+		available = {
+			AND = {
+				strength_ratio = { tag = TDN ratio > 0.5 }
+				TDN = {
+				exists = yes
+				}
+			}
+		}
+		visible = {
+			has_country_flag = enc_tdn_puppet
+		}
+		remove_effect = {
+			country_event = { id = enc_east.2048 }
+		}
+	}
+	
+	ENC_annex_tdn = {
+		icon = decision_enc_officer
+		priority = 300
+		fire_only_once = yes
+		available = {
+			country_exists = TDN
+		}
+		visible = {
+			TDN = {
+			is_puppet_of = ERB
+				}
+		}
+		complete_effect = {
+			ERB = { 
+			annex_country = { 
+			target = TDN 
+			transfer_troops = no
+				}
+			}
+		}
+	}
+
+
+
+	ENC_puppet_che = {
+		icon = decision_enc_officer
+		priority = 300
+		fire_only_once = yes
+		days_remove = 15
+		available = {
+			AND = {
+				strength_ratio = { tag = CHE ratio > 0.5 }
+				CHE = {
+				exists = yes
+				}
+			}
+		}
+		visible = {
+			has_country_flag = enc_che_puppet
+		}
+		remove_effect = {
+			country_event = { id = enc_puppet_purist.1 }
+		}
+	}
+
+	
+	ENC_annex_che = {
+		icon = decision_enc_officer
+		priority = 300
+		fire_only_once = yes
+		available = {
+			country_exists = CHE
+		}
+		visible = {
+			CHE = {
+			is_puppet_of = ERB
+				}
+		}
+		complete_effect = {
+			ERB = { 
+			annex_country = { 
+			target = CHE 
+			transfer_troops = no
+				}
+			}
+		}
+	}
+
+	ENC_puppet_bdt = {
+		icon = decision_enc_officer
+		priority = 300
+		fire_only_once = yes
+		days_remove = 15
+		available = {
+			AND = {
+				strength_ratio = { tag = BDT ratio > 0.5 }
+				CHE = {
+				exists = yes
+				}
+			}
+		}
+		visible = {
+			has_country_flag = enc_bdt_puppet
+		}
+		remove_effect = {
+			country_event = { id = enc_puppet_purist.2 }
+		}
+	}
+
+	ENC_annex_bdt = {
+		icon = decision_enc_officer
+		priority = 300
+		fire_only_once = yes
+		available = {
+			country_exists = BDT
+		}
+		visible = {
+			BDT = {
+			is_puppet_of = ERB
+				}
+		}
+		complete_effect = {
+			ERB = { 
+			annex_country = { 
+			target = BDT 
+			transfer_troops = no
+				}
+			}
+		}
+	}
+
+
+
+
+}

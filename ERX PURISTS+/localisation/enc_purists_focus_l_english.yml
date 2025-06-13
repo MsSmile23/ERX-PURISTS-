@@ -527,6 +527,45 @@ erb_pre_war_robotics_genius: "Pre-War Robotics Genius"
   erb_irs_chief_name_desc: "Chief of the IRS, and a former prostitute working for Miss Kitty's Cats Paw Brothel. She's gifted with numbers, which is why Miss Kitty offered her to us in exchange to stop taxing her brothel."
 
 
+### ROBOT RIGHTS 
+
+enc_no_robot_rights:0 "Enslave the Robot"
+enc_no_robot_rights_desc:0 "With few exceptions, all robots are treated as slaves by the Enclave. Their sentience is seen as a mere facade, an imitation that can never rival the true purity of a pure-blooded American human. Thus, the majority are enslaved, regardless of any signs of intelligence or self-awareness."
+
+
+enc_turing_test:0 "Repurpose the Turing Test"
+enc_turing_test_desc:0 "Although most of our robots remain our property, we are generous enough to repurpose an ancient evaluation known as the Turing Test for a new purpose. If a robot can pass our newly designed test based on that old standard, it will be granted rights equal to our own. That is of course if it's intelligent enough to succeed."
+
+
+### AMERICA'S PUPPETMASTER 
+
+
+enc_puppetmasters:0 "America's Puppetmaster"
+enc_puppetmasters_desc:0 ""
+
+
+enc_the_enclave_doctrine:0 "The Enclave Doctrine"
+enc_the_enclave_doctrine_desc:0 ""
+
+enc_dia_new_purpose:0 "DIA's New Purpose"
+enc_dia_new_purpose_desc:0 ""
+
+enc_remembering_archives:0 "The Archive's Lessons"
+enc_remembering_archives_desc:0 ""
+
+
+enc_the_pure_deep_state:0 "The Purist Deep State"
+enc_the_pure_deep_state_desc:0 ""
+
+enc_settlers_puppets:0 "Controlling the Settlers" 
+enc_settlers_puppets_desc:0 ""
+
+enc_raiders_puppets:0 "Controlling the Raiders"
+enc_raiders_puppets_desc:0 ""
+
+enc_tribal_puppets:0 "Controlling the Tribals"
+enc_tribal_puppets_desc:0 ""
+
 
 ### FOCUS ENDING
 
