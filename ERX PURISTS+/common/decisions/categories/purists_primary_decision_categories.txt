@@ -5,3 +5,19 @@ Purists_Puppet_Raiders_System = {
 	visible = {	has_completed_focus = enc_expansion }
 }
 
+
+Purists_Puppet_Settlers_System = {
+	icon = category_usa_construction
+	allowed = { tag = ERB }
+	priority = 3
+	visible = {	has_completed_focus = enc_the_enclave_doctrine }
+}
+
+
+
+Purists_Puppet_Tribals_System = {
+	icon = category_usa_construction
+	allowed = { tag = ERB }
+	priority = 3
+	visible = {	has_completed_focus = enc_the_enclave_doctrine }
+}

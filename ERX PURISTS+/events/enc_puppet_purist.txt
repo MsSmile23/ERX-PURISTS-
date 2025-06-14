@@ -1,0 +1,64 @@
+﻿add_namespace = enc_puppet_purist
+
+
+country_event = { 
+	id = enc_puppet_purist.1
+	title = enc_puppet_purist.1_t
+	desc = enc_puppet_purist.1_d
+	picture = GFX_event_enc_urban_patrol
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = enc_puppet_purist.1_a
+		ERB = {
+			puppet = CHE
+		}
+		CHE = {
+		set_cosmetic_tag = CHE_ERB
+		set_politics = {
+				ruling_party = ruler
+				}
+		load_focus_tree = enclave_puppet_tree
+		retire_country_leader = yes
+		create_country_leader = {
+		name = "Agent Lumen"
+		picture = gfx\leaders\ENC/portrait_enc_generic_advisor_1.dds
+		expire = "3000.1.1"
+		ideology = military_government
+		promote_leader = yes
+				}
+			}
+	}
+}
+
+country_event = {
+	id = enc_puppet_purist.2
+	title = enc_puppet_purist.2_t
+	desc = enc_puppet_purist.2_d
+	picture = GFX_event_enc_plasma_rifle
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = enc_puppet_purist.2_a
+		ERB = {
+			puppet = BDT
+		}
+		BDT = {
+		set_cosmetic_tag = BDT_ERB
+		set_politics = {
+				ruling_party = ruler
+				}
+		load_focus_tree = enclave_puppet_tree
+		retire_country_leader = yes
+		create_country_leader = {
+		name = "Agent Jackery"
+		picture = gfx\leaders\ENC/portrait_enc_generic_advisor_3.dds
+		expire = "3000.1.1"
+		ideology = military_government
+		promote_leader = yes
+				}
+			}
+	}
+}

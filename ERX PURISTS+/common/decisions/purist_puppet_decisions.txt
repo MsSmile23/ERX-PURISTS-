@@ -1,4 +1,122 @@
 Purists_Puppet_Raiders_System = {
+### Enclave Doctrine
+	erb_purist_raider_takeover = {
+		target_trigger = {
+			FROM = {
+				is_neighbor_of = ERB
+				is_raider_nation = yes
+				is_in_faction = no
+				NOT = {
+					tag = CES
+				}
+				NOT = {
+					tag = EHT
+				}
+				NOT = {
+					tag = WHT
+				}
+				NOT = {
+					tag = PMR
+				}
+				NOT = {
+					tag = CHE
+				}
+				NOT = {
+					tag = BDT
+				}				
+			}
+		}
+		target_array = neighbors
+		target_root_trigger = {
+			has_completed_focus = enc_purity
+		}
+		visible = {
+			FROM = {
+				exists = yes
+				NOT = {
+					has_country_flag = erb_agents_purity
+				}
+				NOT = {
+					is_mexican = yes
+				}
+			}
+		ERB = { has_completed_focus = enc_raiders_puppets }
+		}
+		available = {
+			NOT = {
+				FROM = {
+					is_puppet_of = ERB
+				}
+				has_war_with = FROM
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		#days_remove = 70
+		cost = 250
+		complete_effect = {
+		}
+		remove_effect = {
+			FROM = {
+				set_country_flag = erb_agents_purity
+			}
+			add_to_array = { erb_agents_array = FROM }
+			custom_effect_tooltip = ENC_erb_agents_purity_tt
+		}
+	}
+	
+
+	erb_purist_puppeting_decision = {
+		target_trigger = {
+			FROM = {
+				has_country_flag = erb_agents_purity
+				is_in_faction = no
+			}
+		}
+		target_root_trigger = {
+			has_completed_focus = enc_purity
+		}
+		target_array = erb_agents_array
+		visible = {
+			FROM = {
+				exists = yes
+				is_in_faction = no
+			}
+			NOT = {
+				FROM = {
+					is_puppet_of = ERB
+				}
+				has_war_with = FROM
+			}
+		}
+		available = {
+			NOT = {
+				FROM = {
+					is_puppet_of = ERB
+				}
+				has_war_with = FROM			
+			}		
+			NOT = { FROM = { 
+				strength_ratio = { tag = ERB ratio > 0.5 }
+			 }	}
+		}
+		#days_remove = 60
+		cost = 250
+		complete_effect = {
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		remove_effect = {
+			puppet = FROM
+		}
+	}	
+	
+	
+	
+	### NORMAL PUPPET
+
 	ENC_puppet_jac = {
 		icon = decision_enc_officer
 		priority = 300
@@ -145,7 +263,7 @@ Purists_Puppet_Raiders_System = {
 			}
 		}
 		visible = {
-			has_country_flag = enc_che_puppet
+			has_completed_focus = enc_the_enclave_doctrine
 		}
 		remove_effect = {
 			country_event = { id = enc_puppet_purist.1 }
@@ -189,7 +307,7 @@ Purists_Puppet_Raiders_System = {
 			}
 		}
 		visible = {
-			has_country_flag = enc_bdt_puppet
+			has_completed_focus = enc_the_enclave_doctrine
 		}
 		remove_effect = {
 			country_event = { id = enc_puppet_purist.2 }
@@ -217,8 +335,5 @@ Purists_Puppet_Raiders_System = {
 			}
 		}
 	}
-
-
-
-
+	
 }

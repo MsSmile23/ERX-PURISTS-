@@ -1,0 +1,98 @@
+ERB = {
+	color = rgb { 0 45 106 }
+	color_ui = rgb { 0 45 106 }
+}
+
+ERB_reconstruction = {
+	color = rgb { 0 45 106 }
+	color_ui = rgb { 0 45 106 }
+}
+
+ERB_enclaveamerica = {
+	color = rgb { 0 45 106 }
+	color_ui = rgb { 0 45 106 }
+}
+
+ERB_USA = {
+	color = rgb { 67 123 237 } # base game blue
+	color_ui = rgb { 255 255 255 }
+}
+
+ERB_nevada = {
+	color = rgb { 67 123 237 } # base game blue
+	color_ui = rgb { 255 255 255 }
+}
+
+DES_ERB = {
+	color = rgb { 67 123 237 } # base game blue
+	color_ui = rgb { 255 255 255 }
+}
+
+NCR_ERB = {
+	color = rgb { 64 46 176 }
+	color_ui = rgb { 64 46 176 }
+}
+
+ERB_BOS = {
+	color = rgb { 64 46 176 }
+	color_ui = rgb { 64 46 176 }
+}
+
+ERB_SHI = {
+	color = rgb { 67 123 237 } # base game blue
+	color_ui = rgb { 255 255 255 }
+}
+BJS_ERB = {
+	color = rgb { 67 123 237 } # base game blue
+	color_ui = rgb { 255 255 255 }
+}
+
+BJS_MEX = {
+	color = rgb { 0 127 70 }
+	color_ui = rgb { 92 96 215 }
+}
+
+ERB_NCN = {
+	color = rgb { 0 40 188 }
+	color_ui = rgb { 0 40 818 }
+}
+
+BGR_NOR = {
+	color = rgb { 0 45 106 }
+	color_ui = rgb { 0 45 106 }
+}
+
+TDN_ERB2 = {
+	color = rgb { 0 45 106 }
+	color_ui = rgb { 0 45 106 }
+}
+
+JAC_ERB = {
+	color = rgb { 0 45 106 }
+	color_ui = rgb { 0 45 106 }
+}
+
+VIP_ERB = {
+	color = rgb { 0 45 106 }
+	color_ui = rgb { 0 45 106 }
+}
+
+
+CHE_ERB = {
+	color = rgb { 0 45 106 }
+	color_ui = rgb { 0 45 106 }
+}
+
+BDT_ERB = {
+	color = rgb { 0 45 106 }
+	color_ui = rgb { 0 45 106 }
+}
+
+
+
+# Enclave Administrative Zones
+
+EAZ_BAR = {
+	color = rgb { 0 45 50 }
+	color_ui = rgb { 0 45 50 }
+}

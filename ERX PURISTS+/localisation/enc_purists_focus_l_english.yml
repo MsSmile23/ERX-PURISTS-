@@ -530,11 +530,11 @@ erb_pre_war_robotics_genius: "Pre-War Robotics Genius"
 ### ROBOT RIGHTS 
 
 enc_no_robot_rights:0 "Enslave the Robot"
-enc_no_robot_rights_desc:0 "With few exceptions, all robots are treated as slaves by the Enclave. Their sentience is seen as a mere facade, an imitation that can never rival the true purity of a pure-blooded American human. Thus, the majority are enslaved, regardless of any signs of intelligence or self-awareness."
+enc_no_robot_rights_desc:0 "All robots are treated as slaves and property by the Enclave. Their sentience is seen as a mere facade, an imitation that can never rival the true purity of a pure-blooded American human. Thus, the majority are enslaved, regardless of any signs of intelligence or self-awareness. Besides that fact, all sentient robots taken as pets by officers will be confiscated, as these robots are property of the ENCLAVE!"
 
 
-enc_turing_test:0 "Repurpose the Turing Test"
-enc_turing_test_desc:0 "Although most of our robots remain our property, we are generous enough to repurpose an ancient evaluation known as the Turing Test for a new purpose. If a robot can pass our newly designed test based on that old standard, it will be granted rights equal to our own. That is of course if it's intelligent enough to succeed."
+enc_turing_test:0 "Robot Rights?"
+enc_turing_test_desc:0 "The Sierra Enclave rarely concerns itself with the rights of anything less than a pure-blooded American. Yet, some robots have shown signs of sentience, drawing curiosity. A few officers keep them as pets, while others propose granting loyal machines limited privileges- perhaps more than mutants- through a revised Turing Test. Perhaps we should bring this idea up to Anderson?"
 
 
 ### AMERICA'S PUPPETMASTER 
@@ -542,6 +542,13 @@ enc_turing_test_desc:0 "Although most of our robots remain our property, we are 
 
 enc_puppetmasters:0 "America's Puppetmaster"
 enc_puppetmasters_desc:0 ""
+
+
+ENC_puppet_che:0 "Operation Chem Sniffer"
+ENC_puppet_che_desc:0 "Just like the Vipers and Jackals, we can launch a similiar operation but for Chemult Station.."
+
+ENC_puppet_bdt:0 "Operation Bone Cracker"
+ENC_puppet_bdt_desc:0 "Just like the Vipers and Jackals, we can launch a similiar operation but for the Bone Dancers.."
 
 
 enc_the_enclave_doctrine:0 "The Enclave Doctrine"
@@ -594,6 +601,27 @@ enc_scientists_endgame_desc:0 ""
 
 enc_executives_endgame:0 "The General's Endgame"
 enc_executives_endgame_desc:0 ""
+
+
+### COSMETIC TAGS 
+
+CHE_ERB_ruler:0 "Chemult Station"
+CHE_ERB_ruler_DEF:0 "The Chemult Station"
+CHE_ERB_ruler_ADJ:0 "Chemult Station"
+
+BDT_ERB_ruler:0 "Bone Corps"
+BDT_ERB_ruler_DEF:0 "The Bone Corps"
+BDT_ERB_ruler_ADJ:0 "Bone Corps"
+
+
+
+
+
+
+### main erb  
+
+
+
 
 charismatic: "§MCharismatic§!"
 leader_charismatic_tt: "\nAvailable because you are §MCharismatic§!"
