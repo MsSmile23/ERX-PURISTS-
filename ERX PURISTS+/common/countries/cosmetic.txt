@@ -88,7 +88,10 @@ BDT_ERB = {
 	color_ui = rgb { 0 45 106 }
 }
 
-
+ERB_purist_raider_color = {
+	color = rgb { 0 45 106 }
+	color_ui = rgb { 0 45 106 }
+}
 
 # Enclave Administrative Zones
 

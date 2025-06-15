@@ -110,6 +110,21 @@ Purists_Puppet_Raiders_System = {
 		}
 		remove_effect = {
 			puppet = FROM
+			FROM = {
+			set_cosmetic_tag = ERB_purist_raider_color
+		set_politics = {
+				ruling_party = ruler
+				}
+		load_focus_tree = enclave_puppet_tree
+		retire_country_leader = yes
+		create_country_leader = {
+		name = "Enclave Reclaimation Council"
+		picture = gfx/leaders/puppets/enc_puppet_leader.dds
+		expire = "3000.1.1"
+		ideology = military_government
+		promote_leader = yes
+				}			
+			}
 		}
 	}	
 	
@@ -129,6 +144,7 @@ Purists_Puppet_Raiders_System = {
 				exists = yes
 				}
 			}
+		ERB = { is_neighbor_of = JAC }
 		}
 		visible = {
 			has_country_flag = enc_vipjac_puppet
@@ -172,6 +188,7 @@ Purists_Puppet_Raiders_System = {
 				exists = yes
 				}
 			}
+		ERB = { is_neighbor_of = VIP }
 		}
 		visible = {
 			has_country_flag = enc_vipjac_puppet
@@ -261,6 +278,7 @@ Purists_Puppet_Raiders_System = {
 				exists = yes
 				}
 			}
+		ERB = { is_neighbor_of = CHE }	
 		}
 		visible = {
 			has_completed_focus = enc_the_enclave_doctrine
@@ -301,9 +319,18 @@ Purists_Puppet_Raiders_System = {
 		available = {
 			AND = {
 				strength_ratio = { tag = BDT ratio > 0.5 }
-				CHE = {
+				BDT = {
 				exists = yes
 				}
+			}
+			OR = {
+			ERB = { is_neighbor_of = BDT }	
+			AND = { 
+			CHE = { is_neighbor_of = BDT }	
+			CHE = {
+			is_puppet_of = ERB
+			}			
+			}
 			}
 		}
 		visible = {
